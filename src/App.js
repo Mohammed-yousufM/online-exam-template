@@ -3,18 +3,42 @@ import InstructionsPage from "./InstructionsPage";
 import LoginPage from "./LoginPage";
 import ExamPage from "./ExamPage";
 import ThankPage from "./ThankPage";
-import Timer from "./Timer";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    // 0:InstructionsPage || 1:LoginPage || 2:ExamPage || 3:ThankPage
+    this.state = { pageTobeRendered: 0 };
+  }
+
+  //Call back function, gather permission from children, decide page to be rendered
+  decidePage = (pageIndex) => {
+    this.setState({ pageTobeRendered: pageIndex });
+  };
+
   render() {
     return (
-      <>
-        <InstructionsPage />
-        <LoginPage />
-        <ExamPage />
-        <ThankPage />
-        <Timer />
-      </>
+      <React.Fragment>
+        {(() => {
+          switch (this.state.pageTobeRendered) {
+            case 0:
+              return <InstructionsPage toAppJS={this.decidePage} />;
+
+            case 1:
+              return <LoginPage toAppJS={this.decidePage} />;
+
+            case 2:
+              return <ExamPage toAppJS={this.decidePage} />;
+
+            case 3:
+              return <ThankPage toAppJS={this.decidePage} />;
+
+            default:
+              return <InstructionsPage toAppJS={this.decidePage} />;
+          }
+        })()}
+      </React.Fragment>
     );
   }
 }
