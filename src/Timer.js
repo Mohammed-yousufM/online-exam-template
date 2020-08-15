@@ -8,8 +8,8 @@ class Timer extends Component {
     this.state = { minutes: 0, seconds: 30 };
   }
 
-  timeToParent = () => {
-    this.props.sendTime(true);
+  timeEndToParent = () => {
+    this.props.toExamPageJStime(true);
   };
 
   timerFunc = () => {
@@ -18,15 +18,20 @@ class Timer extends Component {
     } else if (this.state.seconds === 0) {
       if (this.state.minutes === 0) {
         clearInterval(this.timerId);
-        this.timeToParent();
+        this.timeEndToParent();
       } else {
         this.setState({ minutes: this.state.minutes - 1, seconds: 59 });
       }
     }
   };
 
-  componentDidMount() {
-    this.timerId = setInterval(this.timerFunc, 1000);
+  componentDidUpdate(prevProps) {
+    if (
+      this.props.shouldTimerStart !== prevProps.shouldTimerStart &&
+      this.props.shouldTimerStart === true
+    ) {
+      this.timerId = setInterval(this.timerFunc, 1000);
+    }
   }
 
   componentWillUnmount() {
@@ -35,14 +40,14 @@ class Timer extends Component {
 
   render() {
     return this.state.minutes === 0 && this.state.seconds === 0 ? (
-      <h1 className="sticky-top">Time Over!</h1>
+      <h3 className="container sticky-top text-right">Time Over!</h3>
     ) : (
-      <h1 className="sticky-top">
+      <h3 className="container sticky-top text-right">
         Time Remaining: {this.state.minutes}:
         {this.state.seconds < 10
           ? `0${this.state.seconds}`
           : this.state.seconds}
-      </h1>
+      </h3>
     );
   }
 }

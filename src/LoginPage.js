@@ -18,6 +18,11 @@ class LoginPage extends Component {
     this.props.toAppJS(1);
   };
 
+  sendUserData = () => {
+    //callback function to store username inside parent
+    this.props.toGetUser(this.state.userID);
+  };
+
   userIDAreaUpdate = (e) => {
     this.setState({ userID: e.target.value });
   };
@@ -37,6 +42,7 @@ class LoginPage extends Component {
     if (result === false) {
       this.setState({ errorMsg: "Please enter correct UserName and Password" });
     } else {
+      this.sendUserData();
       this.pageChange();
     }
   };

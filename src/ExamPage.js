@@ -7,7 +7,7 @@ class ExamPage extends Component {
     super(props);
 
     this.state = {
-      startTimer: false,
+      //   startTimer: false,
       isTimerEnd: false,
       isQuestionsPageMount: false,
       isQuestionsPageSubmit: false,
@@ -20,22 +20,39 @@ class ExamPage extends Component {
   };
 
   controlTimer = (timerStatus) => {
-    //alert when timer ends
+    //know when timer ends
     this.setState({ isTimerEnd: timerStatus });
   };
 
-  controlQuestionsPage = () => {
-    //alert when one of render and submit are done
+  controlQuestionsPage = (QPageMount, QPageSubmit) => {
+    //store when one of render and submit are done
+    this.setState({
+      isQuestionsPageMount: QPageMount,
+      isQuestionsPageSubmit: QPageSubmit,
+    });
   };
+
+  componentDidUpdate(prevState) {
+    if (
+      this.state.isQuestionsPageSubmit !== prevState.isQuestionsPageSubmit &&
+      this.state.isQuestionsPageSubmit === true
+    ) {
+      this.pageChange();
+    }
+  }
 
   render() {
     return (
       <div>
         <Timer
-          toExamPageJS={this.controlTimer}
+          toExamPageJStime={this.controlTimer}
           shouldTimerStart={this.state.isQuestionsPageMount}
         />
-        <QuestionsPage toExamPageJS={this.controlQuestionsPage} />
+        <QuestionsPage
+          toExamPageJS={this.controlQuestionsPage}
+          infoTimerEnd={this.state.isTimerEnd}
+          username={this.props.username}
+        />
       </div>
     );
   }
