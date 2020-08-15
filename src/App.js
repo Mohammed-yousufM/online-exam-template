@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    // 0:InstructionsPage || 1:LoginPage || 2:ExamPage || 3:ThankPage
+    // 0:LoginPage || 1:InstructionsPage|| 2:ExamPage || 3:ThankPage
     this.state = { pageTobeRendered: 0 };
   }
 
@@ -23,10 +23,10 @@ class App extends Component {
         {(() => {
           switch (this.state.pageTobeRendered) {
             case 0:
-              return <InstructionsPage toAppJS={this.decidePage} />;
+              return <LoginPage toAppJS={this.decidePage} />;
 
             case 1:
-              return <LoginPage toAppJS={this.decidePage} />;
+              return <InstructionsPage toAppJS={this.decidePage} />;
 
             case 2:
               return <ExamPage toAppJS={this.decidePage} />;
@@ -35,7 +35,7 @@ class App extends Component {
               return <ThankPage toAppJS={this.decidePage} />;
 
             default:
-              return <InstructionsPage toAppJS={this.decidePage} />;
+              return <LoginPage toAppJS={this.decidePage} />;
           }
         })()}
       </React.Fragment>

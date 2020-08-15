@@ -3,14 +3,14 @@ import React from "react";
 const InstructionsPage = ({ toAppJS }) => {
   const pageChange = () => {
     //callback function, ask parent to render LogIN page on buttom click
-    toAppJS(1);
+    toAppJS(2);
   };
 
   return (
     <div className="text-justify container">
       <h1 className="text-center">INSTRUCTIONS!!!</h1>
       <h3 className="text-left">
-        Please read the instructions carefully before you start the exam.
+        Please read the instructions carefully before starting your test.
       </h3>
       <section>
         <ul>
@@ -44,9 +44,17 @@ const InstructionsPage = ({ toAppJS }) => {
           </li>
         </ul>
       </section>
-      <p>If you've read the instructions, Click the button below to LogIN</p>
-      <button type="button" className="btn btn-info" onClick={pageChange}>
-        I've read the instructions
+      <p>
+        If you've read the instructions, Click the button below to start the
+        Test.
+      </p>
+      <p>You're one click away from starting your test! ALL THE BEST!</p>
+      <button
+        type="button"
+        className="btn btn-info btn-block"
+        onClick={pageChange}
+      >
+        Start The Test
       </button>
     </div>
   );
