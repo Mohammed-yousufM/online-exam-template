@@ -12,7 +12,7 @@ export const questionsAll = [
     id: "1.",
     question: (
       <MathEq
-        math={String.raw`If $\int \frac{2cosx-sinx+\lambda }{cosx+sinx-2}dx = A ln \left | cosx+sinx-2 \right |+Bx+C$. Then the ordered triplet A, B, &lambda; is`}
+        math={String.raw`If $\int \frac{2cosx-sinx+\lambda }{cosx+sinx-2}dx$ = A ln $\left | cosx+sinx-2 \right |$+Bx+C. Then the ordered triplet A, B, &lambda; is`}
       />
     ),
 

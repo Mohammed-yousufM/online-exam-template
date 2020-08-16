@@ -62,10 +62,74 @@ class QuestionsPage extends Component {
     xhr.send(data);
   };
 
+  //Minimal UI
+  // mainQfunc = (que) => {
+  //   return (
+  //     <div className="form-group ui segment text-break" key={que["id"]}>
+  //       <div className="p-2">
+  //         {que["id"]}
+  //         {que["question"]}
+  //       </div>
+  //       <div className="row">
+  //         <input
+  //           className="col-2"
+  //           type="radio"
+  //           id={++this.j}
+  //           name={que["id"]}
+  //           defaultChecked={false}
+  //           value="A"
+  //         />
+  //         <label className="col-5" htmlFor={this.j}>
+  //           {que["optionA"]}
+  //         </label>
+  //       </div>
+  //       <div className="row">
+  //         <input
+  //           className="col-2"
+  //           type="radio"
+  //           id={++this.j}
+  //           name={que["id"]}
+  //           defaultChecked={false}
+  //           value="B"
+  //         />
+  //         <label className="col-5" htmlFor={this.j}>
+  //           {que["optionB"]}
+  //         </label>
+  //       </div>
+  //       <div className="row">
+  //         <input
+  //           className="col-2"
+  //           type="radio"
+  //           id={++this.j}
+  //           name={que["id"]}
+  //           defaultChecked={false}
+  //           value="C"
+  //         />
+  //         <label className="col-5" htmlFor={this.j}>
+  //           {que["optionC"]}
+  //         </label>
+  //       </div>
+  //       <div className="row">
+  //         <input
+  //           className="col-2"
+  //           type="radio"
+  //           id={++this.j}
+  //           name={que["id"]}
+  //           defaultChecked={false}
+  //           value="D"
+  //         />
+  //         <label className="col-5" htmlFor={this.j}>
+  //           {que["optionD"]}
+  //         </label>
+  //       </div>
+  //     </div>
+  //   );
+  // };
+
   mainQfunc = (que) => {
     return (
-      <div className="ui raised olive segment" key={this.i++}>
-        <div className="ui segment" key={que["id"]}>
+      <div className="ui raised olive segment" key={que["id"]}>
+        <div className="ui segment">
           {que["id"]}
           {que["question"]}
         </div>
@@ -130,7 +194,7 @@ class QuestionsPage extends Component {
     const { status } = this.state;
     return (
       <form
-        className="container"
+        className="container pr-2"
         id="formSubmit"
         name="examForm"
         onSubmit={this.submitForm}
@@ -144,7 +208,7 @@ class QuestionsPage extends Component {
             type="text"
             id="disabledInput"
             name="userID"
-            value={userID}
+            value={"Good Luck " + userID + "!"}
             readOnly
           />
         </div>
@@ -154,9 +218,13 @@ class QuestionsPage extends Component {
           {status === "SUCCESS" ? (
             <p>Thanks! Your response is recorded</p>
           ) : (
-            <button type="submit" className="btn btn-danger btn-lg">
-              Submit
-            </button>
+            <div className="row">
+              <span className="col-5"></span>
+              <button type="submit" className="btn btn-danger col-2">
+                Submit
+              </button>
+              <span className="col-5"></span>
+            </div>
           )}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </>
