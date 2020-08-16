@@ -21,7 +21,7 @@ class ExamPage extends Component {
 
   controlTimer = (timerStatus) => {
     //know when timer ends
-    // this.setState({ isTimerEnd: timerStatus });
+    this.setState({ isTimerEnd: timerStatus });
   };
 
   controlQuestionsPage = (QPageMount, QPageSubmit) => {

@@ -11,24 +11,34 @@ class QuestionsPage extends Component {
     this.j = 0;
   }
 
-  // submitInfoToParent = () => {
-  //   this.props.toExamPageJS(true, true);
-  // };
+  submitInfoToParent = () => {
+    this.props.toExamPageJS(true, true);
+  };
 
   componentDidMount() {
     this.props.toExamPageJS(true, false);
-    setTimeout(() => {
-      console.log("timeOver");
-      document.getElementsByTagName("form").formSubmit.submit();
-    }, 10000);
+    // setTimeout(() => {
+    //   console.log("timeOver");
+    //   document.getElementsByTagName("form").formSubmit.submit();
+    // }, 10000);
   }
 
-  // componentDidUpdate(prevProps) {
+  componentWillUpdate(nextProps, nextState) {
+    if (
+      this.props.infoTimerEnd !== nextProps.infoTimerEnd &&
+      nextProps.infoTimerEnd === true
+    ) {
+      document.getElementsByTagName("form").formSubmit.submit();
+    }
+  }
+
+  // shouldComponentUpdate(prevProps) {
   //   if (
   //     this.props.infoTimerEnd !== prevProps.infoTimerEnd &&
   //     this.props.infoTimerEnd === true
   //   ) {
   //     document.getElementsByTagName("form").formSubmit.submit();
+  //     return true;
   //   }
   // }
 
