@@ -23,7 +23,7 @@ class QuestionsPage extends Component {
     // }, 10000);
   }
 
-  componentWillUpdate(nextProps, nextState) {
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
     if (
       this.props.infoTimerEnd !== nextProps.infoTimerEnd &&
       nextProps.infoTimerEnd === true
@@ -65,14 +65,17 @@ class QuestionsPage extends Component {
   mainQfunc = (que) => {
     return (
       <div className="ui raised olive segment" key={this.i++}>
-        <div className="ui segment">{que["question"]}</div>
+        <div className="ui segment" key={que["id"]}>
+          {que["id"]}
+          {que["question"]}
+        </div>
         <div className="ui stackable two column grid">
           <div className="column">
             <div className="ui segment">
               <input
                 type="radio"
                 id={++this.j}
-                name={que["question"][0]}
+                name={que["id"]}
                 defaultChecked={false}
                 value="A"
               />
@@ -84,7 +87,7 @@ class QuestionsPage extends Component {
               <input
                 type="radio"
                 id={++this.j}
-                name={que["question"][0]}
+                name={que["id"]}
                 defaultChecked={false}
                 value="B"
               />
@@ -98,7 +101,7 @@ class QuestionsPage extends Component {
               <input
                 type="radio"
                 id={++this.j}
-                name={que["question"][0]}
+                name={que["id"]}
                 defaultChecked={false}
                 value="C"
               />
@@ -110,7 +113,7 @@ class QuestionsPage extends Component {
               <input
                 type="radio"
                 id={++this.j}
-                name={que["question"][0]}
+                name={que["id"]}
                 defaultChecked={false}
                 value="D"
               />
@@ -127,17 +130,19 @@ class QuestionsPage extends Component {
     const { status } = this.state;
     return (
       <form
+        className="container"
         id="formSubmit"
         name="examForm"
         onSubmit={this.submitForm}
+        //insert your formspree integration endpoint into action attribute below
         action="https://formspree.io/maypkgqj"
         method="POST"
       >
         <div>
           <input
-            className="ui fluid disabled input"
+            className="form-control"
             type="text"
-            id="userID"
+            id="disabledInput"
             name="userID"
             value={userID}
             readOnly
@@ -149,7 +154,9 @@ class QuestionsPage extends Component {
           {status === "SUCCESS" ? (
             <p>Thanks! Your response is recorded</p>
           ) : (
-            <button type="submit">Submit</button>
+            <button type="submit" className="btn btn-danger btn-lg">
+              Submit
+            </button>
           )}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </>
