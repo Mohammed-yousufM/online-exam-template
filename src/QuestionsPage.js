@@ -6,31 +6,33 @@ class QuestionsPage extends Component {
   constructor(props) {
     super(props);
 
-    this.submitForm = this.submitForm.bind(this);
     this.state = { status: "" };
     this.i = 0;
     this.j = 0;
-    this.inputRef = React.createRef();
   }
 
-  submitInfoToParent = () => {
-    this.props.toExamPageJS(true, true);
-  };
+  // submitInfoToParent = () => {
+  //   this.props.toExamPageJS(true, true);
+  // };
 
   componentDidMount() {
     this.props.toExamPageJS(true, false);
+    setTimeout(() => {
+      console.log("timeOver");
+      document.getElementsByTagName("form").formSubmit.submit();
+    }, 10000);
   }
 
-  componentDidUpdate(prevProps) {
-    if (
-      this.props.infoTimerEnd !== prevProps.infoTimerEnd &&
-      this.props.infoTimerEnd === true
-    ) {
-      this.inputRef.current.click();
-    }
-  }
+  // componentDidUpdate(prevProps) {
+  //   if (
+  //     this.props.infoTimerEnd !== prevProps.infoTimerEnd &&
+  //     this.props.infoTimerEnd === true
+  //   ) {
+  //     document.getElementsByTagName("form").formSubmit.submit();
+  //   }
+  // }
 
-  submitForm(ev) {
+  submitForm = (ev) => {
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);
@@ -48,7 +50,7 @@ class QuestionsPage extends Component {
       }
     };
     xhr.send(data);
-  }
+  };
 
   mainQfunc = (que) => {
     return (
@@ -61,6 +63,7 @@ class QuestionsPage extends Component {
                 type="radio"
                 id={++this.j}
                 name={que["question"][0]}
+                defaultChecked={false}
                 value="A"
               />
               <label htmlFor={this.j}>{que["optionA"]}</label>
@@ -72,6 +75,7 @@ class QuestionsPage extends Component {
                 type="radio"
                 id={++this.j}
                 name={que["question"][0]}
+                defaultChecked={false}
                 value="B"
               />
               <label htmlFor={this.j}>{que["optionB"]}</label>
@@ -85,6 +89,7 @@ class QuestionsPage extends Component {
                 type="radio"
                 id={++this.j}
                 name={que["question"][0]}
+                defaultChecked={false}
                 value="C"
               />
               <label htmlFor={this.j}>{que["optionC"]}</label>
@@ -96,6 +101,7 @@ class QuestionsPage extends Component {
                 type="radio"
                 id={++this.j}
                 name={que["question"][0]}
+                defaultChecked={false}
                 value="D"
               />
               <label htmlFor={this.j}>{que["optionD"]}</label>
@@ -111,13 +117,15 @@ class QuestionsPage extends Component {
     const { status } = this.state;
     return (
       <form
-        id="getThisit"
+        id="formSubmit"
+        name="examForm"
         onSubmit={this.submitForm}
-        action="https://formspree.io/mvowlnen"
+        action="https://formspree.io/maypkgqj"
         method="POST"
       >
-        <div className="ui fluid disabled input">
+        <div>
           <input
+            className="ui fluid disabled input"
             type="text"
             id="userID"
             name="userID"
@@ -125,14 +133,13 @@ class QuestionsPage extends Component {
             readOnly
           />
         </div>
+
         <>{questionsAll.map(this.mainQfunc)}</>
         <>
           {status === "SUCCESS" ? (
             <p>Thanks! Your response is recorded</p>
           ) : (
-            <button type="submit" form="getThisit" ref={this.inputRef}>
-              Submit
-            </button>
+            <button type="submit">Submit</button>
           )}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </>

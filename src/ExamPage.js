@@ -21,7 +21,7 @@ class ExamPage extends Component {
 
   controlTimer = (timerStatus) => {
     //know when timer ends
-    this.setState({ isTimerEnd: timerStatus });
+    // this.setState({ isTimerEnd: timerStatus });
   };
 
   controlQuestionsPage = (QPageMount, QPageSubmit) => {
@@ -32,7 +32,7 @@ class ExamPage extends Component {
     });
   };
 
-  componentDidUpdate(prevState) {
+  componentDidUpdate(prevProps, prevState) {
     if (
       this.state.isQuestionsPageSubmit !== prevState.isQuestionsPageSubmit &&
       this.state.isQuestionsPageSubmit === true
