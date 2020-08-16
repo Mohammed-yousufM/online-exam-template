@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Online Exam Template With ReactJS
-
+For Demo, visit [Online Exam Template Demo](https://boring-ramanujan-4212a5.netlify.app/)
 
 ### Before you use this app:   
   - As a demo, i've set the timer to only 2minutes.
