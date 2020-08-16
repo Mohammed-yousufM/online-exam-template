@@ -17,10 +17,6 @@ class QuestionsPage extends Component {
 
   componentDidMount() {
     this.props.toExamPageJS(true, false);
-    // setTimeout(() => {
-    //   console.log("timeOver");
-    //   document.getElementsByTagName("form").formSubmit.submit();
-    // }, 10000);
   }
 
   UNSAFE_componentWillUpdate(nextProps, nextState) {
@@ -32,16 +28,6 @@ class QuestionsPage extends Component {
     }
   }
 
-  // shouldComponentUpdate(prevProps) {
-  //   if (
-  //     this.props.infoTimerEnd !== prevProps.infoTimerEnd &&
-  //     this.props.infoTimerEnd === true
-  //   ) {
-  //     document.getElementsByTagName("form").formSubmit.submit();
-  //     return true;
-  //   }
-  // }
-
   submitForm = (ev) => {
     ev.preventDefault();
     const form = ev.target;
@@ -52,7 +38,7 @@ class QuestionsPage extends Component {
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
-        // form.reset();
+        form.reset();
         this.setState({ status: "SUCCESS" });
         this.submitInfoToParent();
       } else {
@@ -61,70 +47,6 @@ class QuestionsPage extends Component {
     };
     xhr.send(data);
   };
-
-  //Minimal UI
-  // mainQfunc = (que) => {
-  //   return (
-  //     <div className="form-group ui segment text-break" key={que["id"]}>
-  //       <div className="p-2">
-  //         {que["id"]}
-  //         {que["question"]}
-  //       </div>
-  //       <div className="row">
-  //         <input
-  //           className="col-2"
-  //           type="radio"
-  //           id={++this.j}
-  //           name={que["id"]}
-  //           defaultChecked={false}
-  //           value="A"
-  //         />
-  //         <label className="col-5" htmlFor={this.j}>
-  //           {que["optionA"]}
-  //         </label>
-  //       </div>
-  //       <div className="row">
-  //         <input
-  //           className="col-2"
-  //           type="radio"
-  //           id={++this.j}
-  //           name={que["id"]}
-  //           defaultChecked={false}
-  //           value="B"
-  //         />
-  //         <label className="col-5" htmlFor={this.j}>
-  //           {que["optionB"]}
-  //         </label>
-  //       </div>
-  //       <div className="row">
-  //         <input
-  //           className="col-2"
-  //           type="radio"
-  //           id={++this.j}
-  //           name={que["id"]}
-  //           defaultChecked={false}
-  //           value="C"
-  //         />
-  //         <label className="col-5" htmlFor={this.j}>
-  //           {que["optionC"]}
-  //         </label>
-  //       </div>
-  //       <div className="row">
-  //         <input
-  //           className="col-2"
-  //           type="radio"
-  //           id={++this.j}
-  //           name={que["id"]}
-  //           defaultChecked={false}
-  //           value="D"
-  //         />
-  //         <label className="col-5" htmlFor={this.j}>
-  //           {que["optionD"]}
-  //         </label>
-  //       </div>
-  //     </div>
-  //   );
-  // };
 
   mainQfunc = (que) => {
     return (
