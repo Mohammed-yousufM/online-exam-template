@@ -24,48 +24,48 @@ export const questionsAll = [
     id: "2.",
     question: "What is Additive inverse of -2/5",
 
-    optionA: -2 / 5,
+    optionA: "-2 / 5",
 
-    optionB: 2 / 5,
-    optionC: -5 / 2,
+    optionB: "2 / 5",
+    optionC: "-5 / 2",
 
-    optionD: 5 / 2,
+    optionD: "5 / 2",
   },
   {
     id: "3.",
     question: "Simplify (-7/18*15/-7)-(1*1/4)+(1/2*1/4)",
 
-    optionA: 17 / 24,
+    optionA: "17 / 24",
 
-    optionB: 24 / 17,
+    optionB: "24 / 17",
 
-    optionC: -17 / 24,
+    optionC: "-17 / 24",
 
-    optionD: -24 / 17,
+    optionD: "-24 / 17",
   },
   {
     id: "4.",
     question: "What Number should be added to 7/12 to get 4/15",
 
-    optionA: -11 / 30,
+    optionA: "-11 / 30",
 
-    optionB: 51 / 60,
+    optionB: "51 / 60",
 
-    optionC: 1 / 20,
+    optionC: "1 / 20",
 
-    optionD: -19 / 60,
+    optionD: "-19 / 60",
   },
   {
     id: "5.",
     question: "Evaluate 2/5*(-3/7)-1/6*3/2+1/14*2*5",
 
-    optionA: 11 / 28,
+    optionA: "11 / 28",
 
-    optionB: 28 / 11,
+    optionB: "28 / 11",
 
-    optionC: -11 / 28,
+    optionC: "-11 / 28",
 
-    optionD: -28 / 11,
+    optionD: "-28 / 11",
   },
   {
     id: "6.",
