@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Online Exam Template With ReactJS
 
-For Demo, Clone the repo, CD into the folder, npm start
+For Demo, Clone the repo, CD into the folder, npm install and npm start.
 
 ### Before you use this app:
 
