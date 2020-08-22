@@ -11,7 +11,7 @@ export const studentsDB = [
   { userID: "maimuna", passw: "1006" },
   { userID: "josephus", passw: "1007" },
   { userID: "samuel", passw: "1008" },
-  { userID: "massod", passw: "1009" },
+  { userID: "masood", passw: "1009" },
   { userID: "vineel", passw: "1010" },
   { userID: "abhinav", passw: "1011" },
 ];
