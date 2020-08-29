@@ -127,7 +127,7 @@ export const questionsAll = [
   {
     id: "10.",
     question: (
-      <MathEq math={String.raw`Find m for which $5^{m}\div 5{-3}=5^{5}$`} />
+      <MathEq math={String.raw`Find m for which $5^{m}\div 5^{-3}=5^{5}$`} />
     ),
 
     optionA: 5,
@@ -182,7 +182,7 @@ export const questionsAll = [
     id: "14.",
     question: (
       <MathEq
-        math={String.raw`If a = -1, b = 2, then find $a^{b} \div b^{a}$`}
+        math={String.raw`If $a = -1$, $b = 2$, then find $a^{b} \div b^{a}$`}
       />
     ),
 
@@ -209,18 +209,18 @@ export const questionsAll = [
   {
     id: "16.",
     question:
-      "A Body moves 6m north. 8m east and 10m vertically upwards, what is its resultant displacement from initial position  ",
+      "A body moves 6m north, 8m east and 10m vertically upwards, what is its resultant displacement from initial position  ",
 
     optionA: <MathEq math={String.raw`$10\sqrt{2} \, m$`} />,
     optionB: <MathEq math={String.raw`$10m$`} />,
-    optionC: <MathEq math={String.raw`$\frac{10}{\sqrt{2} \, m}$`} />,
+    optionC: <MathEq math={String.raw`$\frac{10}{\sqrt{2}}m$`} />,
     optionD: <MathEq math={String.raw`$10\times2m$`} />,
   },
 
   {
     id: "17.",
     question:
-      "A man goes 10m towards North, then 20m towards east then displacement is",
+      "A man goes 10m towards North, then 20m towards East then displacement is",
 
     optionA: "22.5m",
     optionB: "25m",
@@ -306,7 +306,7 @@ export const questionsAll = [
       "One car moving on a straight road covers one third of the distance with 20 km/hr and the rest with 60 km/hr. The average speed is",
     optionA: "40 km/hr",
     optionB: "80 km/hr",
-    optionC: <MathEq math={String.raw`$46\frac{2}{3}$`} />,
+    optionC: <MathEq math={String.raw`$46\frac{2}{3}$ km/hr`} />,
     optionD: "36 km/hr",
   },
   {
@@ -361,8 +361,8 @@ export const questionsAll = [
     id: "30.",
     question: "The values of sin30 and cos60 are respectively",
 
-    optionA: "   1,0   ",
-    optionB: "   0,1   ",
+    optionA: "   1, 0   ",
+    optionB: "   0, 1   ",
     optionC: <MathEq math={String.raw`$\frac{1}{2}$ , $\frac{\sqrt{3}}{2}$`} />,
     optionD: <MathEq math={String.raw`$\frac{1}{2}$ , $\frac{1}{2}$`} />,
   },
