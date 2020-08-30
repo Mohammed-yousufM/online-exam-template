@@ -6,7 +6,7 @@ For Demo, Clone the repo, CD into the folder, npm install and npm start.
 
 ### Before you use this app:
 
-- As a demo, i've set the timer to only 2minutes.
+- For logging in, find username and password in dataFile.js. (Don't submit form without adding your own formspree ID)
 - This React app is very basic and developed as a part of practicing ReactJS.
 - App doesn't use libraries like Redux/Redux Form/Formik etc.
 - App doesn't use any back-end services.
