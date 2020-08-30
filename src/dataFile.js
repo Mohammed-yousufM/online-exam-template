@@ -88,7 +88,7 @@ export const questionsAll = [
     id: "7.",
     question: (
       <MathEq
-        math={String.raw`Evaluate ($3^{-7} \div 3^{-10} \times 3^{5}$)`}
+        math={String.raw`Evaluate ($3^{-7} \div 3^{-10} \times 3^{-5}$)`}
       />
     ),
 
@@ -203,7 +203,7 @@ export const questionsAll = [
     optionA: 4,
     optionB: 6,
     optionC: 8,
-    optionD: 2,
+    optionD: 10,
   },
 
   {
