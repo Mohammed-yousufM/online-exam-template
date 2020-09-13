@@ -3,20 +3,22 @@ import MathEq from "./MathEq";
 
 export const studentsDB = [
   { userID: "admin", passw: "1000" },
-  // { userID: "ayaan", passw: "1001" },
-  // { userID: "sami", passw: "1002" },
-  // { userID: "santosh", passw: "1003" },
-  // { userID: "rugveda", passw: "1004" },
-  // { userID: "richitha", passw: "1005" },
-  // { userID: "maimuna", passw: "1006" },
-  // { userID: "josephus", passw: "1007" },
-  // { userID: "samuel", passw: "1008" },
-  // { userID: "masood", passw: "1009" },
-  // { userID: "vineel", passw: "1010" },
-  // { userID: "abhinav", passw: "1011" },
-  // { userID: "arshan", passw: "1012" },
-  // { userID: "neeraj", passw: "1013" },
-  // { userID: "abel", passw: "1014" },
+  { sNO: "1", userID: "ayaan", passw: "1001" },
+  { sNO: "2", userID: "sami", passw: "1002" },
+  { sNO: "3", userID: "santosh", passw: "1003" },
+  { sNO: "4", userID: "rugveda", passw: "1004" },
+  { sNO: "5", userID: "richitha", passw: "1005" },
+  { sNO: "6", userID: "maimuna", passw: "1006" },
+  { sNO: "7", userID: "josephus", passw: "1007" },
+  { sNO: "9", userID: "masood", passw: "1009" },
+  { sNO: "10", userID: "vineel", passw: "1010" },
+  { sNO: "11", userID: "abhinav", passw: "1011" },
+  // Dubai Below
+  { sNO: "8", userID: "samuel", passw: "1008" },
+  { sNO: "12", userID: "arshan", passw: "1012" },
+  { sNO: "13", userID: "neeraj", passw: "1013" },
+  { sNO: "14", userID: "abel", passw: "1014" },
+  { sNO: "15", userID: "rayaan", passw: "1015" },
 ];
 
 export const questionsAll = [
