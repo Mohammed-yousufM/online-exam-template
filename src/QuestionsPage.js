@@ -148,7 +148,7 @@ class QuestionsPage extends Component {
               <span className="col-5"></span>
             </div>
           )}
-          {status === "ERROR" && <p>Ooops! There was an error.</p>}
+          {status === "ERROR" && <strong>Ooops! There was an error.</strong>}
         </>
       </form>
     );
