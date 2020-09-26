@@ -52,8 +52,11 @@ class QuestionsPage extends Component {
     return (
       <div className="ui raised olive segment" key={que["id"]}>
         <div className="ui segment">
-          {que["id"]}
-          {que["question"]}
+          <span>{que["id"]}</span>
+          <span> </span>
+          <span>{que["question"]}</span>
+          <span>{que["image1"] || null}</span>
+          <span>{que["image2"] || null}</span>
         </div>
         <div className="ui stackable two column grid">
           <div className="column">
@@ -121,7 +124,7 @@ class QuestionsPage extends Component {
         name="examForm"
         onSubmit={this.submitForm}
         //insert your formspree integration endpoint into action attribute below
-        action="https://formspree.io/moqpavvv"
+        action="https://formspree.io/xleodevn"
         method="POST"
       >
         <div>

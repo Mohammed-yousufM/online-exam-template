@@ -40,3 +40,8 @@
     transform: rotate(360deg);
   }
 }
+
+#grimage {
+  display: block;
+  margin-top: 5px;
+}

@@ -1,26 +1,42 @@
 import React from "react";
 import MathEq from "./MathEq";
+import Image from "./Image";
+import i1 from "./I1.png";
+import i2 from "./I2.png";
+import i3 from "./I3.png";
+import i4 from "./I4.png";
+import i5 from "./I5.png";
+import i6 from "./I6.png";
+import i7 from "./I7.png";
+import i8 from "./I8.png";
+import i9 from "./I9.png";
+import i10 from "./I10.png";
+import i11 from "./I11.png";
+import i12 from "./I12.png";
+import i13 from "./I13.png";
+import i14 from "./I14.png";
+import i15 from "./I15.png";
 
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "1000" },
-  { sNO: "1", userID: "ayaan", passw: "1001" },
-  { sNO: "2", userID: "sami", passw: "1002" },
-  { sNO: "3", userID: "santosh", passw: "1003" },
-  { sNO: "4", userID: "rugveda", passw: "1004" },
-  { sNO: "5", userID: "richitha", passw: "1005" },
-  { sNO: "6", userID: "maimuna", passw: "1006" },
-  { sNO: "7", userID: "josephus", passw: "1007" },
-  { sNO: "9", userID: "masood", passw: "1009" },
-  { sNO: "10", userID: "vineel", passw: "1010" },
-  { sNO: "11", userID: "abhinav", passw: "1011" },
-  // // Dubai Below
-  { sNO: "8", userID: "samuel", passw: "1008" },
-  { sNO: "12", userID: "arshan", passw: "1012" },
-  { sNO: "13", userID: "neeraj", passw: "1013" },
-  { sNO: "14", userID: "abel", passw: "1014" },
-  { sNO: "15", userID: "rayaan", passw: "1015" },
-  // // New Users - continue S.No.
-  { sNO: "16", userID: "srujana", passw: "1016" },
+  // { sNO: "1", userID: "ayaan", passw: "1001" },
+  // { sNO: "2", userID: "sami", passw: "1002" },
+  // { sNO: "3", userID: "santosh", passw: "1003" },
+  // { sNO: "4", userID: "rugveda", passw: "1004" },
+  // { sNO: "5", userID: "richitha", passw: "1005" },
+  // { sNO: "6", userID: "maimuna", passw: "1006" },
+  // { sNO: "7", userID: "josephus", passw: "1007" },
+  // { sNO: "9", userID: "masood", passw: "1009" },
+  // { sNO: "10", userID: "vineel", passw: "1010" },
+  // { sNO: "11", userID: "abhinav", passw: "1011" },
+  // // // Dubai Below
+  // { sNO: "8", userID: "samuel", passw: "1008" },
+  // { sNO: "12", userID: "arshan", passw: "1012" },
+  // { sNO: "13", userID: "neeraj", passw: "1013" },
+  // { sNO: "14", userID: "abel", passw: "1014" },
+  // { sNO: "15", userID: "rayaan", passw: "1015" },
+  // // // New Users - continue S.No.
+  // { sNO: "16", userID: "srujana", passw: "1016" },
 ];
 
 export const questionsAll = [
@@ -225,159 +241,162 @@ export const questionsAll = [
   {
     id: "16.",
     question:
-      "An object accelerates from rest to a velocity 27.5 m/s in 10 sec then find distance covered by object in next 10 sec",
+      "The variation of velocity of a particle with time moving along a straight line is illustrated in the following figure. The  distance travelled by the  particle in four seconds is",
+    image1: <Image g={i1} />,
 
-    optionA: "A) 550 m",
-    optionB: "B) 137.5 m",
-    optionC: "C) 412.5 m",
-    optionD: "D) 275 m",
+    optionA: "A) 60 m",
+    optionB: "B) 55 m",
+    optionC: "C) 25 m",
+    optionD: "D) 30 m",
   },
 
   {
     id: "17.",
     question:
-      "A body is moving with uniform acceleration describes 40 m in the first 5 sec and 65 m in next 5 sec. Its initial velocity will be",
+      "The displacement of a particle as a function of time is shown in the figure. The figure shows that",
+    image1: <Image g={i2} />,
 
-    optionA: "A) 4 m/s",
-    optionB: "B) 2.5 m/s",
-    optionC: "C) 5.5 m/s",
-    optionD: "D) 11 m/s",
+    optionA:
+      "A) The particle starts with certain velocity but the motion is retarded and finally the particle stops",
+    optionB: "B) The velocity of the particle is constant throughout",
+    optionC: "C) The acceleration of the particle is constant throughout",
+    optionD:
+      "D) The particle starts with constant velocity, then motion is accelerated and finally the particle moves with another constant velocity",
   },
 
   {
     id: "18.",
     question:
-      "Speed of two identical cars are u and 4u at a specific instant. The ratio of the respective distances in which the two cars are stopped from that instant is",
+      "A ball is thrown vertically upwards. Which of the following graph/graphs represent velocity-time graph of the ball during its flight (air resistance is neglected)",
+    image1: <Image g={i3} />,
+    image2: <Image g={i4} />,
 
-    optionA: "A) 1 : 1",
-    optionB: "B) 1 : 4",
-    optionC: "C) 1 : 8",
-    optionD: "D) 1 : 16",
+    optionA: "A) A",
+    optionB: "B) B",
+    optionC: "C) C",
+    optionD: "D) D",
   },
 
   {
     id: "19.",
-    question: (
+    question: "The x-t graph shown in figure represents",
+    image1: <Image g={i5} />,
+
+    optionA: "A) Constant velocity",
+    optionB: "B) Velocity of the body is continuously changing",
+    optionC: "C) Instantaneous velocity",
+    optionD: (
       <MathEq
-        math={String.raw`A man is $45 m$ behind the bus when the bus start accelerating from rest with acceleration $2.5 \, m/s^{2}$ With what minimum velocity should the man start running to catch the bus?`}
+        math={String.raw`D) The body travels with constant speed upto time $t_{1}$ and then stops`}
       />
     ),
-
-    optionA: "A) 12 m/s",
-    optionB: "B) 14 m/s",
-    optionC: "C) 15 m/s",
-    optionD: "D) 16 m/s",
   },
 
   {
     id: "20.",
     question:
-      "If a car at rest accelerates uniformly to a speed of  144 km/h in  20 s. Then it covers a distance of ",
+      "Figures (i) and (ii) below show the displacement-time graphs of two particles moving along the x-axis. We can say that",
+    image1: <Image g={i6} />,
 
-    optionA: "A) 20 m",
-    optionB: "B) 400 m",
-    optionC: "C) 1440 m",
-    optionD: "D) 2880 m",
+    optionA: "A) Both the particles are having a uniformly accelerated motion",
+    optionB: "B) Both the particles are having a uniformly retarded motion",
+    optionC:
+      "C) Particle (i) is having a uniformly accelerated motion while particle (ii) is having a uniformly retarded motion",
+    optionD:
+      "D) Particle (i) is having a uniformly retarded motion while particle (ii) is having a uniformly accelerated motion",
   },
 
   {
     id: "21.",
     question:
-      "An iron ball and a wooden ball of the same radius are released from the same height in vacuum. They take the same time to reach the ground. The reason for this is",
+      "In the following graph, distance travelled by the body in metres is ",
+    image1: <Image g={i7} />,
 
-    optionA:
-      "A) Acceleration due to gravity in vacuum is same  irrespective of the size and mass of the body",
-    optionB:
-      "B) Acceleration due to gravity in vacuum depends upon the mass of the body",
-    optionC: "C) There is no acceleration due to gravity in vacuum",
-    optionD:
-      "D) In vacuum there is a resistance offered to the motion of the body and this resistance depends upon the mass of the body",
+    optionA: "A) 200",
+    optionB: "B) 250",
+    optionC: "C) 300",
+    optionD: "D) 400",
   },
   {
     id: "22.",
-    question:
-      "A body is released from a great height and falls freely towards the earth. Another body is released from the same height exactly one second later. The separation between the two bodies, two seconds after the release of the second body is",
+    question: "Which of the following graph represents uniform motion ",
 
-    optionA: "A) 4.9 m",
-    optionB: "B) 9.8 m",
-    optionC: "C) 19.6 m",
-    optionD: "D) 24.5 m",
+    optionA: <Image g={i8} t="A) " />,
+    optionB: <Image g={i9} t="B) " />,
+    optionC: <Image g={i10} t="C) " />,
+    optionD: <Image g={i11} t="D) " />,
   },
   {
     id: "23.",
     question:
-      "An object is projected upwards with a velocity of 100 m/s. It will strike the ground after (approximately)",
+      "Which of the following velocity-time graphs shows a realistic situation for a body in motion",
 
-    optionA: "A) 10 sec",
-    optionB: "B) 20 sec",
-    optionC: "C) 15 sec",
-    optionD: "D) 5 sec",
+    optionA: <Image g={i12} t="A) " />,
+    optionB: <Image g={i13} t="B) " />,
+    optionC: <Image g={i14} t="C) " />,
+    optionD: <Image g={i15} t="D) " />,
   },
   {
     id: "24.",
     question:
-      "A stone dropped from the top of the tower touches the ground in 4 sec. The height of the tower is about",
+      "Two balls of same size but the density of one is greater than that of the other are dropped from the same height, then which ball will reach the earth first (air resistance is negligible)",
 
-    optionA: "A) 80 m",
-    optionB: "B) 40 m",
-    optionC: "C) 20 m",
-    optionD: "D) 160 m",
+    optionA: "A) Heavy ball",
+    optionB: "B) Light ball",
+    optionC: "C) Both simultaneously",
+    optionD: "D) Will depend upon the density of the balls ",
   },
   {
     id: "25.",
-    question:
-      "A body is released from the top of a tower of height h. It takes t sec to reach the ground. Where will be the ball after time t/2 sec ",
+    question: (
+      <MathEq
+        math={String.raw`If a body is thrown up with the velocity of $15 \, m/s$ then maximum height attained by the body is (g = $10 m/s^{2}$)`}
+      />
+    ),
 
-    optionA: "A) At h/2 from the ground",
-    optionB: "B) At h/4 from the ground",
-    optionC: "C) Depends upon mass and volume of the body",
-    optionD: "D) At 3h/4 from the ground",
+    optionA: "A) 11.25 m",
+    optionB: "B) 16.2 m",
+    optionC: "C) 24.5 m",
+    optionD: "D) 7.62 m",
   },
   {
     id: "26.",
     question: (
       <MathEq
-        math={String.raw`A particle is projected up with an initial velocity of $80 ft/sec.$ The ball will be at a height of $96 ft$ from the ground after ($g=32 ft/s^{2}$)`}
+        math={String.raw`A body falls from rest in the gravitational field of the earth. The distance travelled in the fifth second of its motion is (g = $10 m/s^{2}$)`}
       />
     ),
 
-    optionA: "A) 2.0 and 3.0 sec",
-    optionB: "B) Only at 3.0 sec",
-    optionC: "C) Only at 2.0 sec",
-    optionD: "D) After 1 and 2 sec",
+    optionA: "A) 25 m",
+    optionB: "B) 45 m",
+    optionC: "C) 90 m",
+    optionD: "D) 125 m",
   },
   {
     id: "27.",
     question:
-      "A body starts to fall freely under gravity. The distances covered by it in first, second and third second are in ratio",
+      "A body is thrown vertically up from the ground. It reaches a maximum height of 100m in 5sec. After what time it will reach the ground from the maximum height position",
 
-    optionA: "A) 1:3:5",
-    optionB: "B) 1:2:3",
-    optionC: "C) 1:4:9",
-    optionD: "D) 1:5:6",
+    optionA: "A) 1.2 sec",
+    optionB: "B) 5 sec",
+    optionC: "C) 10 sec",
+    optionD: "D) 25 sec",
   },
   {
     id: "28.",
-    question:
-      "A ball is dropped downwards. After 1 second another ball is dropped downwards from the same point. What is the distance between them after 3 seconds",
+    question: (
+      <MathEq
+        math={String.raw`28.	A body projected vertically upwards with a velocity u returns to the starting point in 4 seconds. If $g = 10 m/s^{2}$, the value of u is`}
+      />
+    ),
 
-    optionA: "A) 25 m",
-    optionB: "B) 20 m",
-    optionC: "C) 50 m",
-    optionD: "D) 9.8 m",
+    optionA: "A) 5 m/sec",
+    optionB: "B) 10 m/sec",
+    optionC: "C) 15 m/sec",
+    optionD: "D) 20 m/sec",
   },
   {
     id: "29.",
-    question:
-      "A stone is thrown with an initial speed of 4.9 m/s from a bridge in vertically upward direction. It falls down in water after 2 sec. The height of the bridge is",
-
-    optionA: "A) 4.9 m",
-    optionB: "B) 9.8 m",
-    optionC: "C) 19.8 m",
-    optionD: "D) 24.7 m",
-  },
-  {
-    id: "30.",
     question:
       "A stone is shot straight upward with a speed of 20 m/sec from a tower 200 m high. The speed with which it strikes the ground is approximately",
 
@@ -385,5 +404,15 @@ export const questionsAll = [
     optionB: "B) 65 m/sec",
     optionC: "C) 70 m/sec",
     optionD: "D) 75 m/sec",
+  },
+  {
+    id: "30.",
+    question:
+      "A ball is dropped downwards. After 1 second another ball is dropped downwards from the same point. What is the distance between them after 3 seconds",
+
+    optionA: "A) 25 m",
+    optionB: "B) 20 m",
+    optionC: "C) 50 m",
+    optionD: "D) 9.8 m",
   },
 ];
