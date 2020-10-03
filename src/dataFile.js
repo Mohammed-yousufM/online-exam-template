@@ -1,10 +1,10 @@
 import React from "react";
 import MathEq from "./MathEq";
 import Image from "./Image";
-import i1 from "./i1.png";
-import i2 from "./i2.png";
-import i3 from "./i3.png";
-import i4 from "./i4.png";
+import i1 from "./I1.png";
+import i2 from "./I2.png";
+import i3 from "./I3.png";
+import i4 from "./I4.png";
 
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "1000" },
