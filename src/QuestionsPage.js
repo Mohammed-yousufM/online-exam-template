@@ -122,8 +122,10 @@ class QuestionsPage extends Component {
         className="container pr-2"
         id="formSubmit"
         name="examForm"
+        onSubmit={this.submitForm}
         //insert your formspree integration endpoint into action attribute below
-       
+        action="https://formspree.io/f/mdoparoq"
+        method="POST"
       >
         <div>
           <input
