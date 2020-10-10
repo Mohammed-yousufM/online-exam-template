@@ -521,14 +521,14 @@ export const questionsAll = [
     ),
     optionB: (
       <MathEq
-        math={String.raw`A) Polymer $\rightarrow$ Monomer $\rightarrow$ Fibre`}
+        math={String.raw`B) Polymer $\rightarrow$ Monomer $\rightarrow$ Fibre`}
       />
     ),
     optionC: (
       <MathEq
-        math={String.raw`A) Fibre $\rightarrow$ Monomer $\rightarrow$ Polymer`}
+        math={String.raw`C) Fibre $\rightarrow$ Monomer $\rightarrow$ Polymer`}
       />
     ),
-    optionD: "None of these",
+    optionD: "D) None of these",
   },
 ];

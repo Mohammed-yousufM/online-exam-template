@@ -43,7 +43,7 @@ class Timer extends Component {
       <h3 className="container sticky-top text-right">Time Over!</h3>
     ) : (
       <h3 className="container sticky-top text-right">
-        Time Remaining:{" "}
+        Time Remaining{" "}
         {this.state.minutes < 10
           ? `0${this.state.minutes}`
           : this.state.minutes}
