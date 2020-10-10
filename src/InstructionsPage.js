@@ -14,12 +14,15 @@ const InstructionsPage = ({ toAppJS }) => {
       </h3>
       <section>
         <ul>
-          <li>Test contains questions from Mathematics and Physics.</li>
           <li>
-            There are total 30 questions || Questions 1-15 are from Mathematics
-            || Questions 16-30 are from Physics.
+            Test contains questions from Mathematics Physics and Chemistry.
           </li>
-          <li>Test total duration is 60 minutes.</li>
+          <li>
+            There are total 45 questions || Questions 1-15 are from Mathematics
+            || Questions 16-30 are from Physics || Questions 31-45 are from
+            Chemistry.
+          </li>
+          <li>Test total duration is 90 minutes.</li>
           <li>
             Click <strong className="text-info">Submit</strong> only after
             you've answered all your questions.

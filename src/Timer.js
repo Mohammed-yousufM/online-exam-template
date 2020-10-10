@@ -5,7 +5,7 @@ class Timer extends Component {
     super(props);
 
     this.timerId = null;
-    this.state = { minutes: 60, seconds: 0 };
+    this.state = { minutes: 90, seconds: 0 };
   }
 
   timeEndToParent = () => {
@@ -14,13 +14,13 @@ class Timer extends Component {
 
   timerFunc = () => {
     if (this.state.seconds > 0) {
-      this.setState({ seconds: this.state.seconds - 1 });
+      return this.setState({ seconds: this.state.seconds - 1 });
     } else if (this.state.seconds === 0) {
       if (this.state.minutes === 0) {
         clearInterval(this.timerId);
-        this.timeEndToParent();
+        return this.timeEndToParent();
       } else {
-        this.setState({ minutes: this.state.minutes - 1, seconds: 59 });
+        return this.setState({ minutes: this.state.minutes - 1, seconds: 59 });
       }
     }
   };
@@ -43,10 +43,15 @@ class Timer extends Component {
       <h3 className="container sticky-top text-right">Time Over!</h3>
     ) : (
       <h3 className="container sticky-top text-right">
-        Time Remaining: {this.state.minutes}:
+        Time Remaining:{" "}
+        {this.state.minutes < 10
+          ? `0${this.state.minutes}`
+          : this.state.minutes}
+        :
         {this.state.seconds < 10
           ? `0${this.state.seconds}`
-          : this.state.seconds}
+          : this.state.seconds}{" "}
+        minutes
       </h3>
     );
   }
