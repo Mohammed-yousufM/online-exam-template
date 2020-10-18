@@ -23,11 +23,11 @@ export const studentsDB = [
   { sNO: "10", userID: "vineel", passw: "1010" },
   { sNO: "11", userID: "abhinav", passw: "1011" },
   // // // // // // Dubai Below
-  // { sNO: "8", userID: "samuel", passw: "1008" },
-  // { sNO: "12", userID: "arshan", passw: "1012" },
-  // { sNO: "13", userID: "neeraj", passw: "1013" },
-  // { sNO: "14", userID: "abel", passw: "1014" },
-  // { sNO: "15", userID: "rayaan", passw: "1015" },
+  { sNO: "8", userID: "samuel", passw: "1008" },
+  { sNO: "12", userID: "arshan", passw: "1012" },
+  { sNO: "13", userID: "neeraj", passw: "1013" },
+  { sNO: "14", userID: "abel", passw: "1014" },
+  { sNO: "15", userID: "rayaan", passw: "1015" },
   // // // // // // New Users - continue S.No.
   { sNO: "16", userID: "srujana", passw: "1016" },
   { sNO: "17", userID: "meghana", passw: "1017" },
@@ -395,9 +395,9 @@ export const questionsAll = [
     ),
 
     optionA: <MathEq math={String.raw`A) $\sqrt{A^{2}+B^{2}+2ABcos\theta}$`} />,
-    optionB: <MathEq math={String.raw`B) $\sqrt{A^{2}+B^{2}+2ABcos\theta}$`} />,
-    optionC: <MathEq math={String.raw`C) $\sqrt{A^{2}+B^{2}+2ABcos\theta}$`} />,
-    optionD: <MathEq math={String.raw`D) $\sqrt{A^{2}+B^{2}+2ABcos\theta}$`} />,
+    optionB: <MathEq math={String.raw`B) $\sqrt{A^{2}-B^{2}+2ABcos\theta}$`} />,
+    optionC: <MathEq math={String.raw`C) $\sqrt{A^{2}+B^{2}-2ABsin\theta}$`} />,
+    optionD: <MathEq math={String.raw`D) $\sqrt{A^{2}+B^{2}+2ABsin\theta}$`} />,
   },
   {
     id: "30.",
