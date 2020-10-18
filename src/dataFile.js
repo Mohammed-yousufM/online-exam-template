@@ -6,532 +6,568 @@ import i2 from "./I2.png";
 import i3 from "./I3.png";
 import i4 from "./I4.png";
 import i5 from "./I5.png";
+import i6 from "./I6.PNG";
+import i7 from "./I7.PNG";
+import i8 from "./I8.PNG";
 
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "admin@1000" },
-  { sNO: "1", userID: "ayaan", passw: "1001" },
-  { sNO: "2", userID: "sami", passw: "1002" },
-  { sNO: "3", userID: "santosh", passw: "1003" },
-  { sNO: "4", userID: "rugveda", passw: "1004" },
-  { sNO: "5", userID: "richitha", passw: "1005" },
-  { sNO: "6", userID: "maimuna", passw: "1006" },
-  { sNO: "7", userID: "josephus", passw: "1007" },
-  { sNO: "9", userID: "masood", passw: "1009" },
-  { sNO: "10", userID: "vineel", passw: "1010" },
-  { sNO: "11", userID: "abhinav", passw: "1011" },
-  // // // // // Dubai Below
-  { sNO: "8", userID: "samuel", passw: "1008" },
-  { sNO: "12", userID: "arshan", passw: "1012" },
-  { sNO: "13", userID: "neeraj", passw: "1013" },
-  { sNO: "14", userID: "abel", passw: "1014" },
-  { sNO: "15", userID: "rayaan", passw: "1015" },
-  // // // // // New Users - continue S.No.
-  { sNO: "16", userID: "srujana", passw: "1016" },
-  { sNO: "17", userID: "meghana", passw: "1017" },
-  { sNO: "18", userID: "asmitha", passw: "1018" },
-  { sNO: "19", userID: "charan", passw: "1019" },
-  { sNO: "20", userID: "mani", passw: "1020" }, //20
+  // { sNO: "1", userID: "ayaan", passw: "1001" },
+  // { sNO: "2", userID: "sami", passw: "1002" },
+  // { sNO: "3", userID: "santosh", passw: "1003" },
+  // { sNO: "4", userID: "rugveda", passw: "1004" },
+  // { sNO: "5", userID: "richitha", passw: "1005" },
+  // { sNO: "6", userID: "maimuna", passw: "1006" },
+  // { sNO: "7", userID: "josephus", passw: "1007" },
+  // { sNO: "9", userID: "masood", passw: "1009" },
+  // { sNO: "10", userID: "vineel", passw: "1010" },
+  // { sNO: "11", userID: "abhinav", passw: "1011" },
+  // // // // // // Dubai Below
+  // { sNO: "8", userID: "samuel", passw: "1008" },
+  // { sNO: "12", userID: "arshan", passw: "1012" },
+  // { sNO: "13", userID: "neeraj", passw: "1013" },
+  // { sNO: "14", userID: "abel", passw: "1014" },
+  // { sNO: "15", userID: "rayaan", passw: "1015" },
+  // // // // // // New Users - continue S.No.
+  // { sNO: "16", userID: "srujana", passw: "1016" },
+  // { sNO: "17", userID: "meghana", passw: "1017" },
+  // { sNO: "18", userID: "asmitha", passw: "1018" },
+  // { sNO: "19", userID: "charan", passw: "1019" },
+  // { sNO: "20", userID: "mani", passw: "1020" }, //20
 ];
 
 export const questionsAll = [
   {
     id: "1.",
-    question: <MathEq math={String.raw`Solve: $\frac{x}{x+15}=\frac{4}{9}$`} />,
+    question: (
+      <MathEq
+        math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}}=\frac{c_{1}}{c_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
+      />
+    ),
 
-    optionA: "A) 10",
-    optionB: "B) 11",
-    optionC: "C) 12",
-    optionD: "D) 13",
+    optionA: "A) Unique solution",
+    optionB: "B) Infinite many solutions",
+    optionC: "C) No solution",
+    optionD: "D) None",
   },
 
   {
     id: "2.",
-    question: "Solve: 3(t-3)=5(2t+1)",
+    question: (
+      <MathEq
+        math={String.raw`If $\frac{a_{1}}{a_{2}} \neq \frac{b_{1}}{b_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
+      />
+    ),
 
-    optionA: "A) 2",
-    optionB: "B) -2",
-    optionC: "C) 1",
-    optionD: "D) -1",
+    optionA: "A) Unique solution",
+    optionB: "B) Infinite many solutions",
+    optionC: "C) No solution",
+    optionD: "D) None",
   },
 
   {
     id: "3.",
     question: (
       <MathEq
-        math={String.raw`Solve: $\frac{x}{2}-\frac{1}{5}=\frac{x}{3}+\frac{1}{4}$`}
+        math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}} \neq \frac{c_{1}}{c_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
       />
     ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{10}{27}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{27}{10}$`} />,
-    optionC: "C) 3",
-    optionD: "D) 4",
+    optionA: "A) Unique solution",
+    optionB: "B) Infinite many solutions",
+    optionC: "C) No solution",
+    optionD: "D) None",
   },
 
   {
     id: "4.",
-    question: "Solve: 3x=2x+18",
+    question: (
+      <MathEq
+        math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}} = \frac{c_{1}}{c_{2}}$ then the the two lines $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ are`}
+      />
+    ),
 
-    optionA: "A) 18",
-    optionB: "B) -18",
-    optionC: "C) 12",
-    optionD: "D) -12",
+    optionA: "A) Parallel",
+    optionB: "B) Coincide",
+    optionC: "C) Intersecting",
+    optionD: "D) None",
   },
 
   {
     id: "5.",
-    question: "Solve: 2x-1=14-x",
+    question: <MathEq math={String.raw`The lines $x+y=8$, $x-y=2$ are`} />,
 
-    optionA: "A) 5",
-    optionB: "B) -5",
-    optionC: "C) 12",
-    optionD: "D) 3",
+    optionA: "A) Parallel",
+    optionB: "B) Coincide",
+    optionC: "C) Intersecting",
+    optionD: "D) None",
   },
 
   {
     id: "6.",
     question: (
-      <MathEq math={String.raw`Solve: $\frac{2x}{3}+1=\frac{7x}{15}+3$`} />
+      <MathEq math={String.raw`The lines $2x-y+1=0$, $2x-y+4=0$ are`} />
     ),
 
-    optionA: "A) 10",
-    optionB: "B) -10",
-    optionC: "C) 2",
-    optionD: "D) 40",
+    optionA: "A) Parallel",
+    optionB: "B) Coincide",
+    optionC: "C) Intersecting",
+    optionD: "D) None",
   },
 
   {
     id: "7.",
-    question:
-      "The ages of Rahul and Haroon are in the ratio 5 : 7, 4years later the sum of their ages will be 56years. What is the present age of Rahul?",
+    question: `Write the mathematical form using two variables: "The cost of two tables and 5 chairs is 2200"`,
 
-    optionA: "A) 28",
-    optionB: "B) 20",
-    optionC: "C) 18",
-    optionD: "D) 12",
+    optionA: "A) x+y=2200",
+    optionB: "B) 2x+y=2200",
+    optionC: "C) 2x+5y=2200",
+    optionD: "D) None",
   },
 
   {
     id: "8.",
-    question:
-      "The sum of three consecutive multiples of 8 is 888. Find the greatest multiple?",
+    question: "If 5x+17=22, then x is ",
 
-    optionA: "A) 288",
-    optionB: "B) 304",
-    optionC: "C) 296",
-    optionD: "D) 46",
+    optionA: "A) -1",
+    optionB: "B) 1",
+    optionC: "C) 0",
+    optionD: "D) 4",
   },
 
   {
     id: "9.",
-    question: <MathEq math={String.raw`Solve: $\frac{x}{3}+1=\frac{7}{15}$`} />,
+    question: (
+      <MathEq
+        math={String.raw`If $\frac{y}{2}-\frac{1}{5}=\frac{y}{3}+\frac{1}{4}$, then y is`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{8}{5}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{5}{8}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{-5}{8}$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{-8}{5}$`} />,
+    optionA: "A) 1",
+    optionB: "B) 36",
+    optionC: <MathEq math={String.raw`C) $\frac{1}{6}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{27}{10}$`} />,
   },
 
   {
     id: "10.",
-    question: "If (x-9)=10, the x=__",
+    question: (
+      <MathEq
+        math={String.raw`If $\frac{5m}{6}+\frac{3m}{4}=\frac{19}{12}$ then m=`}
+      />
+    ),
 
-    optionA: "A) 10",
-    optionB: "B) 12",
-    optionC: "C) 18",
-    optionD: "D) 19",
+    optionA: "A) 1",
+    optionB: "B) 36",
+    optionC: <MathEq math={String.raw`C) $\frac{1}{6}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{27}{10}$`} />,
   },
 
   {
     id: "11.",
-    question: "Solve: 3(7y+4)+4(y+2) = 0",
+    question: (
+      <MathEq
+        math={String.raw`If $x=1$ is a root of $x^{2}+2x+k=0$ then k is`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{4}{5}$`} />,
-    optionB: <MathEq math={String.raw`A) $\frac{2}{5}$`} />,
-    optionC: <MathEq math={String.raw`A) $\frac{-4}{5}$`} />,
-    optionD: <MathEq math={String.raw`A) $\frac{-2}{5}$`} />,
+    optionA: "A) 1",
+    optionB: "B) -3",
+    optionC: "C) 3",
+    optionD: "D) 0",
   },
 
   {
     id: "12.",
     question: (
       <MathEq
-        math={String.raw`Sum of roots of quadratic equation $x^{2}-2x+1=0$ is__`}
+        math={String.raw`If $a=7$, then the value of $- \left ( \frac{1-2a}{a-5} \right )$ is`}
       />
     ),
 
-    optionA: "A) -2",
-    optionB: "B) 1",
-    optionC: "C) 2",
-    optionD: "D) -1",
+    optionA: <MathEq math={String.raw`A) $\frac{-13}{2}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{-15}{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{13}{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{15}{2}$`} />,
   },
 
   {
     id: "13.",
     question: (
-      <MathEq math={String.raw`Multiplicative inverse of $\frac{-3}{19}$ is`} />
+      <MathEq math={String.raw`$\sqrt{248+\sqrt{52+\sqrt{144}}}$ = `} />
     ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{13}{19}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{-19}{13}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{19}{13}$`} />,
-    optionD: "D) 1",
+    optionA: "A) 14",
+    optionB: "B) 12",
+    optionC: "C) 16",
+    optionD: "D) 13",
   },
 
   {
     id: "14.",
     question: (
-      <MathEq math={String.raw`If $a=-1$, $b=2$,then $a^{b}+b^{a}=$__`} />
+      <MathEq
+        math={String.raw`$\left ( x+\frac{1}{x} \right )=5$ then $x^{2}+\frac{1}{x^{2}}$ = `}
+      />
     ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{3}{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{2}{3}$`} />,
-    optionC: "C) 1",
-    optionD: "D) 2",
+    optionA: "A) 23",
+    optionB: "B) 25",
+    optionC: "C) 2",
+    optionD: "D) 0",
   },
 
   {
     id: "15.",
-    question: <MathEq math={String.raw`Factorize: $x^{2}-64$ :`} />,
+    question: (
+      <MathEq
+        math={String.raw`$\left ( \frac{1}{5}+2^{-1}+\frac{1}{90} \right )^{0}$ = `}
+      />
+    ),
 
-    optionA: "A) (x+8)(x-8)",
-    optionB: "B) (x+4)(x-4)",
-    optionC: "C) (x-64)(x+8)",
-    optionD: "D) (x-8)(x-8)",
+    optionA: "A) 0",
+    optionB: <MathEq math={String.raw`B) $\frac{1}{91}$`} />,
+    optionC: "C) 1",
+    optionD: <MathEq math={String.raw`D) $\frac{1}{180}$`} />,
   },
+
   {
     id: "16.",
     question:
-      "A body, thrown upwards with some velocity reaches the maximum height of 50 m. Another body with the double the mass thrown up with double the initial velocity will reach a maximum height of",
+      "If a body loses half of its velocity on penetrating 3 cm in a wooden block, then how much will it penetrate more before coming to rest?",
 
-    optionA: "A) 100m",
-    optionB: "B) 200m",
-    optionC: "C) 300m",
-    optionD: "D) 400m",
+    optionA: "A) 1cm",
+    optionB: "B) 2cm",
+    optionC: "C) 3cm",
+    optionD: "D) 4cm",
   },
 
   {
     id: "17.",
     question:
-      "Figure given shows the distance–time graph of the motion of a car. It follows from the graph that the car is",
-    image1: <Image g={i1} />,
+      "A body dropped from a height h with an initial speed zero, strikes the ground with a velocity 3 km/h . Another body of same mass is dropped from the same height h with an initial speed –u=4km/h. Find the final velocity of second body with which it strikes the ground",
 
-    optionA: "A) At rest",
-    optionB: "B) In uniform motion",
-    optionC: "C) In non-unifrom acceleration",
-    optionD: "D) Uniformly accelerated",
+    optionA: "A) 3 km/h",
+    optionB: "B) 4 km/h",
+    optionC: "C) 5 km/h",
+    optionD: "D) 12 km/h",
   },
 
   {
     id: "18.",
     question:
-      "A particle moves along a semicircle of radius 10m in 5 seconds. The average velocity of the particle is",
+      "A car starting from rest, accelerates at the rate f through a distance S, then continues at constant speed for time t and then decelerates at the rate f/2 to come to rest.  If the total distance travelled is 15 S, then",
 
-    optionA: <MathEq math={String.raw`A) $2\pi \, ms^{-1}$`} />,
-    optionB: <MathEq math={String.raw`B) $4\pi \, ms^{-1}$`} />,
-    optionC: <MathEq math={String.raw`C) $2\, ms^{-1}$`} />,
-    optionD: <MathEq math={String.raw`D) $2\, ms^{-1}$`} />,
+    optionA: <MathEq math={String.raw`A) $S= ft$`} />,
+    optionB: <MathEq math={String.raw`B) $S= \frac{1}{6}ft^{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $S= \frac{1}{2}ft^{2}$`} />,
+    optionD: "D) None of these",
   },
 
   {
     id: "19.",
-    question:
-      "Two balls are dropped from height h and 2h respectively from the earth surface. The ratio of time of these balls to reach the earth is",
+    question: "What determines the nature of the path followed by the particle",
 
-    optionA: <MathEq math={String.raw`A) $1 \, : \, \sqrt{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $\sqrt{2} \, : \, 1$`} />,
-    optionC: "C) 2 : 1",
-    optionD: "D) 1 : 4",
+    optionA: "A) Speed",
+    optionB: "B) Velocity",
+    optionC: "C) Acceleration",
+    optionD: "D) Both (B) and (C)",
   },
 
   {
     id: "20.",
-    question:
-      "A body is projected with a velocity v and after some time it returns  to the point from which it was projected. The average velocity and average speed of the body for the total time of flight are",
+    question: (
+      <MathEq
+        math={String.raw`An object is dropped from rest. Its $v-t$ graph is`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $\vec{v}/2$ and $v/2$`} />,
-    optionB: <MathEq math={String.raw`B) 0 and $v/2$`} />,
-    optionC: <MathEq math={String.raw`C) $0$ and $0$`} />,
-    optionD: <MathEq math={String.raw`D) $\vec{v}/2$ and $0$`} />,
+    optionA: <Image g={i1} t="A) " />,
+    optionB: <Image g={i2} t="B) " />,
+    optionC: <Image g={i3} t="C) " />,
+    optionD: <Image g={i4} t="D) " />,
   },
 
   {
     id: "21.",
-    question: "Which of the following speed-time graphs exist in the nature?",
+    question:
+      "A force of 5 N acts on a particle along a direction making an angle of 60° with vertical. Its vertical component be",
 
-    optionA: <Image g={i2} t="A) " />,
-    optionB: <Image g={i3} t="B) " />,
-    optionC: <Image g={i4} t="C) " />,
-    optionD: "D) All of the above",
+    optionA: "A) 10N",
+    optionB: "B) 3N",
+    optionC: "C) 4N",
+    optionD: "D) 2.5N",
   },
   {
     id: "22.",
-    question:
-      "A body is moving in a straight line a shown in velocity-time graph. The displacement and distance travelled by in 8s  are respectively",
-    image1: <Image g={i5} />,
+    question: (
+      <MathEq
+        math={String.raw`The vector that must be added to the vector $\hat{i}-3\hat{j}+2\hat{k}$ and $3\hat{i}+6\hat{j}-7\hat{k}$ so that the resultant vector is a unit vector along the y-axis is`}
+      />
+    ),
 
-    optionA: "A) 12 m, 20 m",
-    optionB: "B) 20m, 12 m",
-    optionC: "C) 12 m, 12 m",
-    optionD: "D) 20 m, 20 m",
+    optionA: <MathEq math={String.raw`A) $4\hat{i}+2\hat{j}+5\hat{k}$`} />,
+    optionB: <MathEq math={String.raw`A) $-4\hat{i}-2\hat{j}+5\hat{k}$`} />,
+    optionC: <MathEq math={String.raw`A) $3\hat{i}+4\hat{j}+5\hat{k}$`} />,
+    optionD: "Null Vector",
   },
   {
     id: "23.",
     question: (
       <MathEq
-        math={String.raw`A body moves with initial velocity $10 ms^{1}$. If it covers a distance of $20m$ in $2s$, then acceleration of the body is`}
+        math={String.raw`23.	A hall has the dimensions $10m \times 12m \times 14m$. A fly starting at one corner ends up at a diametrically opposite corner. What is the magnitude of its displacement`}
       />
     ),
 
-    optionA: "A) Zero",
-    optionB: <MathEq math={String.raw`B) $10ms^{-2}$`} />,
-    optionC: <MathEq math={String.raw`C) $5ms^{-2}$`} />,
-    optionD: <MathEq math={String.raw`D) $2ms^{-2}$`} />,
+    optionA: "A) 17m",
+    optionB: "B) 26m",
+    optionC: "C) 36m",
+    optionD: "D) 20m",
   },
   {
     id: "24.",
-    question:
-      "A stone is thrown with an initial speed of  4.9 m/s from a bridge in vertically upward direction. It falls down in water after 2 sec. The height of the bridge is",
+    question: (
+      <MathEq
+        math={String.raw`The expression $\left ( \frac{1}{\sqrt{2}} \hat{i} + \frac{1}{\sqrt{2}} \hat{j}\right )$ is a`}
+      />
+    ),
 
-    optionA: "A) 4.9m",
-    optionB: "B) 9.8m",
-    optionC: "C) 19.8m",
-    optionD: "D) 24.7m",
+    optionA: "A) Unit vector",
+    optionB: "B) Null vector",
+    optionC: <MathEq math={String.raw`C) Vector of magnitude $\sqrt{2}$`} />,
+    optionD: "D) Scalar",
   },
   {
     id: "25.",
-    question: "Which of the following is not a vector quantity?",
+    question: (
+      <MathEq
+        math={String.raw`Given vector $\vec{A}=2\hat{i}+3\hat{j}$, the angle between $\vec{A}$ and y-axis is`}
+      />
+    ),
 
-    optionA: "A) Acceleration",
-    optionB: "B) Velocity",
-    optionC: "C) Displacement",
-    optionD: "D) Average speed",
+    optionA: <MathEq math={String.raw`A) $tan^{-1} 3/2$`} />,
+    optionB: <MathEq math={String.raw`B) $tan^{-1} 2/3$`} />,
+    optionC: <MathEq math={String.raw`C) $sin^{-1} 2/3$`} />,
+    optionD: <MathEq math={String.raw`D) $cos^{-1} 2/3$`} />,
   },
   {
     id: "26.",
-    question: "For a physical quantity to be called a vector, it must",
+    question: (
+      <MathEq
+        math={String.raw`The angle made by the vector $A= \hat{i}+\hat{j}$ with x-axis is`}
+      />
+    ),
 
-    optionA: "A) have magnitude and unit",
-    optionB: "B) have magnitude and direction",
-    optionC: "C) have magnitude, direction and obey vector laws of addition",
-    optionD:
-      "D) have magnitude, direction and need not obey vector laws of addition",
+    optionA: <MathEq math={String.raw`A) $90^{\circ}$`} />,
+    optionB: <MathEq math={String.raw`B) $45^{\circ}$`} />,
+    optionC: <MathEq math={String.raw`C) $22.5^{\circ}$`} />,
+    optionD: <MathEq math={String.raw`D) $30^{\circ}$`} />,
   },
   {
     id: "27.",
-    question:
-      "If a velocity vector v having magnitude 10 m/s along west is multiplied by 4 then it becomes",
+    question: (
+      <MathEq
+        math={String.raw`Magnitude of vector which comes on addition of two vectors,$6\hat{i}+7\hat{j}$ and $3\hat{i}+4\hat{j}$ is`}
+      />
+    ),
 
-    optionA: "A) 40 m/s along east",
-    optionB: "B) -40 m/s along west",
-    optionC: "C) 40 m/s along west",
-    optionD: "D) remains unchanged",
+    optionA: <MathEq math={String.raw`A) $\sqrt{136}$`} />,
+    optionB: <MathEq math={String.raw`B) $\sqrt{13.2}$`} />,
+    optionC: <MathEq math={String.raw`C) $\sqrt{202}$`} />,
+    optionD: <MathEq math={String.raw`D) $\sqrt{160}$`} />,
   },
   {
     id: "28.",
-    question: "If a vector is divided by its magnitude then _____ is obtained.",
+    question: "For the figure",
+    image1: <Image g={i5} />,
 
-    optionA: "A) same vector",
-    optionB: "B) unit vector",
-    optionC: "C) null vector",
-    optionD: "D) unlike vector",
+    optionA: <MathEq math={String.raw`A) $\vec{A}+\vec{B}=\vec{C}$`} />,
+    optionB: <MathEq math={String.raw`B) $\vec{B}+\vec{C}=\vec{A}$`} />,
+    optionC: <MathEq math={String.raw`C) $\vec{C}+\vec{A}=\vec{B}$`} />,
+    optionD: <MathEq math={String.raw`D) $\vec{A}+\vec{B}+\vec{C}=0$`} />,
   },
   {
     id: "29.",
-    question:
-      "A displacement vector 4 m along North is rotated in clockwise direction by 270 degree. Then",
+    question: (
+      <MathEq
+        math={String.raw`The value of the sum of two vectors $\vec{A}$ and $\vec{B}$ with $\theta$ as the angle between them is`}
+      />
+    ),
 
-    optionA: "A) only magnitude is changed",
-    optionB: "B) only direction is changed",
-    optionC: "C) both magnitude and direction change",
-    optionD: "D) both magnitude and direction remain same",
+    optionA: <MathEq math={String.raw`A) $\sqrt{A^{2}+B^{2}+2ABcos\theta}$`} />,
+    optionB: <MathEq math={String.raw`B) $\sqrt{A^{2}+B^{2}+2ABcos\theta}$`} />,
+    optionC: <MathEq math={String.raw`C) $\sqrt{A^{2}+B^{2}+2ABcos\theta}$`} />,
+    optionD: <MathEq math={String.raw`D) $\sqrt{A^{2}+B^{2}+2ABcos\theta}$`} />,
   },
   {
     id: "30.",
     question:
-      "Vector P makes angle 30 degree with Y-axis in anticlockwise direction. Another vector Q makes angle 30 degree with X-axis in clockwise direction. The angle between vectors P and Q is",
+      "For the resultant of the two vectors to be maximum, what must be the angle between them",
 
-    optionA: "A)150 degree",
-    optionB: "B) 60 degree",
-    optionC: "C) 30 degree",
-    optionD: "D) 180 degree",
+    optionA: <MathEq math={String.raw`A) $0^{\circ}$`} />,
+    optionB: <MathEq math={String.raw`B) $60^{\circ}$`} />,
+    optionC: <MathEq math={String.raw`C) $90^{\circ}$`} />,
+    optionD: <MathEq math={String.raw`D) $180^{\circ}$`} />,
   },
+
   {
     id: "31.",
-    question: "546 K, 268 K, 300 K are equal to",
+    question: "The correct match for the entries in Column A and column B are",
+    image1: <Image g={i6} />,
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $546^{\circ}$, $268^{\circ}$, $300^{\circ}$`}
-      />
-    ),
-    optionB: (
-      <MathEq math={String.raw`A) $273^{\circ}$, $5^{\circ}$, $27^{\circ}$`} />
-    ),
-    optionC: (
-      <MathEq
-        math={String.raw`A) $-273^{\circ}$, $-5^{\circ}$, $-27^{\circ}$`}
-      />
-    ),
-    optionD: (
-      <MathEq math={String.raw`A) $273^{\circ}$, $-5^{\circ}$, $27^{\circ}$`} />
-    ),
+    optionA: "A)	A-q, B-r, C-p, D-s",
+    optionB: "B) A-p, B-r, C-s, D-q	",
+    optionC: "C) A-q, B-r, C-s, D-p	",
+    optionD: "D) A-s, B-r, C-p, D-q",
   },
 
   {
     id: "32.",
-    question: "The common characteristic of both solid and liquid states are:",
+    question: "Which of the following statements is wrong?",
 
-    optionA: "A) both have fixed shape",
-    optionB: "B) both have fixed volume",
-    optionC: "C) both are rigid",
-    optionD: "D) none of these",
+    optionA:
+      "A)	The volatile compounds evaporate faster than less volatile compounds",
+    optionB: "B)	The rate of evaporation decreases with increase in humidity",
+    optionC: "C)	The rate evaporation increases with decrease of temperature",
+    optionD:
+      "D) The rate of evaporation increases with increase in surface area",
   },
 
   {
     id: "33.",
-    question: "Which of the following is a polymer of tetrafluoroethene?",
+    question:
+      "Assertion (A):  Rayon is a man-made fibre.   Reason (R): Rayon is prepared by using wood pulp",
 
-    optionA: "A) PVC",
-    optionB: "B) nylon",
-    optionC: "C) teflon",
-    optionD: "D) bakelite",
+    optionA: "A)	A and R are true, R supports A",
+    optionB: "B) A and R are true, R does not support A",
+    optionC: "C) A is true, R is false",
+    optionD: "D) Both A and R are false",
   },
 
   {
     id: "34.",
-    question: "Which has the least energetic molecules?",
+    question: "Generally, non-metallic oxides are _______________ in nature",
 
-    optionA: "A)	plasmas",
-    optionB: "B) liquids",
-    optionC: "C) solids",
-    optionD: "D) gases",
+    optionA: "A)	basic",
+    optionB: "B) neutral",
+    optionC: "C) acidic",
+    optionD: "D) amphoteric",
   },
 
   {
     id: "35.",
     question:
-      "Select the correct order of evaporation for water, alcohol (ingredient of sanitizers), petrol and kerosene oil:",
+      "Two substances A and B when brought together form a substance C with evolution of heat. The properties of C are entirely different from those of A and B. The substance C is _________ and the reaction is ____________respectively,",
 
-    optionA: "A)	Petrol < kerosene < alcohol < water",
-    optionB: "B) alcohol > petrol > water > kerosene oil",
-    optionC: "C) kerosene oil < water < petrol < alcohol",
-    optionD: "D) Water < kerosene oil < alcohol < petrol",
+    optionA: "A)	A mixture, exothermic",
+    optionB: "B) compound, endothermic",
+    optionC: "C) an element, exothermic",
+    optionD: "D) none of these",
   },
 
   {
     id: "36.",
-    question:
-      "When a tea-spoon of solid sugar is dissolved in a glass of liquid water; what phase or phases are present after mixing? ",
+    question: "The most characteristic property of metals is their tendency to",
 
-    optionA: "A)	Solid only",
-    optionB: "B) still solid and liquid",
-    optionC: "C) liquid only",
-    optionD: "D) none of these",
+    optionA: "A) Form basic oxides",
+    optionB: "B) form hydrides",
+    optionC: "C) lose electrons",
+    optionD: "D) gain electrons",
   },
 
   {
     id: "37.",
-    question:
-      "All gases will occupy zero volume when the temperature is reduced to",
+    question: "Which of the following is a solid solution?",
 
-    optionA: <MathEq math={String.raw`A) $273^{\circ}C$`} />,
-    optionB: <MathEq math={String.raw`B) $273^{\circ}A$`} />,
-    optionC: <MathEq math={String.raw`C) $-273^{\circ}C$`} />,
-    optionD: <MathEq math={String.raw`D) $0^{\circ}C$`} />,
+    optionA: "A)	sugar",
+    optionB: "B) gold",
+    optionC: "C) Bronze",
+    optionD: "D) rust",
   },
 
   {
     id: "38.",
-    question: "_________contains carbon, hydrogen, oxygen and nitrogen.",
+    question:
+      "Assertion (A):  Bases are prepared from oxides of metals.         Reason (R):  Bases change red litmus paper into blue",
 
-    optionA: "A) polyester",
-    optionB: "B) polyethene",
-    optionC: "C) phenyl vinyl chloride",
-    optionD: "D) polyamide",
+    optionA: "A)	A and R are true, R supports A",
+    optionB: "B) A and R are true, R does not support A",
+    optionC: "C) A is true, but R is false",
+    optionD: "D) A is false but and R is true",
   },
-
   {
     id: "39.",
-    question: "The inter-particle forces are the strongest in",
+    question:
+      "Substances X, Y and Z are beaten hard by hammer. Based on the information provided below in the table which one is a metal?",
+    image1: <Image g={i7} />,
 
-    optionA: "A)	hydrogen",
-    optionB: "B) water",
-    optionC: "C) methyl alcohol",
-    optionD: "D) hydrogen chloride",
+    optionA: "A)	Z",
+    optionB: "B) Y",
+    optionC: "C) X",
+    optionD: "D) None of these",
   },
-
   {
     id: "40.",
-    question: "Badminton and tennis racquets are made of",
+    question:
+      "A few substances are arranged in the increasing order of “forces of attraction” between their particles. Which one of the following represents a correct arrangement?",
 
-    optionA: "A)	rayon",
-    optionB: "B) polyester",
-    optionC: "C) nylon",
-    optionD: "D) all of these",
+    optionA: "A) Water, wind, air",
+    optionB: "B) oxygen, water, sugar",
+    optionC: "C) air, sugar, oil",
+    optionD: "D) salt, juice, air",
   },
 
   {
     id: "41.",
-    question: "Which one of the following is a surface phenomenon?",
+    question:
+      "Which of the following saves the nature by controlling the usage of wood?",
 
-    optionA: "A)	crystallization",
-    optionB: "B) freezing",
-    optionC: "C) melting",
-    optionD: "D) evaporation",
+    optionA: "A) polyester",
+    optionB: "B) metal",
+    optionC: "C) glass",
+    optionD: "D) plastic",
   },
 
   {
     id: "42.",
-    question:
-      "The term used to describe the phase change of a solid to a liquid is:",
+    question: "The correct order of metals in the Activity series is:",
 
-    optionA: "A)	freezing",
-    optionB: "B) boiling",
-    optionC: "C) condensation",
-    optionD: "D) none of these",
+    optionA: "A) Na > Al > Ca > Mg",
+    optionB: "B) Zn > Cu > Fe > Ag",
+    optionC: "C) Al > Ca > Fe >Cu",
+    optionD: "D) Ca > Mg >Zn > Cu",
   },
 
   {
     id: "43.",
-    question:
-      "During summer, water kept in an earthen pot becomes cool because of the phenomenon of",
+    question: "How can you say plastic does not have property of malleability?",
 
-    optionA: "A)	diffusion",
-    optionB: "B) osmosis",
-    optionC: "C) transpiration",
-    optionD: "D) evaporation",
+    optionA: "A) Plastic is not available in the form of thin sheets",
+    optionB: "B) Plastic is not available in the form of wires",
+    optionC: "C) Plastic cannot be changed into thin sheets by hammering",
+    optionD: "D) All the above",
   },
 
   {
     id: "44.",
-    question: "Valency of an atom or radical is its",
+    question: "Which of the following equations is correct?",
 
-    optionA: "A)	Ionization energy",
-    optionB: "B) Electron affinity",
-    optionC: "C) combining capacity",
-    optionD: "D) none of these",
+    optionA: <MathEq math={String.raw`A) $2C + 3O_{2}\rightarrow 2CO_{3}$`} />,
+    optionB: <MathEq math={String.raw`B) $H_{2}+2O_{2}\rightarrow 2HO_{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $C+H_{2}O\rightarrow CO+H_{2}$`} />,
+    optionD: (
+      <MathEq math={String.raw`D) $2Na+2H_{2}O\rightarrow 2NaOH_{2}$`} />
+    ),
   },
 
   {
     id: "45.",
-    question: "The correct order is",
+    question: "The correct match for the entries in Column A and column B are:",
+    image1: <Image g={i8} />,
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) Monomer $\rightarrow$ Fibre $\rightarrow$ Polymer`}
-      />
-    ),
-    optionB: (
-      <MathEq
-        math={String.raw`B) Polymer $\rightarrow$ Monomer $\rightarrow$ Fibre`}
-      />
-    ),
-    optionC: (
-      <MathEq
-        math={String.raw`C) Fibre $\rightarrow$ Monomer $\rightarrow$ Polymer`}
-      />
-    ),
-    optionD: "D) None of these",
+    optionA: "A) 1-c, 2-b, 3-r, 4-d	",
+    optionB: "B) 1-c, 2-d, 3-b, 4-a",
+    optionC: "C) 1-c, 2-a, 3-b, 4-d",
+    optionD: "D) 1-d, 2-a, 3-b, 4-a",
   },
 ];
