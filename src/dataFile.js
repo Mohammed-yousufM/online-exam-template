@@ -6,7 +6,7 @@ import i2 from "./I2.png";
 import i3 from "./I3.png";
 import i4 from "./I4.png";
 import i5 from "./I5.png";
-import i6 from "./I6.png";
+import i6 from "./I6.PNG";
 // import i7 from "./I7.PNG";
 // import i8 from "./I8.PNG";
 
