@@ -132,8 +132,8 @@ export const questionsAll = [
     question: (
       <MathEq
         math={String.raw`If $\begin{vmatrix}
-    4 & 0\\ 
-    7 & 2
+    m & 0\\ 
+    2 & 4
     \end{vmatrix} = 8$, then m is`}
       />
     ),
