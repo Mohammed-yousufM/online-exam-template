@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import axios from "axios";
 
 import { questionsAll } from "./dataFile";
 
@@ -29,54 +29,55 @@ class QuestionsPage extends Component {
     }
   }
 
-  // submitOn = async (ev) => {
-  //   ev.preventDefault();
-  //   this.setState({ submitting: true });
-  //   try {
-  //     const res = await axios.post(
-  //       "https://knowledgefactory.herokuapp.com/users",
-  //       this.state
-  //     );
-  //     if (res.data === "success") {
-  //       ev.target.reset();
-  //       this.setState({ status: "SUCCESS" });
-  //       this.submitInfoToParent();
-  //     } else {
-  //       this.setState({ submitting: false });
-  //       console.log("try error", res);
-
-  //       alert("Submission failed!\nPlease check your internet and try again!");
-  //     }
-  //   } catch (error) {
-  //     this.setState({ submitting: false });
-  //     console.log("catch err", error);
-  //     alert("Submission failed!\nPlease check your internet and try again!");
-  //   }
-  // };
-
-  submitForm = (ev) => {
+  submitOn = async (ev) => {
     ev.preventDefault();
     this.setState({ submitting: true });
-
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
+    try {
+      const res = await axios.post(
+        "https://knowledgefactory.herokuapp.com/users",
+        this.state,
+        { headers: { "Content-Type": "application/json" } }
+      );
+      // console.log(res);
+      if (res.data.rep === "success") {
         this.setState({ status: "SUCCESS" });
         this.submitInfoToParent();
       } else {
-        this.setState({ status: "ERROR" });
         this.setState({ submitting: false });
+        console.log("try error", res);
+
         alert("Submission failed!\nPlease check your internet and try again!");
       }
-    };
-    xhr.send(data);
+    } catch (error) {
+      this.setState({ submitting: false });
+      console.log("catch err", error);
+      alert("Submission failed!\nPlease check your internet and try again!");
+    }
   };
+
+  // submitForm = (ev) => {
+  //   ev.preventDefault();
+  //   this.setState({ submitting: true });
+
+  //   const form = ev.target;
+  //   const data = new FormData(form);
+  //   const xhr = new XMLHttpRequest();
+  //   xhr.open(form.method, form.action);
+  //   xhr.setRequestHeader("Accept", "application/json");
+  //   xhr.onreadystatechange = () => {
+  //     if (xhr.readyState !== XMLHttpRequest.DONE) return;
+  //     if (xhr.status === 200) {
+  //       form.reset();
+  //       this.setState({ status: "SUCCESS" });
+  //       this.submitInfoToParent();
+  //     } else {
+  //       this.setState({ status: "ERROR" });
+  //       this.setState({ submitting: false });
+  //       alert("Submission failed!\nPlease check your internet and try again!");
+  //     }
+  //   };
+  //   xhr.send(data);
+  // };
 
   mainQfunc = (que) => {
     return (
@@ -165,10 +166,11 @@ class QuestionsPage extends Component {
         className="container pr-2"
         id="formSubmit"
         name="examForm"
-        onSubmit={this.submitForm}
+        onSubmit={this.submitOn}
+        // onSubmit={this.submitForm}
         //insert your formspree integration endpoint into action attribute below
-        action="https://formspree.io/f/mqkgpvgk"
-        method="POST"
+        // action="https://formspree.io/f/mqkgpvgk"
+        // method="POST"
       >
         <div>
           <input
