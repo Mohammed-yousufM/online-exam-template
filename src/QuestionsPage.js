@@ -102,7 +102,7 @@ class QuestionsPage extends Component {
                   this.setState({ [que["id"]]: "A" });
                 }}
               />
-              /<label htmlFor={this.j}>{que["optionA"]}</label>
+              <label htmlFor={this.j}>{que["optionA"]}</label>
             </div>
           </div>
           <div className="column">
