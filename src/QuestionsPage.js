@@ -25,12 +25,12 @@ class QuestionsPage extends Component {
       this.props.infoTimerEnd !== nextProps.infoTimerEnd &&
       nextProps.infoTimerEnd === true
     ) {
-      document.getElementsByTagName("form").formSubmit.submit();
+      // document.getElementsByTagName("form").formSubmit.submit();
+      this.submitFunc();
     }
   }
 
-  submitOn = async (ev) => {
-    ev.preventDefault();
+  submitFunc = async () => {
     this.setState({ submitting: true });
     try {
       const res = await axios.post(
@@ -53,6 +53,11 @@ class QuestionsPage extends Component {
       console.log("catch err", error);
       alert("Submission failed!\nPlease check your internet and try again!");
     }
+  };
+
+  onClickSubmit = (ev) => {
+    ev.preventDefault();
+    this.submitFunc();
   };
 
   // submitForm = (ev) => {
@@ -166,7 +171,7 @@ class QuestionsPage extends Component {
         className="container pr-2"
         id="formSubmit"
         name="examForm"
-        onSubmit={this.submitOn}
+        onSubmit={this.onClickSubmit}
         // onSubmit={this.submitForm}
         //insert your formspree integration endpoint into action attribute below
         // action="https://formspree.io/f/mqkgpvgk"
