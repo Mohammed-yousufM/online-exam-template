@@ -406,9 +406,9 @@ export const questionsAll = [
     ),
 
     optionA: <MathEq math={String.raw`A) $2\hat{i}-4\hat{j}$`} />,
-    optionB: <MathEq math={String.raw`A) $4\hat{i}-8\hat{k}$`} />,
-    optionC: <MathEq math={String.raw`A) $2\hat{i}-4\hat{j}+2\hat{k}$`} />,
-    optionD: <MathEq math={String.raw`A) $4\hat{i}-8\hat{j}$`} />,
+    optionB: <MathEq math={String.raw`B) $4\hat{i}-8\hat{k}$`} />,
+    optionC: <MathEq math={String.raw`C) $2\hat{i}-4\hat{j}+2\hat{k}$`} />,
+    optionD: <MathEq math={String.raw`D) $4\hat{i}-8\hat{j}$`} />,
   },
 
   {
@@ -526,9 +526,9 @@ export const questionsAll = [
     ),
 
     optionA: <MathEq math={String.raw`A) $C_{2}H_{2}$`} />,
-    optionB: <MathEq math={String.raw`A) $C_{2}H_{4}$`} />,
-    optionC: <MathEq math={String.raw`A) $C_{3}H_{6}$`} />,
-    optionD: <MathEq math={String.raw`A) $C_{3}H_{8}$`} />,
+    optionB: <MathEq math={String.raw`B) $C_{2}H_{4}$`} />,
+    optionC: <MathEq math={String.raw`C) $C_{3}H_{6}$`} />,
+    optionD: <MathEq math={String.raw`D) $C_{3}H_{8}$`} />,
   },
 
   {
@@ -550,9 +550,9 @@ export const questionsAll = [
     question: "The mass of a molecule of water is",
 
     optionA: <MathEq math={String.raw`A) $3\times ^{-25}$kg`} />,
-    optionB: <MathEq math={String.raw`A) $3\times ^{-26}$kg`} />,
-    optionC: <MathEq math={String.raw`A) $1.5\times ^{-26}$kg`} />,
-    optionD: <MathEq math={String.raw`A) $2.5\times ^{-26}$kg`} />,
+    optionB: <MathEq math={String.raw`B) $3\times ^{-26}$kg`} />,
+    optionC: <MathEq math={String.raw`C) $1.5\times ^{-26}$kg`} />,
+    optionD: <MathEq math={String.raw`D) $2.5\times ^{-26}$kg`} />,
   },
 
   {
