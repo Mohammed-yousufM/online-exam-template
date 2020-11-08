@@ -40,7 +40,7 @@ export const questionsAll = [
   {
     id: "1.",
     question: (
-      <MathEq math={String.raw`Convert $110^{\circ}$ to radian system: `} />
+      <MathEq math={String.raw`Convert $1110^{\circ}$ to radian system: `} />
     ),
 
     optionA: <MathEq math={String.raw`A) $\frac{7\pi}{6}$`} />,
@@ -133,7 +133,7 @@ export const questionsAll = [
     id: "8.",
     question: (
       <MathEq
-        math={String.raw`If $4cot\theta = 3$ then $\frac{sin30^{\circ} cos45^{\circ}}{tan60^{\circ}}$ `}
+        math={String.raw`If $\frac{sin30^{\circ} cos45^{\circ}}{tan60^{\circ}}$= `}
       />
     ),
 
@@ -147,7 +147,7 @@ export const questionsAll = [
     id: "9.",
     question: (
       <MathEq
-        math={String.raw`If $4cot\theta = 3$ then $sin 53 ^{\circ} \: cos 37 ^{\circ}+cos 53 ^{\circ} \: sin 37 ^{\circ}$ `}
+        math={String.raw`If $sin 53 ^{\circ} \: cos 37 ^{\circ}+cos 53 ^{\circ} \: sin 37 ^{\circ}$= `}
       />
     ),
 
