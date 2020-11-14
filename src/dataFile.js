@@ -95,7 +95,7 @@ export const questionsAll = [
     id: "5.",
     question: (
       <MathEq
-        math={String.raw`$cosec^{2}45^{\circ}.sec^{2}30^{\circ}.sin^{2}90^{\circ}.cos^{2}60^{\circ}$=`}
+        math={String.raw`$cosec^{2}45^{\circ}.sec^{2}30^{\circ}.sin^{2}90^{\circ}.cos60^{\circ}$=`}
       />
     ),
 
@@ -122,7 +122,7 @@ export const questionsAll = [
   {
     id: "7.",
     question: (
-      <MathEq math={String.raw`$cos\left ( \frac{-7\pi}{22} \right )$=`} />
+      <MathEq math={String.raw`$cos\left ( \frac{-7\pi}{2} \right )$=`} />
     ),
 
     optionA: "A) 0",
@@ -186,8 +186,8 @@ export const questionsAll = [
     ),
 
     optionA: "A) 0",
-    optionB: "B) 1",
-    optionC: "C) -1",
+    optionB: "B) -1",
+    optionC: "C) 1",
     optionD: "D) 2",
   },
 
