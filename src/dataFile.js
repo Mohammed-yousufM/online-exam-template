@@ -1,10 +1,10 @@
 import React from "react";
 import MathEq from "./MathEq";
-import Image from "./Image";
-import i1 from "./I1.png";
-import i2 from "./I2.png";
-import i3 from "./I3.png";
-import i4 from "./I4.png";
+// import Image from "./Image";
+// import i1 from "./I1.png";
+// import i2 from "./I2.png";
+// import i3 from "./I3.png";
+// import i4 from "./I4.png";
 // import i5 from "./I5.PNG";
 // import i6 from "./I6.png";
 // import i7 from "./I7.PNG";
@@ -12,553 +12,652 @@ import i4 from "./I4.png";
 
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "admin@1000" },
-  { sNO: "1", userID: "ayaan", passw: "1001" },
-  { sNO: "2", userID: "sami", passw: "1002" },
-  { sNO: "3", userID: "santosh", passw: "1003" },
-  { sNO: "4", userID: "rugveda", passw: "1004" },
-  { sNO: "5", userID: "richitha", passw: "1005" },
-  { sNO: "6", userID: "maimuna", passw: "1006" },
-  { sNO: "7", userID: "josephus", passw: "1007" },
-  { sNO: "9", userID: "masood", passw: "1009" },
-  { sNO: "10", userID: "vineel", passw: "1010" },
-  { sNO: "11", userID: "abhinav", passw: "1011" },
-  // // // // // // // Dubai Below
-  { sNO: "8", userID: "samuel", passw: "1008" },
-  { sNO: "12", userID: "arshan", passw: "1012" },
-  { sNO: "13", userID: "neeraj", passw: "1013" },
-  { sNO: "14", userID: "abel", passw: "1014" },
-  { sNO: "15", userID: "rayaan", passw: "1015" },
-  // // // // // // // New Users - continue S.No.
-  { sNO: "16", userID: "srujana", passw: "1016" },
-  { sNO: "17", userID: "meghana", passw: "1017" },
-  { sNO: "18", userID: "asmitha", passw: "1018" },
-  { sNO: "19", userID: "charan", passw: "1019" },
-  { sNO: "20", userID: "mani", passw: "1020" }, //20
+  // { sNO: "1", userID: "ayaan", passw: "1001" },
+  // { sNO: "2", userID: "sami", passw: "1002" },
+  // { sNO: "3", userID: "santosh", passw: "1003" },
+  // { sNO: "4", userID: "rugveda", passw: "1004" },
+  // { sNO: "5", userID: "richitha", passw: "1005" },
+  // { sNO: "6", userID: "maimuna", passw: "1006" },
+  // { sNO: "7", userID: "josephus", passw: "1007" },
+  // { sNO: "9", userID: "masood", passw: "1009" },
+  // { sNO: "10", userID: "vineel", passw: "1010" },
+  // { sNO: "11", userID: "abhinav", passw: "1011" },
+  // // // // // // // // Dubai Below
+  // { sNO: "8", userID: "samuel", passw: "1008" },
+  // { sNO: "12", userID: "arshan", passw: "1012" },
+  // { sNO: "13", userID: "neeraj", passw: "1013" },
+  // { sNO: "14", userID: "abel", passw: "1014" },
+  // { sNO: "15", userID: "rayaan", passw: "1015" },
+  // // // // // // // // New Users - continue S.No.
+  // { sNO: "16", userID: "srujana", passw: "1016" },
+  // { sNO: "17", userID: "meghana", passw: "1017" },
+  // { sNO: "18", userID: "asmitha", passw: "1018" },
+  // { sNO: "19", userID: "charan", passw: "1019" },
+  // { sNO: "20", userID: "mani", passw: "1020" }, //20
 ];
 
 export const questionsAll = [
   {
     id: "1.",
     question: (
-      <MathEq math={String.raw`If $A=30^{\circ}$, then $cos^{2}A-sin^{2}A$=`} />
+      <MathEq math={String.raw`$\sec \left ( 2100^{\circ} \right )=$`} />
     ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{1}{4}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{1}{2}$`} />,
+    optionA: "A) 1",
+    optionB: "B) 2",
     optionC: "C) 0",
-    optionD: "D) 1",
+    optionD: "D) -1",
   },
 
   {
     id: "2.",
     question: (
       <MathEq
-        math={String.raw`If $A=45^{\circ}$, then $\frac{2tanA}{1-tan^{2}A}$=`}
+        math={String.raw`$\cos ^{2}45^{\circ}+\cos ^{2}135^{\circ}+\cos ^{2}225^{\circ}+\cos ^{2}315^{\circ}=$`}
       />
     ),
 
     optionA: "A) 1",
-    optionB: "B) -1",
+    optionB: "B) 2",
     optionC: "C) 0",
-    optionD: "D) undefined",
+    optionD: "D) -1",
   },
 
   {
     id: "3.",
     question: (
-      <MathEq
-        math={String.raw`$sin^{2}30^{\circ}+sin^{2}45^{\circ}+sin^{2}60^{\circ}$=`}
-      />
+      <MathEq math={String.raw`$cosec\left ( 5\pi+\theta \right )=$`} />
     ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{3}{4}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{1}{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{3}{2}$`} />,
-    optionD: "D) 1",
+    optionA: <MathEq math={String.raw`A) $-cosec\theta$`} />,
+    optionB: <MathEq math={String.raw`B) $cosec\theta$`} />,
+    optionC: <MathEq math={String.raw`C) $sec\theta$`} />,
+    optionD: <MathEq math={String.raw`D) $-sec\theta$`} />,
   },
 
   {
     id: "4.",
     question: (
       <MathEq
-        math={String.raw`$tan^{2}30^{\circ}+tan^{2}45^{\circ}+tan^{2}60^{\circ}$=`}
+        math={String.raw`$sec\theta - tan\theta \: = \frac{1}{2}$ then $sec\theta + tan\theta \: =$`}
       />
     ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{13}{3}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{1}{3}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{10}{3}$`} />,
-    optionD: "D) 0",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 0",
+    optionD: "D) -1",
   },
 
   {
     id: "5.",
     question: (
       <MathEq
-        math={String.raw`$cosec^{2}45^{\circ}.sec^{2}30^{\circ}.sin^{2}90^{\circ}.cos60^{\circ}$=`}
+        math={String.raw`If A = $30^{\circ}$, then $cos^{2}A-sin^{2}A$ is`}
       />
     ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{1}{3}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{4}{3}$`} />,
+    optionA: "A) 1",
+    optionB: "B) 2",
     optionC: <MathEq math={String.raw`C) $\frac{1}{2}$`} />,
-    optionD: "D) 1",
+    optionD: "D) 0",
   },
 
   {
     id: "6.",
     question: (
       <MathEq
-        math={String.raw`$\frac{sin^{2}19^{\circ}}{cos^{2}71^{\circ}}+\frac{cos^{2}73^{\circ}}{sin^{2}17^{\circ}}$`}
+        math={String.raw`$\frac{cos45^{\circ}}{sec30^{\circ}+cosec30^{\circ}}$=`}
       />
     ),
 
-    optionA: "A) 0",
-    optionB: "B) 1",
-    optionC: "C) 2",
-    optionD: "D) -1",
+    optionA: <MathEq math={String.raw`A) $\frac{1}{\sqrt{3}}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{\sqrt{3}}{2\sqrt{2}}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{\sqrt{3}}{2\sqrt{6}}$`} />,
+    optionD: (
+      <MathEq math={String.raw`D) $\frac{\sqrt{3}}{2\sqrt{2}+2\sqrt{6}}$`} />
+    ),
   },
 
   {
     id: "7.",
     question: (
-      <MathEq math={String.raw`$cos\left ( \frac{-7\pi}{2} \right )$=`} />
+      <MathEq math={String.raw`$\frac{tan26^{\circ}}{cot64^{\circ}}$`} />
     ),
 
-    optionA: "A) 0",
-    optionB: "B) 1",
-    optionC: "C) 2",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 0",
     optionD: "D) -1",
   },
 
   {
     id: "8.",
-    question: <MathEq math={String.raw`$sec\left ( 2100^{\circ} \right)$=`} />,
+    question: <MathEq math={String.raw`$cosA = \frac{4}{5}$, then $tanA$=`} />,
 
-    optionA: "A) 0",
-    optionB: "B) 1",
-    optionC: "C) -1",
-    optionD: "D) 2",
+    optionA: <MathEq math={String.raw`A) $\frac{3}{4}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{3}{5}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{4}{3}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{5}{3}$`} />,
   },
 
   {
     id: "9.",
     question: (
       <MathEq
-        math={String.raw`$sin330^{\circ}.cos120^{\circ}+cos210^{\circ}.sin300^{\circ}$=`}
+        math={String.raw`The angle of elevation of a tower from a distance 50m from its foot is $30\deg$. The height of the tower is`}
       />
     ),
 
-    optionA: "A) 0",
-    optionB: "B) 1",
-    optionC: "C) -1",
-    optionD: "D) 2",
+    optionA: <MathEq math={String.raw`A) $50\sqrt{3}$`} />,
+    optionB: <MathEq math={String.raw`B) $25\sqrt{3}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{50}{\sqrt{3}}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{100}{\sqrt{3}}$`} />,
   },
 
   {
     id: "10.",
-    question: <MathEq math={String.raw`$tan75^{\circ}$=`} />,
+    question: (
+      <MathEq
+        math={String.raw`A ladder 15m long just reaches the top of a vertical wall. If the ladder makes an angle of $60^{\circ}$ with the wall, find the height of the wall.`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $2+\sqrt{3}$`} />,
-    optionB: <MathEq math={String.raw`B) $2-\sqrt{3}$`} />,
-    optionC: <MathEq math={String.raw`C) $-2+\sqrt{3}$`} />,
-    optionD: <MathEq math={String.raw`D) $-2-\sqrt{3}$`} />,
+    optionA: <MathEq math={String.raw`A) $\frac{15\sqrt{3}}{2}$`} />,
+    optionB: <MathEq math={String.raw`B) $15\sqrt{3}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{15}{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{\sqrt{3}}{2}$`} />,
   },
 
   {
     id: "11.",
     question: (
-      <MathEq math={String.raw`$sec^{2}60^{\circ}-tan^{2}60^{\circ}$=`} />
+      <MathEq
+        math={String.raw`$\frac{1-cos^{2}60^{\circ}}{1+cos^{2}60^{\circ}}$=`}
+      />
     ),
 
-    optionA: "A) 0",
-    optionB: "B) 1",
-    optionC: "C) -1",
-    optionD: "D) 2",
+    optionA: <MathEq math={String.raw`A) $\frac{3}{4}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{5}{3}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{3}{5}$`} />,
+    optionD: "D) 0",
   },
 
   {
     id: "12.",
     question: (
       <MathEq
-        math={String.raw`If $\frac{5m}{6}+\frac{3m}{4}=\frac{19}{12}$, then m=`}
+        math={String.raw`$cos 64^{\circ}cos26^{\circ}-sin64^{\circ}sin26^{\circ}$`}
       />
     ),
 
-    optionA: "A) 0",
-    optionB: "B) -1",
-    optionC: "C) 1",
-    optionD: "D) 2",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 0",
+    optionD: "D) -1",
   },
 
   {
     id: "13.",
     question: (
-      <MathEq math={String.raw`If $x^{2}+2x+k=0$, has a root x=1, then k=`} />
+      <MathEq math={String.raw`$cosec^{2}60^{\circ}-cot^{2}60^{\circ}$=`} />
     ),
 
-    optionA: "A) 3",
-    optionB: "B) -1",
-    optionC: "C) -3",
-    optionD: "D) 0",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 0",
+    optionD: "D) -1",
   },
 
   {
     id: "14.",
-    question: <MathEq math={String.raw`$\sqrt{248+\sqrt{52+\sqrt{144}}}$`} />,
+    question: (
+      <MathEq
+        math={String.raw`$Tan0^{\circ}.Tan1^{\circ}.Tan2^{\circ}....Tan50^{\circ}$=`}
+      />
+    ),
 
-    optionA: "A) 14",
-    optionB: "B) 12",
-    optionC: "C) 13",
-    optionD: "D) 16",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 0",
+    optionD: "D) -1",
   },
 
   {
     id: "15.",
-    question: "Find the value of 1-[1-(1-{1-2})]",
+    question: (
+      <MathEq
+        math={String.raw`$sin^{2}50^{\circ}+cos^{2}50^{\circ}+sec^{2}24^{\circ}-tan^{2}24^{\circ}$=`}
+      />
+    ),
 
-    optionA: "A) 2",
-    optionB: "B) 1",
-    optionC: "C) -1",
-    optionD: "D) 0",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 0",
+    optionD: "D) -1",
   },
 
   {
     id: "16.",
-    question: (
-      <MathEq
-        math={String.raw`A person travels along a straight road for the first half time with a velocity $v_{1}$ and the next half time with a velocity $v_{2}$. The mean velocity V of the man is`}
-      />
-    ),
+    question:
+      "A particle moves for 20 seconds with velocity 3 m/s and then velocity 4 m/s for another 20 seconds and finally moves with velocity 5 m/s for next 20 seconds. What is the average velocity of the particle",
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $\frac{2}{V}=\frac{1}{v_{1}}+\frac{1}{v_{2}}$`}
-      />
-    ),
-    optionB: <MathEq math={String.raw`B) $V=\frac{v_{1}+v_{2}}{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $V=\sqrt{v_{1}v_{2}}$`} />,
-    optionD: <MathEq math={String.raw`D) $V=\sqrt{\frac{v_{1}}{v_{2}}}$`} />,
+    optionA: "A) 3 m/s",
+    optionB: "B) 4 m/s",
+    optionC: "C) 5 m/s",
+    optionD: "D) Zero",
   },
 
   {
     id: "17.",
-    question:
-      "A body is moving along a straight line path with constant velocity. At an instant of time the distance travelled by it is s and its displacement is D, then",
+    question: (
+      <MathEq
+        math={String.raw`If body having initial velocity zero is moving with uniform acceleration $8 m/sec^{2}$ the distance travelled by it in fifth second will be`}
+      />
+    ),
 
-    optionA: "A) D < s",
-    optionB: "B) D > s",
-    optionC: "C) D = s",
-    optionD: <MathEq math={String.raw`D) $D \leq s$`} />,
+    optionA: "A) 36 metres",
+    optionB: "B) 40 metres",
+    optionC: "C) 100 metres",
+    optionD: "D) Zero",
   },
 
   {
     id: "18.",
     question:
-      "You drive a car at seed of  70 km/hr in a straight road for 8.4 km, and then the car runs out of petrol. You walk for 30 min to reach a petrol pump at a distance of  2 km. The average velocity from the beginning of your drive till you reach the petrol pump is",
+      "A boggy of uniformly moving train is suddenly detached from train and stops after covering some distance. The distance covered by the boggy and distance covered by the train in the same time has relation ",
 
-    optionA: "A) 16.8 km/hr",
-    optionB: "B)	35 km/hr",
-    optionC: "C)	64 km/hr",
-    optionD: "D)	18.6 km/hr",
+    optionA: "A) Both will be equal",
+    optionB: "B)	First will be half of second",
+    optionC: "C)	First will be 1/4 of second",
+    optionD: "D) No definite ratio",
   },
 
   {
     id: "19.",
-    question:
-      "The three initial and final position of a man on the x-axis are given as (i)  (-8m,7m)  (ii) (7m,-3m) and (iii) (-7m,3m). Which pair gives the negative displacement",
+    question: (
+      <MathEq
+        math={String.raw`What displacement must be added to the displacement $25\hat{i}-6\hat{j}$m to give a displacement of 7.0 m pointing in the x- direction`}
+      />
+    ),
 
-    optionA: "A) (i)",
-    optionB: "B) (ii)",
-    optionC: "C) (iii)",
-    optionD: "D) (i) and (ii)",
+    optionA: <MathEq math={String.raw`A) $18\hat{i}-6\hat{j}$`} />,
+    optionB: <MathEq math={String.raw`B) $32\hat{i}-13\hat{j}$`} />,
+    optionC: <MathEq math={String.raw`C) $-18\hat{i}+6\hat{j}$`} />,
+    optionD: <MathEq math={String.raw`D) $-25\hat{i}+13\hat{j}$`} />,
   },
 
   {
     id: "20.",
     question:
-      "A boy released a ball from the top of a building. It will clear a window 2m high at a distance 10m below the top in nearly",
+      "A body moves due East with velocity 20 km/hour and then due North with velocity 15 km/hour. The resultant velocity",
 
-    optionA: "A) 1s",
-    optionB: "B) 1.3s",
-    optionC: "C) 0.6s",
-    optionD: "D) 0.13s",
+    optionA: "A)	5 km/hour",
+    optionB: "B)	15 km/hour",
+    optionC: "C)	20 km/hour",
+    optionD: "D)	25 km/hour ",
   },
 
   {
     id: "21.",
     question: (
       <MathEq
-        math={String.raw`The velocity of projection of an oblique projectile is $\vec{v}=3\hat{i}+2\hat{j}$ in ($ms^{-1}$). The speed of the projectile at the highest point of the trajectory is`}
+        math={String.raw`The magnitudes of vectors $\vec{A}, \vec{B}$ and $\vec{C}$ and are 3, 4 and 5 units respectively. If $\vec{A}+\vec{B}=\vec{C}$, the angle between $\vec{A}$ and $\vec{B}$ is `}
       />
     ),
 
-    optionA: <MathEq math={String.raw`A) $3ms^{-1}$`} />,
-    optionB: <MathEq math={String.raw`B) $2ms^{-1}$`} />,
-    optionC: <MathEq math={String.raw`C) $1ms^{-1}$`} />,
-    optionD: "D) Zero",
+    optionA: <MathEq math={String.raw`A) $\frac{\pi}{2}$`} />,
+    optionB: <MathEq math={String.raw`B) $cos^{-1}\left( 0.6 \right)$`} />,
+    optionC: (
+      <MathEq math={String.raw`C) $tan^{-1} \left( \frac{7}{5} \right)$`} />
+    ),
+    optionD: <MathEq math={String.raw`D) $\frac{\pi}{4}$`} />,
   },
   {
     id: "22.",
     question: (
       <MathEq
-        math={String.raw`A stone is projected from the ground with velocity 50 m/s at an angle of $30^{\circ}$.It crosses a wall after 3 sec. How far beyond the wall the stone will strike the ground($g= 10 m/sec^{2}$)`}
+        math={String.raw`The range of a projectile for a given initial velocity is maximum when the angle of projection is $45^{\circ}$. The range will be minimum, if the angle of projection is`}
       />
     ),
 
-    optionA: "A) 90.2m",
-    optionB: "B) 89.6m",
-    optionC: "C) 86.6m",
-    optionD: "D) 70.2m",
+    optionA: <MathEq math={String.raw`A) $90^{\circ}$`} />,
+    optionB: <MathEq math={String.raw`B) $180^{\circ}$`} />,
+    optionC: <MathEq math={String.raw`C) $60^{\circ}$`} />,
+    optionD: <MathEq math={String.raw`D) $75^{\circ}$`} />,
   },
   {
     id: "23.",
     question:
-      "In the case of an oblique projectile, the velocity is perpendicular to acceleration",
+      "The angle of projection at which the horizontal range and maximum height of projectile are equal is",
 
-    optionA: "A) Once only",
-    optionB: "B) Twice",
-    optionC: "C)	Thrice",
-    optionD: "D)	Four times",
+    optionA: <MathEq math={String.raw`A) $45^{\circ}$`} />,
+    optionB: (
+      <MathEq math={String.raw`B) $\theta= tan^{-1} \left(0.25 \right)$`} />
+    ),
+    optionC: (
+      <MathEq math={String.raw`C) $\theta=tan^{-1}4$ or $\theta=76^{\circ}$`} />
+    ),
+    optionD: <MathEq math={String.raw`D) $60^{\circ}$`} />,
   },
   {
     id: "24.",
     question: (
       <MathEq
-        math={String.raw`If the vector $\vec{A}=2\hat{i}+4\hat{j}$ then its magnitude  is`}
+        math={String.raw`The range of a particle when launched at an angle of $15^{\circ}$ with the horizontal is 1.5 km. What is the range of the projectile when launched at an angle of $45^{\circ}$ to the horizontal`}
       />
     ),
 
-    optionA: <MathEq math={String.raw`A) $5\sqrt{5}$`} />,
-    optionB: "B) 10",
-    optionC: "C) 15",
-    optionD: <MathEq math={String.raw`D) $2\sqrt{5}$`} />,
+    optionA: "A)	1.5 km",
+    optionB: "B)	3.0 km",
+    optionC: "C)	6.0 km",
+    optionD: "D)	0.75 km",
   },
   {
     id: "25.",
-    question: "Newton’s first law of motion describes the following",
+    question:
+      "If a bullet of mass 5 gm moving with velocity 100 m /sec, penetrates the wooden block upto 6 cm. Then the average force imposed by the bullet on the block is ",
 
-    optionA: "A) Energy",
-    optionB: "B)	Work",
-    optionC: "C)	Inertia",
-    optionD: "D)	Moment of inertia",
+    optionA: "A)	8300 N",
+    optionB: "B)	417 N",
+    optionC: "C)	830 N",
+    optionD: "D)	Zero",
   },
   {
     id: "26.",
     question:
-      "If two forces of 5 N each are acting along X and Y axes, then the magnitude and direction of resultant is",
+      "A student attempts to pull himself up by tugging on his hair. He will not succeed",
 
-    optionA: <MathEq math={String.raw`A) $5\sqrt{2}, \pi/3$`} />,
-    optionB: <MathEq math={String.raw`B) $5\sqrt{2}, \pi/4$`} />,
-    optionC: <MathEq math={String.raw`C) $-5\sqrt{2}, \pi/3$`} />,
-    optionD: <MathEq math={String.raw`D) $-5\sqrt{2}, \pi/4$`} />,
+    optionA: "A)	As the force exerted is small",
+    optionB: "B)	The frictional force while gripping, is small.",
+    optionC: "C)	Newton's law of inertia is not applicable to living beings.",
+    optionD: "D)	As the force applied is internal to the system.",
   },
   {
     id: "27.",
     question:
-      "A player caught a cricket ball of mass 150 gm moving at the rate of 20 m/sec. If the catching process be completed in 0.1 sec the force of the blow exerted by the ball on the hands of player is",
+      "A man is standing at the centre of frictionless pond of ice. How can he get himself to the shore",
 
-    optionA: "A) 0.3N",
-    optionB: "B) 30N",
-    optionC: "C) 300N",
-    optionD: "D) 3000N",
+    optionA: "A)	By throwing his shirt in vertically upward direction",
+    optionB: "B)	By spitting horizontally",
+    optionC: "C) He will wait for the ice to melt in pond",
+    optionD: "D)	Unable to get at the shore",
   },
   {
     id: "28.",
-    question: (
-      <MathEq
-        math={String.raw`Which of the four arrangements in the figure correctly shows the vector addition of two forces $\vec{F_{1}}$ and $\vec{F_{2}}$ to yield the third force $\vec{F_{3}}$`}
-      />
-    ),
+    question:
+      "If a force of 250 N act on body, the momentum acquired is 125 kg-m/s. What is the period for which force acts on the body",
 
-    optionA: <Image g={i1} t="A" />,
-    optionB: <Image g={i2} t="B" />,
-    optionC: <Image g={i3} t="C" />,
-    optionD: <Image g={i4} t="D" />,
+    optionA: "A)	0.5 sec",
+    optionB: "B)	0.2 sec",
+    optionC: "C)	0.4 sec",
+    optionD: "D)	0.25 sec",
   },
   {
     id: "29.",
     question:
-      "A particle is moving with a constant speed along a straight line path. A force is not required to",
+      "	A player caught a cricket ball of mass 150 gm moving at a rate of 20 m/s. If the catching process be completed in 0.1 s, then the force of the blow exerted by the ball on the hands of the player is",
 
-    optionA: "A) Increase its speed",
-    optionB: "B)	Decrease the momentum",
-    optionC: "C)	Change in direction",
-    optionD: "D)	Keep it moving with uniform velocity",
+    optionA: "A)	0.3 N",
+    optionB: "B)	30 N",
+    optionC: "C)	300 N",
+    optionD: "D)	3000 N",
   },
   {
     id: "30.",
-    question: "Newton’s Second law gives the measure of",
+    question:
+      "A bullet of mass 0.1 kg is fired with a speed of 100 m/sec, the mass of gun is 50 kg. The velocity of recoil is",
 
-    optionA: "A) Acceleration",
-    optionB: "B) Force",
-    optionC: "C) Momentum",
-    optionD: "D) Angular momentum",
+    optionA: "a)	0.2 m/sec",
+    optionB: "b)	0.1 m/sec",
+    optionC: "c)	0.5 m/sec",
+    optionD: "d)	0.05 m/sec",
   },
 
   {
     id: "31.",
-    question: "Coal is transported by",
+    question: [
+      "Consider the following statements:",
+      <br />,
+      "i)	Molecular formula of CH3OH is32 u",
+      <br />,
+      "ii)	In NH3, the ratio ofN and H by mass is 1 : 3",
+      <br />,
+      "iii)	The formula weight of CaCl2 is 111 u.",
+      <br />,
+      "iv)	Isotopes have the same atomic mass",
+      <br />,
+      "Which of the above statements are correct?",
+    ],
 
-    optionA: "A)	cylinders",
-    optionB: "B) pipelines",
-    optionC: "C) tankers",
-    optionD: "D) none of these",
+    optionA: "A) i) & iii)",
+    optionB: "B) i), ii) & iv)",
+    optionC: "C) i), ii), and iii)",
+    optionD: "D) i), iii) and iv)",
   },
 
   {
     id: "32.",
-    question: "Which of the following is a thermosetting plastic?",
+    question: [
+      "A teacher instructed four students A, B, C and D to prepare a suspension of chalk in water. The students prepared suspension in the following manner.",
+      <br />,
+      "-Student ‘A’ placed a piece of chalk in water",
+      <br />,
+      "-Student ‘B’ places powdered chalk in water",
+      <br />,
+      "-Student ‘C’ places powdered chalk in water and then shakes the mixture vigorously",
+      <br />,
+      "-Student ‘D’ places powdered chalk in dil. HCl",
+      <br />,
+      "Which of the students has correct way of preparation of suspension?",
+    ],
 
-    optionA: "A)	PVC",
-    optionB: "B) teflon",
-    optionC: "C) bakelite",
-    optionD: "D) nylon",
+    optionA: "A)	Student A",
+    optionB: "B) student B",
+    optionC: "C) student C",
+    optionD: "D) student D",
   },
 
   {
     id: "33.",
-    question: (
-      <MathEq
-        math={String.raw`The reaction Zinc + Copper sulphate(solution)  $\rightarrow$ Zinc sulphate(solution) + Copper  indicates that the metal which is placed lower in the activity series is`}
-      />
-    ),
+    question: "Which of the following is correct order of density?",
 
-    optionA: "A)	Zinc",
-    optionB: "B) Zinc (II)",
-    optionC: "C) Copper (II)",
-    optionD: "D) Copper",
+    optionA:
+      "A)	Air < exhaust from chimneys < honey  < water < chalk < cotton < iron",
+    optionB:
+      "B)	Air < exhaust from chimneys <cotton < chalk <water < honey <  iron",
+    optionC:
+      "C)	Air < exhaust from chimneys < honey < water < chalk < iron < cotton",
+    optionD:
+      "D)	Air < exhaust from chimneys <cotton<water <honey < chalk  < iron",
   },
 
   {
     id: "34.",
-    question: "The zone of the candle flame which is moderately hot is called",
+    question: [
+      "Curd cannot be stored in",
+      <br />,
+      "i)	Brass vessel",
+      <br />,
+      "ii) copper vessel",
+      <br />,
+      "iii) steel",
+      <br />,
+      "iv) bronze",
+    ],
 
-    optionA: "A)	Inner dark zone (zone of no combustion)",
-    optionB: "B)	Non-luminous zone (zone of complete combustion)",
-    optionC: "C) Luminous zone(zone of incomplete combustion)",
-    optionD: "D) Lowest blue zone",
+    optionA: "A)	i), ii), and iii)",
+    optionB: "B) ii), iii),and iv)",
+    optionC: "C) i), ii),and iv)",
+    optionD: "D) i), iii) and iv)",
   },
 
   {
     id: "35.",
-    question: "A good fuel has the following qualities",
+    question: [
+      "Which of the following are the characteristics of isobars?",
+      <br />,
+      "i)	Isobars have same number of neutrons",
+      <br />,
+      "ii)	Isobars have same number of protons and neutrons",
+      <br />,
+      "iii)	Isobars have similar physical properties",
+      <br />,
+      "iv)	Isobars have same mass number",
+    ],
 
-    optionA: "A)	should have low calorific value",
-    optionB: "B) should cause pollution",
-    optionC: "C) should have high ignition temperature",
-    optionD: "D) should be easy to transport",
+    optionA: "A)	i) and iii) ",
+    optionB: "B) ii) and iv)",
+    optionC: "C) i), iii) and iv)",
+    optionD: "D) iii) and iv)",
   },
 
   {
     id: "36.",
-    question: (
-      <MathEq
-        math={String.raw`The number of moles of He (at mass = 4 amu) present in 52 g of He and $12.044 \times 10^{2}$ atoms of He are respectively`}
-      />
-    ),
+    question: "The dye from blue fountain pen ink can be separated by",
 
-    optionA: "A)	2 and 13",
-    optionB: "B) 0.07 and 0.5",
-    optionC: "C) 1.3 and 2",
-    optionD: "D) 13 and 2",
+    optionA: "A)	evaporation",
+    optionB: "B) distillation",
+    optionC: "C) chromatography",
+    optionD: "D) separating funnel",
   },
 
   {
     id: "37.",
-    question: (
-      <MathEq
-        math={String.raw`If $NaCl, CaSO_{4}, AlCl_{3}$ are respectively molecular formulae for sodium chloride, calcium sulphate and aluminium chloride, which of the following formula is incorrect?`}
-      />
-    ),
+    question: [
+      "Burning  magnesium ribbon is brought in the gas jar of carbon dioxide. Which of the following is correct?",
+      <br />,
+      "i)	It keeps on burning",
+      <br />,
+      "ii)	It gets extinguished",
+      <br />,
+      "iii)	Although CO2 is non-supporter of combustion, but burning magnesium breaks CO2 into carbon and oxygen and oxygen helps in burning",
+      <br />,
+      "iv)	Carbon dioxide is supporter of combustion",
+    ],
 
-    optionA: "A)	AlN",
-    optionB: (
-      <MathEq math={String.raw`B) $\left ( NH_{4} \right )_{2}SO_{4}$`} />
-    ),
-    optionC: <MathEq math={String.raw`C) $Al\left ( SO_{4} \right )_{3}$`} />,
-    optionD: <MathEq math={String.raw`D) $Na_{2}SO_{4}$`} />,
+    optionA: "A)	i) and iv)",
+    optionB: "B) i) and iii)",
+    optionC: "C) i) and ii)",
+    optionD: "D) iii) and iv)",
   },
 
   {
     id: "38.",
-    question: "Which of the following statements is false?",
+    question: (
+      <MathEq
+        math={String.raw`Four test tubes were taken and marked A, B, C and D respectively. 2 mL of solution of $Al_{2} \left( SO_{4} \right)_{3}$ in water was filled in each of the four test tubes. Clean piece of metal Zn was placed in test-tube A, clean iron nail was put in test-tube B, clean copper wire was placed in test-tube C and a clean aluminium wire was placed in test-tube D. It was observed that no change occurred in any of the test-tubes. The correct inference drawn is:`}
+      />
+    ),
 
-    optionA:
-      "A)	Naphthalene ball disappears with time without leaving any solid",
-    optionB: "B)	We can get the smell of perfume siting several meters away",
-    optionC:
-      "C)	Ice at 273 K more effective in cooling than water at the same temperature.",
-    optionD:
-      "D)	Amongst boiling water and steam, boing water produces severe burns",
+    optionA: "A)	Zinc is more active than Al",
+    optionB: "B) zinc is more active than Cu",
+    optionC: "C)	Copper is more active than Al",
+    optionD: "D) zinc, iron & copper are less active than Al",
   },
 
   {
     id: "39.",
-    question: "Digestion of food is an example of",
+    question: [
+      "Arrange the following in decreasing order of mass",
+      <br />,
+      <MathEq math={String.raw`i)	$10^{23}$ molecules of $H_{2}$`} />,
+      <br />,
+      <MathEq math={String.raw`ii) 0.1 mole of $H_{2}O$`} />,
+      <br />,
+      "iii) 0.01 mole of atoms of nitrogen",
+      <br />,
+      <MathEq math={String.raw`iv) 2.24 L of $O_{2}$ at STP`} />,
+    ],
 
-    optionA: "A)	Complete combustion",
-    optionB: "B) Incomplete combustion",
-    optionC: "C) slow combustion",
-    optionD: "D) rapid combustion",
+    optionA: "A)	iv, iii, i, ii",
+    optionB: "B) iv, i, ii, iii",
+    optionC: "C) iv, ii, i, iii",
+    optionD: "D) iv, i, iii, ii",
   },
 
   {
     id: "40.",
     question:
-      "Which of the following sources of energy can be a good alternative to cola in a power stations?    i)	Geothermal energy   	ii) energy from water	iii) Energy from petrol  	iv) energy from plants?",
+      "A student accidentally spilled a few drops of a solution over the shirt. The area became blue-black because the solution was",
 
-    optionA: "A) i) and ii) only",
-    optionB: "B) iv only",
-    optionC: "C) i), ii) and iii) only",
-    optionD: "D) all of the above",
+    optionA: "A)	An acid which burnt the patch of cloth",
+    optionB: "B)	Iodine which reacted with starched part of shirt",
+    optionC: "C)	Potassium dichromate which oxidized the piece of shirt",
+    optionD: "D)	HCl which reacted with metanil pigment of the shirt",
   },
 
   {
     id: "41.",
-    question: "Aluminium does not react readily with air or water because",
+    question: [
+      "Consider the following statements:",
+      <br />,
+      "i)	e/m ratio of particles of  the canal rays remains constant",
+      <br />,
+      "ii)	 the energy of orbit closest to nucleus is lowest",
+      <br />,
+      "iii)	Cl- has 18 electrons and 18 protons",
+      <br />,
+      <MathEq
+        math={String.raw`iv)	The maximum number of electrons  in an energy level is equal to $2n^{2}$.`}
+      />,
+      <br />,
+      "Which of the above statement(s) is/are correct?",
+    ],
 
-    optionA: "A)	It occupies high position in electrochemical series",
-    optionB: "B)	It lies below hydrogen in electrochemical series",
-    optionC: "C)	It is covered with a layer of oxide that does not rub off.",
-    optionD: "D)	It is a noble metal",
+    optionA: "A)	Only ii)",
+    optionB: "B) i), iii) and iv)",
+    optionC: "C) ii) and iv)",
+    optionD: "D) ii), iii) and iv)",
   },
 
   {
     id: "42.",
-    question: "Complete combustion of carbon produces",
+    question: (
+      <MathEq
+        math={String.raw`A metal sulphate has the formula $MSO_{4}$. The  phosphate  of  the  same  metal  will have the formula`}
+      />
+    ),
 
-    optionA: "A)	CO + heat + light",
-    optionB: "B) heat + light",
-    optionC: "C) carbon + heat + light",
-    optionD: "D) none of these",
+    optionA: <MathEq math={String.raw`A) $M_{3} \left(PO_{4}\right)_{3}$`} />,
+    optionB: <MathEq math={String.raw`B) $M_{2}PO_{4}$`} />,
+    optionC: <MathEq math={String.raw`C) $M \left(PO_{4}\right)_{3}$`} />,
+    optionD: <MathEq math={String.raw`D) $M_{3} \left(PO_{4}\right)_{2}$`} />,
   },
 
   {
     id: "43.",
-    question: "Which of the following is an incorrect statement?",
+    question:
+      "An element ‘X’ has the same number of electrons in the first and the fourth shell as well  as  in  the  second  and  the  third shell. What is the formula and nature of its oxide?",
 
-    optionA: "A)	Non-metals act as oxidizing agents",
-    optionB: "B)	Non-metals displace hydrogen from acids",
-    optionC: "C)  Non-metals form oxides that are either neutral or acidic",
-    optionD:
-      "D)Hydrides of non-metals are covalent in nature and may be acidic, neutral or basic in nature.",
+    optionA: "A)	XO, Neutral	",
+    optionB: <MathEq math={String.raw`B) $XO_{2}$, Acidic`} />,
+    optionC: <MathEq math={String.raw`C) $XO_{2}$, Amphoteric`} />,
+    optionD: "D) XO, Basic",
   },
 
   {
     id: "44.",
-    question: "Fire extinguishers extinguish fire by",
+    question:
+      "How much percent of iron ore is found in magnetite (At. Mass of iron = 55.84)?",
 
-    optionA: "A)	Cutting off the supply of air",
-    optionB: "B)	Bringing down the temperature of fuel",
-    optionC: "C)	Supplying air to the fuel",
-    optionD: "D)	Both a) & b)",
+    optionA: "A) 70%",
+    optionB: "B) 65%",
+    optionC: "C) 60%",
+    optionD: "D) 72%",
   },
 
   {
     id: "45.",
-    question:
-      "Assertion (A): The temperature increases inside the fractionating column on going from bottom to the top. Reason (R): The column is not heated at the bottom.",
+    question: [
+      <MathEq
+        math={String.raw`Assertion (A): both 44 g of $CO_{2}$ and 16 g of $CH_{4}$ have same number of carbon atoms.`}
+      />,
+      <br />,
+      <MathEq
+        math={String.raw`Reason (R): both contain 1 g atom of carbon which contains $6.023 x 10^{23}$ carbon atoms.`}
+      />,
+    ],
 
     optionA:
       "A)	Assertion is correct, reason is correct; reason is a correct explanation for assertion",
