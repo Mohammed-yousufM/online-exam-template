@@ -12,28 +12,28 @@ import MathEq from "./MathEq";
 
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "admin@1000" },
-  // { sNO: "1", userID: "ayaan", passw: "1001" },
-  // { sNO: "2", userID: "sami", passw: "1002" },
-  // { sNO: "3", userID: "santosh", passw: "1003" },
-  // { sNO: "4", userID: "rugveda", passw: "1004" },
-  // { sNO: "5", userID: "richitha", passw: "1005" },
-  // { sNO: "6", userID: "maimuna", passw: "1006" },
-  // { sNO: "7", userID: "josephus", passw: "1007" },
-  // { sNO: "9", userID: "masood", passw: "1009" },
-  // { sNO: "10", userID: "vineel", passw: "1010" },
-  // { sNO: "11", userID: "abhinav", passw: "1011" },
-  // // // // // // // // Dubai Below
-  // { sNO: "8", userID: "samuel", passw: "1008" },
-  // { sNO: "12", userID: "arshan", passw: "1012" },
-  // { sNO: "13", userID: "neeraj", passw: "1013" },
-  // { sNO: "14", userID: "abel", passw: "1014" },
-  // { sNO: "15", userID: "rayaan", passw: "1015" },
-  // // // // // // // // New Users - continue S.No.
-  // { sNO: "16", userID: "srujana", passw: "1016" },
-  // { sNO: "17", userID: "meghana", passw: "1017" },
-  // { sNO: "18", userID: "asmitha", passw: "1018" },
-  // { sNO: "19", userID: "charan", passw: "1019" },
-  // { sNO: "20", userID: "mani", passw: "1020" }, //20
+  { sNO: "1", userID: "ayaan", passw: "1001" },
+  { sNO: "2", userID: "sami", passw: "1002" },
+  { sNO: "3", userID: "santosh", passw: "1003" },
+  { sNO: "4", userID: "rugveda", passw: "1004" },
+  { sNO: "5", userID: "richitha", passw: "1005" },
+  { sNO: "6", userID: "maimuna", passw: "1006" },
+  { sNO: "7", userID: "josephus", passw: "1007" },
+  { sNO: "9", userID: "masood", passw: "1009" },
+  { sNO: "10", userID: "vineel", passw: "1010" },
+  { sNO: "11", userID: "abhinav", passw: "1011" },
+  // // // // // // // Dubai Below
+  { sNO: "8", userID: "samuel", passw: "1008" },
+  { sNO: "12", userID: "arshan", passw: "1012" },
+  { sNO: "13", userID: "neeraj", passw: "1013" },
+  { sNO: "14", userID: "abel", passw: "1014" },
+  { sNO: "15", userID: "rayaan", passw: "1015" },
+  // // // // // // // New Users - continue S.No.
+  { sNO: "16", userID: "srujana", passw: "1016" },
+  { sNO: "17", userID: "meghana", passw: "1017" },
+  { sNO: "18", userID: "asmitha", passw: "1018" },
+  { sNO: "19", userID: "charan", passw: "1019" },
+  { sNO: "20", userID: "mani", passw: "1020" }, //20
 ];
 
 export const questionsAll = [
@@ -408,10 +408,10 @@ export const questionsAll = [
     question:
       "A bullet of mass 0.1 kg is fired with a speed of 100 m/sec, the mass of gun is 50 kg. The velocity of recoil is",
 
-    optionA: "a)	0.2 m/sec",
-    optionB: "b)	0.1 m/sec",
-    optionC: "c)	0.5 m/sec",
-    optionD: "d)	0.05 m/sec",
+    optionA: "A)	0.2 m/sec",
+    optionB: "B)	0.1 m/sec",
+    optionC: "C)	0.5 m/sec",
+    optionD: "D)	0.05 m/sec",
   },
 
   {
