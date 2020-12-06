@@ -4,9 +4,9 @@ import Image from "./Image";
 import i1 from "./I1.png";
 import i2 from "./I2.png";
 import i3 from "./I3.png";
-import i4 from "./I4.png";
-import i5 from "./I5.png";
-import i6 from "./I6.png";
+// import i4 from "./I4.png";
+// import i5 from "./I5.png";
+// import i6 from "./I6.png";
 // import i7 from "./I7.PNG";
 // import i8 from "./I8.PNG";
 
@@ -39,7 +39,67 @@ export const studentsDB = [
 export const questionsAll = [
   {
     id: "1.",
-    question: "In which quadrant does the point (-3, -5) lie?",
+    question: (
+      <MathEq
+        math={String.raw`Find the angle which straight line $y=\sqrt{3}x-4$ makes with x-axis`}
+      />
+    ),
+
+    optionA: <MathEq math={String.raw`A) $30^{\circ}$`} />,
+    optionB: <MathEq math={String.raw`B) $60^{\circ}$`} />,
+    optionC: <MathEq math={String.raw`C) $45^{\circ}$`} />,
+    optionD: <MathEq math={String.raw`D) $90^{\circ}$`} />,
+  },
+
+  {
+    id: "2.",
+    question: "Find the equation of line passing through (1,-2), (-2, 3)",
+
+    optionA: "A) 5x+3y+1=0",
+    optionB: "B) x-4y+3=0",
+    optionC: "C) x-2y-2=3",
+    optionD: "D) -4x+y+3=0",
+  },
+
+  {
+    id: "3.",
+    question: (
+      <MathEq
+        math={String.raw`Find the equation of line with $\theta = 150^{\circ}$, c=2.   (y=mx+c)`}
+      />
+    ),
+
+    optionA: <MathEq math={String.raw`A) $y=\frac{-1}{\sqrt{3}}x+2$`} />,
+    optionB: <MathEq math={String.raw`B) $y=2x+\frac{-1}{\sqrt{3}}$`} />,
+    optionC: <MathEq math={String.raw`C) $y=\frac{1}{\sqrt{3}}x+6$`} />,
+    optionD: "D) None of the above",
+  },
+
+  {
+    id: "4.",
+    question: (
+      <MathEq
+        math={String.raw`Find the equation of line with $\theta = \frac{\pi}{3}$ and pass through (1, 2).`}
+      />
+    ),
+
+    optionA: (
+      <MathEq math={String.raw`A) $y-2 = \sqrt{3} \left( x-1\right)$`} />
+    ),
+    optionB: (
+      <MathEq math={String.raw`B) $y-2 = \sqrt{3} \left( x+1\right)$`} />
+    ),
+    optionC: (
+      <MathEq math={String.raw`C) $y-2 = \sqrt{1} \left( x-2\right)$`} />
+    ),
+    optionD: (
+      <MathEq math={String.raw`D) $y-2 = \sqrt{1} \left( x+2\right)$`} />
+    ),
+  },
+
+  {
+    id: "5.",
+    question: "In which quadrant does the point (-5, 7) lie?",
 
     optionA: "A) 1st",
     optionB: "B) 2nd",
@@ -48,359 +108,293 @@ export const questionsAll = [
   },
 
   {
-    id: "2.",
-    question: "On which axis does the point (0, -5) lie?",
-
-    optionA: "A) X-axis",
-    optionB: "B) Y-axis",
-    optionC: "C) None of these",
-    optionD: "D) A & B",
-  },
-
-  {
-    id: "3.",
-    question: "The distance of the point P(8, -6) from the origin is:",
-
-    optionA: "A) 2 units",
-    optionB: "B) 14 units",
-    optionC: "C) 10 units",
-    optionD: "D) None of these",
-  },
-
-  {
-    id: "4.",
-    question: "The distance between the points A(b,0) and B(0,a) is:",
-
-    optionA: <MathEq math={String.raw`A) $\sqrt{a^{2} \:- \:b^{2}}$`} />,
-    optionB: <MathEq math={String.raw`B) $\sqrt{a^{2} \:+ \:b^{2}}$`} />,
-    optionC: <MathEq math={String.raw`C) $\sqrt{a \:+ \:b}$`} />,
-    optionD: "D) (a + b)",
-  },
-
-  {
-    id: "5.",
-    question: "The distance between the points A(2, -3) and B(2, 2) is:",
-
-    optionA: "A) 2 units",
-    optionB: "B) 3 units",
-    optionC: "C) 4 units",
-    optionD: "D) 5 units",
-  },
-
-  {
     id: "6.",
-    question:
-      "The vertices of a triangle are A(4, 4), B(3, -2) and C(-3, 16). The area of the triangle is:",
+    question: "In which axis does the point (6, 0) lie?",
 
-    optionA: "A) 36 sq. units",
-    optionB: "B) 37 sq. units",
-    optionC: "C) 38 sq. units",
-    optionD: "D) None of these",
+    optionA: "A) X- axis",
+    optionB: "B) Y- axis",
+    optionC: "C) Either X or Y",
+    optionD: "D) At origin",
   },
 
   {
     id: "7.",
-    question:
-      "If the points A(2, 3), B(5, k) and C(6, 7) are collinear, then k = ?",
+    question: "The distance of the point P(8, -6) from the origin is",
 
-    optionA: "A) 4",
-    optionB: "B) 6",
-    optionC: <MathEq math={String.raw`C) $\frac{-3}{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{11}{4}$`} />,
+    optionA: "A) 2 units",
+    optionB: "B) 8 units",
+    optionC: "C) 10 units",
+    optionD: "D) 16 units",
   },
 
   {
     id: "8.",
     question:
-      "If the points A(1, -1), B(5, 2) and C(k, 5) are collinear, then k=?",
+      "The vertices of a triangle are A(4, 4), B(3, -2) and C(-3, 16). The area of the triangle is",
 
-    optionA: "A) 6",
-    optionB: "B) -3",
-    optionC: "C) 9",
-    optionD: "D) 4",
+    optionA: "A) 30 sq units",
+    optionB: "B) 36 sq units",
+    optionC: "C) 27 sq units",
+    optionD: "D) 40 sq units",
   },
 
   {
     id: "9.",
     question:
-      "A point C divides the join of A(1, 3) and B(2, 7) in the ratio 3 : 4. The co-ordinates of C are:",
+      "If the points A(1, -1), B(5, 2) and C(k, 5) are collinear, then k=?",
 
-    optionA: <MathEq math={String.raw`A) $\left( \frac{5}{3},5\right)$`} />,
-    optionB: <MathEq math={String.raw`B) $\left(-2,-9 \right)$`} />,
-    optionC: (
-      <MathEq math={String.raw`C) $\left( \frac{10}{7},\frac{33}{7}\right)$`} />
-    ),
-    optionD: <MathEq math={String.raw`D) $\left( \frac{3}{2},5 \right)$`} />,
+    optionA: "A) 2",
+    optionB: "B) 4",
+    optionC: "C) 6",
+    optionD: "D) 9",
   },
 
   {
     id: "10.",
-    question:
-      "The end points of a line segment AB are A(-5,4) and B(7,-8). Its midpoint is:",
+    question: "Solpe of X- axis is",
 
-    optionA: "A) C(1, -2)",
-    optionB: "B) C(2, -1)",
-    optionC: "C) C(2, -3)",
-    optionD: "D) C(2, -2)",
+    optionA: "A) 0",
+    optionB: "B) 1",
+    optionC: "C) -1",
+    optionD: "D) infinity",
   },
 
   {
     id: "11.",
-    question: "The equation x-2=0 is ______",
+    question: "Slope of Y- axis is",
 
-    optionA: "A) parallel to X-axis",
-    optionB: "B) parallel to Y-axis",
-    optionC: "C) parallel to Z-axis",
-    optionD: "D) None of the above",
+    optionA: "A) 0",
+    optionB: "B) 1",
+    optionC: "C) -1",
+    optionD: "D) infinity",
   },
 
   {
     id: "12.",
-    question: "The equation x-2=0 is ______",
+    question: "The points (2,2) (6,3) and (4, 11) are the vertices of",
 
-    optionA: "A) perpendicular to X-axis",
-    optionB: "B) perpendicular to Y-axis",
-    optionC: "C) perpendicular to Z-axis",
-    optionD: "D) None of the above",
+    optionA: "A) an equilateral",
+    optionB: "B) a right angled triangle",
+    optionC: "C) an isosceles triangle",
+    optionD: "D) a scalene triangle",
   },
 
   {
     id: "13.",
-    question: <MathEq math={String.raw`$cos 0^{\circ}$=`} />,
+    question:
+      "A point C divides the line AC, where A(1, 3) and B(2, 7) in the ratio of 3:4. The coordinates of C are",
 
-    optionA: "A) 0",
-    optionB: "B) 1",
-    optionC: "C) Not defined",
-    optionD: "D) None of these",
+    optionA: "A) (5/3, 5)",
+    optionB: "B) (-2, -9)",
+    optionC: "C) (3/5, 5)",
+    optionD: "D) (10/7, 33/7)",
   },
 
   {
     id: "14.",
-    question: (
-      <MathEq
-        math={String.raw`If $sin\theta=\frac{\sqrt{5}}{3}$ and $cos\theta=\frac{1}{3}$, then $tan\theta$=`}
-      />
-    ),
+    question:
+      "The slope of a line passing through the points A(4, -3) and B(6, -3) is",
 
-    optionA: <MathEq math={String.raw`A) $\sqrt{5}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{\sqrt{5}}{9}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{3}{\sqrt{5}}$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{\sqrt{5}}{6}$`} />,
+    optionA: "A) 4",
+    optionB: "B) 0",
+    optionC: "C) infinity",
+    optionD: "D) 5",
   },
 
   {
     id: "15.",
-    question: <MathEq math={String.raw`$cos72^{\circ}-sin18^{\circ}$=`} />,
+    question: (
+      <MathEq
+        math={String.raw`If the inclination of a line joining the points A(x, -3) and B(2, 5) is $135^{\circ}$, then x=?`}
+      />
+    ),
 
-    optionA: "A) 0",
-    optionB: "B) 1",
-    optionC: <MathEq math={String.raw`C) $2sin18^{\circ}$`} />,
-    optionD: "D) None of these",
+    optionA: "A) 10",
+    optionB: "B) 15",
+    optionC: "C) 20",
+    optionD: "D) 25",
   },
 
   {
     id: "16.",
     question: (
       <MathEq
-        math={String.raw`A bullet is fired with a speed of 1000 m/sec in order to hit a target 100 m away. If $g=10m/s^{2}$, the gun should be aimed`}
+        math={String.raw`If $\vec{A}$ and $\vec{B}$ are perpendicular vectors and vector $\vec{A}=5\hat{i}+7\hat{j}-3\hat{k}$ and $\vec{B}=2\hat{i}+2\hat{j}-a\hat{k}$. The value of a is`}
       />
     ),
 
-    optionA: "A)	Directly towards the target",
-    optionB: "B)	5 cm above the target",
-    optionC: "C)	10 cm above the target",
-    optionD: "D)	15 cm above the target",
+    optionA: "A) -2",
+    optionB: "B) 8",
+    optionC: "C) -7",
+    optionD: "D) -8",
   },
 
   {
     id: "17.",
-    question:
-      "The v-t graph for a particle is as shown. The distance travelled in the first four second is",
-    image1: <Image g={i1} />,
+    question: (
+      <MathEq
+        math={String.raw`A force vector applied on a mass is represented as $\vec{F}=6\hat{i}-8\hat{j}+10\hat{k}$ and accelerates with $1 \, m/s^{2}$. What will be the mass of the body in kg.`}
+      />
+    ),
 
-    optionA: "A)	12 m",
-    optionB: "B)	16 m",
-    optionC: "C)	20 m",
-    optionD: "D)	24 m",
+    optionA: <MathEq math={String.raw`A) $10\sqrt{2}$`} />,
+    optionB: "B) 20",
+    optionC: <MathEq math={String.raw`C) $2\sqrt{10}$`} />,
+    optionD: "D) 10",
   },
 
   {
     id: "18.",
-    question:
-      "A body is projected with a velocity v and after some time it returns  to the point from which it was projected. The average velocity and average speed of the body for the total time of flight are",
+    question: (
+      <MathEq
+        math={String.raw`A ball is thrown vertically upwards from the top of a tower at $4.9 ms^{-1}$. It strikes the pond near the base of the tower after 3 seconds. The height of the tower is`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $\vec{v}/2$ and v/2`} />,
-    optionB: "B)	0 and v/2",
-    optionC: "C)	0 and 0",
-    optionD: <MathEq math={String.raw`D) $\vec{v}/2$ and 0`} />,
+    optionA: "A)	73.5 m",
+    optionB: "B)	44.1 m",
+    optionC: "C)	29.4 m",
+    optionD: "D)	None of these",
   },
 
   {
     id: "19.",
-    question: [
-      <MathEq
-        math={String.raw`A particle starts from rest at t=0 and undergoes an acceleration a in $ms^{-2}$ with time t in seconds which is as shown`}
-      />,
-      <Image g={i2} />,
-      <MathEq
-        math={String.raw`Which one of the following plot represents velocity V in $ms^{-1}$ versus time t in seconds`}
-      />,
-    ],
+    question:
+      "An aeroplane is moving with horizontal velocity u at height h.  The velocity of a packet dropped from it on the earth's surface will be (  is acceleration due to gravity)",
 
-    optionA: <Image g={i3} t="A)" />,
-    optionB: <Image g={i4} t="B)" />,
-    optionC: <Image g={i5} t="C)" />,
-    optionD: <Image g={i6} t="D)" />,
+    optionA: <MathEq math={String.raw`A) $\sqrt{u^{2}+2gh}$`} />,
+    optionB: <MathEq math={String.raw`B) $\sqrt{2gh}$`} />,
+    optionC: <MathEq math={String.raw`C) 2gh`} />,
+    optionD: <MathEq math={String.raw`D) $\sqrt{u^{2}-2gh}$`} />,
   },
 
   {
     id: "20.",
-    question: (
-      <MathEq
-        math={String.raw`Consider a vector $\vec{F}=4\hat{i}-3\hat{j}$. Another vector that is perpendicular to $\vec{F}$ is`}
-      />
-    ),
+    question:
+      "At the top of the trajectory of a projectile, the directions of its velocity and acceleration are ",
 
-    optionA: <MathEq math={String.raw`A) $4\hat{i}+3\hat{j}$`} />,
-    optionB: <MathEq math={String.raw`B) $6\hat{j}$`} />,
-    optionC: <MathEq math={String.raw`C) $7\hat{j}$`} />,
-    optionD: <MathEq math={String.raw`D) $3\hat{i}-4\hat{j}$`} />,
+    optionA: "A)	Perpendicular to each other	",
+    optionB: "B)	Parallel to each other",
+    optionC: "C) Inclined to each other at an angle of 45 degree",
+    optionD: "D) Antiparallel to each other",
   },
 
   {
     id: "21.",
     question: (
       <MathEq
-        math={String.raw`A particle is projected with a velocity $200ms^{-1}$ at an angle of $60^{\circ}$. At the highest point, it explodes into three particles of equal masses. One goes vertically upwards with a velocity $100 ms^{-1}$, the second particle goes vertically downwards. What is the velocity of third particle?`}
+        math={String.raw`An object is thrown along a direction inclined at an angle of $45^{\circ}$ with the horizontal direction. The horizontal range of the particle is equal to`}
       />
     ),
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $120 ms^{-1}$ making $60^{\circ}$ angle with horizontal`}
-      />
-    ),
-    optionB: (
-      <MathEq
-        math={String.raw`B) $200 ms^{-1}$ making $60^{\circ}$ angle with horizontal`}
-      />
-    ),
-    optionC: <MathEq math={String.raw`C) $300 ms^{-1}$`} />,
-    optionD: <MathEq math={String.raw`D) $200 ms^{-1}$`} />,
+    optionA: "A)	Vertical height",
+    optionB: "B)	Twice the vertical height",
+    optionC: "C)	Thrice the vertical height",
+    optionD: "D)	Four times the vertical height",
   },
   {
     id: "22.",
     question:
-      "The maximum height attained by a projectile is increased by 10% by increasing its speed of projection, without changing the angle of projection. The percentage increase in the horizontal range will be",
+      "A ball thrown by a boy is caught by another after 2 sec. some distance away in the same level. If the angle of projection is 30 degree, the velocity of projection is",
 
-    optionA: "A)	5%",
-    optionB: "B)	10%",
-    optionC: "C)	15%",
-    optionD: "D)	20%",
+    optionA: "A)	19.6 m/s ",
+    optionB: "B)	9.8 m/s",
+    optionC: "C)	14.7 m/s",
+    optionD: "D)	None of these",
   },
   {
     id: "23.",
-    question: (
-      <MathEq
-        math={String.raw`For an object thrown at $45^{\circ}$ to horizontal, the maximum height (H) and horizontal range (R ) are related as`}
-      />
-    ),
+    question:
+      "A body of mass 2 kg moving on a horizontal surface with an initial velocity of 4 m/sec comes to rest after 2 sec. If one wants to keep this body moving on the same surface with a velocity of 4 m/sec, the force required is",
 
-    optionA: "A)	R=16H",
-    optionB: "B)	R=8H",
-    optionC: "C)	R=4H",
-    optionD: "D)	R=2H",
+    optionA: "A)	8 N",
+    optionB: "B)	4 N",
+    optionC: "C)	Zero",
+    optionD: "D)	2 N",
   },
   {
     id: "24.",
     question:
-      "A stone is just released from the window of a train moving along a horizontal straight track. The stone will hit the ground following",
+      "A body of mass 2 kg is hung on a spring balance mounted vertically in a lift. If the lift descends with an acceleration equal to the acceleration due to gravity ‘g’, the reading on the spring balance will be",
 
-    optionA: "A) Straight path",
-    optionB: "B)	Circular path",
-    optionC: "C)	Parabolic path",
-    optionD: "D)	Hyperbolic path",
+    optionA: "A)	2 kg",
+    optionB: "B) (4 x g) kg",
+    optionC: "C) (2 x g) kg",
+    optionD: "d) Zero",
   },
   {
     id: "25.",
-    question: (
-      <MathEq
-        math={String.raw`While waiting in a car at a stoplight, and 80 kg man and his car are suddenly accelerated to a speed of $5ms^{-1}$ as a result or rear end colllison. If the time of impact is 0.4 s, find the average force on the man`}
-      />
-    ),
+    question:
+      "In doubling the mass and acceleration of the mass, the force acting on the mass with respect to the previous value",
 
-    optionA: "A)	100 N",
-    optionB: "B)	200 N",
-    optionC: "C)	500 N",
-    optionD: "D)	1000 N",
+    optionA: "A)	Decreases to half",
+    optionB: "B)	Remains unchanged",
+    optionC: "C)	Increases two times",
+    optionD: "D)	Increases four times",
   },
   {
     id: "26.",
     question: (
       <MathEq
-        math={String.raw`A machine gun fires a bullet of mass 40 g with a velocity $1200ms^{-1}$. The man holding it can exert a maximum force of 144 N on the gun. How many bullets can be fired per second at the most?`}
+        math={String.raw`A force of 5 N  acts on a body of weight 9.8 N. What is the acceleration produced in $m/sec^{2}$`}
       />
     ),
 
-    optionA: "A)	Only one",
-    optionB: "B)	Three ",
-    optionC: "C)	Can fire any number of bullets",
-    optionD: "D)	144 x 48",
+    optionA: "A)	49.00",
+    optionB: "B)	5.00",
+    optionC: "C)	1.46",
+    optionD: "D)	0.51",
   },
   {
     id: "27.",
-    question:
-      "A ball of mass 0.5 kg moving with a velocity of 2 m/sec strikes a wall normally and bounces back with the same speed. If the time of contact between the ball and the wall is one millisecond, the average force exerted by the wall on the ball is",
+    question: (
+      <MathEq
+        math={String.raw`A block A of mass 7 kg is placed on a frictionless table. A thread tied to it passes over a frictionless pulley and carries a body B of mass 3 kg at the other end. The acceleration of the system is (given $g= 10 ms^{-2}$)`}
+      />
+    ),
+    image1: <Image g={i1} />,
 
-    optionA: "A)	2000 N",
-    optionB: "B)	1000 N",
-    optionC: "C)	5000 N",
-    optionD: "D)	125 N",
+    optionA: <MathEq math={String.raw`A) 100 $ms^{-2}$`} />,
+    optionB: <MathEq math={String.raw`B) 3 $ms^{-2}$`} />,
+    optionC: <MathEq math={String.raw`C) 10 $ms^{-2}$`} />,
+    optionD: <MathEq math={String.raw`D) 30 $ms^{-2}$`} />,
   },
   {
     id: "28.",
-    question: "Impulse is",
+    question: (
+      <MathEq
+        math={String.raw`Three blocks of masses 2 kg, 3 kg and 5 kg are connected to each other with light string and are then placed on a frictionless surface as shown in the figure. The system is pulled by a force F= 10N then tension $T_{1}$ `}
+      />
+    ),
+    image1: <Image g={i2} />,
 
-    optionA: "A)	A scalar",
-    optionB: "B)	Equal to change in the momentum of a body",
-    optionC: "C)	Equal to rate of change of momentum of a body",
-    optionD: "D)	A force",
+    optionA: "A)	1N",
+    optionB: "B)	5 N",
+    optionC: "C)	8 N",
+    optionD: "D)	10 N",
   },
   {
     id: "29.",
-    question:
-      "If two forces of 5 N each are acting along X and Y axes, then the magnitude and direction of resultant is",
+    question: (
+      <MathEq
+        math={String.raw`Two masses $m_{1}$ and $m_{2}$ are attached to a string which passes over a frictionless smooth pulley. When $m_{1}=10kg$, $m_{2}=6kg$, the acceleration of masses is `}
+      />
+    ),
+    image1: <Image g={i3} />,
 
-    optionA: <MathEq math={String.raw`A) $5\sqrt{2}$, $\pi/3$`} />,
-    optionB: <MathEq math={String.raw`B) $5\sqrt{2}$, $\pi/4$`} />,
-    optionC: <MathEq math={String.raw`C) $-5\sqrt{2}$, $\pi/3$`} />,
-    optionD: <MathEq math={String.raw`D) $-5\sqrt{2}$, $\pi/4$`} />,
+    optionA: <MathEq math={String.raw`A) $20 m/s^{2}$`} />,
+    optionB: <MathEq math={String.raw`B) $5 m/s^{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $2.5 m/s^{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $10 m/s^{2}$`} />,
   },
   {
     id: "30.",
-    question:
-      "Ten one –rupee coins are put on top of each other on a table. Each coin has a mass  m. Which of the following statements is not true",
+    question: "The momentum of a system is conserved",
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) The force on the $6^{th}$ (counted from the bottom) due to all the coins on its top is equal to 4 mg (downwards)`}
-      />
-    ),
-    optionB: (
-      <MathEq
-        math={String.raw`B) The force on the $6^{th}$ coin due to $7^{th}$ coin is 4mg (downwards)`}
-      />
-    ),
-    optionC: (
-      <MathEq
-        math={String.raw`C) The reaction on the $6^{th}$ coin due to $7^{th}$ coin is 4mg (upwards)`}
-      />
-    ),
-    optionD: (
-      <MathEq
-        math={String.raw`D) The total force on the $10^{th}$ coin is 9 mg (downwards)`}
-      />
-    ),
+    optionA: "A)	Always",
+    optionB: "B)	Never",
+    optionC: "C)	In the absence of an external force on the system",
+    optionD: "D)	None of the above",
   },
 
   // {
