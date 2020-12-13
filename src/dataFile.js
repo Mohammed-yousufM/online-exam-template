@@ -59,7 +59,7 @@ export const questionsAll = [
     id: "2.",
     question: (
       <MathEq
-        math={String.raw`$\begin{bmatrix}
+        math={String.raw`If $A=\begin{bmatrix}
       2 &0  &1 \\ 
        4& -1 &2 \\ 
        7& 6 &9 
@@ -87,7 +87,7 @@ export const questionsAll = [
     id: "4.",
     question: (
       <MathEq
-        math={String.raw`For example if k=2 and $A=\begin{bmatrix}
+        math={String.raw`If $A=\begin{bmatrix}
       3 &2  &-1 \\ 
        4&-3  &1 
       \end{bmatrix}$ then 2A=`}
