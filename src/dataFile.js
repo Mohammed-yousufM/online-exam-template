@@ -3,10 +3,10 @@ import MathEq from "./MathEq";
 import Image from "./Image";
 import i1 from "./I1.png";
 import i2 from "./I2.png";
-import i3 from "./I3.png";
-import i4 from "./I4.png";
-import i5 from "./I5.png";
-// import i6 from "./I6.png";
+import i3 from "./I3.PNG";
+import i4 from "./I4.PNG";
+import i5 from "./I5.PNG";
+import i6 from "./I6.PNG";
 // import i7 from "./I7.PNG";
 // import i8 from "./I8.PNG";
 
@@ -41,137 +41,155 @@ export const questionsAll = [
     id: "1.",
     question: (
       <MathEq
-        math={String.raw`$\begin{bmatrix}
-      2 &0  &1 \\ 
-       4& -1 &2 \\ 
-       7& 6 &9 
-      \end{bmatrix}$ is a`}
+        math={String.raw`In the Matrix $A=\begin{bmatrix}
+    2 &5  &19  &-7 \\ 
+     35&  -2& \frac{5}{2} & 12\\ 
+     \sqrt{3}&1  &-5  &17 
+    \end{bmatrix}$. Then order of the Matrix A is:`}
       />
     ),
 
-    optionA: "A) is a rectangular matrix of order 3",
-    optionB: "B) is a square matrix of order 3",
-    optionC: "C) is a rectangular matrix of order 9",
-    optionD: "D) is a square matrix of order 9",
+    optionA: "A) 2 x 3",
+    optionB: "B) 3 x 2",
+    optionC: "C) 4 x 3",
+    optionD: "D) 3 x 4",
   },
 
   {
     id: "2.",
     question: (
       <MathEq
-        math={String.raw`If $A=\begin{bmatrix}
-      2 &0  &1 \\ 
-       4& -1 &2 \\ 
-       7& 6 &9 
-      \end{bmatrix}$ then Trace(A) = `}
+        math={String.raw`Find the values of x,y and z from the following: $\begin{bmatrix}
+    4 & 3\\ 
+    x & 5
+    \end{bmatrix} = \begin{bmatrix}
+    y & z\\ 
+    1 & 5
+    \end{bmatrix}$`}
       />
     ),
-    optionA: "A) 12",
-    optionB: "B) 10",
-    optionC: "C) -7",
-    optionD: "D) -12",
+
+    optionA: "A) x=4 , y=3 , z=5",
+    optionB: "B) x=1 , y=3 , z=3",
+    optionC: "C) x=1 , y=4 , z=3",
+    optionD: "D) x= 5, y=3 , z=1",
   },
 
   {
     id: "3.",
-    question:
-      "If each non-diagonal element of a square matrix is equal to zero and each diagonal element is equal to 1, then the matrix is called",
+    question: (
+      <MathEq
+        math={String.raw`If $A= \begin{bmatrix}
+    1 &2  &3 \\ 
+     2& 3 & 1
+    \end{bmatrix}$ and $B=\begin{bmatrix}
+    1 &2  &3 \\ 
+     2& 3 & 1
+    \end{bmatrix}$, then find 2A-B`}
+      />
+    ),
 
-    optionA: "A) a Unity Matrix or Identity Matrix",
-    optionB: "B) a Scalar Matrix",
-    optionC: "C) a Diagonal Matrix",
-    optionD: "D) a Null or Zero Matrix",
+    optionA: (
+      <MathEq
+        math={String.raw`A) $\begin{bmatrix}
+    -1 &5  &3 \\ 
+     5& 6 & 0
+    \end{bmatrix}$`}
+      />
+    ),
+    optionB: (
+      <MathEq
+        math={String.raw`B) $\begin{bmatrix}
+    1 &2  &3 \\ 
+     2& 3 & 1
+    \end{bmatrix}$`}
+      />
+    ),
+    optionC: (
+      <MathEq
+        math={String.raw`C) $\begin{bmatrix}
+    6 &2  &3 \\ 
+     2& 5 & 0
+    \end{bmatrix}$`}
+      />
+    ),
+    optionD: (
+      <MathEq
+        math={String.raw`D) $\begin{bmatrix}
+    3 &2  &4 \\ 
+     1& 6 & 1
+    \end{bmatrix}$`}
+      />
+    ),
   },
 
   {
     id: "4.",
     question: (
       <MathEq
-        math={String.raw`If $A=\begin{bmatrix}
-      3 &2  &-1 \\ 
-       4&-3  &1 
-      \end{bmatrix}$ then 2A=`}
+        math={String.raw`Find the value of x and y from the following equation: $2\begin{bmatrix}
+    x &5 \\ 
+     7& y-3
+    \end{bmatrix}+\begin{bmatrix}
+    3 &-4 \\ 
+     1& 2
+    \end{bmatrix}=\begin{bmatrix}
+    7 &6 \\ 
+     15& 14
+    \end{bmatrix}$`}
       />
     ),
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $\begin{bmatrix}
-      6 &4  &-2 \\ 
-       8&-6  &2 
-      \end{bmatrix}$`}
-      />
-    ),
-    optionB: (
-      <MathEq
-        math={String.raw`B) $\begin{bmatrix}
-      7 &-5  &2 \\ 
-       1&-2  &6 
-      \end{bmatrix}$`}
-      />
-    ),
-    optionC: (
-      <MathEq
-        math={String.raw`C) $\begin{bmatrix}
-      3 &2  &-1 \\ 
-       4&-3  &1 
-      \end{bmatrix}$`}
-      />
-    ),
-    optionD: (
-      <MathEq
-        math={String.raw`D) $\begin{bmatrix}
-      8 &-6  &2 \\ 
-       6&4  &2 
-      \end{bmatrix}$`}
-      />
-    ),
+    optionA: "A) x=2, y=9",
+    optionB: "B) x=4, y=6",
+    optionC: "C) x=3, y=1",
+    optionD: "D) x=5, y=6",
   },
 
   {
     id: "5.",
     question: (
       <MathEq
-        math={String.raw`If $A=\begin{bmatrix}
-      2 &3  &-1 \\ 
-       7&8  &5 
-      \end{bmatrix}$ and $B=\begin{bmatrix}
-      1 &0  &1 \\ 
-       2&-4  &-1 
-      \end{bmatrix}$ then find A+B`}
+        math={String.raw`Let $A=\begin{bmatrix}
+    2 &4 \\ 
+     3& 2
+    \end{bmatrix}$, $B=\begin{bmatrix}
+    1 &3 \\ 
+     -2& 5
+    \end{bmatrix}$. Find A-B`}
       />
     ),
 
     optionA: (
       <MathEq
         math={String.raw`A) $\begin{bmatrix}
-      9 &3  &2 \\ 
-       3&6  &5 
-      \end{bmatrix}$`}
+    2 &5 \\ 
+     7& -3
+    \end{bmatrix}$`}
       />
     ),
     optionB: (
       <MathEq
         math={String.raw`B) $\begin{bmatrix}
-      1 &4  &2 \\ 
-       2&6  &8 
-      \end{bmatrix}$`}
+    1 &3 \\ 
+     6& -3
+    \end{bmatrix}$`}
       />
     ),
     optionC: (
       <MathEq
         math={String.raw`C) $\begin{bmatrix}
-      3 &3  &0 \\ 
-       9&4  &4 
-      \end{bmatrix}$`}
+    1 &1 \\ 
+     5& -3
+    \end{bmatrix}$`}
       />
     ),
     optionD: (
       <MathEq
         math={String.raw`D) $\begin{bmatrix}
-      7 &-5  &2 \\ 
-       1&-2  &6 
-      \end{bmatrix}$`}
+    2 &5 \\ 
+     5& -3
+    \end{bmatrix}$`}
       />
     ),
   },
@@ -180,130 +198,165 @@ export const questionsAll = [
     id: "6.",
     question: (
       <MathEq
-        math={String.raw`If $\begin{bmatrix}
-      x-1 & 2 &y-5 \\ 
-      z & 0 & 2\\ 
-      1 &-1  &1+a 
-      \end{bmatrix} = \begin{bmatrix}
-      1-x & 2 &-y \\ 
-      2 & 0 & 2\\ 
-      1 &-1  &1 
-      \end{bmatrix}$ then find the values of x,y,z and a`}
+        math={String.raw`Compute the following: $\begin{bmatrix}
+    a& b\\ 
+    -b& a
+   \end{bmatrix} + \begin{bmatrix}
+   a& b\\ 
+   b& a
+  \end{bmatrix}$ =`}
       />
     ),
 
-    optionA: "A) x=2, y=3, z=1, a=0",
-    optionB: "B) x=1, y=5/2, z=2, a=0",
-    optionC: "C) x=5, y=1/2, z=2, a=6",
-    optionD: "D) x=1, y=2, z=7, a=1",
+    optionA: (
+      <MathEq
+        math={String.raw`A) $\begin{bmatrix}
+    a& 2b\\ 
+    -2b& a
+   \end{bmatrix}$`}
+      />
+    ),
+    optionB: (
+      <MathEq
+        math={String.raw`B) $\begin{bmatrix}
+    2a& 2b\\ 
+    0& 2a
+   \end{bmatrix}$`}
+      />
+    ),
+    optionC: (
+      <MathEq
+        math={String.raw`C) $\begin{bmatrix}
+    2a& 2b\\ 
+    -2b& 0
+   \end{bmatrix}$`}
+      />
+    ),
+    optionD: (
+      <MathEq
+        math={String.raw`D) $\begin{bmatrix}
+    2b& 2a\\ 
+    0& 2a
+   \end{bmatrix}$`}
+      />
+    ),
   },
 
   {
     id: "7.",
     question: (
       <MathEq
-        math={String.raw`Find the trace of A if $A=\begin{bmatrix}
-      1 & 2 &-\frac{1}{2} \\ 
-      0 & -1 & 2\\ 
-      -\frac{1}{2}  &2  &1 
-      \end{bmatrix}$`}
+        math={String.raw`Compute the indicated products. $\begin{bmatrix}
+    a& b\\ 
+    -b& a
+   \end{bmatrix}\begin{bmatrix}
+   a& -b\\ 
+   b& a
+  \end{bmatrix}$`}
       />
     ),
 
-    optionA: "A) 1",
-    optionB: "B) 6",
-    optionC: "C) 2",
-    optionD: "D) 5",
+    optionA: (
+      <MathEq
+        math={String.raw`A) $\begin{bmatrix}
+    0& a^2+b^2\\ 
+    a^2+b^2& 0
+   \end{bmatrix}$`}
+      />
+    ),
+    optionB: (
+      <MathEq
+        math={String.raw`B) $\begin{bmatrix}
+    a^2+b^2& 0\\ 
+    0& a^2+b^2
+   \end{bmatrix}$`}
+      />
+    ),
+    optionC: (
+      <MathEq
+        math={String.raw`C) $\begin{bmatrix}
+    0& a^2+b^2\\ 
+    0& a^2+b^2
+   \end{bmatrix}$`}
+      />
+    ),
+    optionD: (
+      <MathEq
+        math={String.raw`D) $\begin{bmatrix}
+    a^2+b^2& 0\\ 
+    a^2+b^2& 0
+   \end{bmatrix}$`}
+      />
+    ),
   },
 
   {
     id: "8.",
     question: (
       <MathEq
-        math={String.raw`If $A=\begin{bmatrix}
-      4 & -5\\ 
-      -2 & 3
-      \end{bmatrix}$ then find -5A`}
+        math={String.raw`Find x and y, if $2\begin{bmatrix}
+    1 & 3\\ 
+     0&x 
+    \end{bmatrix}+\begin{bmatrix}
+    y & 0\\ 
+     1&2 
+    \end{bmatrix}=\begin{bmatrix}
+    5 & 6\\ 
+     1&8 
+    \end{bmatrix}$`}
       />
     ),
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $\begin{bmatrix}
-      -20 & 25\\ 
-      10 & -15
-      \end{bmatrix}$`}
-      />
-    ),
-    optionB: (
-      <MathEq
-        math={String.raw`B) $\begin{bmatrix}
-      7 & -6\\ 
-      9 & 3
-      \end{bmatrix}$`}
-      />
-    ),
-    optionC: (
-      <MathEq
-        math={String.raw`C) $\begin{bmatrix}
-      -6 & -8\\ 
-      2 & 2
-      \end{bmatrix}$`}
-      />
-    ),
-    optionD: "D) Doesnot exist",
+    optionA: "A) x=3 , y=3",
+    optionB: "B) x=2 , y=1",
+    optionC: "C) x=5 , y=2",
+    optionD: "D) x=7 , y=3",
   },
 
   {
     id: "9.",
     question: (
       <MathEq
-        math={String.raw`If $A=\begin{bmatrix}
-      0 &1  &2 \\ 
-       2&  3&4 \\ 
-       4&5  &6 
-      \end{bmatrix}$ and $B=\begin{bmatrix}
-      1 &-2  &0 \\ 
-       0&  1&-1 \\ 
-       -1&0  &3 
-      \end{bmatrix}$ then find 4B-3A`}
+        math={String.raw`Simplify $cos\theta\begin{bmatrix}
+    cos\theta &sin\theta \\ 
+    -sin\theta &cos\theta 
+    \end{bmatrix}+sin\theta\begin{bmatrix}
+    sin\theta &-cos\theta \\ 
+    cos\theta &sin\theta 
+    \end{bmatrix}$`}
       />
     ),
 
     optionA: (
       <MathEq
         math={String.raw`A) $\begin{bmatrix}
-      8 &7  &1 \\ 
-      4& -2 &2 \\ 
-      3& 3 &9  
-      \end{bmatrix}$`}
+    0 &0 \\ 
+     0&0 
+    \end{bmatrix}$`}
       />
     ),
     optionB: (
       <MathEq
         math={String.raw`B) $\begin{bmatrix}
-      2 &0  &1 \\ 
-      4& -1 &2 \\ 
-      7& 6 &9  
-      \end{bmatrix}$`}
+    1 &1 \\ 
+     1&1 
+    \end{bmatrix}$`}
       />
     ),
     optionC: (
       <MathEq
         math={String.raw`C) $\begin{bmatrix}
-      1 &-8  &-2 \\ 
-       -3&  -5&-1 \\ 
-       -15&-12  &-8 
-      \end{bmatrix}$`}
+    1 &0 \\ 
+     0&1 
+    \end{bmatrix}$`}
       />
     ),
     optionD: (
       <MathEq
         math={String.raw`D) $\begin{bmatrix}
-      4 &-11  &-6 \\ 
-       -6&  -5&-16 \\ 
-       -16&-15  &-6 
-      \end{bmatrix}$`}
+    0 &1 \\ 
+     1&0 
+    \end{bmatrix}$`}
       />
     ),
   },
@@ -312,97 +365,54 @@ export const questionsAll = [
     id: "10.",
     question: (
       <MathEq
-        math={String.raw`$\begin{bmatrix}
-      0\\ 
-      1\\ 
-      -1
-      \end{bmatrix} + \begin{bmatrix}
-      -1\\ 
-      1\\ 
-      0
-      \end{bmatrix}$`}
+        math={String.raw`If $\begin{vmatrix}
+    3 &1 \\ 
+     x& 1
+    \end{vmatrix}=\begin{bmatrix}
+     3& 2\\ 
+     4& 1
+    \end{bmatrix}$ the x =`}
       />
     ),
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $\begin{bmatrix}
-      -1\\ 
-      1\\ 
-      -1
-      \end{bmatrix}$`}
-      />
-    ),
-    optionB: (
-      <MathEq
-        math={String.raw`B) $\begin{bmatrix}
-      0\\ 
-      1\\ 
-      -1
-      \end{bmatrix}$`}
-      />
-    ),
-    optionC: (
-      <MathEq
-        math={String.raw`C) $\begin{bmatrix}
-      2\\ 
-      1\\ 
-      -1
-      \end{bmatrix}$`}
-      />
-    ),
-    optionD: (
-      <MathEq
-        math={String.raw`D) $\begin{bmatrix}
-      -1\\ 
-      2\\ 
-      -1
-      \end{bmatrix}$`}
-      />
-    ),
+    optionA: "A) 2",
+    optionB: "B) 9",
+    optionC: "C) 8",
+    optionD: "D) 3",
   },
 
   {
     id: "11.",
     question: (
       <MathEq
-        math={String.raw`If $A=\begin{bmatrix}
-      -1 &3 \\ 
-       4& 2
-      \end{bmatrix}$,$B=\begin{bmatrix}
-      2 &1 \\ 
-       3& -5
-      \end{bmatrix}$, $X=\begin{bmatrix}
-      x_{1} &x_{2} \\ 
-      x_{3}& x_{4}
-      \end{bmatrix}$ and A+B = X then find the values of $x_{1}$,$x_{2}$,$x_{3}$ and $x_{4}$`}
+        math={String.raw`$\begin{vmatrix}
+    cos\theta &-sin\theta \\ 
+     sin\theta& cos\theta
+    \end{vmatrix}$ =`}
       />
     ),
 
-    optionA: "A) 1, 4, 3 and -3",
-    optionB: "B) 8, 5, -4 and 10",
-    optionC: "C) 1, 4, 7 and -3",
-    optionD: "D) 2, 9, 1 and -5",
+    optionA: "A) 0",
+    optionB: "B) -1",
+    optionC: "C) 1",
+    optionD: "D) infinity",
   },
 
   {
     id: "12.",
     question: (
       <MathEq
-        math={String.raw`If $\begin{bmatrix}
-      x-3 &2y-8 \\ 
-       z+2& 6
-      \end{bmatrix}$=$\begin{bmatrix}
-      5 &2 \\ 
-       -2& a-4
-      \end{bmatrix}$ then find the values of x,y,z, and a.`}
+        math={String.raw`$\begin{vmatrix}
+     2&4 \\ 
+     -5&-1 
+    \end{vmatrix}$ =`}
       />
     ),
 
-    optionA: "A) 1, 4, 3 and -3",
-    optionB: "B) 8, 5, -4 and 10",
-    optionC: "C) 1, 4, 7 and -3",
-    optionD: "D) 2, 9, 1 and -5",
+    optionA: "A) 10",
+    optionB: "B) 18",
+    optionC: "C) 20",
+    optionD: "D) -15",
   },
 
   {
@@ -410,422 +420,401 @@ export const questionsAll = [
     question: (
       <MathEq
         math={String.raw`If $A=\begin{bmatrix}
-      1 & 2 &3 \\ 
-       3&  2& 1
-      \end{bmatrix}$ and $B=\begin{bmatrix}
-      3&  2& 1 \\ 
-       3 & 2 &1
-      \end{bmatrix}$ find 3B-2A`}
+    1 &0 \\ 
+     0& -1
+    \end{bmatrix}$, $B=\begin{bmatrix}
+    0 &1 \\ 
+     1& 0
+    \end{bmatrix}$ then AB=`}
       />
     ),
 
     optionA: (
       <MathEq
         math={String.raw`A) $\begin{bmatrix}
-      1 & 3 &3 \\ 
-       3&  2& 7
-      \end{bmatrix}$`}
+    0 &1 \\ 
+     -1& 0
+    \end{bmatrix}$`}
       />
     ),
     optionB: (
       <MathEq
         math={String.raw`B) $\begin{bmatrix}
-      4 & 5 &3 \\ 
-       2&  6& 1
-      \end{bmatrix}$`}
+    1 &0 \\ 
+     0& -1
+    \end{bmatrix}$`}
       />
     ),
     optionC: (
       <MathEq
         math={String.raw`C) $\begin{bmatrix}
-      7 & 2 &-3 \\ 
-       -3&  2& 7
-      \end{bmatrix}$`}
+    1 &0 \\ 
+     0& 0
+    \end{bmatrix}$`}
       />
     ),
     optionD: (
       <MathEq
         math={String.raw`D) $\begin{bmatrix}
-      2 & 4 &3 \\ 
-       3&  2& 5
-      \end{bmatrix}$`}
+    0 &0 \\ 
+     0& -1
+    \end{bmatrix}$`}
       />
     ),
   },
 
   {
     id: "14.",
-    question: "If each element of a matrix is zero, then it is called a",
+    question: (
+      <MathEq
+        math={String.raw`$2tan^{2}45^{\circ}+cos^{2}30^{\circ}-sin^{2}60^{\circ}$ =`}
+      />
+    ),
 
-    optionA: "A) a Unity Matrix or Identity Matrix",
-    optionB: "B) a Scalar Matrix",
-    optionC: "C) a Diagonal Matrix",
-    optionD: "D) a Null or Zero Matrix",
+    optionA: "A) 3",
+    optionB: "B) 1",
+    optionC: "C) 0",
+    optionD: "D) 2",
   },
 
   {
     id: "15.",
-    question:
-      "If each non-diagonal element of a square matrix is zero and all diagonal elements are equal to each other, then it is called a",
+    question: (
+      <MathEq
+        math={String.raw`Convert the radian measure to degree measure $\frac{3\pi}{2}$`}
+      />
+    ),
 
-    optionA: "A) a Unity Matrix or Identity Matrix",
-    optionB: "B) a Scalar Matrix",
-    optionC: "C) a Diagonal Matrix",
-    optionD: "D) a Null or Zero Matrix",
+    optionA: <MathEq math={String.raw`A) $250^{\circ}$`} />,
+    optionB: <MathEq math={String.raw`B) $320^{\circ}$`} />,
+    optionC: <MathEq math={String.raw`C) $270^{\circ}$`} />,
+    optionD: <MathEq math={String.raw`D) $180^{\circ}$`} />,
   },
 
   {
     id: "16.",
-    question: (
-      <MathEq
-        math={String.raw`A coin is dropped in a lift. It takes time $t_{1}$ to reach the floor when lift is stationary. It takes time $t_{2}$ when lift is moving up with constant acceleration. Then`}
-      />
-    ),
+    question: "Which of the following statements is not true",
 
-    optionA: <MathEq math={String.raw`A) $t_{1} > t_{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $t_{2} > t_{1}$`} />,
-    optionC: <MathEq math={String.raw`C) $t_{1} = t_{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $t_{1} >> t_{2}$`} />,
+    optionA:
+      "A) The coefficient of friction between two surfaces increases as the surface in contact are made rough",
+    optionB:
+      "B) The force of friction acts in a direction opposite to the applied force",
+    optionC: "C) Rolling friction is greater than sliding friction",
+    optionD:
+      "D) The coefficient of friction between wood and wood is less than 1",
   },
 
   {
     id: "17.",
-    question:
-      "If the tension in the cable of 1000 kg elevator is 1000 kg weight, the elevator",
+    question: (
+      <MathEq
+        math={String.raw`A block of 1 kg is stopped against a wall by applying a force F perpendicular to the wall. If $\mu = 0.2$ then minimum value of F will be`}
+      />
+    ),
 
-    optionA: "A)	Is accelerating upwards",
-    optionB: "B)	Is accelerating downwards",
-    optionC: "C)	May be at rest or accelerating",
-    optionD: "D)	May be at rest or in uniform motion",
+    optionA: "A) 980 N",
+    optionB: "B) 49 N",
+    optionC: "C) 98 N",
+    optionD: "D) 490 N",
   },
 
   {
     id: "18.",
-    question: (
-      <MathEq
-        math={String.raw`A force of 5 N  acts on a body of weight 9.8 N. What is the acceleration produced in $m/sec^{2}$`}
-      />
-    ),
+    question:
+      "The blocks A and B are arranged as shown in the figure. The pulley is frictionless. The mass of A is 10 kg. The coefficient of friction of A with the horizontal surface is 0.20. The minimum mass of B to start the motion will be",
+    image1: <Image g={i1} />,
 
-    optionA: "A)	49.00",
-    optionB: "B)	5.00",
-    optionC: "C)	1.46",
-    optionD: "D)	0.51",
+    optionA: "A) 2 kg",
+    optionB: "B) 0.2 kg",
+    optionC: "C) 5 kg",
+    optionD: "D) 10 kg",
   },
 
   {
     id: "19.",
     question:
-      "A body of mass 40 gm is moving with a constant velocity of 2 cm/sec on a horizontal frictionless table. The force on the table is",
+      "A 20 kg block is initially at rest on a rough horizontal surface. A horizontal force of 75 N is required to set the block in motion. After it is in motion, a horizontal force of 60 N is required to keep the block moving with constant speed. The coefficient of static friction is",
 
-    optionA: "A)	39200 dyne",
-    optionB: "B)	160 dyne",
-    optionC: "C)	80 dyne",
-    optionD: "D)	Zero dyne",
+    optionA: "A) 0.38",
+    optionB: "B) 0.44",
+    optionC: "C) 0.52",
+    optionD: "D) 0.60",
   },
 
   {
     id: "20.",
-    question: (
-      <MathEq
-        math={String.raw`A monkey of mass 20kg is holding a vertical rope. The rope will not break when a mass of 25 kg is suspended from it but will break if the mass exceeds 25 kg. What is the maximum acceleration with which the monkey can climb up along the rope ($g=10m/s^{2}$)`}
-      />
-    ),
+    question: "When two surfaces are coated with a lubricant, then they",
 
-    optionA: <MathEq math={String.raw`A) 10 $m/sec^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) 25 $m/sec^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) 2.5 $m/sec^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) 5 $m/sec^{2}$`} />,
+    optionA: "A) Stick to each other",
+    optionB: "B) Slide upon each other",
+    optionC: "C) Roll upon each other",
+    optionD: "D) None of these",
   },
 
   {
     id: "21.",
-    question: (
-      <MathEq
-        math={String.raw`A man of weight 75 kg is standing in an elevator which is moving with an acceleration of $5m/s^{2}$ in upward direction the apparent weight of the man will be ($g=10m/s^{2}$)`}
-      />
-    ),
+    question:
+      "A box is lying on an inclined plane what is the coefficient of static friction if the box starts sliding when an angle of inclination is 60o",
 
-    optionA: "A)	1425 N",
-    optionB: "B)	1375 N",
-    optionC: "C)	1250 N",
-    optionD: "D)	1125 N",
+    optionA: "A) 1.173",
+    optionB: "B) 1.732",
+    optionC: "C) 2.732",
+    optionD: "D) 1.677",
   },
   {
     id: "22.",
     question:
-      "A thief stole a box full of valuable articles of weight W and while carrying it on his back, he jumped down a wall of height ‘h’ from the ground. Before he reached the ground he experienced a load of ",
+      "A block of mass 2 kg is kept on the floor. The coefficient of static friction is 0.4. If a force F of 2.5 Newtons is applied on the block as shown in the figure, the frictional force between the block and the floor will be",
+    image1: <Image g={i2} />,
 
-    optionA: "A)	2W",
-    optionB: "B)	W",
-    optionC: "C)	W/2",
-    optionD: "D)	Zero",
+    optionA: "a) 2.5 N",
+    optionB: "b) 5 N",
+    optionC: "c) 7.84 N",
+    optionD: "d) 10 N",
   },
   {
     id: "23.",
-    question: (
-      <MathEq
-        math={String.raw`N bullets each of mass m kg are fired with a velocity $v ms^{-1}$ at the rate of n bullets per second upon a wall. The reaction offered by the wall to the bullets is given by`}
-      />
-    ),
+    question: "Which one of the following is not used to reduce friction",
 
-    optionA: <MathEq math={String.raw`A)	$nmv$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{Nmv}{n}$`} />,
-    optionC: <MathEq math={String.raw`C) $n\frac{Nm}{v}$`} />,
-    optionD: <MathEq math={String.raw`D) $n\frac{Nv}{m}$`} />,
+    optionA: "A) Oil",
+    optionB: "B) Ball bearings",
+    optionC: "C) Sand",
+    optionD: "D) Graphite",
   },
   {
     id: "24.",
     question:
-      "A book is lying on the table. What is the angle between the action of the book on the table and the reaction of the table on the book",
+      "An army vehicle of mass 1000 kg is moving with a velocity of 10 m/s and is acted upon by a forward force of 1000 N due to the engine and a retarding force of 500 N due to friction. What will be its velocity after 10 s",
 
-    optionA: <MathEq math={String.raw`A) $0^{\circ}$`} />,
-    optionB: <MathEq math={String.raw`B) $30^{\circ}$`} />,
-    optionC: <MathEq math={String.raw`C) $45^{\circ}$`} />,
-    optionD: <MathEq math={String.raw`D) $180^{\circ}$`} />,
+    optionA: "A) 5 m/s",
+    optionB: "B) 10 m/s",
+    optionC: "C) 15 m/s",
+    optionD: "D) 20 m/s",
   },
   {
     id: "25.",
     question:
-      "When a horse pulls a wagon, the force that causes the horse to move forward is the force",
+      "A body of mass 2 kg is moving with a velocity 8 m/s on a smooth surface. If it is to be brought to rest in 4 seconds, then the force to be applied is",
 
-    optionA: "A)	The ground exerts on it",
-    optionB: "B)	It exerts on the ground",
-    optionC: "C)	The wagon exerts on it",
-    optionD: "D)	It exerts on the wagon",
+    optionA: "A) 8 N",
+    optionB: "B) 4 N",
+    optionC: "C) 2 N",
+    optionD: "D) 1 N",
   },
   {
     id: "26.",
     question: (
       <MathEq
-        math={String.raw`A body of weight 2kg is suspended as shown in the figure. The tension $T_{1}$ in the horizontal string (in kg wt) is`}
+        math={String.raw`The apparent weight of the body, when it is travelling upwards with an acceleration of $2 m/s^{2}$ and mass is 10 kg, will be`}
       />
     ),
-    image1: <Image g={i3} />,
 
-    optionA: <MathEq math={String.raw`A) $2/\sqrt{3}$`} />,
-    optionB: <MathEq math={String.raw`B) $\sqrt{3}/2$`} />,
-    optionC: <MathEq math={String.raw`C) $2\sqrt{3}$`} />,
-    optionD: <MathEq math={String.raw`D) $2$`} />,
+    optionA: "A) 198 N",
+    optionB: "B) 164 N",
+    optionC: "C) 140 N",
+    optionD: "D) 118 N",
   },
   {
     id: "27.",
     question: (
       <MathEq
-        math={String.raw`Two masses $m_{1}=5kg$ and $m_{2}=4.8kg$ tied to a string are hanging over a light frictionless pulley. What is the acceleration of the masses when they are free to move ($g=9.8m/s^{2}$)`}
+        math={String.raw`The time in which a force of 2 N produces a change of momentum of $0.4 kg-ms^{-1}$ in the body is`}
       />
     ),
-    image1: <Image g={i4} />,
 
-    optionA: <MathEq math={String.raw`A) $0.2 m/sec^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $9.8 m/sec^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $5 m/sec^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $4.8 m/sec^{2}$`} />,
+    optionA: "A) 0.2 s",
+    optionB: "B) 0.02 s",
+    optionC: "C) 0.5 s",
+    optionD: "D) 0.05 s",
   },
   {
     id: "28.",
     question: (
       <MathEq
-        math={String.raw`Three blocks of masses $m_{1}$, $m_{2}$ and $m_{3}$ are connected by massless strings as shown on a frictionless table. They are pulled with a force $T_{3}=40N$. If $m_{1}=10kg$, $m_{2}=6kg$ and $m_{3}=4kg$, the tension $T_{2}$ will be`}
+        math={String.raw`A gun of mass 10kg fires 4 bullets per second. The mass of each bullet is 20 g and the velocity of the bullet when it leaves the gun is $300 ms^{-1}$
+    The force required to hold the gun while firing is`}
       />
     ),
-    image1: <Image g={i5} />,
 
-    optionA: "A)	20 N",
-    optionB: "B)	40 N",
-    optionC: "C)	10 N",
-    optionD: "D)	32 N",
+    optionA: "A) 30 N",
+    optionB: "B) 22 N",
+    optionC: "C) 24 N",
+    optionD: "D) 20 N",
   },
   {
     id: "29.",
-    question: "When a body is stationary",
+    question:
+      "A gun is aimed at a target in a line of its barrel. The target is released and allowed to fall under gravity at the same instant the gun is fired. The bullet will",
 
-    optionA: "A)	There is no force acting on it",
-    optionB: "B)	The force acting on it is not in contact with it",
-    optionC: "C)	The combination of forces acting on it balances each other",
-    optionD: "D)	The body is in vacuum",
+    optionA: "A) Pass above the target",
+    optionB: "B) Pass below the target",
+    optionC: "C) Hit the target",
+    optionD: "D) Certainly miss the target",
   },
   {
     id: "30.",
     question: (
       <MathEq
-        math={String.raw`An aircraft is moving with a velocity of $300ms^{-1}$. If all the forces acting on it are balanced, then `}
+        math={String.raw`Two bodies are projected with the same velocity. If one is projected at an angle of $30^{\circ}$ and the other at an angle of $60^{\circ}$ to the horizontal, the
+    ratio of the maximum heights reached is`}
       />
     ),
 
-    optionA: "A)	It still moves with the same velocity",
-    optionB: "B)	It will be just floating at the same point in space",
-    optionC: "C)	It will fall down instantaneously ",
-    optionD: "D)	It will lose its velocity gradually",
+    optionA: "A) 3 : 1",
+    optionB: "B) 1 : 3",
+    optionC: "C) 1 : 2",
+    optionD: "D) 2 : 1",
   },
 
   {
     id: "31.",
-    question:
-      "An atom of an element(X) has its K, L and M shells filled with some electrons. It reacts with sodium metal to form a compound NaX. The number of electrons in the M shell of the atom(X) will be",
+    question: [
+      <MathEq
+        math={String.raw`An element X combines with hydrogen to form a compound $XH_{3}$. The element X is placed on the right side of the periodic table. What is true about the element X?`}
+      />,
+      <div>'A) has three valence electrons'</div>,
+      <div>'B) is a metal and is solid'</div>,
+      <div>'C) is a non-metal and is a gas'</div>,
+      <MathEq
+        math={String.raw`D) $XH_{3}$ reacts with water to form a basic compound`}
+      />,
+    ],
 
-    optionA: "A)	Eight",
-    optionB: "B) Seven",
-    optionC: "C) Two",
-    optionD: "D) One",
+    optionA: "A) A, B and C",
+    optionB: "B) B, C and D",
+    optionC: "C) C, D and A",
+    optionD: "D) D, A and B",
   },
 
   {
     id: "32.",
-    question: [
-      <MathEq
-        math={String.raw`Oxygen gas reacts with hydrogen to produce water. The reaction is represented by the equation $O_{2\left(g \right )}+H_{2\left(g \right )}\rightarrow H_{2}O_{\left(g \right )}$ The above reaction is an example of`}
-      />,
-      "A) Oxidation of hydrogen",
-      "B) Reduction of oxygen",
-      "C) Reduction of hydrogen",
-      "D) Redox reaction",
-    ],
+    question:
+      "Which of the following statements regarding sulphur dioxide are true?",
 
-    optionA: "A)	A, B and C",
-    optionB: "B) B, C and D",
-    optionC: "C) A, C and D",
-    optionD: "D) A, B and D",
+    optionA:
+      "a)	Each molecule of sulphur dioxide consists of one atom of sulphur and one atom of oxygen",
+    optionB:
+      "b)	The two elements sulphur and oxygen are combined in a ratio of 1: 1 by weight",
+    optionC: "c)	A sulphur dioxide molecule cannot exist independently",
+    optionD:
+      "d)	A molecule of suphur dioxide isan example of homonuclear diatomic molecule",
   },
 
   {
     id: "33.",
     question:
-      "Which of the following is a suitable example for illustrating the law of conservation of mass ? (Atomic mass of O = 16; H = 1)",
+      "The mass number of an atom is 31. If the atom has 5 electrons in its M-shell, the number of neutrons present in the atom will be",
 
-    optionA:
-      "A)	18 g of water is formed by the combination of 16 g oxygen with 2 g of hydrogen.",
-    optionB:
-      "B)	18 g of water in liquid state is obtained by heating 18g of ice.",
-    optionC:
-      "C)	18 g of water is completely converted into vapour state on heating.",
-    optionD:
-      "D)	18 g of water freezes at 4 degree centigrade(C) to give same mass of ice",
+    optionA: "A)	15",
+    optionB: "B) 14",
+    optionC: "C) 17",
+    optionD: "D) none of these",
   },
 
   {
     id: "34.",
-    question: "An incorrect electronic configuration is",
+    question:
+      "Which of the following characteristics is/are incorrect in the following table?",
+    image1: <Image g={i3} />,
 
-    optionA: "A)	2, 8, 18, 1",
-    optionB: "B) 2, 8, 17, 2",
-    optionC: "C) 2, 8, 10",
-    optionD: "D) 2, 8, 14, 2",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 3",
+    optionD: "D) 4",
   },
 
   {
     id: "35.",
-    question: "An example of miscible liquids is",
+    question:
+      "Which among the following sets will have the same number of valence electrons?",
 
-    optionA: "A)	Coconut oil + water",
-    optionB: "B) castor oil + water",
-    optionC: "C) alcohol + water",
-    optionD: "D) kerosene + water",
+    optionA: <MathEq math={String.raw`A) $_{11}X^{23},_{20}Y^{40}$`} />,
+    optionB: <MathEq math={String.raw`B) $_{10}X^{20},_{19}Y^{39}$`} />,
+    optionC: <MathEq math={String.raw`C) $_{11}X^{23},_{19}Y^{39}$`} />,
+    optionD: <MathEq math={String.raw`D) $_{18}X^{40},_{26}Y^{40}$`} />,
   },
 
   {
     id: "36.",
     question:
-      "Match the column I with column II and select the correct option for the given codes",
-    image1: <Image g={i1} />,
-    image2: <Image g={i2} />,
+      "Match the mixture in column I with the type of mixture in column II and select the correct option for the given codes  ",
+    image1: <Image g={i4} />,
+    image2: <Image g={i5} />,
 
     optionA: "A) m",
-    optionB: "B) p",
-    optionC: "C) n",
-    optionD: "D) o",
+    optionB: "B) n",
+    optionC: "C) o",
+    optionD: "D) p",
   },
 
   {
     id: "37.",
     question: [
-      <div>
-        An element with atomic number 17 is placed in the group 17 of the long
-        form periodic table. Element with atomic number 9 is placed above and
-        with atomic number 35 is placed below it. Element with atomic number 16
-        is placed left and with atomic number 18 is placed right to it. Which of
-        the following statements are correct ?
-      </div>,
-      <div>(W) Valency of the element with atomic number 18 is zero</div>,
-      <div>
-        (X) Elements with same valency will have atomic number 16, 17 and 18
-      </div>,
-      <div>(Y) Valency of elements with atomic number 9, 17 and 35 is one</div>,
-      <div>
-        (Z) Element with atomic number 17 is more electronegative than element
-        with atomic numbers 16 and 35
-      </div>,
+      "The following reaction is employed in welding of railway tracks. x, y and z in the following equation respectively are:",
+      <MathEq
+        math={String.raw`$xAl+ Fe_{x}O_{y} \rightarrow Al_{2}O_{3}+2Fe+heat$`}
+      />,
     ],
 
-    optionA: "A)	W, X and Y",
-    optionB: "B) W, Y and Z",
-    optionC: "C) X, Y and Z",
-    optionD: "D) W, X and Z",
-  },
-
-  {
-    id: "38.",
-    question: "The vapor pressure is high in case of ",
-
-    optionA: "A)	water",
-    optionB: "B) coconut oil",
-    optionC: "C) petrol",
-    optionD: "D) all of these",
-  },
-
-  {
-    id: "39.",
-    question: (
-      <MathEq
-        math={String.raw`The atomic number of an element M is 16. The number of electrons in its ion $M^{2-}$ will be`}
-      />
-    ),
-
-    optionA: "A)	16",
-    optionB: "B) 14",
-    optionC: "C) 18",
+    optionA: "A)	2, 3, 2",
+    optionB: "B) 2, 1, 1",
+    optionC: "C) 2, 2, 2",
     optionD: "D) none",
   },
 
   {
-    id: "40.",
-    question: [
-      <div>
-        The correct increasing order of valency of a positive radical for the
-        following is:
-      </div>,
-      <MathEq
-        math={String.raw`i) $A \left( H_{2}PO_{4}\right)_{2}$  ii) $B_{2}O$  iii) $C_{2} \left( SO_{4}\right)_{3}$`}
-      />,
-    ],
+    id: "38.",
+    question:
+      "When perfume is poured on a palm, a cooling sensation is perceived. Name for the  phenomenon associated with it is",
 
-    optionA: "A) iii >i> ii",
-    optionB: "B) iii > ii > I",
-    optionC: "C) ii >i> iii",
-    optionD: "D) i> ii > iii",
+    optionA: "A)	cooling",
+    optionB: "B) sublimation",
+    optionC: "C) condensation",
+    optionD: "D) none",
+  },
+
+  {
+    id: "39.",
+    question: "Which of the following is a mismatch",
+    image2: <Image g={i6} />,
+
+    optionA: "A)	M & N",
+    optionB: "B) N & O",
+    optionC: "C) N & P",
+    optionD: "D) M & O",
+  },
+
+  {
+    id: "40.",
+    question: "Explosion takes place in ",
+
+    optionA: "A)	lamps",
+    optionB: "B) lanterns",
+    optionC: "C) crackers",
+    optionD: "D) none of these",
   },
 
   {
     id: "41.",
-    question: "Inexhaustible source among the following is",
+    question: "The metallic rods/plates used in electrolysis are called",
 
-    optionA: "A)	coal",
-    optionB: "B) petroleum",
-    optionC: "C) solar energy",
-    optionD: "D) natural gas",
+    optionA: "A)	Electric charges",
+    optionB: "B) electrolytes",
+    optionC: "C) resistors",
+    optionD: "D) none of these",
   },
 
   {
     id: "42.",
     question: [
-      <div>Assertion (A): Mercury is not a metal</div>,
+      <div>Assertion (A): pure compounds are homogeneous substances</div>,
       <div>
-        Reason (R): Mercury is not sonorous and does not show malleability and
-        ductility
+        Reason (R): compounds cannot be separated into constituent elements by
+        physical methods
       </div>,
     ],
 
-    optionA: "A)	A and R  ae true",
+    optionA: "A)	A and R  are true",
     optionB: "B) A and R are false",
     optionC: "C) A is true, but R is false",
     optionD: "D) A is false, but R is true",
@@ -833,42 +822,50 @@ export const questionsAll = [
 
   {
     id: "43.",
-    question:
-      "Two elements 'X' and 'Y' have 14 and 8 electrons in M- and N-shells respectively. Then the ratio of their atomic numbers is",
+    question: [
+      <MathEq
+        math={String.raw`During the separation of acetone (b.p. $56^{\circ}$ ) from water (b.p. 373K) by fractional distillation, the following steps are carried out.`}
+      />,
+      <div>i) Water remains in the distillation flask.</div>,
+      <div>
+        ii) The acetone - water mixture is taken in a distillation flask and the
+        flask is heated at a temperature equal to or more than the boiling point
+        of acetone but less than that of water.
+      </div>,
+      <div>
+        iii) As the vapour pass through the fractionating column, they get
+        condensed and the liquid formed is collected in the receiver.
+      </div>,
+      <div>
+        iv) When the mixture in the flask is subjected to slow heating, acetone,
+        being more volatile than water, gets vapourised first.
+      </div>,
+    ],
 
-    optionA: "A)	2 : 3",
-    optionB: "B) 3 : 4",
-    optionC: "C) 3 : 2",
-    optionD: "D) 1 : 2",
+    optionA: "A)	iii, i, iv, ii",
+    optionB: "B) ii, iv, i, iii",
+    optionC: "C) iii, i, ii, iv",
+    optionD: "D) ii, iv, iii, i",
   },
 
   {
     id: "44.",
-    question: "Which of the following is not a mixture?",
+    question: "A group of atoms possessing positive or negative charge",
 
-    optionA: "A)	Sodium chloride solution",
-    optionB: "B) brass",
-    optionC: "C) bronze",
-    optionD: "D) molten sodium chloride",
+    optionA: "A)	atom ",
+    optionB: "B) molecule  ",
+    optionC: "C) radical",
+    optionD: "D) valency",
   },
 
   {
     id: "45.",
-    question: [
-      <div>
-        Metals like sodium, potassium, calcium and magnesium are extracted by
-        electrolysis of their chlorides in molten state. These metals are not
-        extracted by reducing of their oxides with carbon because
-      </div>,
-      <div>(J) reduction with carbon is very expensive</div>,
-      <div>(K) carbon readily makes alloy with these metals</div>,
-      <div>(L) carbon has less affinity for oxygen than these metals</div>,
-      <div>(M) carbon is weaker reducing agent than these metals</div>,
-    ],
+    question:
+      "Chemical reactions which occur in presence of sunlight are called________",
 
-    optionA: "A)	J and K",
-    optionB: "B) L and M",
-    optionC: "C) M and N",
-    optionD: "D) N and J",
+    optionA: "A)	thermal",
+    optionB: "B) electrochemical",
+    optionC: "C) light",
+    optionD: "D) photochemical",
   },
 ];
