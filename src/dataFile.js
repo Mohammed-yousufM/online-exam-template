@@ -414,14 +414,10 @@ export const questionsAll = [
         number 17) to form a compound Z. Which of the following statements are
         true regarding this compound?
       </div>,
-      <MathEq
-        math={
-          (String.raw`I. . Molecular formula of Z is $XY_{2}$`,
-          (<div>II. It is soluble in water</div>),
-          (<div>III. X and Y are joined by sharing of electrons</div>),
-          (<div>IV. It would conduct electricity in the molten state.</div>))
-        }
-      />,
+      <MathEq math={String.raw`I. . Molecular formula of Z is $XY_{2}$`} />,
+      <div>II. It is soluble in water</div>,
+      <div>III. X and Y are joined by sharing of electrons</div>,
+      <div>IV. It would conduct electricity in the molten state.</div>,
     ],
 
     optionA: "A)	(II) and (III)",
