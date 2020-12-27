@@ -317,9 +317,9 @@ export const questionsAll = [
       "The magnitude of the centripetal force acting on a body of mass m executing uniform motion in a circle of radius r with speed v is",
 
     optionA: <MathEq math={String.raw`A) $mvr$`} />,
-    optionB: <MathEq math={String.raw`A) $\frac{mv^{2}}{r}$`} />,
-    optionC: <MathEq math={String.raw`A) $\frac{v}{r^{2}m}$`} />,
-    optionD: <MathEq math={String.raw`A) $\frac{v}{rm}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{mv^{2}}{r}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{v}{r^{2}m}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{v}{rm}$`} />,
   },
   {
     id: "24.",
@@ -375,10 +375,10 @@ export const questionsAll = [
     question:
       "A wagon weighing 1000 kg is moving with a velocity 50 km/h on smooth horizontal rails. A mass of 250 kg is dropped into it. The velocity with which it moves now is",
 
-    optionA: "a) 2.5 km/hour",
-    optionB: "b)	20 km/hour",
-    optionC: "c)	40 km/hour",
-    optionD: "d)	50 km/hour",
+    optionA: "A) 2.5 km/hour",
+    optionB: "B)	20 km/hour",
+    optionC: "C)	40 km/hour",
+    optionD: "D)	50 km/hour",
   },
   {
     id: "29.",
