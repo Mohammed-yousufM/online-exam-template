@@ -200,28 +200,38 @@ export const questionsAll = [
     id: "14.",
     question: (
       <MathEq
-        math={String.raw`$2tan^{2}45^{\circ}+cos^{2}30^{\circ}-sin^{2}60^{\circ}$ =`}
+        math={String.raw`In the Matrix $A=\begin{bmatrix}
+    2 &5  &19  &-7 \\ 
+     35&  -2& \frac{5}{2} & 12\\ 
+     \sqrt{3}&1  &-5  &17 
+    \end{bmatrix}$. Then order of the Matrix A is:`}
       />
     ),
 
-    optionA: "A) 3",
-    optionB: "B) 1",
-    optionC: "C) 0",
-    optionD: "D) 2",
+    optionA: "A) 2 x 3",
+    optionB: "B) 3 x 2",
+    optionC: "C) 4 x 3",
+    optionD: "D) 3 x 4",
   },
 
   {
     id: "15.",
     question: (
       <MathEq
-        math={String.raw`Convert the radian measure to degree measure $\frac{3\pi}{2}$`}
+        math={String.raw`Find the values of x,y and z from the following: $\begin{bmatrix}
+    4 & 3\\ 
+    x & 5
+    \end{bmatrix} = \begin{bmatrix}
+    y & z\\ 
+    1 & 5
+    \end{bmatrix}$`}
       />
     ),
 
-    optionA: <MathEq math={String.raw`A) $250^{\circ}$`} />,
-    optionB: <MathEq math={String.raw`B) $320^{\circ}$`} />,
-    optionC: <MathEq math={String.raw`C) $270^{\circ}$`} />,
-    optionD: <MathEq math={String.raw`D) $180^{\circ}$`} />,
+    optionA: "A) x=4 , y=3 , z=5",
+    optionB: "B) x=1 , y=3 , z=3",
+    optionC: "C) x=1 , y=4 , z=3",
+    optionD: "D) x= 5, y=3 , z=1",
   },
 
   {
