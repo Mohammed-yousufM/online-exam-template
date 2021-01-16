@@ -1,14 +1,8 @@
 import React from "react";
 import MathEq from "./MathEq";
 import Image from "./Image";
-import i1 from "./I1.png";
-import i2 from "./I2.png";
-import i3 from "./I3.png";
-import i4 from "./I4.png";
-import i5 from "./I5.png";
 import i6 from "./I6.bmp";
 import i7 from "./I7.bmp";
-import i8 from "./I8.bmp";
 
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "admin@1000" },
@@ -41,379 +35,371 @@ export const studentsDB = [
 export const questionsAll = [
   {
     id: "1.",
-    question:
-      "If the total surface area of a cube is 6 sq units, then what is the volume of the cube?",
+    question: "Which of the following is an empty set",
 
-    optionA: "A) 1 cu unit",
-    optionB: "B) 2 cu units",
-    optionC: "C) 4 cu units",
-    optionD: "D) 6 cu units",
+    optionA: <MathEq math={String.raw`A) {$\phi$}`} />,
+    optionB: "B) {0}",
+    optionC: <MathEq math={String.raw`C) {n $\epsilon$ N and n<1 }`} />,
+    optionD: "D) The set of all even prime numbers",
   },
 
   {
     id: "2.",
-    question:
-      "The maximum length of a pencil that can be kept in a rectangular box of dimensions 8cm x 6cm x 2cm, is",
+    question: (
+      <MathEq
+        math={String.raw`Let A = {x: x $\epsilon$ R; x$\geq$3}, B = {x: x $\epsilon$ R; x$\leq$5} then $A \cap B$=_____`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) 2$\sqrt{13} cm$`} />,
-    optionB: <MathEq math={String.raw`B) 2$\sqrt{14} cm$`} />,
-    optionC: <MathEq math={String.raw`C) 2$\sqrt{26} cm$`} />,
-    optionD: <MathEq math={String.raw`D) 10$\sqrt{2} cm$`} />,
+    optionA: `A) (3,5) `,
+    optionB: `B) [3,5] `,
+    optionC: `C) B `,
+    optionD: `D) (0, 5] `,
   },
 
   {
     id: "3.",
 
-    question: (
-      <MathEq
-        math={String.raw`A cube has each edge 2cm and a cuboid is 1cm long, 2cm wide and 3cm high. The paint in a certain container is sufficient to paint an area equal to $54 cm^{2}$. Which one of the following is correct? `}
-      />
-    ),
+    question: "If A = {1,2,2,1,3,4,3,4} then n(A)=",
 
-    optionA: "A) Both cube and cuboid can be painted",
-    optionB: "B) Only cube can be painted",
-    optionC: "C) Only cuboid can be painted",
-    optionD: "D) Neither cube nor cuboid can be painted",
+    optionA: "A) 0",
+    optionB: "B) 4",
+    optionC: "C) 8",
+    optionD: "D) 20",
   },
 
   {
     id: "4.",
-    question:
-      "The capacity of a cuboid tank of water is 50000L. Find the breadth of the tank. Find the breadth of the tank, if its length and depth are 2.5m and 10m, respectively.",
+    question: (
+      <MathEq
+        math={String.raw`The solution set of the equation in $x^{2}+x-2=0$ in roster form is`}
+      />
+    ),
 
-    optionA: "A) 2m",
-    optionB: "B) 4m",
-    optionC: "C) 9m",
-    optionD: "D) 6m",
+    optionA: "A) {1, -2}",
+    optionB: "B) {1, 2}",
+    optionC: "C) {-1, 2}",
+    optionD: (
+      <MathEq math={String.raw`D) {x: x $\epsilon$ R, $1\leq x \leq-2$}`} />
+    ),
   },
 
   {
     id: "5.",
-    question:
-      "The diameter of the base of a right circular cylinder is 14cm, while its length 40cm. Find the total surface area of the cylinder",
-
-    optionA: "A) 2068 sq cm",
-    optionB: "B) 1825 sq cm",
-    optionC: "C) 1925 sq cm",
-    optionD: "D) 2160 sq cm",
+    question: "If A= {1,2,3}, B={2,2,1,3,3} then",
+    optionA: "A) A=B",
+    optionB: <MathEq math={String.raw`B) $A \: \neq \: B$`} />,
+    optionC: "C) Can't say",
+    optionD: "D) A, B are not sets",
   },
 
   {
     id: "6.",
-    question:
-      "A rod of 2cm diameter and 30cm length is converted into a wire of 3m length of uniform thickness. The diameter of the wire is",
+    question: "If U = {a,b,c,d,e,f,g,h} and A={a,b,c} then complement of A is",
 
-    optionA: <MathEq math={String.raw`A) $2/10cm$`} />,
-    optionB: <MathEq math={String.raw`B) $2/\sqrt{10}cm$`} />,
-    optionC: <MathEq math={String.raw`C) $1/\sqrt{10}cm$`} />,
-    optionD: <MathEq math={String.raw`D) $1/10cm$`} />,
+    optionA: "A) {d,e,f}",
+    optionB: "B) {d,e,f,g,h}",
+    optionC: "C) {a,b,c}",
+    optionD: "D) {d,e,g,h}",
   },
 
   {
     id: "7.",
-    question: (
-      <MathEq
-        math={String.raw`The curved surface area of a cylinder pillar is 264 sq m and its volume is $924m^{3}$. The ratio of diameter to its height is`}
-      />
-    ),
+    question: "Which of the following not a well defined collection of objects",
 
-    optionA: "A) 7 : 3",
-    optionB: "B) 3 : 7",
-    optionC: "C) 7 : 6",
-    optionD: "D) 6 : 7",
+    optionA: "A) The set of Natural Numbers",
+    optionB: "B) Rivers of India",
+    optionC: "C) Various kinds of triangles",
+    optionD: "D) Five most renowned mathematicians of the world",
   },
 
   {
     id: "8.",
     question:
-      "The diameter of a roller is 84cm and its length 120cm. It takes 500 complete revolutions to move once over to level a playground. Find the area of the playground (in sq m).",
+      'Which of the following is the roster form of letters of word "SCHOOL"',
 
-    optionA: "A) 1632",
-    optionB: "B) 1817",
-    optionC: "C) 1532",
-    optionD: "D) 1584",
+    optionA: "A) {S,H,O,L}",
+    optionB: "B) {S,C,H,O,L}",
+    optionC: "C) {S,C,O,L}",
+    optionD: "D) {H,O,O,L}",
   },
 
   {
     id: "9.",
     question: (
       <MathEq
-        math={String.raw`The volume pf a right circular cone is $100 \pi cm ^{3}$ and its height is 12cm. Find its slant height`}
+        math={String.raw`Write the solution set of the equation $x^{2}+x-6=0$ in roster form`}
       />
     ),
 
-    optionA: "A) 13cm",
-    optionB: "B) 16cm",
-    optionC: "C) 9cm",
-    optionD: "D) 26cm",
+    optionA: "A) {2, -3}",
+    optionB: "B) {-1, -2}",
+    optionC: "C) {1, 2}",
+    optionD: "D) {-1, 2}",
   },
 
   {
     id: "10.",
-    question:
-      "The radius of the base of a right circular cone is doubled. To keep the volume fixed, the height of the cone will be",
-
-    optionA: "A) half of the previous height",
-    optionB: "B) one-third of the previous height",
-    optionC: "C) one-fourth of the previous height",
-    optionD: (
+    question: (
       <MathEq
-        math={String.raw`D) $\frac{1}{\sqrt{2}}$ times of the previous height`}
+        math={String.raw`Write the set {x:x is a positive integer and $x^{2}<40$} in the roster form`}
       />
     ),
+
+    optionA: "A) {1,2,3,4,5,6}",
+    optionB: "B) {1,2,3,4,5,6,7}",
+    optionC: "C) {2,3,4,5,6,7}",
+    optionD: "D) {0,1,2,3,5,6}",
   },
 
   {
     id: "11.",
-    question:
-      "If the volumes of two right circular cones are in the ratio 1 : 3 and their diameters are in the ratio 3 : 5, then the ratio of their heights is",
+    question: "____ set is subset of every set",
 
-    optionA: "A) 25 : 27",
-    optionB: "B) 1 : 5",
-    optionC: "C) 3 : 5",
-    optionD: "D) 5 : 27",
+    optionA: "A) U",
+    optionB: <MathEq math={String.raw`B) $\phi$`} />,
+    optionC: "C) finite",
+    optionD: "D) infinite set",
   },
 
   {
     id: "12.",
-    question: (
-      <MathEq
-        math={String.raw`The curved surface area and the total surface area of a cylinder are in the ratio 1 : 2. If the total surface area of the right cylinder is $616 cm^{2}$. Then its volume is`}
-      />
-    ),
+    question: "Which of the following is subset of A={1,3,5,7,9}",
 
-    optionA: <MathEq math={String.raw`A) 1632$cm^{3}$`} />,
-    optionB: <MathEq math={String.raw`B) 1078$cm^{3}$`} />,
-    optionC: <MathEq math={String.raw`C) 1232$cm^{3}$`} />,
-    optionD: <MathEq math={String.raw`D) 1848$cm^{3}$`} />,
+    optionA: "A) B={1,3}",
+    optionB: "B) C={1,3,5,6}",
+    optionC: "C) D={1,2,3,5,7}",
+    optionD: "D) E={1,2,3}",
   },
 
   {
     id: "13.",
-    question:
-      "What is the diameter of the largest circle lying on the surface of a sphere of surface area 616 sq cm ?",
-
-    optionA: "A) 14 cm",
-    optionB: "B) 10.5 cm",
-    optionC: "C) 7 cm",
-    optionD: "D) 3.5 cm",
+    question: (
+      <MathEq
+        math={String.raw`X={Ram, Geeta, Akbar}, Y={Geeta, David, Ashok} then $X \cup Y$`}
+      />
+    ),
+    optionA: "A) {Ram, Geeta, Akbar, David, Akbar}",
+    optionB: "B) {Geeta}",
+    optionC: "C) {Ram, Akbar}",
+    optionD: "D) {David}",
   },
 
   {
     id: "14.",
-    question:
-      "A sphere and a hemisphere have the same surface area. The ratio of their volumes is",
+    question: (
+      <MathEq
+        math={String.raw`A={1,2,3......}, B={2,3,5,7} $\Rightarrow$ then $A \cup B$`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{\sqrt{3}}{4} \: :1$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{3\sqrt{3}}{4} \: :1$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{\sqrt{3}}{8} \: :1$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{\sqrt{3}}{8} \: :1$`} />,
+    optionA: "A) A",
+    optionB: "B) B",
+    optionC: "C) null set",
+    optionD: "D) U",
   },
 
   {
     id: "15.",
-    question:
-      "A hemispherical bowl has 3.5cm radius. It is to be painted inside as well as outside. Find the cost of painting it at the rate of rupees 5 per 10 sq cm.",
+    question: "Let A= {a,e,i,o,u}, B={a,i,k,u} then A-B",
 
-    optionA: "A) 50",
-    optionB: "B) 81",
-    optionC: "C) 56",
-    optionD: "D) 77",
+    optionA: "A) {a,e}",
+    optionB: "B) {e,i}",
+    optionC: "C) {e,o}",
+    optionD: "D) {e,i,o}",
   },
 
   {
     id: "16.",
     question:
-      "Two balls are dropped from height h and 2h respectively from the earth surface. The ratio of time of these balls to reach the earth is",
+      "If a particle moves from point P (2,3,5) to point Q (3,4,5). Its displacement vector be",
 
-    optionA: <MathEq math={String.raw`A) 1 : $\sqrt{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $\sqrt{2}$ : 1`} />,
-    optionC: "C) 2 : 1",
-    optionD: "D) 1 : 4",
+    optionA: <MathEq math={String.raw`A) $\hat{i}+\hat{j}+10\hat{k}$`} />,
+    optionB: <MathEq math={String.raw`B) $\hat{i}+\hat{j}+5\hat{k}$`} />,
+    optionC: <MathEq math={String.raw`C) $\hat{i}+\hat{j}$`} />,
+    optionD: <MathEq math={String.raw`D) $2\hat{i}+4\hat{j}+6\hat{k}$`} />,
   },
 
   {
     id: "17.",
-    question: "Which of the following speed-time graphs exist in the nature?",
+    question: (
+      <MathEq
+        math={String.raw`A force of 5 N acts on a particle along a direction making an angle of $60^{circ}$ with vertical. Its vertical component be`}
+      />
+    ),
 
-    optionA: <Image g={i1} t={"A"} />,
-    optionB: <Image g={i2} t={"B"} />,
-    optionC: <Image g={i3} t={"C"} />,
-    optionD: "D) All of the above",
+    optionA: "A) 10 N",
+    optionB: "B) 3 N",
+    optionC: "C) 4 N",
+    optionD: "D) 2.5 N",
   },
 
   {
     id: "18.",
-    question:
-      "A particle travels 10m in first 5 sec and 10m in next 3 sec. Assuming constant acceleration what is the distance travelled in next 2 sec",
-
-    optionA: "A)	8.3 m",
-    optionB: "B)	9.3 m",
-    optionC: "C)	10.3 m",
-    optionD: "D)	None of above",
+    question: (
+      <MathEq
+        math={String.raw`The velocity of a body moving with a uniform acceleration of $2 m/sec^{2}$ is 10m/sec . Its velocity after an interval of 4 sec is`}
+      />
+    ),
+    optionA: "A)	12 m / sec",
+    optionB: "B)	14 m / sec",
+    optionC: "C)	16 m / sec",
+    optionD: "D)	18 m / sec",
   },
 
   {
     id: "19.",
-    question: (
-      <MathEq
-        math={String.raw`The wheel of toy car rotates about axis. It slows down from 400 rps to 200 rps in 2s. Then its angular retardation in $rads^{-2}$ is`}
-      />
-    ),
+    question:
+      "A particle starting from rest travels a distance x in first 2 seconds and a distance y in next two seconds, then",
 
-    optionA: <MathEq math={String.raw`A) $200 \pi$`} />,
-    optionB: "B) 100",
-    optionC: <MathEq math={String.raw`C) $400 \pi$`} />,
-    optionD: "D) None of these",
+    optionA: "A)	y = x",
+    optionB: "B)	y = 2x",
+    optionC: "C)	y = 3x",
+    optionD: "D)	y = 4x",
   },
 
   {
     id: "20.",
-    question:
-      "The magnitude of resultant of three vectors of magnitude 1, 2 and 3 whose directions are those of the sides of an equilateral triangle taken in order is",
+    question: (
+      <MathEq
+        math={String.raw`The initial velocity of a body moving along a straight line is 7 m / s . It has a uniform acceleration of $4 m / s^{2}$ . The distance covered by the body
+    in the 5th second of its motion is`}
+      />
+    ),
 
-    optionA: "A)	zero",
-    optionB: <MathEq math={String.raw`B) $2\sqrt{2}$ unit`} />,
-    optionC: <MathEq math={String.raw`C) $4\sqrt{3}$ unit`} />,
-    optionD: <MathEq math={String.raw`D) $\sqrt{3}$ unit`} />,
+    optionA: "A)	25 m",
+    optionB: "B)	35 m",
+    optionC: "C)	50 m",
+    optionD: "D)	85 m",
   },
 
   {
     id: "21.",
     question: (
       <MathEq
-        math={String.raw`The horizontal range of a projectile is $4\sqrt{3}$ times its maximum height. Its angle of projection will be`}
+        math={String.raw`A body of mass m is moving in a circle of radius r with a constant speed v . The force on the body is $\frac{mv^{2}}{r}$ and is directed towards the centre. What is the work done by this force in moving the body over half the circumference of the circle`}
       />
     ),
 
-    optionA: <MathEq math={String.raw`A) $45^{\circ}$`} />,
-    optionB: <MathEq math={String.raw`B) $60^{\circ}$`} />,
-    optionC: <MathEq math={String.raw`C) $90^{\circ}$`} />,
-    optionD: <MathEq math={String.raw`D) $30^{\circ}$`} />,
+    optionA: <MathEq math={String.raw`A) $\frac{mv^{2}}{r} \times \pi r$`} />,
+    optionB: "B) Zero",
+    optionC: <MathEq math={String.raw`C) $\frac{mv^{2}}{r^{2}} $`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{\pi r^{2}}{mv^{2}}$`} />,
   },
   {
     id: "22.",
-    question: (
-      <MathEq
-        math={String.raw`A car of mass 2000 kg is moving with a speed of $10 ms^{-1}$  on a circular path of radius 20 m on a level road. What must be the frictional force between the car and the road so that the car does not slip?`}
-      />
-    ),
+    question:
+      "If a particle moves in a circle describing equal angles in equal times, its velocity vector",
 
-    optionA: <MathEq math={String.raw`A) $10^{4}$N`} />,
-    optionB: <MathEq math={String.raw`B) $10^{3}$N`} />,
-    optionC: <MathEq math={String.raw`C) $10^{5}$N`} />,
-    optionD: <MathEq math={String.raw`D) $10^{2}$N`} />,
+    optionA: "A)	Remains constant",
+    optionB: "B)	Changes in magnitude",
+    optionC: "C)	Changes in direction",
+    optionD: "D)	Changes both in magnitude and direction",
   },
   {
     id: "23.",
     question:
-      "A car of mass 800 kg moves on a circular track of radius 40 m. If the coefficient of friction is 0.5, then maximum velocity with which the car can move is",
+      "A stone of mass m is tied to a string of length l and rotated in a circle with a constant speed v . If the string is released, the stone flies",
 
-    optionA: "A)	7 m/s",
-    optionB: "B)	14 m/s",
-    optionC: "C)	8 m/s",
-    optionD: "D)	12 m/s",
+    optionA: "A)	Radially outward",
+    optionB: "B)	Radially inward",
+    optionC: "C)	Tangentially outward",
+    optionD: (
+      <MathEq math={String.raw`D) With an acceleration $\frac{mv^{2}}{l}$`} />
+    ),
   },
   {
     id: "24.",
     question:
-      "Which of the following statements is false for a particle moving in a circle with a constant angular speed?",
+      "A body is moving in a circular path with a constant speed. It has",
 
-    optionA: "A)	The velocity vector is tangent to the circle",
-    optionB: "B)	The acceleration vector is tangent to the circle",
-    optionC: "C)	The acceleration vector point  to the center of the circle",
-    optionD:
-      "D)	The velocity and acceleration vectors are perpendicular to each other",
+    optionA: "A)	A constant velocity",
+    optionB: "B)	A constant acceleration",
+    optionC: "C)	An acceleration of constant magnitude",
+    optionD: "D)	An acceleration which varies with time",
   },
   {
     id: "25.",
     question:
-      "A cricket ball of mass 0.25 kg with speed 10 m/s collides with a bat and returns with same speed with in 0.01 s. The force acted on bat is",
+      "In an elevator moving vertically up with an acceleration g, the force exerted on the floor by a passenger of mass M is",
 
-    optionA: "A)	25 N",
-    optionB: "B)	50 N",
-    optionC: "C)	250 N",
-    optionD: "D)	500 N",
+    optionA: "A)	Mg",
+    optionB: "B)	1/2 Mg",
+    optionC: "C)	Zero",
+    optionD: "D)	2 Mg",
   },
   {
     id: "26.",
-    question: (
+    question: [
+      "A mass 1 kg is suspended by a thread. It is",
       <MathEq
-        math={String.raw`A block moving on a surface with velocity 20 ms$^{-1}$ comes to rest because of surface friction over a distance of 40 m. taking g=(10 ms$^{-2}$), the coefficient of dynamic friction is `}
-      />
-    ),
+        math={String.raw`lifted up with an acceleration $4.9m / s^{2}$`}
+      />,
+      <MathEq math={String.raw`lowered with an acceleration $4.9m / s^{2}$`} />,
+      <div>The ratio of the tensions is</div>,
+    ],
 
-    optionA: "A)	0.5",
-    optionB: "B)	0.3",
-    optionC: "C)	0.2",
-    optionD: "D)	0.1",
+    optionA: "A)	3:1",
+    optionB: "B)	1:3",
+    optionC: "C)	1:2",
+    optionD: "D)	2:1",
   },
   {
     id: "27.",
-    question: (
-      <MathEq
-        math={String.raw`Two masses $m_{1}=5 kg$ and $m_{2}=4.8 kg$ tied to a string are hanging over a light frictionless pulley. What is the acceleration of the masses when they are free to move (g=9.8 ms$^{-2}$)`}
-      />
-    ),
-    image1: <Image g={i4} />,
-    optionA: <MathEq math={String.raw`A) $0.2m/s^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $9.8m/s^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $5m/s^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $4.8 m/s^{2}$`} />,
+    question:
+      "A body moves a distance of 10 m along a straight line under the action of a force of 5 N. If the work done is 25 joules, the angle which the force makes with the direction of motion of the body is",
+
+    optionA: <MathEq math={String.raw`A) $0^{\circ}$`} />,
+    optionB: <MathEq math={String.raw`B) $30^{\circ}$`} />,
+    optionC: <MathEq math={String.raw`C) $60^{\circ}$`} />,
+    optionD: <MathEq math={String.raw`D) $90^{\circ}$`} />,
   },
   {
     id: "28.",
     question:
-      "A horizontal force of 10 N is necessary to just hold a block stationary against a wall. The coefficient of friction between the block and the wall is 0.2. The weight of the block is",
-    image1: <Image g={i5} />,
-    optionA: "A) 2 N",
-    optionB: "B) 20 N",
-    optionC: "C) 50 N",
-    optionD: "D) 100 N",
+      "You lift a heavy book from the floor of the room and keep it in the book-shelf having a height 2 m. In this process you take 5 seconds. The work done by you will depend upon",
+
+    optionA: "A) Mass of the book and time taken",
+    optionB: "B) Weight of the book and height of the book-shelf",
+    optionC: "C) Height of the book-shelf and time taken",
+    optionD: "D) Mass of the book, height of the book-shelf and time taken",
   },
   {
     id: "29.",
     question: (
       <MathEq
-        math={String.raw`A body of mass 10 kg slides along a rough horizontal surface. The coefficient of friction is $1/\sqrt{3}$. Taking $g=10 m/s^{2}$, the least force which acts an angle of $30^{\circ}$ to the horizontal is`}
+        math={String.raw`A force $\vec{F}=5\hat{i}+6\hat{j}-4\hat{k}$ acting on a body, produces a displacement of $\vec{s}=6\vec{i}+5\vec{k}$ Work done by the force is`}
       />
     ),
 
-    optionA: "A) 25 N",
-    optionB: "B) 100 N",
-    optionC: "C) 50 N",
-    optionD: <MathEq math={String.raw`D) $\frac{50}{\sqrt{3}}$ N`} />,
+    optionA: "A) 18 units",
+    optionB: "B) 15 units",
+    optionC: "C) 12 units",
+    optionD: "D) 10 units",
   },
   {
     id: "30.",
     question:
-      "The average force necessary to stop a bullet of mass 20 g moving with a speed of 250 m/s, as it penetrates into the wood for a distance of 12 cm is",
+      "A force of 5 N acts on a 15 kg body initially at rest. The work done by the force during the first second of motion of the body is",
 
-    optionA: <MathEq math={String.raw`A) $2.2 \times 10^{3}$ N`} />,
-    optionB: <MathEq math={String.raw`B) $3.2 \times 10^{3}$ N`} />,
-    optionC: <MathEq math={String.raw`C) $4.2 \times 10^{3}$ N`} />,
-    optionD: <MathEq math={String.raw`D) $5.2 \times 10^{3}$ N`} />,
+    optionA: "A) 5 J",
+    optionB: "B) 5/6 J",
+    optionC: "C) 6 J",
+    optionD: "D) 75 J",
   },
 
   {
     id: "31.",
-    question: [
-      <MathEq
-        math={String.raw`An element X combines with hydrogen to form a compound $XH_{3}$. The element X is placed on the right side of the periodic table. What is true about the element X?`}
-      />,
-      <div>(A) Has two valence electrons</div>,
-      <div>(B) Is a metal and is solid</div>,
-      <div>(C) Is a non-metal and is a gas</div>,
-      <div>(D) Has a 5 valence electrons</div>,
-      <MathEq
-        math={String.raw`(E) $XH_{3}$ reacts with water to form a basic compound`}
-      />,
-    ],
+    question:
+      "Which of the following is a suitableexample for illustrating the law ofconservation of mass ? (Atomic mass ofO = 16; H = 1)",
 
-    optionA: "A) A, B and C",
-    optionB: "B) B, C and D",
-    optionC: "C) B, D and E ",
-    optionD: "D) E, A and B",
+    optionA: "A) 18 g of water freezes at 4deg C to give same mass of ice",
+    optionB:
+      "B) 18g of water in liquid state isobtained by heating 18g of ice.",
+    optionC:
+      "C) 18g of water is completely convertedinto vapour state on heating.",
+    optionD:
+      "D) d) 18 g of water is formed by the combination of 16 g oxygen with 2 g of hydrogen",
   },
 
   {
@@ -422,7 +408,7 @@ export const questionsAll = [
 
     optionA: (
       <MathEq
-        math={String.raw`A) $Number of atoms = \frac{mass of substance x number of atoms in the molecule x N_{A}}{molar mass}$`}
+        math={String.raw`A) $Number of atoms = \frac{mass of substance x number of atoms in the molecule x N_{A}}{mass of substance}$`}
       />
     ),
     optionB: (
@@ -432,7 +418,7 @@ export const questionsAll = [
     ),
     optionC: (
       <MathEq
-        math={String.raw`C) $\frac{Mass of one atom of hydrogen}{mass of an electron}=1837$`}
+        math={String.raw`C) $\frac{mass of an electron}{Mass of one atom of hydrogen}=1837$`}
       />
     ),
     optionD: "D) Molar mass = mass x number of moles",
@@ -440,48 +426,62 @@ export const questionsAll = [
 
   {
     id: "33.",
-    question: "Which of the following is not a fossil fuel?",
+    question: "Coal is mainly carbon, also having some other elements like",
 
-    optionA: "A)	coal",
-    optionB: "B) petroleum",
-    optionC: "C) charcoal",
-    optionD: "D) Natural gas ",
+    optionA: "A) oxygen, hydrogen, nitrogen, and sulphur",
+    optionB: "B) chlorine, nitrogen, sulphur and helium",
+    optionC: "C) sulphur, phosphorus, iodine and oxygen",
+    optionD: "D) bromine, nitrogen, phosphorus and hydrogen",
   },
 
   {
     id: "34.",
-    question: "Which of the following synthetic fibres absorb more water?",
+    question: "Which statements are true for cotton clothes?",
 
-    optionA: "a)	Nylon",
-    optionB: "b) acrylic",
-    optionC: "c) Rayon",
-    optionD: "d) polyester",
+    optionA:
+      "a) It absorbs water efficiently but does not burn at a moderate speed.",
+    optionB:
+      "b) It does not absorb water efficiently but burns at a moderate speed",
+    optionC:
+      "c) It does not absorb water efficiently and does not burn at a moderate speed",
+    optionD: "d) It absorbs water efficiently and burns at a moderate speed",
   },
 
   {
     id: "35.",
-    question: "Some metals react with acids to evolve ____________ gas.",
+    question: (
+      <MathEq
+        math={String.raw`‘M’ and ‘N’ are two elements which form $M_{2}N_{3}$ and $M_{3}N_{4}. If 0.2 mol of $M_{2}N_{3}$ weighs 32 g and 0.4 mol of $M_{3}N_{4}$ weighs 92.8 g, the atomic weights of M and N respectively are `}
+      />
+    ),
 
-    optionA: "A)	oxygen",
-    optionB: "B) nitrogen",
-    optionC: "C) carbon dioxide",
-    optionD: "D) hydrogen",
+    optionA: "A) 16,56",
+    optionB: "B) 16,16",
+    optionC: "C) 56,16",
+    optionD: "D) 56,56",
   },
 
   {
     id: "36.",
-    question: "Which pair of molecules has the same number of electrons?",
+    question: [
+      "180 g of water can be represented as",
+      <div>i) 5 g mole of water</div>,
+      <div>ii) 10 moles of water</div>,
+      <MathEq math={String.raw`iii)	$6.023 x 10^{23}$ molecules of water`} />,
+      <MathEq math={String.raw`iv)	$6.023 x 10^{24}$ molecules of water`} />,
+    ],
 
-    optionA: <MathEq math={String.raw`A) $N_{2}$ and $F_{2}$`} />,
-    optionB: <MathEq math={String.raw`A) $Cl_{2}$ and $CO_{2}$`} />,
-    optionC: <MathEq math={String.raw`A) $H_{2}O$ and $H_{2}S$`} />,
-    optionD: <MathEq math={String.raw`A) $O_{2}$ and $C_{2}H_{4}$`} />,
+    optionA: "A) i  and ii only	",
+    optionB: "B) ii and iv only",
+    optionC: "C) ii and iii only",
+    optionD: "D) i, ii, iii and iv",
   },
 
   {
     id: "37.",
     question: [
       "Match the column I with column II and select the correct option for the given codes",
+      <div>(At.masses: Al-26.98; S-32.06; Na- 22.99; Cu-63.546;)</div>,
       <Image g={i6} />,
       <Image g={i7} />,
     ],
@@ -495,72 +495,73 @@ export const questionsAll = [
   {
     id: "38.",
     question:
-      "The type of combustion in which material suddenly bursts into flame without the application of any external agent is called",
+      "Place a piece of burning charcoal on an iron plate and cover it with a jar. The charcoal stop burning because",
 
-    optionA: "A)	Rapid combustion",
-    optionB: "B) slow combustion",
-    optionC: "C)	Spontaneous combustion",
-    optionD: "D) explosion",
+    optionA: "A) Its ignition temperature is lowered",
+    optionB: "B) it becomes cold after sometime",
+    optionC: "C) a spontaneous reaction occurs",
+    optionD: "D) none of these",
   },
 
   {
     id: "39.",
-    question:
-      "Ashutosh is conducting an experiment in the laboratory involving compound D. one mole of compound D weighs 35 g. in one experiment he consumed 105 g of D while in the other he required only 70 g of compound D. The number of moles of D Ashutosh used would be respectively",
+    question: [
+      "Two chemical species X and Y combine together to form a product P which contains both Xand  Y.",
+      <MathEq math={String.raw`X + Y $\rightarrow$ P`} />,
+      <div>
+        X and Y cannot be broken down into simpler substances by simple chemical
+        reactions. Which of the following concerning the species X, Y and P are
+        correct?
+      </div>,
+      <div>(i) P is a compound</div>,
+      <div>(ii) X and Y are compounds</div>,
+      <div>(iii) X and Y are elements</div>,
+      <div>(iv) P has a fixed composition</div>,
+    ],
 
-    optionA: "A)	2 & 1",
-    optionB: "B) 2 & 3",
-    optionC: "C) 3 & 2",
-    optionD: "D) 1 & 2",
+    optionA: "A)	(i), (ii) and (iii)",
+    optionB: "B) (i), (ii) and (iv)",
+    optionC: "C) (ii), (iii) and (iv)",
+    optionD: "D) (i), (iii) and (iv)",
   },
 
   {
     id: "40.",
-    question: ["Which row is mismatch in the following:", <Image g={i8} />],
+    question:
+      "The greenish deposit on the surface of copper vessel is chemically a mixture of ",
 
-    optionA: "A) J",
-    optionB: "B) K & N",
-    optionC: "C) L & M",
-    optionD: "D) M",
+    optionA: <MathEq math={String.raw`A) $Cu(OH)_{2} \:  and \: CuO$`} />,
+    optionB: <MathEq math={String.raw`B) $CuO \: and \: CuCO_{3}$`} />,
+    optionC: <MathEq math={String.raw`C) $Cu_{2}O \: and \: CuO$`} />,
+    optionD: <MathEq math={String.raw`D) $Cu(OH)_{2} and CuCO_{3}$`} />,
   },
 
   {
     id: "41.",
-    question:
-      "The non-metal present in garlic, eggs, hair and nails is ____________",
+    question: "The best conductor of electricity is",
 
-    optionA: "a)	chlorine",
-    optionB: "b) iodine",
-    optionC: "c) oxygen",
-    optionD: "d) sulphur",
+    optionA: "a) Distilled water",
+    optionB: "b) tap water",
+    optionC: "c) rain water",
+    optionD: "d) sea water",
   },
 
   {
     id: "42.",
     question: (
       <MathEq
-        math={String.raw`Two bulbs of $B_{1}$ and $B_{2}$ of equal capacity contain 10 g of Oxygen ($O_{2}$) and ozone ($O_{3}$) respectively. Which bulb will have greater number of oxygen atoms and which will have greater number of molecules? `}
+        math={String.raw`\Randheer took 2-3 crystals of $KMnO_{4}$ and dissolved them in 50 mL of water. He took 10 mL of this solution (half test-tube)and added 40 mL of water (2 test-tubes). He took 10 mL of new solution and added 40 mL of more water. He kept on diluting (adding water) like this 5 to 6 times and labelled the solutions as I, II, III, IV, V, VI. Which of the following is correct on the basis of experiment?`}
       />
     ),
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $B_{1}$ will have more number of atoms while $B_{2}$ will have less number of molecules`}
-      />
-    ),
-    optionB: (
-      <MathEq
-        math={String.raw`B)	$B_{1}$ will have more number of molecules while $B_{2}$ will have less number of atoms`}
-      />
-    ),
-    optionC: (
-      <MathEq
-        math={String.raw`C)	Both will contain the same number of atoms but $B_{1}$ contains more number of molecules`}
-      />
-    ),
+    optionA: "a) The colour of solution is green.",
+    optionB:
+      "b)	The order of darkness of purple coloured solutions is : I > II > III > IV > V > VI",
+    optionC:
+      "c)	The darkness of purple coloured solutions is I < II < III < IV < V < VI",
     optionD: (
       <MathEq
-        math={String.raw`D)	Both will contain the same number of molecules but $B_{1}$ contains more number of atoms`}
+        math={String.raw`d)	One crystal of $KMnO_{4}$ has one tiny particle.`}
       />
     ),
   },
@@ -568,8 +569,11 @@ export const questionsAll = [
   {
     id: "43.",
     question: [
-      <div>Assertion (A): True solution exhibits Tyndall effect</div>,
-      <div>Reason (R): Particles are very large in size</div>,
+      <div>
+        Assertion (A): solid carbon dioxide changes its state when exposed to
+        air
+      </div>,
+      <MathEq math={String.raw`Reason (R): $CO_{2}$ undergoes sublimation`} />,
     ],
 
     optionA: "A)	A and R  are true",
@@ -580,22 +584,35 @@ export const questionsAll = [
 
   {
     id: "44.",
-    question: "One of the following is not an electrolyte",
+    question: [
+      "Which of the following are the characteristics of isobars of an element?",
+      <div>(i) Isobars of an element have same number of neutrons</div>,
+      <div>
+        (ii) Isobars of an element have same number of protons and neutrons
+      </div>,
+      <div>(iii) Isobars of an element have similar physical properties</div>,
+      <div>(iv) Isobars of an element have same mass number</div>,
+    ],
 
-    optionA: "A)	Sulphuric acid  ",
-    optionB: "B) Lemon juice",
-    optionC: "C) Tamarind juice",
-    optionD: "D) Detergent solution",
+    optionA: "A)	(i) and (iii)",
+    optionB: "B) (ii) and (iv)",
+    optionC: "C) (i), (iii) and (iv) ",
+    optionD: "D) (ii), (iii) and (iv)",
   },
 
   {
     id: "45.",
-    question:
-      "A silicon ship used in an integrated chip has a mass of 5.68 mg. The number of silicon atoms present in this chip is (At. mass of Si is: 28.08)",
+    question: [
+      "Arrange the following in increasing order of number of molecules",
+      <MathEq math={String.raw`I)	0.5 mol of $H_{2}$`} />,
+      <MathEq math={String.raw`II)	4.0 g of $H_{2}$`} />,
+      <div>III)18 g of water</div>,
+      <div>IV. 2.2 g of carbon dioxide</div>,
+    ],
 
-    optionA: <MathEq math={String.raw`A) $1.2172 \: \times \: 10^{20}$`} />,
-    optionB: <MathEq math={String.raw`A) $12.172 \: \times \: 10^{20}$`} />,
-    optionC: <MathEq math={String.raw`A) $3.491 \: \times \: 10^{20}$`} />,
-    optionD: <MathEq math={String.raw`A) $1.2172 \: \times \: 10^{20}$`} />,
+    optionA: "A) II > III > I > IV",
+    optionB: "B) IV < I < III < II",
+    optionC: "C) I < II < III < IV",
+    optionD: "D)IV < III < I < II",
   },
 ];
