@@ -224,7 +224,7 @@ export const questionsAll = [
     id: "17.",
     question: (
       <MathEq
-        math={String.raw`A force of 5 N acts on a particle along a direction making an angle of $60^{circ}$ with vertical. Its vertical component be`}
+        math={String.raw`A force of 5 N acts on a particle along a direction making an angle of $60^{\circ}$ with vertical. Its vertical component be`}
       />
     ),
 
