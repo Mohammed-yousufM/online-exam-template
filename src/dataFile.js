@@ -139,7 +139,7 @@ export const questionsAll = [
       <MathEq
         math={String.raw`The number of elements in sets X,Y and Z are as shown in the Venn diagram. Find n($Z^{'}$)`}
       />,
-      <Image g={i4} />,
+      <Image g={i3} />,
     ],
     optionA: "A) 14",
     optionB: "B) 30",
