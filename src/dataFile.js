@@ -1,6 +1,9 @@
 import React from "react";
 import MathEq from "./MathEq";
 import Image from "./Image";
+import i1 from "./I1.jpeg";
+import i2 from "./I2.jpeg";
+import i3 from "./I3.jpeg";
 import i6 from "./I6.bmp";
 import i7 from "./I7.bmp";
 
@@ -35,121 +38,138 @@ export const studentsDB = [
 export const questionsAll = [
   {
     id: "1.",
-    question: "Which of the following is an empty set",
+    question: (
+      <MathEq
+        math={String.raw`Given $\zeta  =\left \{ x:1\leq x\leq 20, x \in  integer\right \}$, M= {perfect squares, N={2-digit number with sum of digits more than 5} and K = {multiples of 4}, find $M\cap K$}`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) {$\phi$}`} />,
-    optionB: "B) {0}",
-    optionC: <MathEq math={String.raw`C) {n $\epsilon$ N and n<1 }`} />,
-    optionD: "D) The set of all even prime numbers",
+    optionA: "A) {4, 16}",
+    optionB: "B) {4}",
+    optionC: "C) {16}",
+    optionD: "D) {4,4}",
   },
 
   {
     id: "2.",
     question: (
       <MathEq
-        math={String.raw`Let A = {x: x $\epsilon$ R; x$\geq$3}, B = {x: x $\epsilon$ R; x$\leq$5} then $A \cap B$=_____`}
+        math={String.raw`Given $\zeta  =\left \{ x:1\leq x\leq 20, x \in  integer\right \}$, M= {perfect squares, N={2-digit number with sum of digits more than 5} and K = {multiples of 4}, find $M\cap N$}`}
       />
     ),
 
-    optionA: `A) (3,5) `,
-    optionB: `B) [3,5] `,
-    optionC: `C) B `,
-    optionD: `D) (0, 5] `,
+    optionA: "A) {4, 16}",
+    optionB: "B) {4}",
+    optionC: "C) {16}",
+    optionD: "D) {4,4}",
   },
 
   {
     id: "3.",
 
-    question: "If A = {1,2,2,1,3,4,3,4} then n(A)=",
+    question: (
+      <MathEq
+        math={String.raw`If A = {2,4,6,7,9,10}, B={2,5,6,8,12,13,14,16} and C= {8,10,12,14,16} then find n($A \cup B \cup C$)`}
+      />
+    ),
 
     optionA: "A) 0",
     optionB: "B) 4",
-    optionC: "C) 8",
+    optionC: "C) 12",
     optionD: "D) 20",
   },
 
   {
     id: "4.",
-    question: (
+    question: [
       <MathEq
-        math={String.raw`The solution set of the equation in $x^{2}+x-2=0$ in roster form is`}
-      />
-    ),
+        math={String.raw`In the venn diagram, $\zeta$ is the universal set. List all the elements of $Q^{'}$`}
+      />,
+      <Image g={i1} />,
+    ],
 
-    optionA: "A) {1, -2}",
-    optionB: "B) {1, 2}",
-    optionC: "C) {-1, 2}",
-    optionD: (
-      <MathEq math={String.raw`D) {x: x $\epsilon$ R, $1\leq x \leq-2$}`} />
-    ),
+    optionA: "A) {2,3}",
+    optionB: "B) {1, 2,3}",
+    optionC: "C) {5,6,7}",
+    optionD: "D) {2,3,5,6,7}",
   },
 
   {
     id: "5.",
-    question: "If A= {1,2,3}, B={2,2,1,3,3} then",
-    optionA: "A) A=B",
-    optionB: <MathEq math={String.raw`B) $A \: \neq \: B$`} />,
-    optionC: "C) Can't say",
-    optionD: "D) A, B are not sets",
+    question: [
+      <MathEq
+        math={String.raw`The venn diagram show all the number of elements in sets $\zeta$, F and G.Find n($F^{'} \cap G^{'}$) $Q$`}
+      />,
+      <Image g={i2} />,
+    ],
+    optionA: "A) 2",
+    optionB: "B) 3",
+    optionC: "C) 5",
+    optionD: "D) 1",
   },
 
   {
     id: "6.",
-    question: "If U = {a,b,c,d,e,f,g,h} and A={a,b,c} then complement of A is",
+    question:
+      "In a group of 20 adults there are 8 females, 9 literate and 6 female literate. Find the number of male illiterates in the group.",
 
-    optionA: "A) {d,e,f}",
-    optionB: "B) {d,e,f,g,h}",
-    optionC: "C) {a,b,c}",
-    optionD: "D) {d,e,g,h}",
+    optionA: "A) 15",
+    optionB: "B) 6",
+    optionC: "C) 9",
+    optionD: "D) 12",
   },
 
   {
     id: "7.",
-    question: "Which of the following not a well defined collection of objects",
-
-    optionA: "A) The set of Natural Numbers",
-    optionB: "B) Rivers of India",
-    optionC: "C) Various kinds of triangles",
-    optionD: "D) Five most renowned mathematicians of the world",
+    question: [
+      <MathEq
+        math={String.raw`The number of elements in sets X,Y and Z are as shown in the Venn diagram. Find n($X^{'}$)`}
+      />,
+      <Image g={i3} />,
+    ],
+    optionA: "A) 14",
+    optionB: "B) 30",
+    optionC: "C) 7",
+    optionD: "D) 0",
   },
 
   {
     id: "8.",
-    question:
-      'Which of the following is the roster form of letters of word "SCHOOL"',
-
-    optionA: "A) {S,H,O,L}",
-    optionB: "B) {S,C,H,O,L}",
-    optionC: "C) {S,C,O,L}",
-    optionD: "D) {H,O,O,L}",
+    question: [
+      <MathEq
+        math={String.raw`The number of elements in sets X,Y and Z are as shown in the Venn diagram. Find n($Z^{'}$)`}
+      />,
+      <Image g={i4} />,
+    ],
+    optionA: "A) 14",
+    optionB: "B) 30",
+    optionC: "C) 7",
+    optionD: "D) 0",
   },
 
   {
     id: "9.",
-    question: (
-      <MathEq
-        math={String.raw`Write the solution set of the equation $x^{2}+x-6=0$ in roster form`}
-      />
-    ),
+    question:
+      "A survey of 30youths shows that 20 like to read and 15 like outdoor games. Find how many of them who like both reading and outdoor ga",
 
-    optionA: "A) {2, -3}",
-    optionB: "B) {-1, -2}",
-    optionC: "C) {1, 2}",
-    optionD: "D) {-1, 2}",
+    optionA: "A) 5",
+    optionB: "B) 15",
+    optionC: "C) 10",
+    optionD: "D) 20",
   },
 
   {
     id: "10.",
     question: (
       <MathEq
-        math={String.raw`Write the set {x:x is a positive integer and $x^{2}<40$} in the roster form`}
+        math={String.raw`Let A={x:x $\in$ R; x $\geq$ 3}, B={x:x $\in$ R; x $\leq$ 5} then $A \cap B$ = ____________`}
       />
     ),
 
-    optionA: "A) {1,2,3,4,5,6}",
-    optionB: "B) {1,2,3,4,5,6,7}",
-    optionC: "C) {2,3,4,5,6,7}",
-    optionD: "D) {0,1,2,3,5,6}",
+    optionA: "A) (3, 5)",
+    optionB: "B) [3, 5]",
+    optionC: "C) B",
+    optionD: "D) (0,5]",
   },
 
   {
@@ -175,197 +195,155 @@ export const questionsAll = [
   {
     id: "13.",
     question: (
-      <MathEq
-        math={String.raw`X={Ram, Geeta, Akbar}, Y={Geeta, David, Ashok} then $X \cup Y$`}
-      />
+      <MathEq math={String.raw`How many elements has P(A), if A= $\phi $`} />
     ),
-    optionA: "A) {Ram, Geeta, Akbar, David, Akbar}",
-    optionB: "B) {Geeta}",
-    optionC: "C) {Ram, Akbar}",
-    optionD: "D) {David}",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 3",
+    optionD: "D) 0",
   },
 
   {
     id: "14.",
-    question: (
-      <MathEq
-        math={String.raw`A={1,2,3......}, B={2,3,5,7} $\Rightarrow$ then $A \cup B$`}
-      />
-    ),
+    question: "The group of beautiful girls is",
 
-    optionA: "A) A",
-    optionB: "B) B",
-    optionC: "C) null set",
-    optionD: "D) U",
+    optionA: "A) null set",
+    optionB: "B) A finite set",
+    optionC: "C) not a set",
+    optionD: "D) Infinite set",
   },
 
   {
     id: "15.",
-    question: "Let A= {a,e,i,o,u}, B={a,i,k,u} then A-B",
+    question: "Which of the following is finite",
 
-    optionA: "A) {a,e}",
-    optionB: "B) {e,i}",
-    optionC: "C) {e,o}",
-    optionD: "D) {e,i,o}",
+    optionA: "A) A={x:x is set of points on a line}",
+    optionB: <MathEq math={String.raw`B) B={x:x $\in$ N and x is prime}`} />,
+    optionC: <MathEq math={String.raw`C) C={x:x $\in$ N and x is Odd}`} />,
+    optionD: <MathEq math={String.raw`D) D={x:x $\in$ N and (x-1)(x-2)=0}`} />,
   },
 
   {
     id: "16.",
     question:
-      "If a particle moves from point P (2,3,5) to point Q (3,4,5). Its displacement vector be",
+      "A body under the action of several forces will have zero acceleration",
 
-    optionA: <MathEq math={String.raw`A) $\hat{i}+\hat{j}+10\hat{k}$`} />,
-    optionB: <MathEq math={String.raw`B) $\hat{i}+\hat{j}+5\hat{k}$`} />,
-    optionC: <MathEq math={String.raw`C) $\hat{i}+\hat{j}$`} />,
-    optionD: <MathEq math={String.raw`D) $2\hat{i}+4\hat{j}+6\hat{k}$`} />,
+    optionA: "A) When the body is very light",
+    optionB: "B) When the body is very heavy",
+    optionC: "C) When the body is a point body",
+    optionD: "D) When the vector sum of all the forces acting on it is zero",
   },
 
   {
     id: "17.",
-    question: (
-      <MathEq
-        math={String.raw`A force of 5 N acts on a particle along a direction making an angle of $60^{\circ}$ with vertical. Its vertical component be`}
-      />
-    ),
+    question:
+      "Two trains travelling on the same track are approaching each other with equal speeds of 40 m/s. The drivers of the trains begin to decelerate simultaneously when they are just 2.0 km apart. Assuming the decelerations to be uniform and equal, the value of the deceleration to barely avoid collision should be ",
 
-    optionA: "A) 10 N",
-    optionB: "B) 3 N",
-    optionC: "C) 4 N",
-    optionD: "D) 2.5 N",
+    optionA: <MathEq math={String.raw`A) 11.8 $m/s^{2}$`} />,
+    optionB: <MathEq math={String.raw`B) 11.0 $m/s^{2}$`} />,
+    optionC: <MathEq math={String.raw`C) 2.1 $m/s^{2}$`} />,
+    optionD: <MathEq math={String.raw`D) 0.8 $m/s^{2}$`} />,
   },
 
   {
     id: "18.",
     question: (
       <MathEq
-        math={String.raw`The velocity of a body moving with a uniform acceleration of $2 m/sec^{2}$ is 10m/sec . Its velocity after an interval of 4 sec is`}
+        math={String.raw`A body moves from rest with a constant acceleration of $5 \: m/s^{2}$ . Its instantaneous speed (in m/s) at the end of 10 sec  is `}
       />
     ),
-    optionA: "A)	12 m / sec",
-    optionB: "B)	14 m / sec",
-    optionC: "C)	16 m / sec",
-    optionD: "D)	18 m / sec",
+    optionA: "A)	50",
+    optionB: "B)	5",
+    optionC: "C)	2",
+    optionD: "D)	0.5",
   },
 
   {
     id: "19.",
     question:
-      "A particle starting from rest travels a distance x in first 2 seconds and a distance y in next two seconds, then",
+      "A body is revolving with a constant speed along a circle. If its direction of motion is reversed but the speed remains the same, then which of the following statement is true",
 
-    optionA: "A)	y = x",
-    optionB: "B)	y = 2x",
-    optionC: "C)	y = 3x",
-    optionD: "D)	y = 4x",
+    optionA: "A)	The centripetal force will not suffer any change in magnitude",
+    optionB: "B)	The centripetal force will have its direction reversed",
+    optionC: "C)	The centripetal force would point away from centre.",
+    optionD: "D)	The centripetal force would be doubled",
   },
 
   {
     id: "20.",
-    question: (
-      <MathEq
-        math={String.raw`The initial velocity of a body moving along a straight line is 7 m / s . It has a uniform acceleration of $4 m / s^{2}$ . The distance covered by the body
-    in the 5th second of its motion is`}
-      />
-    ),
+    question: "When a body moves with a constant speed along a circle",
 
-    optionA: "A)	25 m",
-    optionB: "B)	35 m",
-    optionC: "C)	50 m",
-    optionD: "D)	85 m",
+    optionA: "A)	No work is done on it",
+    optionB: "B)	No acceleration is produced in the body",
+    optionC: "C)	No force acts on the body",
+    optionD: "D)	Its velocity remains constant",
   },
 
   {
     id: "21.",
-    question: (
-      <MathEq
-        math={String.raw`A body of mass m is moving in a circle of radius r with a constant speed v . The force on the body is $\frac{mv^{2}}{r}$ and is directed towards the centre. What is the work done by this force in moving the body over half the circumference of the circle`}
-      />
-    ),
+    question:
+      "A body of mass   moves in a circular path with uniform angular velocity. The motion of the body has constant",
 
-    optionA: <MathEq math={String.raw`A) $\frac{mv^{2}}{r} \times \pi r$`} />,
-    optionB: "B) Zero",
-    optionC: <MathEq math={String.raw`C) $\frac{mv^{2}}{r^{2}} $`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{\pi r^{2}}{mv^{2}}$`} />,
+    optionA: "A) Acceleration",
+    optionB: "B) Velocity",
+    optionC: "C) Momentum",
+    optionD: "D) Kinetic energy",
   },
   {
     id: "22.",
     question:
-      "If a particle moves in a circle describing equal angles in equal times, its velocity vector",
+      "At the top of the trajectory of a projectile, the directions of its velocity and acceleration are",
 
-    optionA: "A)	Remains constant",
-    optionB: "B)	Changes in magnitude",
-    optionC: "C)	Changes in direction",
-    optionD: "D)	Changes both in magnitude and direction",
+    optionA: "A)	Perpendicular to each other",
+    optionB: "B)	Parallel to each other",
+    optionC: "C)	Inclined to each other at an angle of 45deg",
+    optionD: "D)	Antiparallel to each other",
   },
   {
     id: "23.",
-    question:
-      "A stone of mass m is tied to a string of length l and rotated in a circle with a constant speed v . If the string is released, the stone flies",
-
-    optionA: "A)	Radially outward",
-    optionB: "B)	Radially inward",
-    optionC: "C)	Tangentially outward",
-    optionD: (
-      <MathEq math={String.raw`D) With an acceleration $\frac{mv^{2}}{l}$`} />
+    question: (
+      <MathEq
+        math={String.raw`An object is thrown along a direction inclined at an angle of $45 ^{\circ}$ with the horizontal direction. The horizontal range of the particle is equal to `}
+      />
     ),
+
+    optionA: "A)	Vertical height",
+    optionB: "B)	Twice the vertical height",
+    optionC: "C)	Thrice the vertical height",
+    optionD: "D) Four times the vertical height",
   },
   {
     id: "24.",
     question:
-      "A body is moving in a circular path with a constant speed. It has",
+      "The average force necessary to stop a bullet of mass 20 g moving with a speed of 250 m/s, as it penetrates into the wood for a distance of 12 cm is",
 
-    optionA: "A)	A constant velocity",
-    optionB: "B)	A constant acceleration",
-    optionC: "C)	An acceleration of constant magnitude",
-    optionD: "D)	An acceleration which varies with time",
+    optionA: <MathEq math={String.raw`A) $2.2 \times 10^{3}$ N`} />,
+    optionB: <MathEq math={String.raw`B) $3.2 \times 10^{3}$ N`} />,
+    optionC: <MathEq math={String.raw`C) $4.2 \times 10^{3}$ N`} />,
+    optionD: <MathEq math={String.raw`D) $5.2 \times 10^{3}$ N`} />,
   },
   {
     id: "25.",
     question:
-      "In an elevator moving vertically up with an acceleration g, the force exerted on the floor by a passenger of mass M is",
+      "The average resisting force that must act on a 5 kg mass to reduce its speed from 65 cm/s to 15 cm/s in 0.2s is",
 
-    optionA: "A)	Mg",
-    optionB: "B)	1/2 Mg",
-    optionC: "C)	Zero",
-    optionD: "D)	2 Mg",
+    optionA: "A)	12.5 N",
+    optionB: "B)	25 N",
+    optionC: "C)	50 N",
+    optionD: "D)	100 N",
   },
   {
     id: "26.",
-    question: [
-      "A mass 1 kg is suspended by a thread. It is",
-      <MathEq
-        math={String.raw`lifted up with an acceleration $4.9m / s^{2}$`}
-      />,
-      <MathEq math={String.raw`lowered with an acceleration $4.9m / s^{2}$`} />,
-      <div>The ratio of the tensions is</div>,
-    ],
+    question:
+      "A mass is hanging on a spring balance which is kept in a lift.  The lift ascends. The spring balance will show in its reading",
 
-    optionA: "A)	3:1",
-    optionB: "B)	1:3",
-    optionC: "C)	1:2",
-    optionD: "D)	2:1",
+    optionA: "A)	Increase",
+    optionB: "B)	Decrease",
+    optionC: "C)	No change",
+    optionD: "D)	Change depending upon velocity",
   },
   {
     id: "27.",
-    question:
-      "A body moves a distance of 10 m along a straight line under the action of a force of 5 N. If the work done is 25 joules, the angle which the force makes with the direction of motion of the body is",
-
-    optionA: <MathEq math={String.raw`A) $0^{\circ}$`} />,
-    optionB: <MathEq math={String.raw`B) $30^{\circ}$`} />,
-    optionC: <MathEq math={String.raw`C) $60^{\circ}$`} />,
-    optionD: <MathEq math={String.raw`D) $90^{\circ}$`} />,
-  },
-  {
-    id: "28.",
-    question:
-      "You lift a heavy book from the floor of the room and keep it in the book-shelf having a height 2 m. In this process you take 5 seconds. The work done by you will depend upon",
-
-    optionA: "A) Mass of the book and time taken",
-    optionB: "B) Weight of the book and height of the book-shelf",
-    optionC: "C) Height of the book-shelf and time taken",
-    optionD: "D) Mass of the book, height of the book-shelf and time taken",
-  },
-  {
-    id: "29.",
     question: (
       <MathEq
         math={String.raw`A force $\vec{F}=5\hat{i}+6\hat{j}-4\hat{k}$ acting on a body, produces a displacement of $\vec{s}=6\vec{i}+5\vec{k}$ Work done by the force is`}
@@ -378,7 +356,7 @@ export const questionsAll = [
     optionD: "D) 10 units",
   },
   {
-    id: "30.",
+    id: "28.",
     question:
       "A force of 5 N acts on a 15 kg body initially at rest. The work done by the force during the first second of motion of the body is",
 
@@ -387,193 +365,195 @@ export const questionsAll = [
     optionC: "C) 6 J",
     optionD: "D) 75 J",
   },
+  {
+    id: "29.",
+    question:
+      "What average horsepower is developed by an 80 kg man while climbing in 10 s  a flight of stairs that rises 6 m vertically",
+
+    optionA: "A) 0.63 HP",
+    optionB: "B) 1.26 HP",
+    optionC: "C) 1.8 HP",
+    optionD: "D) 2.1 HP",
+  },
+  {
+    id: "30.",
+    question:
+      "A car of mass 1000 kg accelerates uniformly from rest to a velocity of 54 km/hour in 5s. The average power of the engine during this period in watts is (neglect friction)",
+
+    optionA: "A) 2000 W",
+    optionB: "B) 22500 W",
+    optionC: "C) 5000 W",
+    optionD: "D) 2250 W",
+  },
 
   {
     id: "31.",
-    question:
-      "Which of the following is a suitableexample for illustrating the law ofconservation of mass ? (Atomic mass ofO = 16; H = 1)",
+    question: [
+      "Which of the following are correct about a chemical equation ?",
+      <div>(A) it tells about feasibility of that reaction</div>,
+      <div>(B) it does not indicate the rate of a reaction</div>,
+      <div>
+        (C) it tells the ratio of the masses of the reactants and products
+      </div>,
+      <div>
+        (D) it tells about whether or not heat will be liberated or absorbed
+      </div>,
+      <div>(E) it saves time and space in writing</div>,
+    ],
 
-    optionA: "A) 18 g of water freezes at 4deg C to give same mass of ice",
-    optionB:
-      "B) 18g of water in liquid state isobtained by heating 18g of ice.",
-    optionC:
-      "C) 18g of water is completely convertedinto vapour state on heating.",
-    optionD:
-      "D) d) 18 g of water is formed by the combination of 16 g oxygen with 2 g of hydrogen",
+    optionA: "A) A, B and C ",
+    optionB: "B) B, C and D",
+    optionC: "C) B, C and E ",
+    optionD: "D) all of the above",
   },
 
   {
     id: "32.",
-    question: "Which of the following equation is incorrect?",
+    question:
+      "The diameter of zinc atom is 2.6 Ao. the number of atoms present in a length of 1.6 cm if the zinc atoms are arranged side by side lengthwise would be ",
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $Number of atoms = \frac{mass of substance x number of atoms in the molecule x N_{A}}{mass of substance}$`}
-      />
-    ),
-    optionB: (
-      <MathEq
-        math={String.raw`B) $Number of moles=\frac{No.of particles}{Avogadro number}$`}
-      />
-    ),
-    optionC: (
-      <MathEq
-        math={String.raw`C) $\frac{mass of an electron}{Mass of one atom of hydrogen}=1837$`}
-      />
-    ),
-    optionD: "D) Molar mass = mass x number of moles",
+    optionA: <MathEq math={String.raw`A) $6.023 \times 10^{23}$ `} />,
+    optionB: <MathEq math={String.raw`B) $6.153 \times 10^{7}$`} />,
+    optionC: <MathEq math={String.raw`C) $1.62 \times 10^{19}$`} />,
+    optionD: <MathEq math={String.raw`D) $6.15 \times 10^{19}$`} />,
   },
 
   {
     id: "33.",
-    question: "Coal is mainly carbon, also having some other elements like",
+    question: [
+      "Which of the following substances is used in the following applications?",
+      <div>-It is used as a fire proofing material</div>,
+      <div>-For sealing gaps in laboratory apparatus</div>,
+      <div>-It is used in making toys</div>,
+    ],
 
-    optionA: "A) oxygen, hydrogen, nitrogen, and sulphur",
-    optionB: "B) chlorine, nitrogen, sulphur and helium",
-    optionC: "C) sulphur, phosphorus, iodine and oxygen",
-    optionD: "D) bromine, nitrogen, phosphorus and hydrogen",
+    optionA: "A) Bleaching powder",
+    optionB: "B) baking soda ",
+    optionC: "C) washing soda",
+    optionD: "D) plaster of paris ",
   },
 
   {
     id: "34.",
-    question: "Which statements are true for cotton clothes?",
+    question: "Which of the given chemical equations in NOT balanced?",
 
-    optionA:
-      "a) It absorbs water efficiently but does not burn at a moderate speed.",
-    optionB:
-      "b) It does not absorb water efficiently but burns at a moderate speed",
-    optionC:
-      "c) It does not absorb water efficiently and does not burn at a moderate speed",
-    optionD: "d) It absorbs water efficiently and burns at a moderate speed",
+    optionA: (
+      <MathEq
+        math={String.raw`A) $3Fe + 4H_{2}O\rightarrow Fe_{3}O_{4}+4H_{2}$`}
+      />
+    ),
+    optionB: <MathEq math={String.raw`B) $KClO_{3}\rightarrow KCl+O_{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $CaCO_{3}\rightarrow CaO+CO_{2}$`} />,
+    optionD: (
+      <MathEq math={String.raw`D) $Mg+2HCl\rightarrow MgCl_{2}+H_{2}$`} />
+    ),
   },
 
   {
     id: "35.",
     question: (
       <MathEq
-        math={String.raw`‘M’ and ‘N’ are two elements which form $M_{2}N_{3}$ and $M_{3}N_{4}. If 0.2 mol of $M_{2}N_{3}$ weighs 32 g and 0.4 mol of $M_{3}N_{4}$ weighs 92.8 g, the atomic weights of M and N respectively are `}
+        math={String.raw`Find the total mass of neutrons (in kg) in 14 mg of $^{14}C$. (Assume that mass of a neutron = $1.675 x 10^{-27}kg$)`}
       />
     ),
 
-    optionA: "A) 16,56",
-    optionB: "B) 16,16",
-    optionC: "C) 56,16",
-    optionD: "D) 56,56",
+    optionA: <MathEq math={String.raw`A) $4.034 \times 10^{-8}$`} />,
+    optionB: <MathEq math={String.raw`B) $8.078 \times 10^{-6}$`} />,
+    optionC: <MathEq math={String.raw`C) $1.25 \times 10^{-9}$`} />,
+    optionD: <MathEq math={String.raw`D) $5.36 \times 10^{-7}$`} />,
   },
 
   {
     id: "36.",
-    question: [
-      "180 g of water can be represented as",
-      <div>i) 5 g mole of water</div>,
-      <div>ii) 10 moles of water</div>,
-      <MathEq math={String.raw`iii)	$6.023 x 10^{23}$ molecules of water`} />,
-      <MathEq math={String.raw`iv)	$6.023 x 10^{24}$ molecules of water`} />,
-    ],
+    question: "If a substance undergoes a change to form a new substance",
 
-    optionA: "A) i  and ii only	",
-    optionB: "B) ii and iv only",
-    optionC: "C) ii and iii only",
-    optionD: "D) i, ii, iii and iv",
+    optionA: "A) The physical properties of the new substance will be the same",
+    optionB: "B) The chemical properties of the new substance will be the same",
+    optionC:
+      "C) Both physical properties and chemical properties of the new substance will be the same",
+    optionD:
+      "D) Both physical properties and chemical properties of the new substance will be different",
   },
 
   {
     id: "37.",
     question: [
-      "Match the column I with column II and select the correct option for the given codes",
-      <div>(At.masses: Al-26.98; S-32.06; Na- 22.99; Cu-63.546;)</div>,
+      "Match the column I with column II and select the correct option for the given codes ",
       <Image g={i6} />,
       <Image g={i7} />,
     ],
 
-    optionA: "A) m",
-    optionB: "B) n",
-    optionC: "C) o",
-    optionD: "D) p",
+    optionA: "A) a",
+    optionB: "B) b",
+    optionC: "C) c",
+    optionD: "D) d",
   },
 
   {
     id: "38.",
-    question:
-      "Place a piece of burning charcoal on an iron plate and cover it with a jar. The charcoal stop burning because",
+    question: [
+      "Which of the following statements is/are true based on the given reactions?",
+      <MathEq math={String.raw`$ZnO+C\rightarrow Zn+CO$`} />,
+      <MathEq math={String.raw`$2Fe_{2}O_{3}+3C\rightarrow 4Fe+3CO_{2}$`} />,
+    ],
 
-    optionA: "A) Its ignition temperature is lowered",
-    optionB: "B) it becomes cold after sometime",
-    optionC: "C) a spontaneous reaction occurs",
-    optionD: "D) none of these",
+    optionA: "A) Carbon is reduced",
+    optionB: "B) metal oxide is oxidised",
+    optionC: "C) Metal oxide is reduced",
+    optionD: "D) both b & c",
   },
 
   {
     id: "39.",
-    question: [
-      "Two chemical species X and Y combine together to form a product P which contains both Xand  Y.",
-      <MathEq math={String.raw`X + Y $\rightarrow$ P`} />,
-      <div>
-        X and Y cannot be broken down into simpler substances by simple chemical
-        reactions. Which of the following concerning the species X, Y and P are
-        correct?
-      </div>,
-      <div>(i) P is a compound</div>,
-      <div>(ii) X and Y are compounds</div>,
-      <div>(iii) X and Y are elements</div>,
-      <div>(iv) P has a fixed composition</div>,
-    ],
+    question: "Fuels must not ",
 
-    optionA: "A)	(i), (ii) and (iii)",
-    optionB: "B) (i), (ii) and (iv)",
-    optionC: "C) (ii), (iii) and (iv)",
-    optionD: "D) (i), (iii) and (iv)",
+    optionA: "A)	burn in a controllable way	",
+    optionB: "B) have high calorific value",
+    optionC: "C) have low ignition temperature",
+    optionD: "D) pollute",
   },
 
   {
     id: "40.",
     question:
-      "The greenish deposit on the surface of copper vessel is chemically a mixture of ",
+      "If an agarbatti is lighted in one corner of a room, the smell can be felt after sometime in another corner of the room. This shows that",
 
-    optionA: <MathEq math={String.raw`A) $Cu(OH)_{2} \:  and \: CuO$`} />,
-    optionB: <MathEq math={String.raw`B) $CuO \: and \: CuCO_{3}$`} />,
-    optionC: <MathEq math={String.raw`C) $Cu_{2}O \: and \: CuO$`} />,
-    optionD: <MathEq math={String.raw`D) $Cu(OH)_{2} and CuCO_{3}$`} />,
+    optionA: "A) The perfume is strong",
+    optionB: "B) The room has a fan which circulates the perfume",
+    optionC: "C) Particles of matter are constantly moving",
+    optionD: "D) None of these",
   },
 
   {
     id: "41.",
-    question: "The best conductor of electricity is",
+    question:
+      "The inter particle distance is _______________ in gases and  _____________ in solids",
 
-    optionA: "a) Distilled water",
-    optionB: "b) tap water",
-    optionC: "c) rain water",
-    optionD: "d) sea water",
+    optionA: "a) Maximum, minimum",
+    optionB: "b) maximum, maximum",
+    optionC: "c) minimum, maximum",
+    optionD: "d) minimum. maximum ",
   },
 
   {
     id: "42.",
-    question: (
-      <MathEq
-        math={String.raw`\Randheer took 2-3 crystals of $KMnO_{4}$ and dissolved them in 50 mL of water. He took 10 mL of this solution (half test-tube)and added 40 mL of water (2 test-tubes). He took 10 mL of new solution and added 40 mL of more water. He kept on diluting (adding water) like this 5 to 6 times and labelled the solutions as I, II, III, IV, V, VI. Which of the following is correct on the basis of experiment?`}
-      />
-    ),
+    question:
+      "Rahul one day thought to clean his messy room. While cleaning he found items like old T-shirts, cable wire, cycle tyres, bottle of shaving foam, table cloth, broken toys, pain killer strips, stop cock of glass bottle and tube of face wash. Which of the following is a synthetic fibre?",
 
-    optionA: "a) The colour of solution is green.",
-    optionB:
-      "b)	The order of darkness of purple coloured solutions is : I > II > III > IV > V > VI",
-    optionC:
-      "c)	The darkness of purple coloured solutions is I < II < III < IV < V < VI",
-    optionD: (
-      <MathEq
-        math={String.raw`d)	One crystal of $KMnO_{4}$ has one tiny particle.`}
-      />
-    ),
+    optionA: "A)	stop cock of glass bottle.",
+    optionB: "B)	 broken toys",
+    optionC: "C)	pain killer strips	",
+    optionD: "D) Table cloth",
   },
 
   {
     id: "43.",
     question: [
+      <div>Assertion (A): steam and ice have same physical properties</div>,
       <div>
-        Assertion (A): solid carbon dioxide changes its state when exposed to
-        air
+        Reason (R): the conversion of steam to ice is a physical and chemical
+        change
       </div>,
-      <MathEq math={String.raw`Reason (R): $CO_{2}$ undergoes sublimation`} />,
     ],
 
     optionA: "A)	A and R  are true",
@@ -584,35 +564,27 @@ export const questionsAll = [
 
   {
     id: "44.",
-    question: [
-      "Which of the following are the characteristics of isobars of an element?",
-      <div>(i) Isobars of an element have same number of neutrons</div>,
-      <div>
-        (ii) Isobars of an element have same number of protons and neutrons
-      </div>,
-      <div>(iii) Isobars of an element have similar physical properties</div>,
-      <div>(iv) Isobars of an element have same mass number</div>,
-    ],
+    question:
+      "When an atom loses electrons, the species formed is called a (an) __________ and has a _________ charge.",
 
-    optionA: "A)	(i) and (iii)",
-    optionB: "B) (ii) and (iv)",
-    optionC: "C) (i), (iii) and (iv) ",
-    optionD: "D) (ii), (iii) and (iv)",
+    optionA: "A)	anion, positive",
+    optionB: "B) cation, negative",
+    optionC: "C) anion, negative ",
+    optionD: "D) cation, positive",
   },
 
   {
     id: "45.",
     question: [
-      "Arrange the following in increasing order of number of molecules",
-      <MathEq math={String.raw`I)	0.5 mol of $H_{2}$`} />,
-      <MathEq math={String.raw`II)	4.0 g of $H_{2}$`} />,
-      <div>III)18 g of water</div>,
-      <div>IV. 2.2 g of carbon dioxide</div>,
+      "15.	In the given equation what does ‘X’ stand for?",
+      <MathEq
+        math={String.raw`$2Al +\left ( X\right )H_{2}SO_{4} \: \rightarrow \: Al_{2}\left ( SO_{4}\right )_{3}+3H_{2}$`}
+      />,
     ],
 
-    optionA: "A) II > III > I > IV",
-    optionB: "B) IV < I < III < II",
-    optionC: "C) I < II < III < IV",
-    optionD: "D)IV < III < I < II",
+    optionA: "A) 2",
+    optionB: "B) 3",
+    optionC: "C) 1",
+    optionD: "D) 5",
   },
 ];
