@@ -1,11 +1,12 @@
 import React from "react";
 import MathEq from "./MathEq";
 import Image from "./Image";
-import i1 from "./I1.jpeg";
-import i2 from "./I2.jpeg";
-import i3 from "./I3.jpeg";
+import i1 from "./I1.bmp";
+import i2 from "./I2.bmp";
+import i3 from "./I3.bmp";
+import i4 from "./I4.bmp";
+import i5 from "./I5.bmp";
 import i6 from "./I6.bmp";
-import i7 from "./I7.bmp";
 
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "admin@1000" },
@@ -40,28 +41,24 @@ export const questionsAll = [
     id: "1.",
     question: (
       <MathEq
-        math={String.raw`Given $\zeta  =\left \{ x:1\leq x\leq 20, x \in  integer\right \}$, M= {perfect squares, N={2-digit number with sum of digits more than 5} and K = {multiples of 4}, find $M\cap K$}`}
+        math={String.raw`The degree of the polynomial $\frac{2}{3} x ^{4} -  \frac{1}{5} x + \frac{7}{8} x ^{7} +3$ is`}
       />
     ),
 
-    optionA: "A) {4, 16}",
-    optionB: "B) {4}",
-    optionC: "C) {16}",
-    optionD: "D) {4,4}",
+    optionA: "A) 1",
+    optionB: "B) 4",
+    optionC: "C) 7",
+    optionD: "D) 12",
   },
 
   {
     id: "2.",
-    question: (
-      <MathEq
-        math={String.raw`Given $\zeta  =\left \{ x:1\leq x\leq 20, x \in  integer\right \}$, M= {perfect squares, N={2-digit number with sum of digits more than 5} and K = {multiples of 4}, find $M\cap N$}`}
-      />
-    ),
+    question: "The zeros of the polynomial 2x-3 is",
 
-    optionA: "A) {4, 16}",
-    optionB: "B) {4}",
-    optionC: "C) {16}",
-    optionD: "D) {4,4}",
+    optionA: "A) 2/3",
+    optionB: "B) 3/2",
+    optionC: "C) 0",
+    optionD: "D) 3",
   },
 
   {
@@ -69,419 +66,420 @@ export const questionsAll = [
 
     question: (
       <MathEq
-        math={String.raw`If A = {2,4,6,7,9,10}, B={2,5,6,8,12,13,14,16} and C= {8,10,12,14,16} then find n($A \cup B \cup C$)`}
+        math={String.raw`If Degree of $9x^{5}y^{2}z^{r}$ is 15. Then r = _____`}
       />
     ),
 
-    optionA: "A) 0",
-    optionB: "B) 4",
-    optionC: "C) 12",
-    optionD: "D) 20",
+    optionA: "A) 8",
+    optionB: "B) 15",
+    optionC: "C) 7",
+    optionD: "D) 6",
   },
 
   {
     id: "4.",
-    question: [
+    question: (
       <MathEq
-        math={String.raw`In the venn diagram, $\zeta$ is the universal set. List all the elements of $Q^{'}$`}
-      />,
-      <Image g={i1} />,
-    ],
+        math={String.raw`Degree of the polynomial $\frac{x^{3}+x^{4}-x^{6}}{x^{2}}$ is _____`}
+      />
+    ),
 
-    optionA: "A) {2,3}",
-    optionB: "B) {1, 2,3}",
-    optionC: "C) {5,6,7}",
-    optionD: "D) {2,3,5,6,7}",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 3",
+    optionD: "D) 4",
   },
 
   {
     id: "5.",
-    question: [
+    question: (
       <MathEq
-        math={String.raw`The venn diagram show all the number of elements in sets $\zeta$, F and G.Find n($F^{'} \cap G^{'}$) $Q$`}
-      />,
-      <Image g={i2} />,
-    ],
-    optionA: "A) 2",
-    optionB: "B) 3",
-    optionC: "C) 5",
-    optionD: "D) 1",
+        math={String.raw`The addition of ($3x^{2}-6x=xy$), ($2x^{3}-5x^{2}-3y$) and ($7x+8y$) is `}
+      />
+    ),
+
+    optionA: <MathEq math={String.raw`A) $2x^{3}-8x^{2}+x+xy+5y$`} />,
+    optionB: <MathEq math={String.raw`B) $2x^{3}-2x^{2}+x+xy+5y$`} />,
+    optionC: <MathEq math={String.raw`C) $2x^{3}-2x^{2}+x+xy+5y$`} />,
+    optionD: <MathEq math={String.raw`D) $2x^{3}-2x^{2}-x+xy+5y$`} />,
   },
 
   {
     id: "6.",
-    question:
-      "In a group of 20 adults there are 8 females, 9 literate and 6 female literate. Find the number of male illiterates in the group.",
+    question: (
+      <MathEq math={String.raw`The product of $5x^{4}y^{2}$ and $-4xy$ is`} />
+    ),
 
-    optionA: "A) 15",
-    optionB: "B) 6",
-    optionC: "C) 9",
-    optionD: "D) 12",
+    optionA: <MathEq math={String.raw`A) $12x^{3}y$`} />,
+    optionB: <MathEq math={String.raw`B) $12x^{4}y$`} />,
+    optionC: <MathEq math={String.raw`C) $-20x^{5}y^{3}$`} />,
+    optionD: <MathEq math={String.raw`D) $-12x^{3}y$`} />,
   },
 
   {
     id: "7.",
-    question: [
+    question: (
       <MathEq
-        math={String.raw`The number of elements in sets X,Y and Z are as shown in the Venn diagram. Find n($X^{'}$)`}
-      />,
-      <Image g={i3} />,
-    ],
-    optionA: "A) 14",
-    optionB: "B) 30",
-    optionC: "C) 7",
-    optionD: "D) 0",
+        math={String.raw`Divide $4x^{3}-10x^{2}+5x$ by 2x, then the resultant value is`}
+      />
+    ),
+
+    optionA: <MathEq math={String.raw`A) $2x^{2}-5x+\frac{5}{2}$`} />,
+    optionB: <MathEq math={String.raw`B) $4x^{2}+5x+\frac{5}{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $4x^{2}-5x-\frac{5}{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $4x^{2}+5x-\frac{5}{2}$`} />,
   },
 
   {
     id: "8.",
-    question: [
-      <MathEq
-        math={String.raw`The number of elements in sets X,Y and Z are as shown in the Venn diagram. Find n($Z^{'}$)`}
-      />,
-      <Image g={i3} />,
-    ],
-    optionA: "A) 14",
-    optionB: "B) 30",
-    optionC: "C) 7",
-    optionD: "D) 0",
+    question: "(4x-9y)(3x+11y)=",
+
+    optionA: <MathEq math={String.raw`A) $12x^{2}+17xy-99y^{2}$`} />,
+    optionB: <MathEq math={String.raw`B) $12x^{2}-17xy+99y^{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $12x^{2}-17xy-99y^{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $12x^{2}+17xy+99y^{2}$`} />,
   },
 
   {
     id: "9.",
-    question:
-      "A survey of 30youths shows that 20 like to read and 15 like outdoor games. Find how many of them who like both reading and outdoor ga",
+    question: "The factorisation of 2a(3x+5y)-5b(3x+5y) is",
 
-    optionA: "A) 5",
-    optionB: "B) 15",
-    optionC: "C) 10",
-    optionD: "D) 20",
+    optionA: "A) (2a+5b)(3x-5y)",
+    optionB: "B) (2a-5b)(3x+5y)",
+    optionC: "C) (2a-5b)(3x-5y)",
+    optionD: "D) (2a+5b)(3x-5y)", //clone
   },
 
   {
     id: "10.",
-    question: (
-      <MathEq
-        math={String.raw`Let A={x:x $\in$ R; x $\geq$ 3}, B={x:x $\in$ R; x $\leq$ 5} then $A \cap B$ = ____________`}
-      />
-    ),
+    question: "The factorization of 2r(y-x)+3(x-y) is",
 
-    optionA: "A) (3, 5)",
-    optionB: "B) [3, 5]",
-    optionC: "C) B",
-    optionD: "D) (0,5]",
+    optionA: "A) (x-y)(2r+3)",
+    optionB: "B) (x-y)(3-2r)",
+    optionC: "C) (x-y)(2r-3)",
+    optionD: "D) (x-y)(r-3)",
   },
 
   {
     id: "11.",
-    question: "____ set is subset of every set",
+    question: <MathEq math={String.raw`The factors of $m^{2}-5m+9m-45$ are`} />,
 
-    optionA: "A) U",
-    optionB: <MathEq math={String.raw`B) $\phi$`} />,
-    optionC: "C) finite",
-    optionD: "D) infinite set",
+    optionA: "A) (m+5)(m-9)",
+    optionB: "B) (m-5)(m+9)",
+    optionC: "C) (m-5)(m-9)",
+    optionD: "D) (m+5)(m+9)",
   },
 
   {
     id: "12.",
-    question: "Which of the following is subset of A={1,3,5,7,9}",
+    question: "The factors of 2a-8ab-1+4b",
 
-    optionA: "A) B={1,3}",
-    optionB: "B) C={1,3,5,6}",
-    optionC: "C) D={1,2,3,5,7}",
-    optionD: "D) E={1,2,3}",
+    optionA: "A) (2a-1)(1-4b)",
+    optionB: "B) (2a-1)(1+4b)",
+    optionC: "C) (2a+1)(1+4b)",
+    optionD: "D) (a-1)(1-4b)",
   },
 
   {
     id: "13.",
     question: (
-      <MathEq math={String.raw`How many elements has P(A), if A= $\phi $`} />
+      <MathEq math={String.raw`The factorisation of $x^{2}-6x+8$ is`} />
     ),
-    optionA: "A) 1",
-    optionB: "B) 2",
-    optionC: "C) 3",
-    optionD: "D) 0",
+
+    optionA: "A) (x+4)(x+2)",
+    optionB: "B) (x-4)(x-2)",
+    optionC: "C) (x+4)(x-2)",
+    optionD: "D) (x-4)(x+2)",
   },
 
   {
     id: "14.",
-    question: "The group of beautiful girls is",
+    question: (
+      <MathEq math={String.raw`The factorisation of $x^{2}+x-42$ is`} />
+    ),
 
-    optionA: "A) null set",
-    optionB: "B) A finite set",
-    optionC: "C) not a set",
-    optionD: "D) Infinite set",
+    optionA: "A) (x-7)(x-6)",
+    optionB: "B) (x+7)(x-6)",
+    optionC: "C) (x-7)(x+6)",
+    optionD: "D) (x+7)(x+6)",
   },
 
   {
     id: "15.",
-    question: "Which of the following is finite",
+    question: <MathEq math={String.raw`$1+m^{3}=$`} />,
 
-    optionA: "A) A={x:x is set of points on a line}",
-    optionB: <MathEq math={String.raw`B) B={x:x $\in$ N and x is prime}`} />,
-    optionC: <MathEq math={String.raw`C) C={x:x $\in$ N and x is Odd}`} />,
-    optionD: <MathEq math={String.raw`D) D={x:x $\in$ N and (x-1)(x-2)=0}`} />,
+    optionA: <MathEq math={String.raw`A) (1+m)($1+m+m^{2}$)`} />,
+    optionB: <MathEq math={String.raw`B) (1-m)($1-m+m^{2}$)`} />,
+    optionC: <MathEq math={String.raw`C) (1+m)($1+m-m^{2}$)`} />,
+    optionD: <MathEq math={String.raw`D) (1+m)($1-m+m^{2}$)`} />,
   },
 
   {
     id: "16.",
     question:
-      "A body under the action of several forces will have zero acceleration",
+      "A vehicle of 100 kg is moving with a velocity of 5 m/sec. To stop it in 1/10 sec , the required force in opposite direction is",
 
-    optionA: "A) When the body is very light",
-    optionB: "B) When the body is very heavy",
-    optionC: "C) When the body is a point body",
-    optionD: "D) When the vector sum of all the forces acting on it is zero",
+    optionA: "A) 5000 N",
+    optionB: "B) 500 N",
+    optionC: "C) 50 N",
+    optionD: "D) 1000 N",
   },
 
   {
     id: "17.",
-    question:
-      "Two trains travelling on the same track are approaching each other with equal speeds of 40 m/s. The drivers of the trains begin to decelerate simultaneously when they are just 2.0 km apart. Assuming the decelerations to be uniform and equal, the value of the deceleration to barely avoid collision should be ",
+    question: (
+      <MathEq
+        math={String.raw`A boy having a mass equal to 40 kilograms is standing in an elevator. The force felt by the feet of the boy will be greatest when the elevator     g=($9.8 metres/sec^{2}$)`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) 11.8 $m/s^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) 11.0 $m/s^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) 2.1 $m/s^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) 0.8 $m/s^{2}$`} />,
+    optionA: "A) Stands still",
+    optionB: "B) Moves downward at a constant velocity of 4 metres/sec",
+    optionC: (
+      <MathEq
+        math={String.raw`C) Accelerates downward with an acceleration equal to $4 metres/sec^{2}$`}
+      />
+    ),
+    optionD: (
+      <MathEq
+        math={String.raw`D) Accelerates upward with an acceleration equal to $4 metres/sec^{2}$}`}
+      />
+    ),
   },
 
   {
     id: "18.",
     question: (
       <MathEq
-        math={String.raw`A body moves from rest with a constant acceleration of $5 \: m/s^{2}$ . Its instantaneous speed (in m/s) at the end of 10 sec  is `}
+        math={String.raw`A rocket has an initial mass of $20\times10^{3}$ kg . If it is to blast off with an initial acceleration of $4ms^{-2}$ , the initial thrust needed is ($g\cong \: 10ms^{-2}$) `}
       />
     ),
-    optionA: "A)	50",
-    optionB: "B)	5",
-    optionC: "C)	2",
-    optionD: "D)	0.5",
+    optionA: <MathEq math={String.raw`A) $6\times10^{4}$ N`} />,
+    optionB: <MathEq math={String.raw`B) $28\times10^{4}$ N`} />,
+    optionC: <MathEq math={String.raw`C) $20\times10^{4}$ N`} />,
+    optionD: <MathEq math={String.raw`D) $12\times10^{4}$ N`} />,
   },
 
   {
     id: "19.",
-    question:
-      "A body is revolving with a constant speed along a circle. If its direction of motion is reversed but the speed remains the same, then which of the following statement is true",
-
-    optionA: "A)	The centripetal force will not suffer any change in magnitude",
-    optionB: "B)	The centripetal force will have its direction reversed",
-    optionC: "C)	The centripetal force would point away from centre.",
-    optionD: "D)	The centripetal force would be doubled",
+    question: (
+      <MathEq
+        math={String.raw`A 500 kg horse pulls a cart of mass 1500 kg along a level road with an acceleration of $1ms^{-2}$ . If the coefficient of sliding friction is 0.2, then the force exerted by the horse in forward direction is	`}
+      />
+    ),
+    optionA: "A)	3000 N",
+    optionB: "B)	4000 N",
+    optionC: "C)	5000 N",
+    optionD: "D)	6000 N",
   },
 
   {
     id: "20.",
-    question: "When a body moves with a constant speed along a circle",
+    question:
+      "The maximum speed of a car on a road turn of radius 30m; if the coefficient of friction between the tyres and the road is 0.4; will be	",
 
-    optionA: "A)	No work is done on it",
-    optionB: "B)	No acceleration is produced in the body",
-    optionC: "C)	No force acts on the body",
-    optionD: "D)	Its velocity remains constant",
+    optionA: "A)	9.84 m/s ",
+    optionB: "B)	10.84 m/s",
+    optionC: "C)	7.84 m/s",
+    optionD: "D)	5.84 m/s",
   },
 
   {
     id: "21.",
     question:
-      "A body of mass   moves in a circular path with uniform angular velocity. The motion of the body has constant",
+      "A block of mass 50 kg slides over a horizontal distance of 1 m.  If the coefficient of friction between their surfaces is 0.2, then work done against friction is",
 
-    optionA: "A) Acceleration",
-    optionB: "B) Velocity",
-    optionC: "C) Momentum",
-    optionD: "D) Kinetic energy",
+    optionA: "A) 98 J ",
+    optionB: "B) 72 J",
+    optionC: "C) 56 J",
+    optionD: "D) 34 J",
   },
   {
     id: "22.",
-    question:
-      "At the top of the trajectory of a projectile, the directions of its velocity and acceleration are",
-
-    optionA: "A)	Perpendicular to each other",
-    optionB: "B)	Parallel to each other",
-    optionC: "C)	Inclined to each other at an angle of 45deg",
-    optionD: "D)	Antiparallel to each other",
-  },
-  {
-    id: "23.",
     question: (
       <MathEq
-        math={String.raw`An object is thrown along a direction inclined at an angle of $45 ^{\circ}$ with the horizontal direction. The horizontal range of the particle is equal to `}
+        math={String.raw`On the horizontal surface of a truck ($\mu  = 0.6$), a block of mass 1 kg is placed.  If the truck is accelerating at the rate of $5m/sec^{2}$ then frictional force on the block will be `}
       />
     ),
 
-    optionA: "A)	Vertical height",
-    optionB: "B)	Twice the vertical height",
-    optionC: "C)	Thrice the vertical height",
-    optionD: "D) Four times the vertical height",
+    optionA: "A)	5 N",
+    optionB: "B)	6 N",
+    optionC: "C)	5.88 N",
+    optionD: "D)	8 N",
+  },
+  {
+    id: "23.",
+    question:
+      "From a stationary tank of mass 125000 pound a small shell of mass 25 pound is fired with a muzzle velocity of 1000 ft/sec. The tank recoils with a velocity of	",
+
+    optionA: "A)	0.1 ft/sec",
+    optionB: "B)	0.2 ft/sec",
+    optionC: "C)	0.4 ft/sec",
+    optionD: "D)  0.8 ft/sec",
   },
   {
     id: "24.",
     question:
-      "The average force necessary to stop a bullet of mass 20 g moving with a speed of 250 m/s, as it penetrates into the wood for a distance of 12 cm is",
+      "A bomb of 12 kg explodes into two pieces of masses 4 kg  and 8 kg. The velocity of 8kg mass is 6 m/sec. The kinetic energy of the other mass is",
 
-    optionA: <MathEq math={String.raw`A) $2.2 \times 10^{3}$ N`} />,
-    optionB: <MathEq math={String.raw`B) $3.2 \times 10^{3}$ N`} />,
-    optionC: <MathEq math={String.raw`C) $4.2 \times 10^{3}$ N`} />,
-    optionD: <MathEq math={String.raw`D) $5.2 \times 10^{3}$ N`} />,
+    optionA: "A) 48 J ",
+    optionB: "B) 32 J",
+    optionC: "C) 24 J",
+    optionD: "D) 288 J",
   },
   {
     id: "25.",
     question:
-      "The average resisting force that must act on a 5 kg mass to reduce its speed from 65 cm/s to 15 cm/s in 0.2s is",
+      "The kinetic energy of a body of mass 3 kg and momentum 2 Ns is  ",
 
-    optionA: "A)	12.5 N",
-    optionB: "B)	25 N",
-    optionC: "C)	50 N",
-    optionD: "D)	100 N",
+    optionA: "A) 1 J ",
+    optionB: "B) 2/3 J",
+    optionC: "C) 3/2 J",
+    optionD: "D) 4 J",
   },
   {
     id: "26.",
     question:
-      "A mass is hanging on a spring balance which is kept in a lift.  The lift ascends. The spring balance will show in its reading",
+      "If the distance between two masses is doubled, the gravitational attraction between them ",
 
-    optionA: "A)	Increase",
-    optionB: "B)	Decrease",
-    optionC: "C)	No change",
-    optionD: "D)	Change depending upon velocity",
+    optionA: "A)	Is doubled",
+    optionB: "B)	Becomes four times",
+    optionC: "C)	Is reduced to half",
+    optionD: "D)	Is reduced to a quarter",
   },
   {
     id: "27.",
-    question: (
-      <MathEq
-        math={String.raw`A force $\vec{F}=5\hat{i}+6\hat{j}-4\hat{k}$ acting on a body, produces a displacement of $\vec{s}=6\vec{i}+5\vec{k}$ Work done by the force is`}
-      />
-    ),
+    question:
+      "Which of the following is the evidence to show that there must be a force acting on earth and directed towards the sun",
 
-    optionA: "A) 18 units",
-    optionB: "B) 15 units",
-    optionC: "C) 12 units",
-    optionD: "D) 10 units",
+    optionA: "A) Deviation of the falling bodies towards east",
+    optionB: "B) Revolution of the earth round the sun",
+    optionC: "C) Phenomenon of day and night ",
+    optionD: "D) Apparent motion of sun round the earth",
   },
   {
     id: "28.",
     question:
-      "A force of 5 N acts on a 15 kg body initially at rest. The work done by the force during the first second of motion of the body is",
+      "The gravitational force between two stones of mass 1 kg each separated by a distance of 1 metre in vacuum is",
 
-    optionA: "A) 5 J",
-    optionB: "B) 5/6 J",
-    optionC: "C) 6 J",
-    optionD: "D) 75 J",
+    optionA: "A) Zero",
+    optionB: <MathEq math={String.raw`B) 6.675x$10^{-5}$ newton`} />,
+    optionC: <MathEq math={String.raw`C) 6.675x$10^{-11}$ newton`} />,
+    optionD: <MathEq math={String.raw`D) 6.675x$10^{-8}$ newton`} />,
   },
   {
     id: "29.",
-    question:
-      "What average horsepower is developed by an 80 kg man while climbing in 10 s  a flight of stairs that rises 6 m vertically",
+    question: (
+      <MathEq
+        math={String.raw`The distance of neptune and saturn from sun are nearly $10^{13}$  and $10^{12}$  meters respectively. Assuming that they move in circular orbits, their periodic times will be in the ratio `}
+      />
+    ),
 
-    optionA: "A) 0.63 HP",
-    optionB: "B) 1.26 HP",
-    optionC: "C) 1.8 HP",
-    optionD: "D) 2.1 HP",
+    optionA: <MathEq math={String.raw`A) $\sqrt{10}$}`} />,
+    optionB: "B) 100 ",
+    optionC: <MathEq math={String.raw`C) $10\sqrt{10}$ `} />,
+    optionD: <MathEq math={String.raw`D) $1/\sqrt{10}$ `} />,
   },
   {
     id: "30.",
     question:
-      "A car of mass 1000 kg accelerates uniformly from rest to a velocity of 54 km/hour in 5s. The average power of the engine during this period in watts is (neglect friction)",
+      "If the earth is at one-fourth of its present distance from the sun, the duration of the year will be",
 
-    optionA: "A) 2000 W",
-    optionB: "B) 22500 W",
-    optionC: "C) 5000 W",
-    optionD: "D) 2250 W",
+    optionA: "A) Half the present year",
+    optionB: "B) One-eighth the present year",
+    optionC: "C) One-fourth the present year",
+    optionD: "D) One-sixth the present year",
   },
 
   {
     id: "31.",
     question: [
-      "Which of the following are correct about a chemical equation ?",
-      <div>(A) it tells about feasibility of that reaction</div>,
-      <div>(B) it does not indicate the rate of a reaction</div>,
+      "Which of the following statements are correct ?",
+      <div>(A) molecular mass of ammonium sulphate is 132</div>,
+      <div>(B) the cation in stannous chloride is divalent diatomic</div>,
       <div>
-        (C) it tells the ratio of the masses of the reactants and products
+        (C) a mixture of sugar and salt can be separated by sedimentation
       </div>,
+      <div>(D) all plastics do not have same arrangement of monomer units</div>,
       <div>
-        (D) it tells about whether or not heat will be liberated or absorbed
+        (E) mercury and gallium are metals which exist in liquid state at room
+        temperature
       </div>,
-      <div>(E) it saves time and space in writing</div>,
     ],
 
     optionA: "A) A, B and C ",
     optionB: "B) B, C and D",
-    optionC: "C) B, C and E ",
+    optionC: "C) A, D and E  ",
     optionD: "D) all of the above",
   },
 
   {
     id: "32.",
-    question:
-      "The diameter of zinc atom is 2.6 Ao. the number of atoms present in a length of 1.6 cm if the zinc atoms are arranged side by side lengthwise would be ",
+    question: "Which of the below ions are cations?",
 
-    optionA: <MathEq math={String.raw`A) $6.023 \times 10^{23}$ `} />,
-    optionB: <MathEq math={String.raw`B) $6.153 \times 10^{7}$`} />,
-    optionC: <MathEq math={String.raw`C) $1.62 \times 10^{19}$`} />,
-    optionD: <MathEq math={String.raw`D) $6.15 \times 10^{19}$`} />,
+    optionA: "a)	Phosphate",
+    optionB: "b) Carbonate",
+    optionC: "c) Aluminate",
+    optionD: "d) none of these",
   },
 
   {
     id: "33.",
-    question: [
-      "Which of the following substances is used in the following applications?",
-      <div>-It is used as a fire proofing material</div>,
-      <div>-For sealing gaps in laboratory apparatus</div>,
-      <div>-It is used in making toys</div>,
-    ],
+    question: "Which of the below ions is a trivalent polyatomic?",
 
-    optionA: "A) Bleaching powder",
-    optionB: "B) baking soda ",
-    optionC: "C) washing soda",
-    optionD: "D) plaster of paris ",
+    optionA: "a) Ammonium",
+    optionB: "b) nitride ",
+    optionC: "c) bicarbonate",
+    optionD: "d) Phosphate",
   },
 
   {
     id: "34.",
-    question: "Which of the given chemical equations in NOT balanced?",
+    question: "Which of the below ions is a trivalent monoatomic?",
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $3Fe + 4H_{2}O\rightarrow Fe_{3}O_{4}+4H_{2}$`}
-      />
-    ),
-    optionB: <MathEq math={String.raw`B) $KClO_{3}\rightarrow KCl+O_{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $CaCO_{3}\rightarrow CaO+CO_{2}$`} />,
-    optionD: (
-      <MathEq math={String.raw`D) $Mg+2HCl\rightarrow MgCl_{2}+H_{2}$`} />
-    ),
+    optionA: "a)	cuprous",
+    optionB: "b) peroxide",
+    optionC: "c) phosphide",
+    optionD: "d) Nitrate",
   },
 
   {
     id: "35.",
-    question: (
+    question: [
+      "Which of the following statements is/or correct",
       <MathEq
-        math={String.raw`Find the total mass of neutrons (in kg) in 14 mg of $^{14}C$. (Assume that mass of a neutron = $1.675 x 10^{-27}kg$)`}
-      />
-    ),
+        math={String.raw`I.	5 moles of $CO_{2}$ and 5 moles of $H_{2}O$ have the same mass`}
+      />,
+      <MathEq
+        math={String.raw`II.	100 g of $NH_{3}$ has more atoms than that present in 100 g of $N_{2}$.`}
+      />,
+      <MathEq
+        math={String.raw`III.	16 g of solid sulphur contains $3.76 \times 10^{22}$ molecules.`}
+      />,
+    ],
 
-    optionA: <MathEq math={String.raw`A) $4.034 \times 10^{-8}$`} />,
-    optionB: <MathEq math={String.raw`B) $8.078 \times 10^{-6}$`} />,
-    optionC: <MathEq math={String.raw`C) $1.25 \times 10^{-9}$`} />,
-    optionD: <MathEq math={String.raw`D) $5.36 \times 10^{-7}$`} />,
+    optionA: "a) I and II only",
+    optionB: "b) II and III only	",
+    optionC: "c) III only",
+    optionD: "d) I only",
   },
 
   {
     id: "36.",
-    question: "If a substance undergoes a change to form a new substance",
+    question: [
+      "Rambo prepared a flow chart to show classification of fibres and plastics. He left few columns blank.",
+      <Image g={i1} />,
+    ],
 
-    optionA: "A) The physical properties of the new substance will be the same",
-    optionB: "B) The chemical properties of the new substance will be the same",
-    optionC:
-      "C) Both physical properties and chemical properties of the new substance will be the same",
-    optionD:
-      "D) Both physical properties and chemical properties of the new substance will be different",
+    optionA: "A) a",
+    optionB: "B) b",
+    optionC: "C) c",
+    optionD: "D) d",
   },
 
   {
     id: "37.",
-    question: [
-      "Match the column I with column II and select the correct option for the given codes ",
-      <Image g={i6} />,
-      <Image g={i7} />,
-    ],
+    question: <Image g={i2} />,
 
     optionA: "A) a",
     optionB: "B) b",
@@ -492,68 +490,71 @@ export const questionsAll = [
   {
     id: "38.",
     question: [
-      "Which of the following statements is/are true based on the given reactions?",
-      <MathEq math={String.raw`$ZnO+C\rightarrow Zn+CO$`} />,
-      <MathEq math={String.raw`$2Fe_{2}O_{3}+3C\rightarrow 4Fe+3CO_{2}$`} />,
+      <Image g={i3} />,
+      <div>Which of the following statements are correct</div>,
     ],
 
-    optionA: "A) Carbon is reduced",
-    optionB: "B) metal oxide is oxidised",
-    optionC: "C) Metal oxide is reduced",
-    optionD: "D) both b & c",
+    optionA: "a) X can be condensed back to coal",
+    optionB: "b) Y and Z are useless products",
+    optionC: "c) Z starts burning when exposed to air",
+    optionD: "d) none of these",
   },
 
   {
     id: "39.",
-    question: "Fuels must not ",
+    question:
+      "Colors of flames produced by kerosene lamp, candle and Bunsen burner are respectively",
 
-    optionA: "A)	burn in a controllable way	",
-    optionB: "B) have high calorific value",
-    optionC: "C) have low ignition temperature",
-    optionD: "D) pollute",
+    optionA: "A) blue, yellow and yellow	",
+    optionB: "B) yellow, yellow and blue",
+    optionC: "C) orange, blue and yellow",
+    optionD: "D) yellow, orange and yellow",
   },
 
   {
     id: "40.",
-    question:
-      "If an agarbatti is lighted in one corner of a room, the smell can be felt after sometime in another corner of the room. This shows that",
+    question: <Image g={i5} />,
 
-    optionA: "A) The perfume is strong",
-    optionB: "B) The room has a fan which circulates the perfume",
-    optionC: "C) Particles of matter are constantly moving",
-    optionD: "D) None of these",
+    optionA: "a) Gas, liquid and liquid",
+    optionB: "b) solid, liquid and liquid ",
+    optionC: "c) liquid, solid and liquid",
+    optionD: "d) solid, liquid and gas",
   },
 
   {
     id: "41.",
-    question:
-      "The inter particle distance is _______________ in gases and  _____________ in solids",
+    question: <Image g={i4} />,
 
-    optionA: "a) Maximum, minimum",
-    optionB: "b) maximum, maximum",
-    optionC: "c) minimum, maximum",
-    optionD: "d) minimum. maximum ",
+    optionA: "A) I",
+    optionB: "B) II",
+    optionC: "C) III",
+    optionD: "D) IV",
   },
 
   {
     id: "42.",
-    question:
-      "Rahul one day thought to clean his messy room. While cleaning he found items like old T-shirts, cable wire, cycle tyres, bottle of shaving foam, table cloth, broken toys, pain killer strips, stop cock of glass bottle and tube of face wash. Which of the following is a synthetic fibre?",
+    question: (
+      <MathEq
+        math={String.raw`The atomic number of an element is 13. What will be the number of electrons in its ion $X^{3+}$?`}
+      />
+    ),
 
-    optionA: "A)	stop cock of glass bottle.",
-    optionB: "B)	 broken toys",
-    optionC: "C)	pain killer strips	",
-    optionD: "D) Table cloth",
+    optionA: "A) 16",
+    optionB: "B) 26",
+    optionC: "C) 13",
+    optionD: "D) None of these",
   },
 
   {
     id: "43.",
     question: [
-      <div>Assertion (A): steam and ice have same physical properties</div>,
       <div>
-        Reason (R): the conversion of steam to ice is a physical and chemical
-        change
+        Assertion (A): one mole of any substance is equal to its molecular
+        weight in grams
       </div>,
+      <MathEq
+        math={String.raw`Number of moles = $\frac{mass of substance in grams}{molecular weight}$`}
+      />,
     ],
 
     optionA: "A)	A and R  are true",
@@ -564,27 +565,25 @@ export const questionsAll = [
 
   {
     id: "44.",
-    question:
-      "When an atom loses electrons, the species formed is called a (an) __________ and has a _________ charge.",
+    question: <Image g={i6} />,
 
-    optionA: "A)	anion, positive",
-    optionB: "B) cation, negative",
-    optionC: "C) anion, negative ",
-    optionD: "D) cation, positive",
+    optionA: "a)	Krypton, oxygen, nitrogen, neon",
+    optionB: "b) nitrogen, neon, oxygen, krypton",
+    optionC: "c)  neon, nitrogen, oxygen, krypton",
+    optionD: "d) oxygen, nitrogen, neon, krypton",
   },
 
   {
     id: "45.",
-    question: [
-      "15.	In the given equation what does ‘X’ stand for?",
+    question: (
       <MathEq
-        math={String.raw`$2Al +\left ( X\right )H_{2}SO_{4} \: \rightarrow \: Al_{2}\left ( SO_{4}\right )_{3}+3H_{2}$`}
-      />,
-    ],
+        math={String.raw`Aspartame, an artificial sweetner has the molecular formula $C_{14}H_{18}N_{2}O_{5}$. What is the mass in grams of one molecule ? (At masses: C= 12.00, H = 1.008, N = 14.01, O = 16.00) `}
+      />
+    ),
 
-    optionA: "A) 2",
-    optionB: "B) 3",
-    optionC: "C) 1",
-    optionD: "D) 5",
+    optionA: <MathEq math={String.raw`A) $4.89 \times 10^{-21}$`} />,
+    optionB: <MathEq math={String.raw`B) $2.24 \times 10^{-21}$`} />,
+    optionC: <MathEq math={String.raw`C) $3.85 \times 10^{-22}$`} />,
+    optionD: <MathEq math={String.raw`D) $4.89 \times 10^{-22}$`} />,
   },
 ];
