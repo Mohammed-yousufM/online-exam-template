@@ -34,7 +34,8 @@ export const studentsDB = [
   { sNO: "20", userID: "mani", passw: "1020" },
   { sNO: "21", userID: "jaideep", passw: "1021" },
   { sNO: "22", userID: "abhinay", passw: "1022" },
-  { sNO: "23", userID: "rizwana", passw: "1023" }, //23
+  { sNO: "23", userID: "rizwana", passw: "1023" },
+  { sNO: "24", userID: "sujith", passw: "1024" }, //24
 ];
 
 export const questionsAll = [
