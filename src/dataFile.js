@@ -36,10 +36,10 @@ export const studentsDB = [
   { sNO: "22", userID: "abhinay", passw: "1022" },
   // { sNO: "23", userID: "rizwana", passw: "1023" },
   { sNO: "24", userID: "sujith", passw: "1024" }, //24
-  { sNO: "25", userID: "nandini", passw: "1025" },
+  // { sNO: "25", userID: "nandini", passw: "1025" },
   { sNO: "26", userID: "anil", passw: "1026" },
   { sNO: "27", userID: "mahamood", passw: "1027" },
-  { sNO: "28", userID: "maheedhar", passw: "1028" },
+  { sNO: "28", userID: "ananya", passw: "1028" },
   { sNO: "29", userID: "basim", passw: "1029" },
   { sNO: "30", userID: "diya", passw: "1030" },
   { sNO: "31", userID: "fahad", passw: "1031" },
