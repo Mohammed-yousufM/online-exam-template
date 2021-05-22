@@ -1,5 +1,5 @@
-import React from "react";
-import MathEq from "./MathEq";
+// import React from "react";
+// import MathEq from "./MathEq";
 // import Image from "./Image";
 // import i1 from "./I1.bmp";
 // import i2 from "./I2.bmp";
