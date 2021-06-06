@@ -1,8 +1,8 @@
 import React from "react";
 import MathEq from "./MathEq";
-import Image from "./Image";
-import i1 from "./I1.png";
-import i2 from "./I2.png";
+// import Image from "./Image";
+// import i1 from "./I1.png";
+// import i2 from "./I2.png";
 // import i3 from "./I3.bmp";
 // import i4 from "./I4.bmp";
 // import i5 from "./I5.bmp";
@@ -51,223 +51,201 @@ export const studentsDB = [
   { sNO: "37", userID: "pradyumna", passw: "1037" },
   { sNO: "38", userID: "bhargav", passw: "1038" },
   { sNO: "39", userID: "srimedha", passw: "1039" },
+  { sNO: "40", userID: "azra", passw: "1040" },
+  { sNO: "41", userID: "bilvika", passw: "1041" },
 ];
 
 export const questionsAll = [
   {
     id: "1.",
-    question: "HCF of 100, 101 is",
-
-    optionA: "A) 1",
-    optionB: "B) 7",
-    optionC: "C) 37",
-    optionD: "D) None",
+    question: "What is multiplicative inverse of -1",
+    optionA: "A) 0",
+    optionB: "B) 1",
+    optionC: "C) -1",
+    optionD: "D) Does not exist",
   },
-
   {
     id: "2.",
-    question: "LCM of 100, 101 is",
+    question: (
+      <MathEq math={String.raw`Evaluate $\left ( \frac{1}{2} \right )^{-5}$`} />
+    ),
 
-    optionA: "A) 1",
-    optionB: "B) 7",
-    optionC: "C) 10100",
-    optionD: "D) None",
+    optionA: "A) 8",
+    optionB: "B) 16",
+    optionC: "C) 32",
+    optionD: "D) 64",
   },
-
   {
     id: "3.",
-    question: "Which one of the following is an irrational number",
+    question: (
+      <MathEq math={String.raw`Multiplicative inverse of $7^{-2}$ is`} />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $\pi$`} />,
-    optionB: <MathEq math={String.raw`B) $e$`} />,
-    optionC: "C) Both",
-    optionD: "D) None",
+    optionA: <MathEq math={String.raw`A) $7^{-2}$`} />,
+    optionB: <MathEq math={String.raw`B) $7^{2}$`} />,
+    optionC: "C) 0",
+    optionD: "D) Does not exist",
   },
-
   {
     id: "4.",
-    question: "Which one of the following is prime?",
+    question: (
+      <MathEq
+        math={String.raw`Evaluate ($3^{-17} \div 3^{-10} \times 3^{5}$)`}
+      />
+    ),
 
-    optionA: "A) 9",
-    optionB: "B) 99",
-    optionC: "C) 129",
-    optionD: "D) 29",
+    optionA: <MathEq math={String.raw`A) $\frac{1}{3}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{1}{3^{2}}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{1}{3^{3}}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{1}{3^{4}}$`} />,
   },
 
   {
     id: "5.",
-    question: "Which one of the following are twin prime numbers",
-
-    optionA: "A) (18,20)",
-    optionB: "B) (19,21)",
-    optionC: "C) (17, 19)",
-    optionD: "D) (21, 23)",
+    question: (
+      <MathEq
+        math={String.raw`Find $\left ( 2^{-1}+3^{-1}+4^{-1} \right )^{0}$`}
+      />
+    ),
+    optionA: "A) 1",
+    optionB: "B) -1",
+    optionC: <MathEq math={String.raw`C) $\frac{1}{30}$`} />,
+    optionD: "D)0",
   },
 
   {
     id: "6.",
-    question: "Which one of the following statement is true",
+    question: (
+      <MathEq math={String.raw`Find m for which $5^{m}\div5^{-3}=5^{5}$`} />
+    ),
 
-    optionA: "A) All Natural numbers are Real",
-    optionB: "B) All Integers are Real",
-    optionC: "C) All Rational numbers are Real",
-    optionD: "D) All of the above",
+    optionA: "A) 5",
+    optionB: "B) 3",
+    optionC: "C) 2",
+    optionD: "D) 4",
   },
 
   {
     id: "7.",
-    question: <MathEq math={String.raw`LCM of ($\pi$, $\pi^{2}$)`} />,
+    question: (
+      <MathEq
+        math={String.raw`Find the value of $\left ( 3^{0}-4^{0} \right )\times 5^{2}$`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $\pi$`} />,
-    optionB: <MathEq math={String.raw`B) $2\pi$`} />,
-    optionC: <MathEq math={String.raw`C) $\pi^{2}$`} />,
-    optionD: "D) Not possible",
+    optionA: "A) 0",
+    optionB: "B) 1",
+    optionC: "C) -1",
+    optionD: "D) 2",
   },
 
   {
     id: "8.",
-    question: <MathEq math={String.raw`LCM of ($\sqrt{2}$, $\sqrt{3}$)`} />,
+    question: (
+      <MathEq
+        math={String.raw`Find the value of $\left ( 64 \right )^{-2/3}\times\left ( 1/4 \right )^{-3}$`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`$\sqrt{2}$`} />,
-    optionB: <MathEq math={String.raw`$\sqrt{3}$`} />,
-    optionC: <MathEq math={String.raw`$\sqrt{6}$`} />,
-    optionD: "D) Not possible",
+    optionA: "A) 1",
+    optionB: "B) 0",
+    optionC: "C) 2",
+    optionD: "D) 4",
   },
 
   {
     id: "9.",
     question: (
-      <MathEq math={String.raw`The simplest form of $\frac{69}{92}$ is`} />
+      <MathEq
+        math={String.raw`Evaluate $\left ( \frac{1}{3}\right )^{-1}-\left (\frac{1}{4}\right)^{-1}$`}
+      />
     ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{2}{3}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{3}{4}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{13}{24}$`} />,
-    optionD: "D) None of these",
+    optionA: "A) 1",
+    optionB: "B) -1",
+    optionC: "C) 0",
+    optionD: "D) 12",
   },
-
   {
     id: "10.",
-    question: "The HCF of 42, 63, 140 is",
+    question: (
+      <MathEq
+        math={String.raw`The number obtained  on rationalising the denominator of $\frac{1}{\sqrt{7}-2}$ is`}
+      />
+    ),
 
-    optionA: "A) 14",
-    optionB: "B) 9",
-    optionC: "C) 21",
-    optionD: "D) 7",
+    optionA: <MathEq math={String.raw`A) $\frac{\sqrt{7}+2}{3}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{\sqrt{7}-2}{3}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{\sqrt{7}+2}{5}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{\sqrt{7}+2}{45}$`} />,
   },
 
   {
     id: "11.",
-    question: (
-      <MathEq
-        math={String.raw`HCF of ($2^{2} \times 3^{3} \times 5^{5}$), ($2^{3} \times 3^{2} \times 5^{2} \times 7$) and ($2^{4} \times 3^{4} \times 5 \times 11 \times7^{2}$) is`}
-      />
-    ),
+    question: "Which one of the following is a rational number",
 
-    optionA: "A) 180",
-    optionB: "B) 360",
-    optionC: "C) 540",
-    optionD: "D) 1260",
+    optionA: <MathEq math={String.raw`A) $2-\sqrt{5}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{2\sqrt{7}}{7\sqrt{7}}$`} />,
+    optionC: "C) Both A and B",
+    optionD: "D) None of the above",
   },
-
   {
     id: "12.",
-    question: "LCM of 22, 54, 108, 135, 198 is",
+    question: (
+      <MathEq math={String.raw`106 $\times$ 106 - 94 $\times$ 94 = ?`} />
+    ),
 
-    optionA: "A) 330",
-    optionB: "B) 1980",
-    optionC: "C) 5940",
-    optionD: "D) 11880",
+    optionA: "A) 2400",
+    optionB: "B) 2000",
+    optionC: "C) 1904",
+    optionD: "D) 1906",
   },
 
   {
     id: "13.",
     question: (
       <MathEq
-        math={String.raw`The LCM of ($2^{3} \times 3 \times 5^{2} \times 7$), ($2^{4} \times 3^{2} \times 5 \times 7^{2} \times 11$) and ($2 \times 3^{3} \times 5^{4}$) is`}
+        math={String.raw`397 $\times$ 397 + 103 $\times$ 103 + 2 $\times$ 397 $\times$ 103 = ?`}
       />
     ),
 
-    optionA: (
-      <MathEq math={String.raw`A) ($2^{4} \times 3^{3} \times 5^{4}$) is`} />
-    ),
-    optionB: (
-      <MathEq math={String.raw`B) ($2 \times 3 \times 5 \times 7 \times 11)`} />
-    ),
-    optionC: (
-      <MathEq
-        math={String.raw`C) ($2^{4} \times 3^{3} \times 5^{4} \times 7^{2} \times 11$) is`}
-      />
-    ),
+    optionA: "A) 249996",
+    optionB: "B) 250000",
+    optionC: "C) 86436",
     optionD: "D) None of these",
   },
 
   {
     id: "14.",
-    question:
-      "The HCF of two numbers is 11 and their LCM is 770. If one of the numbers is 275, then the other is:",
+    question: (
+      <MathEq
+        math={String.raw`$\frac{\left ( 946+157 \right )^{2}+\left ( 946-157 \right )^{2}}{\left ( 946 \times 946 + 157 \times 157 \right )} = ?$`}
+      />
+    ),
 
-    optionA: "A) 279",
-    optionB: "B) 283",
-    optionC: "C) 308",
-    optionD: "D) 318",
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 789",
+    optionD: "D) 1103",
   },
 
   {
     id: "15.",
-    question:
-      "The ratio between two numbers is 2:3. If their LCM is 150, then the numbers are:",
+    question: (
+      <MathEq
+        math={String.raw`Simplify $\left ( 3+\sqrt{3} \right )\left ( 3-\sqrt{3} \right )$`}
+      />
+    ),
 
-    optionA: "A) 30, 40",
-    optionB: "B) 48, 64",
-    optionC: "C) 50, 75",
-    optionD: "D) None of these",
+    optionA: "A) 3",
+    optionB: "B) 4",
+    optionC: "C) 5",
+    optionD: "D) 6",
   },
 
   {
     id: "16.",
-    question: "Light year is a unit of",
-
-    optionA: "A) Time",
-    optionB: "B) Mass",
-    optionC: "C) Distance",
-    optionD: "D) Energy",
-  },
-
-  {
-    id: "17.",
-    question: "One nanometre is equal to",
-
-    optionA: <MathEq math={String.raw`A) $10^{9}$ mm`} />,
-    optionB: <MathEq math={String.raw`B) $10^{-6}$ cm`} />,
-    optionC: <MathEq math={String.raw`C) $10^{-7}$ cm`} />,
-    optionD: <MathEq math={String.raw`D) $10^{-9}$ cm`} />,
-  },
-
-  {
-    id: "18.",
-    question: "A micron is related to centimetre as",
-
-    optionA: <MathEq math={String.raw`A) 1micron = $10^{-8}$ cm`} />,
-    optionB: <MathEq math={String.raw`B) 1micron = $10^{-6}$ cm`} />,
-    optionC: <MathEq math={String.raw`C) 1micron = $10^{-5}$ cm`} />,
-    optionD: <MathEq math={String.raw`D) 1micron = $10^{-4}$ cm`} />,
-  },
-
-  {
-    id: "19.",
-    question:
-      "A cube has numerically equal volume and surface area. The volume of such a cube is ",
-
-    optionA: "A) 216 units",
-    optionB: "B) 1000 units",
-    optionC: "C) 2000 units",
-    optionD: "D) 3000 units",
-  },
-
-  {
-    id: "20.",
-    question: "per sec is a unit of",
+    question: "parsec is a unit of ",
 
     optionA: "A) Distance",
     optionB: "B) Velocity ",
@@ -276,94 +254,145 @@ export const questionsAll = [
   },
 
   {
-    id: "21.",
-    question: "Which of the following is a derived unit",
+    id: "17.",
+    question:
+      "Which of the following quantity is expressed as force per unit area ",
 
-    optionA: "A) Unit of mass",
-    optionB: "B) Unit of length",
-    optionC: "C) Unit of time",
-    optionD: "D) Unit of volume",
+    optionA: "A) Work",
+    optionB: "B) Pressure",
+    optionC: "C) Volume",
+    optionD: "D) Area",
+  },
+
+  {
+    id: "18.",
+    question: "One femtometer is equivalent to",
+
+    optionA: <MathEq math={String.raw`A) $10^{15}$m`} />,
+    optionB: <MathEq math={String.raw`B) $10^{-15}$m`} />,
+    optionC: <MathEq math={String.raw`C) $10^{-12}$m`} />,
+    optionD: <MathEq math={String.raw`D) $10^{12}$m`} />,
+  },
+
+  {
+    id: "19.",
+    question:
+      "A Body moves 6 m north. 8 m east and 10m vertically upwards, what is its resultant displacement from initial position",
+
+    optionA: <MathEq math={String.raw`A) $10\sqrt{2}$m`} />,
+    optionB: <MathEq math={String.raw`B) 10m`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{10}{\sqrt{2}}$m`} />,
+    optionD: <MathEq math={String.raw`D) $10 \times 2$m`} />,
+  },
+
+  {
+    id: "20.",
+    question:
+      "A man goes 10m towards North, then 20m towards east then displacement is ",
+
+    optionA: "A) 22.5m",
+    optionB: "B) 25m",
+    optionC: "C) 25.5m",
+    optionD: "D) 30m",
+  },
+
+  {
+    id: "21.",
+    question:
+      "An aeroplane flies 400 m  north and 300 m south and then flies 1200 m upwards then net displacement is nearly",
+
+    optionA: "A) 1200 m",
+    optionB: "B) 1300 m",
+    optionC: "C) 1400 m",
+    optionD: "D) 1500 m",
   },
   {
     id: "22.",
-    question: "Which of the following is not a unit of time  ",
+    question:
+      "An athlete completes one round of a circular track of radius R in 40 sec. What will be his displacement at the end of 2 min. 20 sec ",
 
-    optionA: "A) Leap year",
-    optionB: "B) Micro second",
-    optionC: "C) Lunar month",
-    optionD: "D) Light year",
+    optionA: "A) Zero",
+    optionB: "B) 2R",
+    optionC: <MathEq math={String.raw`C) 2$\pi$R`} />,
+    optionD: <MathEq math={String.raw`D) 7$\pi$R`} />,
   },
   {
     id: "23.",
-    question: "Candela is the unit of",
+    question: "Which of the following is a one dimensional motion",
 
-    optionA: "A) Electric intensity",
-    optionB: "B) Luminous intensity",
-    optionC: "C) Sound intensity",
-    optionD: "D) None of these",
+    optionA: "A) Landing of an aircraft",
+    optionB: "B) Earth revolving around the sun",
+    optionC: "C) Motion of simple pendulum",
+    optionD: "D) Train running on a straight track",
   },
   {
     id: "24.",
-    question: "Number of base SI units is",
+    question:
+      "A 150 m long train is moving with a uniform velocity of 45 km/h. The time taken by the train to cross a bridge of length 850 meters is",
 
-    optionA: "A) 4",
-    optionB: "B) 7",
-    optionC: "C) 3",
-    optionD: "D) 5",
+    optionA: "A) 56 sec",
+    optionB: "B) 68 sec",
+    optionC: "C) 80 sec",
+    optionD: "D) 92 sec ",
   },
   {
     id: "25.",
     question:
-      "Which of the following system of units is not based on units of mass, length and time alone",
+      "A particle is constrained to move on a straight line path. It returns to the starting point after 10 sec. The total distance covered by the particle during this time is 30 m. Which of the following statements about the motion of the particle is false",
 
-    optionA: "A) SI",
-    optionB: "B) MKS",
-    optionC: "C) FPS",
-    optionD: "D) CGS",
+    optionA: "A) Displacement of the particle is zero",
+    optionB: "B) Average speed of the particle is 3 m/s",
+    optionC: "C) Displacement of the particle is 30 m",
+    optionD: "D) Both (a) and (b)",
   },
   {
     id: "26.",
-    question: ["In a right angled triangle ABC find side BC", <Image g={i1} />],
+    question:
+      "An airplane flies with a constant speed of 800 km/h. How long will it take to travel a distance of 1800 kilometers?",
 
-    optionA: "A) 4",
-    optionB: "B) 6",
-    optionC: "C) 8",
-    optionD: "D) 12",
+    optionA: "A) 2 hr 15 min",
+    optionB: "B) 2 hr 45 min",
+    optionC: "C) 3 hr 15 min",
+    optionD: "D) 3 hr 45 min",
   },
   {
     id: "27.",
-    question: <Image g={i2} />,
+    question:
+      "Peter roller skates with a constant speed of 8 km/h. How far can he travel in 3 hours 45 minutes?",
 
-    optionA: "A) 24/25",
-    optionB: "B) 7/25",
-    optionC: "C) 24/7",
-    optionD: "D) 25/24",
+    optionA: "A) 20 km",
+    optionB: "B) 30 km",
+    optionC: "C) 40 km",
+    optionD: "D) 50 km",
   },
   {
     id: "28.",
-    question: <MathEq math={String.raw`Convert $\pi$/4 radian into degree`} />,
+    question:
+      "Speed of a moving object is 0.06 m/s. This speed is equal to _____ km/hr",
 
-    optionA: "A) 90 degree",
-    optionB: "B) 60 degree",
-    optionC: "C) 45 degree",
-    optionD: "D) 30 degree",
+    optionA: "A) 2.16",
+    optionB: "B) 1.08",
+    optionC: "C) 0.216",
+    optionD: "D) 0.0216",
   },
   {
     id: "29.",
-    question: "Find the value of sin 30 + tan 45",
+    question:
+      "In which of the following cases, distance and displacement are equal?",
 
-    optionA: "A) 2/3",
-    optionB: "B) 1",
-    optionC: "C) 5/2",
-    optionD: "D) 3/2",
+    optionA: "A) A pendulum moving to and fro",
+    optionB: "B) A car moving on a circular track",
+    optionC: "C) A snake crawling on ground",
+    optionD: "D) An athlete running on a straight track",
   },
   {
     id: "30.",
-    question: "Find volume of a sphere of radius 3m (nearly)",
+    question:
+      "A bus covers 250 km towards west in 5 hr and 250 km towards north in another 5 hr. Its Average speed is",
 
-    optionA: "A) 113 units",
-    optionB: "B) 103 uni1ts",
-    optionC: "C) 212 units",
-    optionD: "D) 36 units",
+    optionA: "A) 35 kmph",
+    optionB: "B) 45 kmph",
+    optionC: "C) 50 kmph",
+    optionD: "D) 70 kmph",
   },
 ];
