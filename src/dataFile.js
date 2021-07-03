@@ -10,386 +10,424 @@ import MathEq from "./MathEq";
 
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "admin@1000" },
-  { sNO: "1", userID: "ayaan", passw: "1001" },
-  { sNO: "2", userID: "sami", passw: "1002" },
-  { sNO: "3", userID: "santosh", passw: "1003" },
-  // { sNO: "4", userID: "rugveda", passw: "1004" },
-  { sNO: "5", userID: "richitha", passw: "1005" },
-  { sNO: "6", userID: "maimuna", passw: "1006" },
-  // { sNO: "7", userID: "josephus", passw: "1007" },
-  // { sNO: "9", userID: "masood", passw: "1009" },
-  { sNO: "10", userID: "vineel", passw: "1010" },
-  { sNO: "11", userID: "abhinav", passw: "1011" },
-  // // // // // // // Dubai Below
-  // { sNO: "8", userID: "samuel", passw: "1008" },
-  // { sNO: "12", userID: "arshan", passw: "1012" },
-  // { sNO: "13", userID: "neeraj", passw: "1013" },
-  // { sNO: "14", userID: "abel", passw: "1014" },
-  // { sNO: "15", userID: "rayaan", passw: "1015" },
-  // // // // // // // New Users - continue S.No.
-  // { sNO: "16", userID: "srujana", passw: "1016" },
-  // { sNO: "17", userID: "meghana", passw: "1017" },
-  // { sNO: "18", userID: "asmitha", passw: "1018" },
-  // { sNO: "19", userID: "charan", passw: "1019" },
-  // { sNO: "20", userID: "mani", passw: "1020" },
-  { sNO: "21", userID: "jaideep", passw: "1021" },
-  { sNO: "22", userID: "abhinay", passw: "1022" },
-  // { sNO: "23", userID: "rizwana", passw: "1023" },
-  { sNO: "24", userID: "sujith", passw: "1024" }, //24
-  // { sNO: "25", userID: "nandini", passw: "1025" },
-  { sNO: "26", userID: "madhav", passw: "1026" },
-  { sNO: "27", userID: "mahamood", passw: "1027" },
-  { sNO: "28", userID: "ananya", passw: "1028" },
-  { sNO: "29", userID: "basim", passw: "1029" },
-  { sNO: "30", userID: "diya", passw: "1030" },
-  { sNO: "31", userID: "fahad", passw: "1031" },
-  { sNO: "32", userID: "ashu", passw: "1032" },
-  { sNO: "33", userID: "safwan", passw: "1033" },
-  { sNO: "34", userID: "tasneem", passw: "1034" },
-  { sNO: "35", userID: "yojit", passw: "1035" },
-  { sNO: "36", userID: "zoya", passw: "1036" },
-  { sNO: "37", userID: "pradyumna", passw: "1037" },
-  { sNO: "38", userID: "bhargav", passw: "1038" },
-  { sNO: "39", userID: "srimedha", passw: "1039" },
-  { sNO: "40", userID: "azra", passw: "1040" },
-  { sNO: "41", userID: "bilvika", passw: "1041" },
-  { sNO: "42", userID: "adwaith", passw: "1042" },
-  { sNO: "43", userID: "neekshitha", passw: "1043" },
+  // { sNO: "1", userID: "ayaan", passw: "1001" },
+  // { sNO: "2", userID: "sami", passw: "1002" },
+  // { sNO: "3", userID: "santosh", passw: "1003" },
+  // // { sNO: "4", userID: "rugveda", passw: "1004" },
+  // { sNO: "5", userID: "richitha", passw: "1005" },
+  // { sNO: "6", userID: "maimuna", passw: "1006" },
+  // // { sNO: "7", userID: "josephus", passw: "1007" },
+  // // { sNO: "9", userID: "masood", passw: "1009" },
+  // { sNO: "10", userID: "vineel", passw: "1010" },
+  // { sNO: "11", userID: "abhinav", passw: "1011" },
+  // // // // // // // // Dubai Below
+  // // { sNO: "8", userID: "samuel", passw: "1008" },
+  // // { sNO: "12", userID: "arshan", passw: "1012" },
+  // // { sNO: "13", userID: "neeraj", passw: "1013" },
+  // // { sNO: "14", userID: "abel", passw: "1014" },
+  // // { sNO: "15", userID: "rayaan", passw: "1015" },
+  // // // // // // // // New Users - continue S.No.
+  // // { sNO: "16", userID: "srujana", passw: "1016" },
+  // // { sNO: "17", userID: "meghana", passw: "1017" },
+  // // { sNO: "18", userID: "asmitha", passw: "1018" },
+  // // { sNO: "19", userID: "charan", passw: "1019" },
+  // // { sNO: "20", userID: "mani", passw: "1020" },
+  // { sNO: "21", userID: "jaideep", passw: "1021" },
+  // { sNO: "22", userID: "abhinay", passw: "1022" },
+  // // { sNO: "23", userID: "rizwana", passw: "1023" },
+  // { sNO: "24", userID: "sujith", passw: "1024" }, //24
+  // // { sNO: "25", userID: "nandini", passw: "1025" },
+  // { sNO: "26", userID: "madhav", passw: "1026" },
+  // { sNO: "27", userID: "mahamood", passw: "1027" },
+  // { sNO: "28", userID: "ananya", passw: "1028" },
+  // { sNO: "29", userID: "basim", passw: "1029" },
+  // { sNO: "30", userID: "diya", passw: "1030" },
+  // { sNO: "31", userID: "fahad", passw: "1031" },
+  // { sNO: "32", userID: "ashu", passw: "1032" },
+  // { sNO: "33", userID: "safwan", passw: "1033" },
+  // { sNO: "34", userID: "tasneem", passw: "1034" },
+  // { sNO: "35", userID: "yojit", passw: "1035" },
+  // { sNO: "36", userID: "zoya", passw: "1036" },
+  // { sNO: "37", userID: "pradyumna", passw: "1037" },
+  // { sNO: "38", userID: "bhargav", passw: "1038" },
+  // { sNO: "39", userID: "srimedha", passw: "1039" },
+  // { sNO: "40", userID: "azra", passw: "1040" },
+  // { sNO: "41", userID: "bilvika", passw: "1041" },
+  // { sNO: "42", userID: "adwaith", passw: "1042" },
+  // { sNO: "43", userID: "neekshitha", passw: "1043" },
 ];
 
 export const questionsAll = [
   {
     id: "1.",
-    question: "Find the sum of additive and multiplicative inverse of 7.",
+    question: (
+      <MathEq
+        math={String.raw`Add the expressions $5x^{2} + 3x - 8$ and $4x^{2} -5x +6$`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $\frac{-48}{7}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{48}{7}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{7}{48}$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{-7}{48}$`} />,
+    optionA: <MathEq math={String.raw`A) $9x^{2} -2x - 2$`} />,
+    optionB: <MathEq math={String.raw`B) $9x^{2} +2x - 2$`} />,
+    optionC: <MathEq math={String.raw`C) $9x^{2} -2x + 2$`} />,
+    optionD: <MathEq math={String.raw`D) $-9x^{2} -2x - 2$`} />,
   },
 
   {
     id: "2.",
     question: (
       <MathEq
-        math={String.raw`Find $x$, from $\left ( -5 \right )^{x+1} \times \left ( -5 \right )^{5}= \left ( -5 \right )^{7}$`}
+        math={String.raw`Subtract the expression $4x^{2} -5x +6$ from $5x^{2} + 3x - 8$`}
       />
     ),
 
-    optionA: "A) 3",
-    optionB: "B) 2",
-    optionC: "C) 1",
-    optionD: "D) 0",
+    optionA: <MathEq math={String.raw`A) $x^{2} +8x -14$`} />,
+    optionB: <MathEq math={String.raw`B) $x^{2} -8x -14$`} />,
+    optionC: <MathEq math={String.raw`C) $x^{2} +8x +14$`} />,
+    optionD: <MathEq math={String.raw`D) $-x^{2} +8x -14$`} />,
   },
 
   {
     id: "3.",
-    question: (
-      <MathEq
-        math={String.raw`Co-efficient of $x^{2}y$ from $\frac{3}{2} x^{2}y \,+\, \frac{4}{5} xy \,-\, \frac{1}{2} x^{2}yz$ is`}
-      />
-    ),
+    question: "Add ab-bc, bc-ca,  ca-ab",
 
-    optionA: <MathEq math={String.raw`A) $\frac{-1}{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{3}{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{-3}{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{1}{2}$`} />,
+    optionA: "A) ab-bc",
+    optionB: "B) ab+bc+ca",
+    optionC: "C) 0",
+    optionD: "D) -ab-bc-ca",
   },
 
   {
     id: "4.",
-    question: "Which one of the following expression is not a polynomial?",
+    question: (
+      <MathEq
+        math={String.raw`Find the remainder, when $3x^{4}+5x^{3}-7x^{2}+2x+2$ divided by $x^{2}+3x+1$`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $x^{2} - 2x +5$`} />,
-    optionB: <MathEq math={String.raw`B) $y^{2} - xy +5$`} />,
-    optionC: "C) x+1",
-    optionD: <MathEq math={String.raw`D) $t^{2}+\sqrt{t} +1$`} />,
+    optionA: "A) 0",
+    optionB: "B) 1",
+    optionC: "C) 2x+1",
+    optionD: "D) -1",
   },
 
   {
     id: "5.",
-    question: <MathEq math={String.raw`The expression $l^{2}+m^{2}$ is?`} />,
+    question: "HCF of 100, 101 is",
 
-    optionA: "A) Binomial",
-    optionB: "B) Monomial",
-    optionC: "C) Trinomial",
-    optionD: "D) None of these",
+    optionA: "A) 1",
+    optionB: "B) 7",
+    optionC: "C) 37",
+    optionD: "D) None",
   },
 
   {
     id: "6.",
-    question: "The expression 5xyz is?",
+    question: "Which one of the following is prime?",
 
-    optionA: "A) Binomial",
-    optionB: "B) Monomial",
-    optionC: "C) Trinomial",
-    optionD: "D) None of these",
+    optionA: "A) 9",
+    optionB: "B) 99",
+    optionC: "C) 129",
+    optionD: "D) 29",
   },
 
   {
     id: "7.",
     question: (
-      <MathEq math={String.raw`The degree of $x^{2} + \frac{1}{x^{2}} +1$`} />
+      <MathEq math={String.raw`Evaluate $\left ( \frac{1}{2} \right )^{-5}$`} />
     ),
 
-    optionA: "A) 4",
-    optionB: "B) 2",
-    optionC: "C) Does not exist",
-    optionD: "D) 1",
+    optionA: "A) 8",
+    optionB: "B) 16",
+    optionC: "C) 32",
+    optionD: "D) 64",
   },
 
   {
     id: "8.",
-    question: (
-      <MathEq
-        math={String.raw`Find the value of $9x^{2}+25y^{2}-30xy$, when $x=\frac{2}{3}$, $y=\frac{3}{5}$`}
-      />
-    ),
+    question: "Which one of the following equation is quadratic",
 
-    optionA: "A) 1",
-    optionB: "B) 2",
-    optionC: "C) 3",
-    optionD: "D) 4",
+    optionA: <MathEq math={String.raw`A) $11=-4x^{2}-x^{3}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{-3}{y} -4 =0$`} />,
+    optionC: <MathEq math={String.raw`C) $n-3=4n$`} />,
+    optionD: <MathEq math={String.raw`D) $-3y^{2}-2y-7=0$`} />,
   },
 
   {
     id: "9.",
-    question: (
-      <MathEq
-        math={String.raw`Find the product of $\frac{24pq}{5p^{2}} \times \frac{25pr}{12q}$ `}
-      />
-    ),
+    question: "Which one of the following equation is not a quadratic",
 
-    optionA: "A) 10pqr",
-    optionB: "B) 10r",
-    optionC: "C) 10pr",
-    optionD: "D) 10",
+    optionA: <MathEq math={String.raw`A) $q^{2}-4=-3$`} />,
+    optionB: <MathEq math={String.raw`B) $y^{2}-4=11y$`} />,
+    optionC: <MathEq math={String.raw`C) $4-y=3$`} />,
+    optionD: <MathEq math={String.raw`D) $-3y^{2}-2y-7=0$`} />,
   },
 
   {
     id: "10.",
     question: (
       <MathEq
-        math={String.raw`The value of $a\left( a^{2}+a+1\right)+5$, when a=-1`}
+        math={String.raw`The factors of the quadratic equtaion: $x^{2}-x-12=0$ is`}
       />
     ),
 
-    optionA: "A) -4",
-    optionB: "B) 5",
-    optionC: "C) 6",
-    optionD: "D) 4",
+    optionA: "A) (x+3)(x+4)=0",
+    optionB: "B) (x+3)(x-4)=0",
+    optionC: "C) (x-3)(x-4)=0",
+    optionD: "D) (x-3)(x+4)=0",
   },
 
   {
     id: "11.",
     question: (
       <MathEq
-        math={String.raw`Find the value of $p\left( x\right) = 5x-4x^{2}+3$ when $x=0$`}
+        math={String.raw`Standard form of quadratic equtaion: $7-4x=x^{2}$ is`}
       />
     ),
 
-    optionA: "A) 0",
-    optionB: "B) 5",
-    optionC: "C) 3",
-    optionD: "D) 4",
+    optionA: <MathEq math={String.raw`A) $x^{2}+4x-7=0$`} />,
+    optionB: <MathEq math={String.raw`B) $x^{2}+4x+7=0$`} />,
+    optionC: <MathEq math={String.raw`C) $x^{2}-4x-7=0$`} />,
+    optionD: "D) None of these",
   },
 
   {
     id: "12.",
     question: (
       <MathEq
-        math={String.raw`Find the remainder when $x^{3}+3x^{2}+3x+1$ is divided by $x+1$`}
+        math={String.raw`The standard formula for finding the roots of quadratic equation $ax^{2} \, + \, bx \,+\, c \,= \,0$`}
       />
     ),
 
-    optionA: "A) 0",
-    optionB: "B) 1",
-    optionC: "C) -1",
-    optionD: "D) 2",
+    optionA: (
+      <MathEq
+        math={String.raw`A) $x \, = \, \frac{b \pm \sqrt{b^{2}-4ac}}{2a} $`}
+      />
+    ),
+    optionB: (
+      <MathEq math={String.raw`B) $x \, = \, \frac{\sqrt{b^{2}-4ac}}{2a} $`} />
+    ),
+    optionC: (
+      <MathEq
+        math={String.raw`C) $x \, = \, \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} $`}
+      />
+    ),
+    optionD: <MathEq math={String.raw`D) $x \, = \, \frac{-b \pm }{2a} $`} />,
   },
 
   {
     id: "13.",
-    question: <MathEq math={String.raw`Find the factors of $3x^{2}-x-4$`} />,
+    question: (
+      <MathEq
+        math={String.raw`The value of the discriminant of $x^{2}+x+1=0$ is`}
+      />
+    ),
 
-    optionA: "A) (3x+4)(x+1)",
-    optionB: "B) (3x-4)(x+1)",
-    optionC: "C) (3x+4)(x-1)",
-    optionD: "D) (3x-4)(x-1)",
+    optionA: "A) -3",
+    optionB: "B) -4",
+    optionC: "C) -2",
+    optionD: "D) -5",
   },
 
   {
     id: "14.",
-    question: <MathEq math={String.raw`Find the factors of $x^{3}-1$`} />,
+    question: (
+      <MathEq
+        math={String.raw`In quadratic equation $ax^{2} \, + \, bx \,+\, c \,= \,0$`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) ($x-1$)($x^{2}-x+1$)`} />,
-    optionB: <MathEq math={String.raw`B) ($x-1$)($x^{2}-x-1$)`} />,
-    optionC: <MathEq math={String.raw`C) ($x-1$)($x^{2}+x+1$)`} />,
-    optionD: <MathEq math={String.raw`D) ($x+1$)($x^{2}-x+1$)`} />,
+    optionA: <MathEq math={String.raw`A) $a,b,c \: \in  \: R, a=0$`} />,
+    optionB: <MathEq math={String.raw`B) $a,b,c \: \in  \: R, a \neq 0$`} />,
+    optionC: "C) Both",
+    optionD: "D) None of these",
   },
 
   {
     id: "15.",
-    question: "Find the product of (x+8)(x-10)",
+    question: "The standard form of quadratic equation is",
 
-    optionA: <MathEq math={String.raw`A) $x^{2}+2x+80$`} />,
-    optionB: <MathEq math={String.raw`B) $x^{2}-2x+80$`} />,
-    optionC: <MathEq math={String.raw`C) $x^{2}+2x-80$`} />,
-    optionD: <MathEq math={String.raw`D) $x^{2}-2x-80$`} />,
+    optionA: (
+      <MathEq math={String.raw`A) $ax^{2} \, + \, bx \,+\, c \,= \,0$`} />
+    ),
+    optionB: <MathEq math={String.raw`B) $ax \, + \, b \,= \,0$`} />,
+    optionC: (
+      <MathEq
+        math={String.raw`C) $ax^{3} \, + \, bx^{2} \,+\, cx \, + \, d \, = \,0$`}
+      />
+    ),
+    optionD: "D) None of these",
   },
 
   {
     id: "16.",
-    question:
-      "A particle is moving in a circular path of radius r. The displacement after half a circle would be:",
+    question: (
+      <MathEq
+        math={String.raw`A stone was thrown down a well at 2 m/s. It reached the bottom in 2 seconds. Determine the depth 𝐷 of the well, given that the acceleration due to gravity $10 m/s^{2}$.`}
+      />
+    ),
 
-    optionA: "A) 0",
-    optionB: <MathEq math={String.raw`B) $\pi r$`} />,
-    optionC: <MathEq math={String.raw`C) $2\pi r$`} />,
-    optionD: "D) 2r",
+    optionA: "A)	12 m",
+    optionB: "B) 24 m",
+    optionC: "C) 16 m",
+    optionD: "D) 20 m",
   },
 
   {
     id: "17.",
-    question:
-      "The numerical ratio of displacement to distance for a moving object is :",
+    question: (
+      <MathEq
+        math={String.raw`If an apple falls from a tree and takes 1.5 seconds to reach the ground, at what velocity does it hit the ground? Take the acceleration due to gravity 𝑔= $10 m/s^{2}$.`}
+      />
+    ),
 
-    optionA: "A) always less than 1",
-    optionB: "B) equal to 1 or more than 1",
-    optionC: "C) always more than ",
-    optionD: "D) equal to 1 or less than 1",
+    optionA: "A)	10 m/s",
+    optionB: "B) 15 m/s",
+    optionC: "C) 20 m/s",
+    optionD: "D) 25 m/s",
   },
 
   {
     id: "18.",
-    question:
-      " A boy is sitting on a merry-go-round which is moving with a constant speed of 10 m/s. This means that the boy is :",
+    question: (
+      <MathEq
+        math={String.raw`A body is projected vertically upward from the top of a tower 60 m tall with initial velocity 20 m/s. Find maximum height reached by the body from surface of earth. g=$10 m/s^{2}$.`}
+      />
+    ),
 
-    optionA: "A) at rest",
-    optionB: "B) moving with no acceleration",
-    optionC: "C) in accelerated motion",
-    optionD: "D) moving with uniform velocity",
+    optionA: "A)	20 m",
+    optionB: "B) 40 m",
+    optionC: "C) 60 m",
+    optionD: "D) 80 m",
   },
 
   {
     id: "19.",
-    question:
-      "In which of the following cases of motion, the distance moved and the magnitude of displacement are equal ?",
+    question: (
+      <MathEq
+        math={String.raw`A ball dropped is from height 40m. Find height by which it falls during $2^{nd}$ second.`}
+      />
+    ),
 
-    optionA: "A) if the car is moving on straight road ",
-    optionB: "B) if the car is moving on circular road",
-    optionC: "C) if the pendulum is moving to and fro",
-    optionD: "D) if a planet is moving around the sun",
+    optionA: "A)	10 m",
+    optionB: "B) 15 m",
+    optionC: "C) 20 m",
+    optionD: "D) 25 m",
   },
 
   {
     id: "20.",
     question:
-      "The speed of a moving object is determined to be 0.06 m/s. This speed is equal to :",
+      "A ball is thrown vertically upward with velocity 50m. Its Time of ascent is",
 
-    optionA: "A) 2.16 km/h",
-    optionB: "B) 1.08 km/h",
-    optionC: "C) 0.216 km/h",
-    optionD: "D) 0.0216 km/h",
+    optionA: "A)	2 s",
+    optionB: "B) 3 s",
+    optionC: "C) 4 s",
+    optionD: "D) 5 s",
   },
 
   {
     id: "21.",
-    question: [
-      "A freely falling object travels 4.9 m in 1st second, 14.7 m in 2nd second, 24.5 m in 3rd second, and so on.",
-      "This data shows that the motion of a freely falling object is a case of :",
-    ],
+    question:
+      "A boy wishes to throw a ball vertically upward so that it just reaches the top of a building 20 m high. What must be the initial velocity of throw?",
 
-    optionA: "A) uniform motion",
-    optionB: "B) uniform acceleration",
-    optionC: "C) no acceleration",
-    optionD: "D) uniform velocity",
+    optionA: "A)	20 m/s",
+    optionB: "B) 16 m/s",
+    optionC: "C) 12 m/s",
+    optionD: "D) 10 m/s",
   },
   {
     id: "22.",
     question:
-      "When a car runs on a circular track with a uniform speed, its velocity is said to be changing. This is because :",
+      "If a body is projected vertically up from a point and it returns to the same point, its",
 
-    optionA: "A) the car has a uniform acceleration",
-    optionB: "B) the direction of car varies continuously",
-    optionC: "C) the car travels unequal distances in equal time intervals",
-    optionD: "D) the car travels equal distances in unequal time intervals",
+    optionA: "A) average speed is zero, but not average velocity.",
+    optionB: "B) Both average speed and average velocity are zero.",
+    optionC: "C) average velocity is zero but not average speed.",
+    optionD: "D) Both average speed and velocity depend upon the path",
   },
   {
     id: "23.",
-    question:
-      "Which of the following statement is correct regarding velocity and speed of a moving body ?",
+    question: (
+      <MathEq
+        math={String.raw`A ball takes t second to fall from a height $h_{1}$ and 2t seconds to fall from a height $h_{2}$. Then $\frac{h_{1}}{h_{2}}$ is:`}
+      />
+    ),
 
-    optionA: "A) velocity of a moving body is always higher than its speed",
-    optionB: "B) speed of a moving body is always higher than its velocity",
-    optionC: "C) speed of a moving body is its velocity in a given direction",
-    optionD: "D) velocity of a moving body is its speed in a given direction",
+    optionA: "A) 0.5",
+    optionB: "B) 0.25",
+    optionC: "C) 2",
+    optionD: "D) 4",
   },
   {
     id: "24.",
-    question:
-      "Which of the following can sometimes be ‘zero’ for a moving body ?",
+    question: "A vertically projected down body travels with",
 
-    optionA: "A) average velocity",
-    optionB: "B) distance travelled",
-    optionC: "C) average speed",
-    optionD: "D) displacement",
+    optionA: "A) uniform velocity.",
+    optionB: "B) uniform speed.",
+    optionC: "C) uniform acceleration.",
+    optionD: "D) uniform retardation.",
   },
   {
     id: "25.",
     question:
-      "When a car driver travelling at a speed of 10 m/s applies brakes and brings the car to rest in 20 s, then retardation will be :",
+      "A stone is released with zero velocity from the top of a tower reaches the ground in 4 second, the height of the tower is about",
 
-    optionA: <MathEq math={String.raw`A) $+2m/s^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $-2m/s^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $-0.5m/s^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $+0.5m/s^{2}$`} />,
+    optionA: "A) 20 m",
+    optionB: "B) 40 m",
+    optionC: "C) 80 m",
+    optionD: "D) 16 m",
   },
   {
     id: "26.",
-    question: "Which of the following could not be a unit of speed ?",
+    question:
+      "A train moves with a uniform velocity of 36 kmh-1 for 10 s. Find the distance travelled by it.",
 
-    optionA: "A) km/h",
-    optionB: "B) s/m",
-    optionC: "C) m/s",
-    optionD: <MathEq math={String.raw`D) mm s$^{-1}$`} />,
+    optionA: "A) 50m",
+    optionB: "B) 100 m",
+    optionC: "C) 200m",
+    optionD: "D) 250 m",
   },
   {
     id: "27.",
-    question: "One of the following is not a vector quantity. This one is :",
+    question:
+      "A train starts from rest. It moves through 1 km in 100 s with uniform acceleration. What will be its speed at the end of 100 s.?",
 
-    optionA: "A) displacement",
-    optionB: "B) speed",
-    optionC: "C) acceleration",
-    optionD: "D) velocity",
+    optionA: "A) 10 m/s",
+    optionB: "B) 15 m/s",
+    optionC: "C) 20 m/s",
+    optionD: "D) 25 m/s",
   },
   {
     id: "28.",
-    question: "Which of the following could not be a unit of acceleration ?",
+    question: (
+      <MathEq
+        math={String.raw`A car has a velocity of $10 ms^{-1}$. It accelerates at $0.2 ms^{-2}$ for half minute. Find the distance travelled during this time`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $km/s^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $cm \, s^{-2}$`} />,
-    optionC: <MathEq math={String.raw`C) $km/s$`} />,
-    optionD: <MathEq math={String.raw`D) $m/s^{2}$`} />,
+    optionA: "A) 240 m/s",
+    optionB: "B) 340 m/s",
+    optionC: "C) 390cm/s",
+    optionD: "D) 450 m/s",
   },
   {
     id: "29.",
     question:
-      "A car travels 100 km at a speed of 60 km/h and returns with a speed of 40 km/h. Calculate the average speed for the whole journey.",
+      "A ball is thrown vertically upwards with velocity 60 m/s. Its velocity at highest position is",
 
-    optionA: "A) 48 km/h",
-    optionB: "B) 24 km/h",
-    optionC: "C) 50 km/h",
-    optionD: "D) None",
+    optionA: "A) 2.5 m/s",
+    optionB: "B) 5 m/s",
+    optionC: "C) 6 m/s",
+    optionD: "D) zero",
   },
   {
     id: "30.",
     question:
-      "A ball hits a wall horizontally at 6.0 m/s. It rebounds horizontally at 4.4 m/s. The ball is in contact with the wall for 0.040 s. What is the acceleration of the ball ?",
+      "A ball is thrown vertically upwards with velocity 60 m/s. Its acceleration at highest position is",
 
-    optionA: <MathEq math={String.raw`A) -260$m/s^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) +260$m/s^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) -120$m/s^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) +120$m/s^{2}$`} />,
+    optionA: "A) 2.5 m/s",
+    optionB: "B) 5 m/s",
+    optionC: "C) 9.8 m/s",
+    optionD: "D) zero",
   },
 ];
