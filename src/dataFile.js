@@ -28,7 +28,6 @@ import i20 from "./I20.png";
 import i21 from "./I21.png";
 import i23 from "./I23.png";
 
-
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "admin@1000" },
   { sNO: "1", userID: "ayaan", passw: "1001" },
@@ -81,292 +80,382 @@ export const studentsDB = [
 export const questionsAll = [
   {
     id: "1.",
-    question:'The quadratic equations whose roots are 2, 3 is',
-    
-    optionA:<MathEq math={String.raw`A) $x^{2}+5x+6=0$`}/>,
-    optionB:<MathEq math={String.raw`B) $x^{2}-5x+6=0$`}/>,
-    optionC:<MathEq math={String.raw`C) $x^{2}-5x-6=0$`}/>,
-    optionD:<MathEq math={String.raw`A) $x^{2}+5x-6=0$`}/>,
+    question: "The quadratic equations whose roots are 2, 3 is",
+
+    optionA: <MathEq math={String.raw`A) $x^{2}+5x+6=0$`} />,
+    optionB: <MathEq math={String.raw`B) $x^{2}-5x+6=0$`} />,
+    optionC: <MathEq math={String.raw`C) $x^{2}-5x-6=0$`} />,
+    optionD: <MathEq math={String.raw`A) $x^{2}+5x-6=0$`} />,
   },
 
   {
     id: "2.",
-    question:<MathEq math={String.raw`The roots of the quadratic equation $2x^{2}+x-6=0$ are`}/>,
+    question: (
+      <MathEq
+        math={String.raw`The roots of the quadratic equation $2x^{2}+x-6=0$ are`}
+      />
+    ),
 
-    optionA:'A) -2, 3/2',
-    optionB:'B) 2, -3/2',
-    optionC:'C) 2, -2',
-    optionD:'D) -2,-3/2',
+    optionA: "A) -2, 3/2",
+    optionB: "B) 2, -3/2",
+    optionC: "C) 2, -2",
+    optionD: "D) -2,-3/2",
   },
-  
+
   {
     id: "3.",
-    question:<MathEq math={String.raw`The sum of roots of $100x^{2}-20x+1=0$`}/>,
+    question: (
+      <MathEq math={String.raw`The sum of roots of $100x^{2}-20x+1=0$`} />
+    ),
 
-    optionA:'A) -1/4',
-    optionB:'B) 1/5',
-    optionC:'C) 1/100',
-    optionD:'D) 1/4',
+    optionA: "A) -1/4",
+    optionB: "B) 1/5",
+    optionC: "C) 1/100",
+    optionD: "D) 1/4",
   },
-  
+
   {
     id: "4.",
-    question:<MathEq math={String.raw`The product of roots of $x^{2}-3x-1=0$`}/>,
+    question: (
+      <MathEq math={String.raw`The product of roots of $x^{2}-3x-1=0$`} />
+    ),
 
-    optionA:'A) 1',
-    optionB:'B) -3',
-    optionC:'C) -1',
-    optionD:'D) 3',
+    optionA: "A) 1",
+    optionB: "B) -3",
+    optionC: "C) -1",
+    optionD: "D) 3",
   },
-  
+
   {
     id: "5.",
-    question:<MathEq math={String.raw`Find the value of k, if $2x^{2}+kx+3=0$ has equal roots`}/>,
+    question: (
+      <MathEq
+        math={String.raw`Find the value of k, if $2x^{2}+kx+3=0$ has equal roots`}
+      />
+    ),
 
-    optionA:<MathEq math={String.raw`A) $2\sqrt{6}$`}/>,
-    optionB:<MathEq math={String.raw`B) $\sqrt{6}$`}/>,
-    optionC:'C) 12',
-    optionD:'D) 0',
+    optionA: <MathEq math={String.raw`A) $2\sqrt{6}$`} />,
+    optionB: <MathEq math={String.raw`B) $\sqrt{6}$`} />,
+    optionC: "C) 12",
+    optionD: "D) 0",
   },
 
   {
     id: "6.",
-    question:<MathEq math={String.raw`The roots of the quadratic equation $2x^{2}-6x+3=0$ are`}/>,
+    question: (
+      <MathEq
+        math={String.raw`The roots of the quadratic equation $2x^{2}-6x+3=0$ are`}
+      />
+    ),
 
-    optionA:'A) real and distinct',
-    optionB:'B) real and equal',
-    optionC:'C) not real',
-    optionD:'D) none',
+    optionA: "A) real and distinct",
+    optionB: "B) real and equal",
+    optionC: "C) not real",
+    optionD: "D) none",
   },
 
   {
     id: "7.",
-    question:<MathEq math={String.raw`The roots of the quadratic equation $2x^{2}-3x+5=0$ are`}/>,
+    question: (
+      <MathEq
+        math={String.raw`The roots of the quadratic equation $2x^{2}-3x+5=0$ are`}
+      />
+    ),
 
-    optionA:'A) real and distinct',
-    optionB:'B) real and equal',
-    optionC:'C) not real',
-    optionD:'D) none',
+    optionA: "A) real and distinct",
+    optionB: "B) real and equal",
+    optionC: "C) not real",
+    optionD: "D) none",
   },
-  
+
   {
     id: "8.",
-    question:<MathEq math={String.raw`The graph of $2x^{2}+3x+1=0$ is`}/>,
+    question: <MathEq math={String.raw`The graph of $2x^{2}+3x+1=0$ is`} />,
 
-    optionA:'A) open up',
-    optionB:'B) open down',
-    optionC:'C) open left',
-    optionD:'D) open right',
+    optionA: "A) open up",
+    optionB: "B) open down",
+    optionC: "C) open left",
+    optionD: "D) open right",
   },
-  
+
   {
     id: "9.",
-    question:<MathEq math={String.raw`Graph of $y=-5x^{2}+7x+2$ is`}/>,
+    question: <MathEq math={String.raw`Graph of $y=-5x^{2}+7x+2$ is`} />,
 
-    optionA:'A) open up',
-    optionB:'B) open down',
-    optionC:'C) open left',
-    optionD:'D) open right',
+    optionA: "A) open up",
+    optionB: "B) open down",
+    optionC: "C) open left",
+    optionD: "D) open right",
   },
-  
+
   {
     id: "10.",
-    question:<MathEq math={String.raw`The maximum or minimum value of $ax^{2}+bx+c=0$ exists at x=`}/>,
+    question: (
+      <MathEq
+        math={String.raw`The maximum or minimum value of $ax^{2}+bx+c=0$ exists at x=`}
+      />
+    ),
 
-    optionA:'A) b/a',
-    optionB:'B) -b/a',
-    optionC:'C) b/2a',
-    optionD:'D) -b/2a',
+    optionA: "A) b/a",
+    optionB: "B) -b/a",
+    optionC: "C) b/2a",
+    optionD: "D) -b/2a",
   },
 
   {
     id: "11.",
-    question:<MathEq math={String.raw`The maximum or minimum value of $ax^{2}+bx+c$ is`}/>,
+    question: (
+      <MathEq
+        math={String.raw`The maximum or minimum value of $ax^{2}+bx+c$ is`}
+      />
+    ),
 
-    optionA:<MathEq math={String.raw`A) $\frac{4ac-b^{2}}{4a}$`}/>,
-    optionB:<MathEq math={String.raw`B) $\frac{4ac+b^{2}}{4a}$`}/>,
-    optionC:<MathEq math={String.raw`C) $\frac{4ac-b^{2}}{a}$`}/>,
-    optionD:<MathEq math={String.raw`D) $\frac{4ac+b^{2}}{a}$`}/>,
+    optionA: <MathEq math={String.raw`A) $\frac{4ac-b^{2}}{4a}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{4ac+b^{2}}{4a}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{4ac-b^{2}}{a}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{4ac+b^{2}}{a}$`} />,
   },
 
   {
     id: "12.",
-    question:<MathEq math={String.raw`If $\alpha$ and $\beta$ are roots of $ax^{2}+bx+c=0$ then $\left | \alpha - \beta \right |$ =`}/>,
+    question: (
+      <MathEq
+        math={String.raw`If $\alpha$ and $\beta$ are roots of $ax^{2}+bx+c=0$ then $\left | \alpha - \beta \right |$ =`}
+      />
+    ),
 
-    optionA:<MathEq math={String.raw`A) $\frac{\sqrt{b^{2}-4ac}}{\left | a \right |}$`}/>,
-    optionB:<MathEq math={String.raw`B) $\frac{b^{2}-2ac}{a^{2}}$`}/>,
-    optionC:<MathEq math={String.raw`C) $\frac{b}{a}$`}/>,
-    optionD:<MathEq math={String.raw`D) $\frac{c}{a}$`}/>,
+    optionA: (
+      <MathEq
+        math={String.raw`A) $\frac{\sqrt{b^{2}-4ac}}{\left | a \right |}$`}
+      />
+    ),
+    optionB: <MathEq math={String.raw`B) $\frac{b^{2}-2ac}{a^{2}}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{b}{a}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{c}{a}$`} />,
   },
-  
+
   {
     id: "13.",
-    question:<MathEq math={String.raw`If $\alpha$ and $\beta$ are roots of $ax^{2}+bx+c=0$ then $\alpha ^{2} + \beta ^{2}$ =`}/>,
+    question: (
+      <MathEq
+        math={String.raw`If $\alpha$ and $\beta$ are roots of $ax^{2}+bx+c=0$ then $\alpha ^{2} + \beta ^{2}$ =`}
+      />
+    ),
 
-    optionA:<MathEq math={String.raw`A) $\frac{\sqrt{b^{2}-4ac}}{\left | a \right |}$`}/>,
-    optionB:<MathEq math={String.raw`B) $\frac{b^{2}-2ac}{a^{2}}$`}/>,
-    optionC:<MathEq math={String.raw`C) $\frac{b}{a}$`}/>,
-    optionD:<MathEq math={String.raw`D) $\frac{c}{a}$`}/>,
+    optionA: (
+      <MathEq
+        math={String.raw`A) $\frac{\sqrt{b^{2}-4ac}}{\left | a \right |}$`}
+      />
+    ),
+    optionB: <MathEq math={String.raw`B) $\frac{b^{2}-2ac}{a^{2}}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{b}{a}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{c}{a}$`} />,
   },
-  
+
   {
     id: "14.",
-    question:<MathEq math={String.raw`The maximum value of $-5x^{2}+2x+3$ is`}/>,
+    question: (
+      <MathEq math={String.raw`The maximum value of $-5x^{2}+2x+3$ is`} />
+    ),
 
-    optionA:'A) -16/5',
-    optionB:'B) 16',
-    optionC:'C) 5',
-    optionD:'D) 16/5',
+    optionA: "A) -16/5",
+    optionB: "B) 16",
+    optionC: "C) 5",
+    optionD: "D) 16/5",
   },
-  
+
   {
     id: "15.",
-    question:<MathEq math={String.raw`SUm of roots of $ax^{2}+bx+c=0$ is`}/>,
+    question: <MathEq math={String.raw`SUm of roots of $ax^{2}+bx+c=0$ is`} />,
 
-    optionA:'A) b/a',
-    optionB:'B) b/a',
-    optionC:'C) c/a',
-    optionD:'D) -c/a',
+    optionA: "A) b/a",
+    optionB: "B) -b/a",
+    optionC: "C) c/a",
+    optionD: "D) -c/a",
   },
 
   {
     id: "16.",
-    question:["The variation of velocity of a particle with time moving along a straight line is illustrated in the following figure. The  distance travelled by the  particle in four seconds is", <Image g={i1} />],
+    question: [
+      "The variation of velocity of a particle with time moving along a straight line is illustrated in the following figure. The  distance travelled by the  particle in four seconds is",
+      <Image g={i1} />,
+    ],
 
-    optionA:'A) 60m',
-    optionB:'B) 55m',
-    optionC:'C) 25m',
-    optionD:'D) 30m',
+    optionA: "A) 60m",
+    optionB: "B) 55m",
+    optionC: "C) 25m",
+    optionD: "D) 30m",
   },
 
   {
     id: "17.",
-    question:["The displacement of a particle as a function of time is shown in the figure. The figure shows that", <Image g={i2} />],
+    question: [
+      "The displacement of a particle as a function of time is shown in the figure. The figure shows that",
+      <Image g={i2} />,
+    ],
 
-    optionA:'A) The particle starts with certain velocity but the motion is retarded and finally the particle stops',
-    optionB:'B) The velocity of the particle is constant throughout',
-    optionC:'C) The acceleration of the particle is constant throughout',
-    optionD:'D) The particle starts with constant velocity, then motion is accelerated and finally the particle moves with another constant velocity',
+    optionA:
+      "A) The particle starts with certain velocity but the motion is retarded and finally the particle stops",
+    optionB: "B) The velocity of the particle is constant throughout",
+    optionC: "C) The acceleration of the particle is constant throughout",
+    optionD:
+      "D) The particle starts with constant velocity, then motion is accelerated and finally the particle moves with another constant velocity",
   },
-  
+
   {
     id: "18.",
-    question:["A ball is thrown vertically upwards. Which of the following graph/graphs represent velocity-time graph of the ball during its flight (air resistance is neglected)", <Image g={i3}/>, <Image g={i23}/>],
+    question: [
+      "A ball is thrown vertically upwards. Which of the following graph/graphs represent velocity-time graph of the ball during its flight (air resistance is neglected)",
+      <Image g={i3} />,
+      <Image g={i23} />,
+    ],
 
-    optionA:'A) a',
-    optionB:'B) b',
-    optionC:'C) c',
-    optionD:'D) d',
+    optionA: "A) a",
+    optionB: "B) b",
+    optionC: "C) c",
+    optionD: "D) d",
   },
-  
+
   {
     id: "19.",
-    question:["The graph between the displacement   and time   for a particle moving in a straight line is shown in figure. During the interval   and  , the acceleration of the particle is", <Image g={i4} />, <Image g={i5} />],
+    question: [
+      "The graph between the displacement   and time   for a particle moving in a straight line is shown in figure. During the interval   and  , the acceleration of the particle is",
+      <Image g={i4} />,
+      <Image g={i5} />,
+    ],
 
-    optionA:'A) a',
-    optionB:'B) b',
-    optionC:'C) c',
-    optionD:'D) d',
+    optionA: "A) a",
+    optionB: "B) b",
+    optionC: "C) c",
+    optionD: "D) d",
   },
-  
+
   {
     id: "20.",
-    question:["The   graph of a moving object is given in figure. The maximum acceleration is", <Image g={i6} />],
+    question: [
+      "The   graph of a moving object is given in figure. The maximum acceleration is",
+      <Image g={i6} />,
+    ],
 
-    optionA:<MathEq math={String.raw`A) $1 cm/sec^{2}$`}/>,
-    optionB:<MathEq math={String.raw`B) $2 cm/sec^{2}$`}/>,
-    optionC:<MathEq math={String.raw`C) $3 cm/sec^{2}$`}/>,
-    optionD:<MathEq math={String.raw`D) $6 cm/sec^{2}$`}/>,
+    optionA: <MathEq math={String.raw`A) $1 cm/sec^{2}$`} />,
+    optionB: <MathEq math={String.raw`B) $2 cm/sec^{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $3 cm/sec^{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $6 cm/sec^{2}$`} />,
   },
 
   {
     id: "21.",
-    question:["The   graph shown in figure represents", <Image g={i7} />],
+    question: ["The   graph shown in figure represents", <Image g={i7} />],
 
-    optionA:'A) Constant velocity',
-    optionB:'B) Velocity of the body is continuously changing',
-    optionC:'C) Instantaneous velocity',
-    optionD:'D) The body travels with constant speed upto time   and then stops',
+    optionA: "A) Constant velocity",
+    optionB: "B) Velocity of the body is continuously changing",
+    optionC: "C) Instantaneous velocity",
+    optionD:
+      "D) The body travels with constant speed upto time   and then stops",
   },
   {
     id: "22.",
-    question:["A lift is going up. The variation in the speed of the lift is as given in the graph. What is the height to which the lift takes the passengers", <Image g={i8} />],
+    question: [
+      "A lift is going up. The variation in the speed of the lift is as given in the graph. What is the height to which the lift takes the passengers",
+      <Image g={i8} />,
+    ],
 
-    optionA:'A) 3.6m',
-    optionB:'B) 28.8m',
-    optionC:'C) 36.0m',
-    optionD:'D) cannot be calculated from the above graph',
+    optionA: "A) 3.6m",
+    optionB: "B) 28.8m",
+    optionC: "C) 36.0m",
+    optionD: "D) cannot be calculated from the above graph",
   },
   {
     id: "23.",
-    question:["Velocity-time (v-t) graph for a moving object is shown in the figure. Total displacement of the object during the time interval when there is non-zero acceleration and retardation is", <Image g={i9} />],
+    question: [
+      "Velocity-time (v-t) graph for a moving object is shown in the figure. Total displacement of the object during the time interval when there is non-zero acceleration and retardation is",
+      <Image g={i9} />,
+    ],
 
-    optionA:'A) 60m',
-    optionB:'B) 50m',
-    optionC:'C) 30m',
-    optionD:'D) 40m',
+    optionA: "A) 60m",
+    optionB: "B) 50m",
+    optionC: "C) 30m",
+    optionD: "D) 40m",
   },
   {
     id: "24.",
-    question:["Figures (i) and (ii) below show the displacement-time graphs of two particles moving along the x-axis. We can say that", <Image g={i10} />],
+    question: [
+      "Figures (i) and (ii) below show the displacement-time graphs of two particles moving along the x-axis. We can say that",
+      <Image g={i10} />,
+    ],
 
-    optionA:'A) Both the particles are having a uniformly accelerated motion',
-    optionB:'B) Both the particles are having a uniformly retarded motion',
-    optionC:'C) Particle (i) is having a uniformly accelerated motion while particle (ii) is having a uniformly retarded motion',
-    optionD:'D) Particle (i) is having a uniformly retarded motion while particle (ii) is having a uniformly accelerated motion',
+    optionA: "A) Both the particles are having a uniformly accelerated motion",
+    optionB: "B) Both the particles are having a uniformly retarded motion",
+    optionC:
+      "C) Particle (i) is having a uniformly accelerated motion while particle (ii) is having a uniformly retarded motion",
+    optionD:
+      "D) Particle (i) is having a uniformly retarded motion while particle (ii) is having a uniformly accelerated motion",
   },
   {
     id: "25.",
-    question:["For the velocity-time graph shown in figure below the distance covered by the body in last two seconds of its motion is what fraction of the total distance covered by it in all the seven seconds", <Image g={i11} />],
+    question: [
+      "For the velocity-time graph shown in figure below the distance covered by the body in last two seconds of its motion is what fraction of the total distance covered by it in all the seven seconds",
+      <Image g={i11} />,
+    ],
 
-    optionA:'A) 1/2',
-    optionB:'B) 1/4',
-    optionC:'C) 1/3',
-    optionD:'D) 2/3',
+    optionA: "A) 1/2",
+    optionB: "B) 1/4",
+    optionC: "C) 1/3",
+    optionD: "D) 2/3",
   },
   {
     id: "26.",
-    question:["In the following graph, distance travelled by the body in metres is", <Image g={i12} />],
+    question: [
+      "In the following graph, distance travelled by the body in metres is",
+      <Image g={i12} />,
+    ],
 
-    optionA:'A) 200',
-    optionB:'B) 250',
-    optionC:'C) 300',
-    optionD:'D) 400',
+    optionA: "A) 200",
+    optionB: "B) 250",
+    optionC: "C) 300",
+    optionD: "D) 400",
   },
   {
     id: "27.",
-    question:"Velocity-time curve for a body projected vertically upwards is",
+    question: "Velocity-time curve for a body projected vertically upwards is",
 
-    optionA:'A) parabola',
-    optionB:'B) ellipse',
-    optionC:'C) hyperbola',
-    optionD:'D) straight line',
+    optionA: "A) parabola",
+    optionB: "B) ellipse",
+    optionC: "C) hyperbola",
+    optionD: "D) straight line",
   },
   {
     id: "28.",
-    question:["The displacement-time graph of moving particle is shown below", <Image g={i13} />, <div>The instantaneous velocity of the particle is negative at the point</div>],
+    question: [
+      "The displacement-time graph of moving particle is shown below",
+      <Image g={i13} />,
+      <div>
+        The instantaneous velocity of the particle is negative at the point
+      </div>,
+    ],
 
-    optionA:'A) D',
-    optionB:'B) F',
-    optionC:'C) C',
-    optionD:'D) E',
+    optionA: "A) D",
+    optionB: "B) F",
+    optionC: "C) C",
+    optionD: "D) E",
   },
   {
     id: "29.",
-    question:"Which graph represents the uniform acceleration",
+    question: "Which graph represents the uniform acceleration",
 
-    optionA:<Image g={i14} t="A"/>,
-    optionB:<Image g={i15} t="B"/>,
-    optionC:<Image g={i16} t="C"/>,
-    optionD:<Image g={i17} t="D"/>,
+    optionA: <Image g={i14} t="A" />,
+    optionB: <Image g={i15} t="B" />,
+    optionC: <Image g={i16} t="C" />,
+    optionD: <Image g={i17} t="D" />,
   },
   {
     id: "30.",
-    question:"Which of the following velocity-time graphs shows a realistic situation for a body in motion",
+    question:
+      "Which of the following velocity-time graphs shows a realistic situation for a body in motion",
 
-    optionA:<Image g={i18} t="A"/>,
-    optionB:<Image g={i19} t="B"/>,
-    optionC:<Image g={i20} t="C"/>,
-    optionD:<Image g={i21} t="D"/>,
+    optionA: <Image g={i18} t="A" />,
+    optionB: <Image g={i19} t="B" />,
+    optionC: <Image g={i20} t="C" />,
+    optionD: <Image g={i21} t="D" />,
   },
 ];
