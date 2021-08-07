@@ -2,31 +2,31 @@ import React from "react";
 import MathEq from "./MathEq";
 import Image from "./Image";
 import i1 from "./I1.png";
-import i2 from "./I2.png";
-// import i3 from "./I3.bmp";
-// import i4 from "./I4.bmp";
-// import i5 from "./I5.bmp";
-// import i6 from "./I6.bmp";
-import i3 from "./I3.png";
-import i4 from "./I4.png";
-import i5 from "./I5.JPG";
-import i6 from "./I6.png";
-import i7 from "./I7.png";
-import i8 from "./I8.png";
-import i9 from "./I9.png";
-import i10 from "./I10.png";
-import i11 from "./I11.png";
-import i12 from "./I12.png";
-import i13 from "./I13.png";
-import i14 from "./I14.png";
-import i15 from "./I15.png";
-import i16 from "./I16.png";
-import i17 from "./I17.png";
-import i18 from "./I18.png";
-import i19 from "./I19.png";
-import i20 from "./I20.png";
-import i21 from "./I21.png";
-import i23 from "./I23.png";
+// import i2 from "./I2.png";
+// // import i3 from "./I3.bmp";
+// // import i4 from "./I4.bmp";
+// // import i5 from "./I5.bmp";
+// // import i6 from "./I6.bmp";
+// import i3 from "./I3.png";
+// import i4 from "./I4.png";
+// import i5 from "./I5.JPG";
+// import i6 from "./I6.png";
+// import i7 from "./I7.png";
+// import i8 from "./I8.png";
+// import i9 from "./I9.png";
+// import i10 from "./I10.png";
+// import i11 from "./I11.png";
+// import i12 from "./I12.png";
+// import i13 from "./I13.png";
+// import i14 from "./I14.png";
+// import i15 from "./I15.png";
+// import i16 from "./I16.png";
+// import i17 from "./I17.png";
+// import i18 from "./I18.png";
+// import i19 from "./I19.png";
+// import i20 from "./I20.png";
+// import i21 from "./I21.png";
+// import i23 from "./I23.png";
 
 export const studentsDB = [
   { sNO: "0", userID: "admin", passw: "admin@1000" },
@@ -81,382 +81,318 @@ export const studentsDB = [
 export const questionsAll = [
   {
     id: "1.",
-    question: "The quadratic equations whose roots are 2, 3 is",
+    question: (
+      <MathEq
+        math={String.raw`Solve: $\frac{x}{2}-\frac{1}{5}=\frac{x}{3}+\frac{1}{4}$`}
+      />
+    ),
 
-    optionA: <MathEq math={String.raw`A) $x^{2}+5x+6=0$`} />,
-    optionB: <MathEq math={String.raw`B) $x^{2}-5x+6=0$`} />,
-    optionC: <MathEq math={String.raw`C) $x^{2}-5x-6=0$`} />,
-    optionD: <MathEq math={String.raw`A) $x^{2}+5x-6=0$`} />,
+    optionA: <MathEq math={String.raw`A) $\frac{10}{27}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{27}{10}$`} />,
+    optionC: "C) 3",
+    optionD: "D) 4",
   },
 
   {
     id: "2.",
-    question: (
-      <MathEq
-        math={String.raw`The roots of the quadratic equation $2x^{2}+x-6=0$ are`}
-      />
-    ),
+    question: "Solve: 3x=2x+18",
 
-    optionA: "A) -2, 3/2",
-    optionB: "B) 2, -3/2",
-    optionC: "C) 2, -2",
-    optionD: "D) -2,-3/2",
+    optionA: "A) 18",
+    optionB: "B) -18",
+    optionC: "C) 12",
+    optionD: "D) -12",
   },
 
   {
     id: "3.",
-    question: (
-      <MathEq math={String.raw`The sum of roots of $100x^{2}-20x+1=0$`} />
-    ),
+    question: "Solve: 2x-1=14-x",
 
-    optionA: "A) -1/4",
-    optionB: "B) 1/5",
-    optionC: "C) 1/100",
-    optionD: "D) 1/4",
+    optionA: "A) 5",
+    optionB: "B) -5",
+    optionC: "C) 12",
+    optionD: "D) 3",
   },
 
   {
     id: "4.",
     question: (
-      <MathEq math={String.raw`The product of roots of $x^{2}-3x-1=0$`} />
+      <MathEq
+        math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}} = \frac{c_{1}}{c_{2}}$ then the the two lines $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ are`}
+      />
     ),
 
-    optionA: "A) 1",
-    optionB: "B) -3",
-    optionC: "C) -1",
-    optionD: "D) 3",
+    optionA: "A) Parallel",
+    optionB: "B) Coincide",
+    optionC: "C) Intersecting",
+    optionD: "D) None",
   },
 
   {
     id: "5.",
-    question: (
-      <MathEq
-        math={String.raw`Find the value of k, if $2x^{2}+kx+3=0$ has equal roots`}
-      />
-    ),
+    question: <MathEq math={String.raw`The lines $x+y=8$, $x-y=2$ are`} />,
 
-    optionA: <MathEq math={String.raw`A) $2\sqrt{6}$`} />,
-    optionB: <MathEq math={String.raw`B) $\sqrt{6}$`} />,
-    optionC: "C) 12",
-    optionD: "D) 0",
+    optionA: "A) Parallel",
+    optionB: "B) Coincide",
+    optionC: "C) Intersecting",
+    optionD: "D) None",
   },
 
   {
     id: "6.",
     question: (
-      <MathEq
-        math={String.raw`The roots of the quadratic equation $2x^{2}-6x+3=0$ are`}
-      />
+      <MathEq math={String.raw`The lines $2x-y+1=0$, $2x-y+4=0$ are`} />
     ),
 
-    optionA: "A) real and distinct",
-    optionB: "B) real and equal",
-    optionC: "C) not real",
-    optionD: "D) none",
+    optionA: "A) Parallel",
+    optionB: "B) Coincide",
+    optionC: "C) Intersecting",
+    optionD: "D) None",
   },
 
   {
     id: "7.",
-    question: (
-      <MathEq
-        math={String.raw`The roots of the quadratic equation $2x^{2}-3x+5=0$ are`}
-      />
-    ),
+    question: `Write the mathematical form using two variables: "The cost of two tables and 5 chairs is 2200"`,
 
-    optionA: "A) real and distinct",
-    optionB: "B) real and equal",
-    optionC: "C) not real",
-    optionD: "D) none",
+    optionA: "A) x+y=2200",
+    optionB: "B) 2x+y=2200",
+    optionC: "C) 2x+5y=2200",
+    optionD: "D) None",
   },
 
   {
     id: "8.",
-    question: <MathEq math={String.raw`The graph of $2x^{2}+3x+1=0$ is`} />,
+    question: (
+      <MathEq
+        math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}}=\frac{c_{1}}{c_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
+      />
+    ),
 
-    optionA: "A) open up",
-    optionB: "B) open down",
-    optionC: "C) open left",
-    optionD: "D) open right",
+    optionA: "A) Unique solution",
+    optionB: "B) Infinite many solutions",
+    optionC: "C) No solution",
+    optionD: "D) None",
   },
 
   {
     id: "9.",
-    question: <MathEq math={String.raw`Graph of $y=-5x^{2}+7x+2$ is`} />,
+    question: (
+      <MathEq
+        math={String.raw`If $\frac{a_{1}}{a_{2}} \neq \frac{b_{1}}{b_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
+      />
+    ),
 
-    optionA: "A) open up",
-    optionB: "B) open down",
-    optionC: "C) open left",
-    optionD: "D) open right",
+    optionA: "A) Unique solution",
+    optionB: "B) Infinite many solutions",
+    optionC: "C) No solution",
+    optionD: "D) None",
   },
 
   {
     id: "10.",
     question: (
       <MathEq
-        math={String.raw`The maximum or minimum value of $ax^{2}+bx+c=0$ exists at x=`}
+        math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}} \neq \frac{c_{1}}{c_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
       />
     ),
 
-    optionA: "A) b/a",
-    optionB: "B) -b/a",
-    optionC: "C) b/2a",
-    optionD: "D) -b/2a",
+    optionA: "A) Unique solution",
+    optionB: "B) Infinite many solutions",
+    optionC: "C) No solution",
+    optionD: "D) None",
   },
 
   {
     id: "11.",
-    question: (
-      <MathEq
-        math={String.raw`The maximum or minimum value of $ax^{2}+bx+c$ is`}
-      />
-    ),
+    question: "Solve 8x+5y=9, 3x+2y=4",
 
-    optionA: <MathEq math={String.raw`A) $\frac{4ac-b^{2}}{4a}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{4ac+b^{2}}{4a}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{4ac-b^{2}}{a}$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{4ac+b^{2}}{a}$`} />,
+    optionA: "A) x= -2, y= 5",
+    optionB: "B) x= -1, y= 7",
+    optionC: "C) x= 2, y= 3",
+    optionD: "D) x= 9, y= 4",
   },
 
   {
     id: "12.",
-    question: (
-      <MathEq
-        math={String.raw`If $\alpha$ and $\beta$ are roots of $ax^{2}+bx+c=0$ then $\left | \alpha - \beta \right |$ =`}
-      />
-    ),
+    question:
+      "For what value of k, the system of equations kx-y-2=0 and 6x-2y-3=0 has a unique solution",
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $\frac{\sqrt{b^{2}-4ac}}{\left | a \right |}$`}
-      />
-    ),
-    optionB: <MathEq math={String.raw`B) $\frac{b^{2}-2ac}{a^{2}}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{b}{a}$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{c}{a}$`} />,
+    optionA: <MathEq math={String.raw`A) $k\neq 4$`} />,
+    optionB: <MathEq math={String.raw`B) $k\neq 3$`} />,
+    optionC: <MathEq math={String.raw`C) $k\neq 5$`} />,
+    optionD: <MathEq math={String.raw`D) $k\neq 2$`} />,
   },
 
   {
     id: "13.",
-    question: (
-      <MathEq
-        math={String.raw`If $\alpha$ and $\beta$ are roots of $ax^{2}+bx+c=0$ then $\alpha ^{2} + \beta ^{2}$ =`}
-      />
-    ),
+    question:
+      "For what value of k, the system of equations x+2y+7=0 and 2x+ky+14=0 has an infinite number solutions?",
 
-    optionA: (
-      <MathEq
-        math={String.raw`A) $\frac{\sqrt{b^{2}-4ac}}{\left | a \right |}$`}
-      />
-    ),
-    optionB: <MathEq math={String.raw`B) $\frac{b^{2}-2ac}{a^{2}}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{b}{a}$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{c}{a}$`} />,
+    optionA: "A) k= 2",
+    optionB: "B) k= 4",
+    optionC: "C) k= 3",
+    optionD: "D) k= 7",
   },
 
   {
     id: "14.",
-    question: (
-      <MathEq math={String.raw`The maximum value of $-5x^{2}+2x+3$ is`} />
-    ),
+    question:
+      "For what value of k, the system of equations kx-10y-3=0 and 3x-5y-7=0 has no solution?",
 
-    optionA: "A) -16/5",
-    optionB: "B) 16",
-    optionC: "C) 5",
-    optionD: "D) 16/5",
+    optionA: "A) k= 6",
+    optionB: "B) k= 4",
+    optionC: "C) k= 2",
+    optionD: "D) k= 5",
   },
 
   {
     id: "15.",
-    question: <MathEq math={String.raw`SUm of roots of $ax^{2}+bx+c=0$ is`} />,
+    question:
+      "In a fraction, if unity is added to the numerator and subtracted from the denominator, it becomes 2/3. Instead, if unity is subtracted from the numerator and added to the denominator, it becomes 1/2. Find the fraction.",
 
-    optionA: "A) b/a",
-    optionB: "B) -b/a",
-    optionC: "C) c/a",
-    optionD: "D) -c/a",
+    optionA: "A) 19/11",
+    optionB: "B) 11/19",
+    optionC: "C) 2/19",
+    optionD: "D) 10/19",
   },
 
   {
     id: "16.",
-    question: [
-      "The variation of velocity of a particle with time moving along a straight line is illustrated in the following figure. The  distance travelled by the  particle in four seconds is",
-      <Image g={i1} />,
-    ],
+    question:'A man goes 10m towards North, then 20m towards east then displacement is',
 
-    optionA: "A) 60m",
-    optionB: "B) 55m",
-    optionC: "C) 25m",
-    optionD: "D) 30m",
+    optionA:'A) 22.5m',
+    optionB:'B) 25m',
+    optionC:'C) 25.5m',
+    optionD:'D) 30m',
   },
 
   {
     id: "17.",
-    question: [
-      "The displacement of a particle as a function of time is shown in the figure. The figure shows that",
-      <Image g={i2} />,
-    ],
+    question:"An athlete completes one round of a circular track of radius R in 40 sec. What will be his displacement at the end of 2 min. 20 sec",
 
-    optionA:
-      "A) The particle starts with certain velocity but the motion is retarded and finally the particle stops",
-    optionB: "B) The velocity of the particle is constant throughout",
-    optionC: "C) The acceleration of the particle is constant throughout",
-    optionD:
-      "D) The particle starts with constant velocity, then motion is accelerated and finally the particle moves with another constant velocity",
+    optionA:'A) Zero',
+    optionB:'B) 2R ',
+    optionC:<MathEq math={String.raw`C) $2\pi$R`} />,
+    optionD: <MathEq math={String.raw`D) $7 \pi$R`} />,
   },
-
+  
   {
     id: "18.",
-    question: [
-      "A ball is thrown vertically upwards. Which of the following graph/graphs represent velocity-time graph of the ball during its flight (air resistance is neglected)",
-      <Image g={i3} />,
-      <Image g={i23} />,
-    ],
+    question:"A car travels from A to B at a speed of 20 km/hr and returns at a speed of 30 km/hr. The average speed of the car for the  whole journey is",
 
-    optionA: "A) a",
-    optionB: "B) b",
-    optionC: "C) c",
-    optionD: "D) d",
+    optionA:'A) 25 km/hr',
+    optionB:'B) 24 km/hr',
+    optionC:'C) 50 km/hr',
+    optionD:'D) 5 km/hr',
   },
-
+  
   {
     id: "19.",
-    question: [
-      "The graph between the displacement   and time   for a particle moving in a straight line is shown in figure. During the interval   and  , the acceleration of the particle is",
-      <Image g={i4} />,
-      <Image g={i5} />,
-    ],
+    question:"A boy walks to his school at a distance of 6 km with constant speed of 2.5 km/hour and walks back with a constant speed of 4 km/hr. His average speed for round trip expressed in km/hour, is ",
 
-    optionA: "A) a",
-    optionB: "B) b",
-    optionC: "C) c",
-    optionD: "D) d",
+    optionA:'A) 24/13',
+    optionB:'B) 40/13',
+    optionC:'C) 3',
+    optionD:'D) 1/2',
   },
-
+  
   {
     id: "20.",
-    question: [
-      "The   graph of a moving object is given in figure. The maximum acceleration is",
-      <Image g={i6} />,
-    ],
+    question:"A particle moves for 20 seconds with velocity 3 m/s and then velocity 4 m/s for another 20 seconds and finally moves with velocity 5 m/s for next 20 seconds. What is the average velocity of the particle",
 
-    optionA: <MathEq math={String.raw`A) $1 cm/sec^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $2 cm/sec^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $3 cm/sec^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $6 cm/sec^{2}$`} />,
+    optionA:'A) 3 m/s',
+    optionB:'B) 4 m/s',
+    optionC:'C) 5 m/s',
+    optionD:'D) Zero',
   },
 
   {
     id: "21.",
-    question: ["The   graph shown in figure represents", <Image g={i7} />],
+    question:["Which of the following options is correct for the object having a straight line motion represented by the following graph", <Image g={i1} />],
 
-    optionA: "A) Constant velocity",
-    optionB: "B) Velocity of the body is continuously changing",
-    optionC: "C) Instantaneous velocity",
-    optionD:
-      "D) The body travels with constant speed upto time   and then stops",
+    optionA:'A) The object moves with constantly increasing velocity from O to A and then it moves with constant velocity.',
+    optionB:'B) Velocity of the object increases uniformly',
+    optionC:'C) Average velocity is zero',
+    optionD:'D) The graph shown is impossible',
   },
   {
     id: "22.",
-    question: [
-      "A lift is going up. The variation in the speed of the lift is as given in the graph. What is the height to which the lift takes the passengers",
-      <Image g={i8} />,
-    ],
+    question:<MathEq math={String.raw`The initial velocity of the particle is $10 m/sec$  and its retardation is $2 m/sec^{2}$. The distance moved by the particle in 5th second of its motion is`} />,
 
-    optionA: "A) 3.6m",
-    optionB: "B) 28.8m",
-    optionC: "C) 36.0m",
-    optionD: "D) cannot be calculated from the above graph",
+    optionA:'A) 1m',
+    optionB:'B) 19m',
+    optionC:'C) 50m',
+    optionD:'D) 75m',
   },
   {
     id: "23.",
-    question: [
-      "Velocity-time (v-t) graph for a moving object is shown in the figure. Total displacement of the object during the time interval when there is non-zero acceleration and retardation is",
-      <Image g={i9} />,
-    ],
+    question:"A motor car moving with a uniform speed of 20m/sec comes to stop on the application of brakes after travelling a distance of 10m Its acceleration is",
 
-    optionA: "A) 60m",
-    optionB: "B) 50m",
-    optionC: "C) 30m",
-    optionD: "D) 40m",
+    optionA: <MathEq math={String.raw`A) $20 m/sec^{2}$`} />,
+    optionB: <MathEq math={String.raw`B) $-20 m/sec^{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $-40 m/sec^{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $+2 m/sec^{2}$`} />,
   },
   {
     id: "24.",
-    question: [
-      "Figures (i) and (ii) below show the displacement-time graphs of two particles moving along the x-axis. We can say that",
-      <Image g={i10} />,
-    ],
+    question:"Which of the following four statements is false",
 
-    optionA: "A) Both the particles are having a uniformly accelerated motion",
-    optionB: "B) Both the particles are having a uniformly retarded motion",
-    optionC:
-      "C) Particle (i) is having a uniformly accelerated motion while particle (ii) is having a uniformly retarded motion",
-    optionD:
-      "D) Particle (i) is having a uniformly retarded motion while particle (ii) is having a uniformly accelerated motion",
+    optionA:'A) A body can have zero velocity and still be accelerated',
+    optionB:'B) A body can have a constant velocity and still have a varying speed',
+    optionC:'C) A body can have a constant speed and still have a varying velocity',
+    optionD:'D) The direction of the velocity of a body can change when its acceleration is constant',
   },
   {
     id: "25.",
-    question: [
-      "For the velocity-time graph shown in figure below the distance covered by the body in last two seconds of its motion is what fraction of the total distance covered by it in all the seven seconds",
-      <Image g={i11} />,
-    ],
+    question:<MathEq math={String.raw`A body moves from rest with a constant acceleration of $5 m/sec^{2}$. Its instantaneous speed (in m/s) at the end of 10 sec  is`} />,
 
-    optionA: "A) 1/2",
-    optionB: "B) 1/4",
-    optionC: "C) 1/3",
-    optionD: "D) 2/3",
+    optionA:'A) 50',
+    optionB:'B) 5',
+    optionC:'C) 2',
+    optionD:'D) 0.5',
   },
   {
     id: "26.",
-    question: [
-      "In the following graph, distance travelled by the body in metres is",
-      <Image g={i12} />,
-    ],
+    question:"A boggy of uniformly moving train is suddenly detached from train and stops after covering some distance. The distance covered by the boggy and distance covered by the train in the same time has relation",
 
-    optionA: "A) 200",
-    optionB: "B) 250",
-    optionC: "C) 300",
-    optionD: "D) 400",
+    optionA:'A) Both will be equal',
+    optionB:'B) First will be half of second',
+    optionC:'C) First will be 1/4 of second',
+    optionD:'D) No definite ratio',
   },
   {
     id: "27.",
-    question: "Velocity-time curve for a body projected vertically upwards is",
+    question:"A body starts from rest. What is the ratio of the distance travelled by the body during the 4th and 3rd second",
 
-    optionA: "A) parabola",
-    optionB: "B) ellipse",
-    optionC: "C) hyperbola",
-    optionD: "D) straight line",
+    optionA:'A) 7/5',
+    optionB:'B) 5/7',
+    optionC:'C) 7/3',
+    optionD:'D) 3/7',
   },
   {
     id: "28.",
-    question: [
-      "The displacement-time graph of moving particle is shown below",
-      <Image g={i13} />,
-      <div>
-        The instantaneous velocity of the particle is negative at the point
-      </div>,
-    ],
+    question:"If a train travelling at 72 kmph is to be brought to rest in a distance of 200 metres, then its retardation should be ",
 
-    optionA: "A) D",
-    optionB: "B) F",
-    optionC: "C) C",
-    optionD: "D) E",
+    optionA: <MathEq math={String.raw`A) $20 ms^{-2}$`} />,
+    optionB: <MathEq math={String.raw`B) $10 ms^{-2}$`} />,
+    optionC: <MathEq math={String.raw`C) $2 ms^{-2}$`} />,
+    optionD: <MathEq math={String.raw`D) $1 ms^{-2}$`} />,
   },
   {
     id: "29.",
-    question: "Which graph represents the uniform acceleration",
+    question:"Acceleration of a particle changes when",
 
-    optionA: <Image g={i14} t="A" />,
-    optionB: <Image g={i15} t="B" />,
-    optionC: <Image g={i16} t="C" />,
-    optionD: <Image g={i17} t="D" />,
+    optionA:'A) Direction of velocity changes',
+    optionB:'B) Magnitude of velocity changes',
+    optionC:'C) Both of above',
+    optionD:'D) Speed changes',
   },
   {
     id: "30.",
-    question:
-      "Which of the following velocity-time graphs shows a realistic situation for a body in motion",
+    question:"The velocity of a bullet is reduced from 200m/s to 100m/s while travelling through a wooden block of thickness 10cm. The retardation, assuming it to be uniform, will be ",
 
-    optionA: <Image g={i18} t="A" />,
-    optionB: <Image g={i19} t="B" />,
-    optionC: <Image g={i20} t="C" />,
-    optionD: <Image g={i21} t="D" />,
+    optionA: <MathEq math={String.raw`A) $10 \times 10^{4} \: m/s^{2}$`} />,
+    optionB: <MathEq math={String.raw`B) $12 \times 10^{4} \: m/s^{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $13.5 \times 10^{4} \: m/s^{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $15 \times 10^{4} \: m/s^{2}$`} />,
   },
 ];
