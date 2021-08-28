@@ -1,7 +1,7 @@
 import React from "react";
 import MathEq from "./MathEq";
-import Image from "./Image";
-import i1 from "./I1.png";
+// import Image from "./Image";
+// import i1 from "./I1.png";
 // import i2 from "./I2.png";
 // // import i3 from "./I3.bmp";
 // // import i4 from "./I4.bmp";
@@ -83,40 +83,6 @@ export const questionsAll = [
     id: "1.",
     question: (
       <MathEq
-        math={String.raw`Solve: $\frac{x}{2}-\frac{1}{5}=\frac{x}{3}+\frac{1}{4}$`}
-      />
-    ),
-
-    optionA: <MathEq math={String.raw`A) $\frac{10}{27}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{27}{10}$`} />,
-    optionC: "C) 3",
-    optionD: "D) 4",
-  },
-
-  {
-    id: "2.",
-    question: "Solve: 3x=2x+18",
-
-    optionA: "A) 18",
-    optionB: "B) -18",
-    optionC: "C) 12",
-    optionD: "D) -12",
-  },
-
-  {
-    id: "3.",
-    question: "Solve: 2x-1=14-x",
-
-    optionA: "A) 5",
-    optionB: "B) -5",
-    optionC: "C) 12",
-    optionD: "D) 3",
-  },
-
-  {
-    id: "4.",
-    question: (
-      <MathEq
         math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}} = \frac{c_{1}}{c_{2}}$ then the the two lines $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ are`}
       />
     ),
@@ -128,7 +94,7 @@ export const questionsAll = [
   },
 
   {
-    id: "5.",
+    id: "2.",
     question: <MathEq math={String.raw`The lines $x+y=8$, $x-y=2$ are`} />,
 
     optionA: "A) Parallel",
@@ -138,7 +104,7 @@ export const questionsAll = [
   },
 
   {
-    id: "6.",
+    id: "3.",
     question: (
       <MathEq math={String.raw`The lines $2x-y+1=0$, $2x-y+4=0$ are`} />
     ),
@@ -149,18 +115,10 @@ export const questionsAll = [
     optionD: "D) None",
   },
 
-  {
-    id: "7.",
-    question: `Write the mathematical form using two variables: "The cost of two tables and 5 chairs is 2200"`,
-
-    optionA: "A) x+y=2200",
-    optionB: "B) 2x+y=2200",
-    optionC: "C) 2x+5y=2200",
-    optionD: "D) None",
-  },
+   
 
   {
-    id: "8.",
+    id: "4.",
     question: (
       <MathEq
         math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}}=\frac{c_{1}}{c_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
@@ -174,7 +132,7 @@ export const questionsAll = [
   },
 
   {
-    id: "9.",
+    id: "5.",
     question: (
       <MathEq
         math={String.raw`If $\frac{a_{1}}{a_{2}} \neq \frac{b_{1}}{b_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
@@ -188,7 +146,7 @@ export const questionsAll = [
   },
 
   {
-    id: "10.",
+    id: "6.",
     question: (
       <MathEq
         math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}} \neq \frac{c_{1}}{c_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
@@ -200,199 +158,234 @@ export const questionsAll = [
     optionC: "C) No solution",
     optionD: "D) None",
   },
+  {
+    id: "7.",
+    question:<MathEq math={String.raw`Solve $\left ( x-1 \right )\left ( x+5 \right )> 0$`}/>,
+
+    optionA:<MathEq math={String.raw`A) $x \in \left ( -\infty , -5 \right ) \cup \left ( 1, \infty \right )$`}/>,
+    optionB:<MathEq math={String.raw`B) $x \in \left ( -\infty , 5 \right ] \cup \left [ 1, \infty \right )$`}/>,
+    optionC:<MathEq math={String.raw`C) $x \in \left ( -5 , 5 \right )$`}/>,
+    optionD:<MathEq math={String.raw`D) $x \in \left ( 1 , 5 \right )$`}/>,
+  },
+  
+  {
+    id: "8.",
+    question:<MathEq math={String.raw`Solve $\frac{x-1}{2-x}> 0$`}/>,
+
+    optionA:<MathEq math={String.raw`A) $x \in \left ( -2, -1 \right )$`}/>,
+    optionB:<MathEq math={String.raw`B) $x \in \left ( -1, 2 \right ]$`}/>,
+    optionC:<MathEq math={String.raw`C) $x \in \left ( 1, 2 \right )$`}/>,
+    optionD:<MathEq math={String.raw`D) $x \in \left [ 1, 2 \right ]$`}/>,
+  },
+  
+  {
+    id: "9.",
+    question:<MathEq math={String.raw`Solve $\frac{3}{x-2}< 1$`}/>,
+
+    optionA:<MathEq math={String.raw`A) $x \in \left ( -\infty , 2 \right ) \cup \left ( 5, \infty \right )$`}/>,
+    optionB:<MathEq math={String.raw`B) $x \in \left ( -\infty , 5 \right ] \cup \left [ 2, \infty \right )$`}/>,
+    optionC:<MathEq math={String.raw`C) $x \in \left ( -2 , 5 \right )$`}/>,
+    optionD:<MathEq math={String.raw`D) $x \in \left ( 2 , 5 \right )$`}/>,
+  },
+  
+  {
+    id: "10.",
+    question:<MathEq math={String.raw`Solve $\frac{x^{2}+1}{x^{2}-4} <0$`}/>,
+
+    optionA:<MathEq math={String.raw`A) $x \in \left ( -\infty , 2 \right ) \cup \left ( 4, \infty \right )$`}/>,
+    optionB:<MathEq math={String.raw`B) $x \in \left ( 2 , 4 \right )$`}/>,
+    optionC:<MathEq math={String.raw`C) $x \in \left ( -2 , 4 \right )$`}/>,
+    optionD:<MathEq math={String.raw`D) $x \in \left ( -2 , 2 \right )$`}/>,
+  },
 
   {
     id: "11.",
-    question: "Solve 8x+5y=9, 3x+2y=4",
+    question:<MathEq math={String.raw`Find the value of $log _{\sqrt{5}} 125$`}/>,
 
-    optionA: "A) x= -2, y= 5",
-    optionB: "B) x= -1, y= 7",
-    optionC: "C) x= 2, y= 3",
-    optionD: "D) x= 9, y= 4",
+    optionA:'A) 3',
+    optionB:'B) 4',
+    optionC:'C) 5',
+    optionD:'D) 6',
   },
 
   {
     id: "12.",
-    question:
-      "For what value of k, the system of equations kx-y-2=0 and 6x-2y-3=0 has a unique solution",
+    question:<MathEq math={String.raw`Find the value of $log _{97} 1$`}/>,
 
-    optionA: <MathEq math={String.raw`A) $k\neq 4$`} />,
-    optionB: <MathEq math={String.raw`B) $k\neq 3$`} />,
-    optionC: <MathEq math={String.raw`C) $k\neq 5$`} />,
-    optionD: <MathEq math={String.raw`D) $k\neq 2$`} />,
+    optionA:'A) 0',
+    optionB:'B) 1',
+    optionC:'C) 2',
+    optionD:'D) 3',
   },
-
+  
   {
     id: "13.",
-    question:
-      "For what value of k, the system of equations x+2y+7=0 and 2x+ky+14=0 has an infinite number solutions?",
+    question:<MathEq math={String.raw`Find the value of $log _{5} -5$`}/>,
 
-    optionA: "A) k= 2",
-    optionB: "B) k= 4",
-    optionC: "C) k= 3",
-    optionD: "D) k= 7",
+    optionA:'A) -1',
+    optionB:'B) 1',
+    optionC:'C) 0',
+    optionD:'D) not defined',
   },
-
+  
   {
     id: "14.",
-    question:
-      "For what value of k, the system of equations kx-10y-3=0 and 3x-5y-7=0 has no solution?",
+    question:<MathEq math={String.raw`Find the range of x, $log _{4} \left ( 5-x \right )$`}/>,
 
-    optionA: "A) k= 6",
-    optionB: "B) k= 4",
-    optionC: "C) k= 2",
-    optionD: "D) k= 5",
+    optionA:'A) x > 5',
+    optionB:'B) x < 5',
+    optionC:'C) x > 4',
+    optionD:'D) x < 4',
   },
-
+  
   {
     id: "15.",
-    question:
-      "In a fraction, if unity is added to the numerator and subtracted from the denominator, it becomes 2/3. Instead, if unity is subtracted from the numerator and added to the denominator, it becomes 1/2. Find the fraction.",
+    question:<MathEq math={String.raw`Find the range of x, $log _{\left ( x-5 \right )} 4$`}/>,
 
-    optionA: "A) 19/11",
-    optionB: "B) 11/19",
-    optionC: "C) 2/19",
-    optionD: "D) 10/19",
+    optionA:<MathEq math={String.raw`A) $x \in \left ( 5,\infty  \right ) + \left \{ 6 \right \}$`}/>,
+    optionB:<MathEq math={String.raw`B) $x \in \left ( 5,\infty  \right )$`}/>,
+    optionC:<MathEq math={String.raw`C) $x \in \left ( 5,\infty  \right ) - \left \{ 6 \right \}$`}/>,
+    optionD:<MathEq math={String.raw`D) $x \in \left [ 5,\infty  \right ) - \left \{ 6 \right \}$`}/>,
   },
 
   {
     id: "16.",
-    question:'A man goes 10m towards North, then 20m towards east then displacement is',
+    question:'A hammer weighing 3kg, moving with a velocity of 10m/s, strikes against the head of a spike and drives it into a block of wood. If the hammer comes to rest in 0.025s, the impulse associated with the ball will be',
 
-    optionA:'A) 22.5m',
-    optionB:'B) 25m',
-    optionC:'C) 25.5m',
-    optionD:'D) 30m',
+    optionA:'A) 30 Ns',
+    optionB:'B) -30 Ns',
+    optionC:'C) 15 Ns',
+    optionD:'D) -15 Ns',
   },
 
   {
     id: "17.",
-    question:"An athlete completes one round of a circular track of radius R in 40 sec. What will be his displacement at the end of 2 min. 20 sec",
+    question: "A rocket works on the",
 
-    optionA:'A) Zero',
-    optionB:'B) 2R ',
-    optionC:<MathEq math={String.raw`C) $2\pi$R`} />,
-    optionD: <MathEq math={String.raw`D) $7 \pi$R`} />,
+    optionA:'A) First law of motion',
+    optionB:'B) Second law of motion',
+    optionC:'C) Third law of motion',
+    optionD:'D) Law of conservation of energy',
   },
   
   {
     id: "18.",
-    question:"A car travels from A to B at a speed of 20 km/hr and returns at a speed of 30 km/hr. The average speed of the car for the  whole journey is",
+    question:"If you are asked to push an object so that the acceleration produced in it is now twice as before, then the force required will be",
 
-    optionA:'A) 25 km/hr',
-    optionB:'B) 24 km/hr',
-    optionC:'C) 50 km/hr',
-    optionD:'D) 5 km/hr',
+    optionA:'A) Twice as before',
+    optionB:'B) Half as before',
+    optionC:'C) Same as before',
+    optionD:'D) Four times as before',
   },
   
   {
     id: "19.",
-    question:"A boy walks to his school at a distance of 6 km with constant speed of 2.5 km/hour and walks back with a constant speed of 4 km/hr. His average speed for round trip expressed in km/hour, is ",
+    question:"It is difficult to walk on ice because of",
 
-    optionA:'A) 24/13',
-    optionB:'B) 40/13',
-    optionC:'C) 3',
-    optionD:'D) 1/2',
+    optionA:'A) absence of friction',
+    optionB:'B) absence of inertia',
+    optionC:'C) more inertia',
+    optionD:'D) more friction',
   },
   
   {
     id: "20.",
-    question:"A particle moves for 20 seconds with velocity 3 m/s and then velocity 4 m/s for another 20 seconds and finally moves with velocity 5 m/s for next 20 seconds. What is the average velocity of the particle",
+    question:"The law which defines force is",
 
-    optionA:'A) 3 m/s',
-    optionB:'B) 4 m/s',
-    optionC:'C) 5 m/s',
-    optionD:'D) Zero',
+    optionA:'A) Newtons third law of motion',
+    optionB:'B) Newtons first law of motion',
+    optionC:'C) Newtons second law of motion',
+    optionD:'D) Newtons law of gravity',
   },
 
   {
     id: "21.",
-    question:["Which of the following options is correct for the object having a straight line motion represented by the following graph", <Image g={i1} />],
+    question:"The law which gives a quantitative measurement of force is",
 
-    optionA:'A) The object moves with constantly increasing velocity from O to A and then it moves with constant velocity.',
-    optionB:'B) Velocity of the object increases uniformly',
-    optionC:'C) Average velocity is zero',
-    optionD:'D) The graph shown is impossible',
+    optionA:'A) Newtons third law of motion',
+    optionB:'B) Newtons first law of motion',
+    optionC:'C) Newtons second law of motion',
+    optionD:'D) Newtons law of gravity',
   },
   {
     id: "22.",
-    question:<MathEq math={String.raw`The initial velocity of the particle is $10 m/sec$  and its retardation is $2 m/sec^{2}$. The distance moved by the particle in 5th second of its motion is`} />,
+    question:"Friction between any two objects is due to",
 
-    optionA:'A) 1m',
-    optionB:'B) 19m',
-    optionC:'C) 50m',
-    optionD:'D) 75m',
+    optionA:'A) attraction between them',
+    optionB:'B) repulsion between them',
+    optionC:'C) some adhesive forces between them',
+    optionD:'D) irregularities on the surfaces',
   },
   {
     id: "23.",
-    question:"A motor car moving with a uniform speed of 20m/sec comes to stop on the application of brakes after travelling a distance of 10m Its acceleration is",
+    question:"A and B are two objects with mass 6kg and 34kg respectively. Then ",
 
-    optionA: <MathEq math={String.raw`A) $20 m/sec^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $-20 m/sec^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $-40 m/sec^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $+2 m/sec^{2}$`} />,
+    optionA:'A) A has more inertia than B',
+    optionB:'B) B has more inertia than A',
+    optionC:'C) A and B both have same inertia',
+    optionD:'D) None of the above is true',
   },
   {
     id: "24.",
-    question:"Which of the following four statements is false",
+    question:"Which of the following class of forces is different from others?",
 
-    optionA:'A) A body can have zero velocity and still be accelerated',
-    optionB:'B) A body can have a constant velocity and still have a varying speed',
-    optionC:'C) A body can have a constant speed and still have a varying velocity',
-    optionD:'D) The direction of the velocity of a body can change when its acceleration is constant',
+    optionA:'A) Pulling of a cart',
+    optionB:'B) Stretching of a coiled spring',
+    optionC:'C) Kicking of the football',
+    optionD:'D) Electrical force',
   },
   {
     id: "25.",
-    question:<MathEq math={String.raw`A body moves from rest with a constant acceleration of $5 m/sec^{2}$. Its instantaneous speed (in m/s) at the end of 10 sec  is`} />,
+    question:"Which of the following class of forces is different from others?",
 
-    optionA:'A) 50',
-    optionB:'B) 5',
-    optionC:'C) 2',
-    optionD:'D) 0.5',
+    optionA:'A) Magnetic force',
+    optionB:'B) Electrical force',
+    optionC:'C) Gravitational force',
+    optionD:'D) Stretching of a spring',
   },
   {
     id: "26.",
-    question:"A boggy of uniformly moving train is suddenly detached from train and stops after covering some distance. The distance covered by the boggy and distance covered by the train in the same time has relation",
+    question:<MathEq math={String.raw`If $10 ms^{-2}$, what is the force of gravity acting on a mass of 1kg?`}/>,
 
-    optionA:'A) Both will be equal',
-    optionB:'B) First will be half of second',
-    optionC:'C) First will be 1/4 of second',
-    optionD:'D) No definite ratio',
+    optionA:'A) 1N',
+    optionB:'B) 10N',
+    optionC:'C) 1/10 N',
+    optionD:'D) None of these',
   },
   {
     id: "27.",
-    question:"A body starts from rest. What is the ratio of the distance travelled by the body during the 4th and 3rd second",
+    question:'When an object undergoes acceleration',
 
-    optionA:'A) 7/5',
-    optionB:'B) 5/7',
-    optionC:'C) 7/3',
-    optionD:'D) 3/7',
+    optionA:"A) it's speed always increases",
+    optionB:"B) it's velocity always increases",
+    optionC:"C) it always falls towards the earth",
+    optionD:"D) a force always acts on it",
   },
   {
     id: "28.",
-    question:"If a train travelling at 72 kmph is to be brought to rest in a distance of 200 metres, then its retardation should be ",
+    question:"A force acts on an object which is free to move. If we know the magnitude of the force and the mass of the object, newton's second law of motion enables us to determine the object's",
 
-    optionA: <MathEq math={String.raw`A) $20 ms^{-2}$`} />,
-    optionB: <MathEq math={String.raw`B) $10 ms^{-2}$`} />,
-    optionC: <MathEq math={String.raw`C) $2 ms^{-2}$`} />,
-    optionD: <MathEq math={String.raw`D) $1 ms^{-2}$`} />,
+    optionA:'A) weight',
+    optionB:'B) speec',
+    optionC:'C) acceleration',
+    optionD:'D) position',
   },
   {
     id: "29.",
-    question:"Acceleration of a particle changes when",
+    question:"Newton used the phrase 'quantity of motion' for",
 
-    optionA:'A) Direction of velocity changes',
-    optionB:'B) Magnitude of velocity changes',
-    optionC:'C) Both of above',
-    optionD:'D) Speed changes',
+    optionA:'A) momentum',
+    optionB:'B) force',
+    optionC:'C) acceleration due to gravity',
+    optionD:'D) none of these',
   },
   {
     id: "30.",
-    question:"The velocity of a bullet is reduced from 200m/s to 100m/s while travelling through a wooden block of thickness 10cm. The retardation, assuming it to be uniform, will be ",
+    question:<MathEq math={String.raw`$kg ms^{-1}$ is the SI unit of`}/>,
 
-    optionA: <MathEq math={String.raw`A) $10 \times 10^{4} \: m/s^{2}$`} />,
-    optionB: <MathEq math={String.raw`B) $12 \times 10^{4} \: m/s^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $13.5 \times 10^{4} \: m/s^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $15 \times 10^{4} \: m/s^{2}$`} />,
+    optionA:'A) Impulse',
+    optionB:'B) Force',
+    optionC:'C) Angular velocity',
+    optionD:'D) None of these',
   },
 ];
