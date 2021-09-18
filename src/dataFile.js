@@ -42,7 +42,7 @@ export const studentsDB = [
   { sNO: "11", userID: "abhinav", passw: "1011" },
   // // // // // // // Dubai Below
   // { sNO: "8", userID: "samuel", passw: "1008" },
-  // { sNO: "12", userID: "arshan", passw: "1012" },
+  { sNO: "12", userID: "arshan", passw: "1012" },
   // { sNO: "13", userID: "neeraj", passw: "1013" },
   // { sNO: "14", userID: "abel", passw: "1014" },
   // { sNO: "15", userID: "rayaan", passw: "1015" },
@@ -82,310 +82,343 @@ export const questionsAll = [
   {
     id: "1.",
     question: (
-      <MathEq
-        math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}} = \frac{c_{1}}{c_{2}}$ then the the two lines $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ are`}
-      />
+      <MathEq math={String.raw`Convert $40^{\circ}$ to Radian measure`} />
     ),
 
-    optionA: "A) Parallel",
-    optionB: "B) Coincide",
-    optionC: "C) Intersecting",
-    optionD: "D) None",
+    optionA: <MathEq math={String.raw`A) $\frac{2\pi}{7}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{2\pi}{9}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{\pi}{9}$ `} />,
+    optionD: "D) 0",
   },
 
   {
     id: "2.",
-    question: <MathEq math={String.raw`The lines $x+y=8$, $x-y=2$ are`} />,
+    question: (
+      <MathEq
+        math={String.raw`Convert the $\frac{4\pi ^{c}}{5}$ to Degree measure`}
+      />
+    ),
 
-    optionA: "A) Parallel",
-    optionB: "B) Coincide",
-    optionC: "C) Intersecting",
-    optionD: "D) None",
+    optionA: <MathEq math={String.raw`A) $144^{\circ}$`} />,
+    optionB: <MathEq math={String.raw`B) $142^{\circ}$`} />,
+    optionC: <MathEq math={String.raw`C) $138^{\circ}$`} />,
+    optionD: <MathEq math={String.raw`D) $146^{\circ}$`} />,
   },
 
   {
     id: "3.",
     question: (
-      <MathEq math={String.raw`The lines $2x-y+1=0$, $2x-y+4=0$ are`} />
+      <MathEq
+        math={String.raw`Convert the $\frac{7\pi ^{c}}{6}$ to Degree measure`}
+      />
     ),
 
-    optionA: "A) Parallel",
-    optionB: "B) Coincide",
-    optionC: "C) Intersecting",
-    optionD: "D) None",
+    optionA: <MathEq math={String.raw`A) $200^{\circ}$`} />,
+    optionB: <MathEq math={String.raw`B) $210^{\circ}$`} />,
+    optionC: <MathEq math={String.raw`C) $320^{\circ}$`} />,
+    optionD: <MathEq math={String.raw`D) $0^{\circ}$`} />,
   },
-
-   
 
   {
     id: "4.",
     question: (
-      <MathEq
-        math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}}=\frac{c_{1}}{c_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
-      />
+      <MathEq math={String.raw`Convert $270^{\circ}$ to Radian measure`} />
     ),
 
-    optionA: "A) Unique solution",
-    optionB: "B) Infinite many solutions",
-    optionC: "C) No solution",
-    optionD: "D) None",
+    optionA: <MathEq math={String.raw`A) $3\pi^{c}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{2\pi^{c}}{3}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{3\pi^{c}}{2}$ `} />,
+    optionD: <MathEq math={String.raw`D) $\frac{3\pi^{c}}{4}$ `} />,
   },
 
   {
     id: "5.",
-    question: (
-      <MathEq
-        math={String.raw`If $\frac{a_{1}}{a_{2}} \neq \frac{b_{1}}{b_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
-      />
-    ),
+    question: <MathEq math={String.raw`If $sinA=\frac{3}{4}$, then $tanA$=`} />,
 
-    optionA: "A) Unique solution",
-    optionB: "B) Infinite many solutions",
-    optionC: "C) No solution",
-    optionD: "D) None",
+    optionA: <MathEq math={String.raw`A) $\frac{3}{7}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{\sqrt{7}}{3}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{1}{\sqrt{7}}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{3}{\sqrt{7}}$`} />,
   },
 
   {
     id: "6.",
     question: (
       <MathEq
-        math={String.raw`If $\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}} \neq \frac{c_{1}}{c_{2}}$ then the equations $a_{1}x +b_{1}y+c_{1}=0$ and $a_{2}x +b_{2}y+c_{2}=0$ have`}
+        math={String.raw`If $sinA=\frac{4}{5}$, then $\left ( 4+tanA \right )\left ( 2+cosA \right )$=`}
       />
     ),
 
-    optionA: "A) Unique solution",
-    optionB: "B) Infinite many solutions",
-    optionC: "C) No solution",
-    optionD: "D) None",
+    optionA: <MathEq math={String.raw`A) $\frac{208}{5}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{208}{7}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{208}{13}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{208}{15}$`} />,
   },
+
   {
     id: "7.",
-    question:<MathEq math={String.raw`Solve $\left ( x-1 \right )\left ( x+5 \right )> 0$`}/>,
+    question: (
+      <MathEq
+        math={String.raw`Find $\frac{\left ( 1+sin\theta  \right )\left ( 1-sin\theta \right )}{\left ( 1+sin\theta  \right )\left ( 1-cos\theta \right )}$ if $cot\theta = \frac{7}{8}$`}
+      />
+    ),
 
-    optionA:<MathEq math={String.raw`A) $x \in \left ( -\infty , -5 \right ) \cup \left ( 1, \infty \right )$`}/>,
-    optionB:<MathEq math={String.raw`B) $x \in \left ( -\infty , 5 \right ] \cup \left [ 1, \infty \right )$`}/>,
-    optionC:<MathEq math={String.raw`C) $x \in \left ( -5 , 5 \right )$`}/>,
-    optionD:<MathEq math={String.raw`D) $x \in \left ( 1 , 5 \right )$`}/>,
+    optionA: <MathEq math={String.raw`A) $\frac{49}{6}$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{64}{49}$`} />,
+    optionC: <MathEq math={String.raw`C) $\frac{49}{64}$`} />,
+    optionD: "D) 0",
   },
-  
+
   {
     id: "8.",
-    question:<MathEq math={String.raw`Solve $\frac{x-1}{2-x}> 0$`}/>,
+    question: (
+      <MathEq
+        math={String.raw`Find the value of $\frac{2tan30^{\circ}}{1-tan^{2}30^{\circ}}$`}
+      />
+    ),
 
-    optionA:<MathEq math={String.raw`A) $x \in \left ( -2, -1 \right )$`}/>,
-    optionB:<MathEq math={String.raw`B) $x \in \left ( -1, 2 \right ]$`}/>,
-    optionC:<MathEq math={String.raw`C) $x \in \left ( 1, 2 \right )$`}/>,
-    optionD:<MathEq math={String.raw`D) $x \in \left [ 1, 2 \right ]$`}/>,
+    optionA: <MathEq math={String.raw`A) $\frac{1}{\sqrt{3}}$`} />,
+    optionB: <MathEq math={String.raw`B) $\sqrt{3}$`} />,
+    optionC: "C) 0",
+    optionD: <MathEq math={String.raw`D) $\frac{1}{2}$`} />,
   },
-  
+
   {
     id: "9.",
-    question:<MathEq math={String.raw`Solve $\frac{3}{x-2}< 1$`}/>,
+    question: (
+      <MathEq
+        math={String.raw`Find the value of $\frac{cos60^{\circ}+sin60^{\circ}}{cos60^{\circ}-sin60^{\circ}}$`}
+      />
+    ),
 
-    optionA:<MathEq math={String.raw`A) $x \in \left ( -\infty , 2 \right ) \cup \left ( 5, \infty \right )$`}/>,
-    optionB:<MathEq math={String.raw`B) $x \in \left ( -\infty , 5 \right ] \cup \left [ 2, \infty \right )$`}/>,
-    optionC:<MathEq math={String.raw`C) $x \in \left ( -2 , 5 \right )$`}/>,
-    optionD:<MathEq math={String.raw`D) $x \in \left ( 2 , 5 \right )$`}/>,
+    optionA: <MathEq math={String.raw`A) $-\left ( \sqrt{3}+2 \right )$`} />,
+    optionB: "B) 1",
+    optionC: <MathEq math={String.raw`C) $-\sqrt{3}+2$`} />,
+    optionD: "D) 0",
   },
-  
+
   {
     id: "10.",
-    question:<MathEq math={String.raw`Solve $\frac{x^{2}+1}{x^{2}-4} <0$`}/>,
+    question: (
+      <MathEq
+        math={String.raw`Find the value of $sin60^{\circ} cos30^{\circ}+cos60^{\circ} sin30^{\circ}$`}
+      />
+    ),
 
-    optionA:<MathEq math={String.raw`A) $x \in \left ( -\infty , 2 \right ) \cup \left ( 4, \infty \right )$`}/>,
-    optionB:<MathEq math={String.raw`B) $x \in \left ( 2 , 4 \right )$`}/>,
-    optionC:<MathEq math={String.raw`C) $x \in \left ( -2 , 4 \right )$`}/>,
-    optionD:<MathEq math={String.raw`D) $x \in \left ( -2 , 2 \right )$`}/>,
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: <MathEq math={String.raw`C) $\frac{3}{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $\frac{2}{3}$`} />,
   },
 
   {
     id: "11.",
-    question:<MathEq math={String.raw`Find the value of $log _{\sqrt{5}} 125$`}/>,
+    question: (
+      <MathEq
+        math={String.raw`Find the value of $sin^{2}60^{\circ}+cos^{2}30^{\circ}+cot^{2}45^{\circ}+sec^{2}60^{\circ}-cosec^{2}30^{\circ}$`}
+      />
+    ),
 
-    optionA:'A) 3',
-    optionB:'B) 4',
-    optionC:'C) 5',
-    optionD:'D) 6',
+    optionA: <MathEq math={String.raw`$\frac{5}{2}$`} />,
+    optionB: <MathEq math={String.raw`$\frac{3}{2}$`} />,
+    optionC: <MathEq math={String.raw`$\frac{7}{2}$`} />,
+    optionD: <MathEq math={String.raw`$\frac{1}{2}$`} />,
   },
 
   {
     id: "12.",
-    question:<MathEq math={String.raw`Find the value of $log _{97} 1$`}/>,
+    question: (
+      <MathEq
+        math={String.raw`Find the value of $2sin^{2}30^{\circ}-3cos^{2}45^{\circ}+tan^{2}60^{\circ}$`}
+      />
+    ),
 
-    optionA:'A) 0',
-    optionB:'B) 1',
-    optionC:'C) 2',
-    optionD:'D) 3',
+    optionA: "A) 1",
+    optionB: "B) 2",
+    optionC: "C) 4",
+    optionD: "D) 5",
   },
   
   {
     id: "13.",
-    question:<MathEq math={String.raw`Find the value of $log _{5} -5$`}/>,
+    question: (
+      <MathEq
+        math={String.raw`$sin^{2}A + cos^{2}A$ = `}
+      />
+    ),
 
-    optionA:'A) -1',
-    optionB:'B) 1',
-    optionC:'C) 0',
-    optionD:'D) not defined',
+    optionA: "A) not defined",
+    optionB: "B) 0",
+    optionC: "C) -1",
+    optionD: "D) 1",
   },
   
   {
     id: "14.",
-    question:<MathEq math={String.raw`Find the range of x, $log _{4} \left ( 5-x \right )$`}/>,
+    question: (
+      <MathEq
+        math={String.raw`$cos^{2}30^{\circ}-sin^{2}30^{\circ}$ = `}
+      />
+    ),
 
-    optionA:'A) x > 5',
-    optionB:'B) x < 5',
-    optionC:'C) x > 4',
-    optionD:'D) x < 4',
+    optionA: "A) not defined",
+    optionB: "B) 1/2",
+    optionC: "C) 0",
+    optionD: "D) 1", 
   },
   
   {
     id: "15.",
-    question:<MathEq math={String.raw`Find the range of x, $log _{\left ( x-5 \right )} 4$`}/>,
+    question: (
+      <MathEq
+        math={String.raw`$tan225^{\circ}$ = `}
+      />
+    ),
 
-    optionA:<MathEq math={String.raw`A) $x \in \left ( 5,\infty  \right ) + \left \{ 6 \right \}$`}/>,
-    optionB:<MathEq math={String.raw`B) $x \in \left ( 5,\infty  \right )$`}/>,
-    optionC:<MathEq math={String.raw`C) $x \in \left ( 5,\infty  \right ) - \left \{ 6 \right \}$`}/>,
-    optionD:<MathEq math={String.raw`D) $x \in \left [ 5,\infty  \right ) - \left \{ 6 \right \}$`}/>,
+    optionA: "A) not defined",
+    optionB: "B) 1/2",
+    optionC: "C) 1",
+    optionD: "D) 0", 
   },
 
   {
     id: "16.",
-    question:'A hammer weighing 3kg, moving with a velocity of 10m/s, strikes against the head of a spike and drives it into a block of wood. If the hammer comes to rest in 0.025s, the impulse associated with the ball will be',
+    question:'A rock is brought from the surface of the moon,',
 
-    optionA:'A) 30 Ns',
-    optionB:'B) -30 Ns',
-    optionC:'C) 15 Ns',
-    optionD:'D) -15 Ns',
+    optionA:'its mass will change',
+    optionB:'its weight will change but not mass',
+    optionC:'both mass and weight wil change',
+    optionD:'its mass and weight both will remain same',
   },
 
   {
     id: "17.",
-    question: "A rocket works on the",
+    question:"A lead ball and a snow ball of identical radius are released from a certain height in vacuum. The time taken by both of them to reach the ground are",
 
-    optionA:'A) First law of motion',
-    optionB:'B) Second law of motion',
-    optionC:'C) Third law of motion',
-    optionD:'D) Law of conservation of energy',
+    optionA:'exactly equal',
+    optionB:'unequal',
+    optionC:'roughly equal',
+    optionD:'in the ratio of the density of lead and snow',
   },
   
   {
     id: "18.",
-    question:"If you are asked to push an object so that the acceleration produced in it is now twice as before, then the force required will be",
+    question:"The SI unit of g is",
 
-    optionA:'A) Twice as before',
-    optionB:'B) Half as before',
-    optionC:'C) Same as before',
-    optionD:'D) Four times as before',
+    optionA: <MathEq math={String.raw`A) $m^{2}/s$`} />,
+    optionB: <MathEq math={String.raw`B) $m/s^{2}$`} />,
+    optionC: <MathEq math={String.raw`C) $s/m^{2}$`} />,
+    optionD: <MathEq math={String.raw`D) $m/s$`} />,
   },
   
   {
     id: "19.",
-    question:"It is difficult to walk on ice because of",
+    question:"If the distance between two masses be doubled, then the force between them will become",
 
-    optionA:'A) absence of friction',
-    optionB:'B) absence of inertia',
-    optionC:'C) more inertia',
-    optionD:'D) more friction',
+    optionA:'A) 1/4 times',
+    optionB:'B) 4 times',
+    optionC:'C) 1/2 times',
+    optionD:'D) 2 times',
   },
   
   {
     id: "20.",
-    question:"The law which defines force is",
+    question:"A body falls freely towards the earth with",
 
-    optionA:'A) Newtons third law of motion',
-    optionB:'B) Newtons first law of motion',
-    optionC:'C) Newtons second law of motion',
-    optionD:'D) Newtons law of gravity',
+    optionA:'A) uniform speed',
+    optionB:'B) uniform velocity',
+    optionC:'C) uniform acceleration',
+    optionD:'D) none of these',
   },
 
   {
     id: "21.",
-    question:"The law which gives a quantitative measurement of force is",
+    question:'The force of gravitaion between two bodies does not depend on',
 
-    optionA:'A) Newtons third law of motion',
-    optionB:'B) Newtons first law of motion',
-    optionC:'C) Newtons second law of motion',
-    optionD:'D) Newtons law of gravity',
+    optionA:'A) their separation',
+    optionB:'B) the gravitational constant',
+    optionC:'C) the product of their masses',
+    optionD:'D) the sum of their masses',
   },
   {
     id: "22.",
-    question:"Friction between any two objects is due to",
+    question:'A body having a mass 1kg on the surface of the earth weighs',
 
-    optionA:'A) attraction between them',
-    optionB:'B) repulsion between them',
-    optionC:'C) some adhesive forces between them',
-    optionD:'D) irregularities on the surfaces',
+    optionA:'A) 9.8 N',
+    optionB:'B) 1/9.8 N',
+    optionC:'C) 980 N',
+    optionD:'D) 1/980 N',
   },
   {
     id: "23.",
-    question:"A and B are two objects with mass 6kg and 34kg respectively. Then ",
+    question:"A stone dropped from the roof of the building takes 4s to reach the ground. the height of the building is",
 
-    optionA:'A) A has more inertia than B',
-    optionB:'B) B has more inertia than A',
-    optionC:'C) A and B both have same inertia',
-    optionD:'D) None of the above is true',
+    optionA:'A) 9.8m',
+    optionB:'B) 19.6m',
+    optionC:'C) 39.2m',
+    optionD:'D) 78.4m',
   },
   {
     id: "24.",
-    question:"Which of the following class of forces is different from others?",
+    question:"A ball is thrown up and attains a maximum height of 100m. It's initial speed was",
 
-    optionA:'A) Pulling of a cart',
-    optionB:'B) Stretching of a coiled spring',
-    optionC:'C) Kicking of the football',
-    optionD:'D) Electrical force',
+    optionA:'A) 9.8 m/s',
+    optionB:'B) 44.2 m/s',
+    optionC:'C) 19.6 m/s',
+    optionD:'D) None of these',
   },
   {
     id: "25.",
-    question:"Which of the following class of forces is different from others?",
+    question:"The weight of an object",
 
-    optionA:'A) Magnetic force',
-    optionB:'B) Electrical force',
-    optionC:'C) Gravitational force',
-    optionD:'D) Stretching of a spring',
+    optionA:'A) is the quantity of matter it contains',
+    optionB:"B) refers to it's inertia",
+    optionC:"C) is same as it's mass but is expressed in different units",
+    optionD:"D) is the force with which it is attracted towards the earth",
   },
   {
     id: "26.",
-    question:<MathEq math={String.raw`If $10 ms^{-2}$, what is the force of gravity acting on a mass of 1kg?`}/>,
+    question:"What is the mass of an object whose weight is 980N",
 
-    optionA:'A) 1N',
-    optionB:'B) 10N',
-    optionC:'C) 1/10 N',
-    optionD:'D) None of these',
+    optionA:'A) 980 kg',
+    optionB:'B) 98 kg',
+    optionC:'C) 100 kg',
+    optionD:'D) 0',
   },
   {
     id: "27.",
-    question:'When an object undergoes acceleration',
+    question:"A weighing macine measures",
 
-    optionA:"A) it's speed always increases",
-    optionB:"B) it's velocity always increases",
-    optionC:"C) it always falls towards the earth",
-    optionD:"D) a force always acts on it",
+    optionA:'A) weight only',
+    optionB:'B) mass only',
+    optionC:'C) mass and weight',
+    optionD:'D) None of these',
   },
   {
     id: "28.",
-    question:"A force acts on an object which is free to move. If we know the magnitude of the force and the mass of the object, newton's second law of motion enables us to determine the object's",
+    question:"Hold a stone at the end of the spring balance. the pointer shows 5 kg wt. Now release the spring balance then the pointer will read",
 
-    optionA:'A) weight',
-    optionB:'B) speec',
-    optionC:'C) acceleration',
-    optionD:'D) position',
+    optionA:'A) more than 5kg wt',
+    optionB:'B) less than 5kg wt',
+    optionC:'C) equal to 5kg wt',
+    optionD:'D) 0',
   },
   {
     id: "29.",
-    question:"Newton used the phrase 'quantity of motion' for",
+    question:"While orbiting around the earth in a space ship an astronaut experiences",
 
-    optionA:'A) momentum',
-    optionB:'B) force',
-    optionC:'C) acceleration due to gravity',
-    optionD:'D) none of these',
+    optionA:'A) more weight',
+    optionB:'B) lesser weight',
+    optionC:'C) weightlessness',
+    optionD:'D) nothing at all',
   },
   {
     id: "30.",
-    question:<MathEq math={String.raw`$kg ms^{-1}$ is the SI unit of`}/>,
+    question:"The three laws of planetary motion were given by",
 
-    optionA:'A) Impulse',
-    optionB:'B) Force',
-    optionC:'C) Angular velocity',
-    optionD:'D) None of these',
+    optionA:'A) Aristotle',
+    optionB:'B) Kepler',
+    optionC:'C) Copernicus',
+    optionD:'D) Tycho Brahe',
   },
 ];
