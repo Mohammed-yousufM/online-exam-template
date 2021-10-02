@@ -1,7 +1,7 @@
 import React from "react";
 import MathEq from "./MathEq";
-// import Image from "./Image";
-// import i1 from "./I1.png";
+import Image from "./Image";
+import i1 from "./I1.png";
 // import i2 from "./I2.png";
 // // import i3 from "./I3.bmp";
 // // import i4 from "./I4.bmp";
@@ -81,32 +81,132 @@ export const studentsDB = [
 export const questionsAll = [
   {
     id: "1.",
-    question: (
-      <MathEq math={String.raw`Convert $40^{\circ}$ to Radian measure`} />
-    ),
+    question:
+      "A circus artist climbing a 20m long rope which is tightly stretched and tied from the top of the vertical pole to the ground. Find the height of the pole if the angle made by the rope with ground level is 30 degrees",
 
-    optionA: <MathEq math={String.raw`A) $\frac{2\pi}{7}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{2\pi}{9}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{\pi}{9}$ `} />,
-    optionD: "D) 0",
+    optionA: "A) 10m",
+    optionB: "B) 20m",
+    optionC: "C) 30m",
+    optionD: "D) 40m",
   },
 
   {
     id: "2.",
-    question: (
-      <MathEq
-        math={String.raw`Convert the $\frac{4\pi ^{c}}{5}$ to Degree measure`}
-      />
-    ),
+    question:
+      "Shadow of a building is 10m long, when the angle of elevation of sun is 60 degrees.Find the height of the building.",
 
-    optionA: <MathEq math={String.raw`A) $144^{\circ}$`} />,
-    optionB: <MathEq math={String.raw`B) $142^{\circ}$`} />,
-    optionC: <MathEq math={String.raw`C) $138^{\circ}$`} />,
-    optionD: <MathEq math={String.raw`D) $146^{\circ}$`} />,
+    optionA: <MathEq math={String.raw`A) $10$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{10}{\sqrt{3}}$`} />,
+    optionC: <MathEq math={String.raw`C) $10\sqrt{3}$`} />,
+    optionD: <MathEq math={String.raw`D) $20$`} />,
   },
 
   {
     id: "3.",
+    question: (
+      <MathEq
+        math={String.raw`If a vertical pole 6m high has a shadow of length $2\sqrt{3}$m. Find the angle of elevation of the sun`}
+      />
+    ),
+
+    optionA: "A) 30 degrees",
+    optionB: "B) 20 degrees",
+    optionC: "C) 45 degrees",
+    optionD: "D) 60 degrees",
+  },
+
+  {
+    id: "4.",
+    question:
+      "A 1.5m tall boy is standing at some distance from a 30m tall building. The angle of elevation from his eyes to the top of the building increases from 30degrees to 60degrees as he walks towards the building. Find the distance he walked towards the building.",
+
+    optionA: <MathEq math={String.raw`A) $19$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{19}{\sqrt{3}}$`} />,
+    optionC: <MathEq math={String.raw`C) $19\sqrt{3}$`} />,
+    optionD: <MathEq math={String.raw`D) $19/3$`} />,
+  },
+
+  {
+    id: "5.",
+    question:
+      "From a point on the ground the angles of elevation of bottom and top of the transmission tower at the top o a 20m high building are 45degrees and 60degrees respectively. Find the height of the tower.",
+
+    optionA: <MathEq math={String.raw`A) $20 \left ( \sqrt{3}-1 \right )$`} />,
+    optionB: <MathEq math={String.raw`B) $\frac{20}{\sqrt{3}-1}$`} />,
+    optionC: <MathEq math={String.raw`C) $20\sqrt{3}$`} />,
+    optionD: <MathEq math={String.raw`D) $20/3$`} />,
+  },
+
+  {
+    id: "6.",
+    question: (
+      <MathEq
+        math={String.raw`$sin\theta = \frac{1}{\sqrt{2}} \:$ $cos\theta = \frac{1}{\sqrt{2}}$ then find $tan\theta  \:+ \: cot\theta$`}
+      />
+    ),
+
+    optionA: "A) 4",
+    optionB: "B) 2",
+    optionC: "C) 1",
+    optionD: "D) 3",
+  },
+
+  {
+    id: "7.",
+    question: (
+      <MathEq
+        math={String.raw`If $5tan\theta = 4$ then $\frac{5sin\theta \:-\: 3cos\theta}{5sin\theta \:+\: 2cos\theta}$`}
+      />
+    ),
+
+    optionA: "A) 0",
+    optionB: "B) 1",
+    optionC: "C) 1/6",
+    optionD: "D) 6",
+  },
+
+  {
+    id: "8.",
+    question: <MathEq math={String.raw`$-13 \pi /6$ radians =`} />,
+
+    optionA: <MathEq math={String.raw`A) $-390^{\circ}$`} />,
+    optionB: <MathEq math={String.raw`B) $-490^{\circ}$`} />,
+    optionC: <MathEq math={String.raw`C) $-410^{\circ}$`} />,
+    optionD: <MathEq math={String.raw`D) $-30^{\circ}$`} />,
+  },
+
+  {
+    id: "9.",
+    question: "If x= 45degrees, then tanx + cotx =",
+
+    optionA: "A) 2",
+    optionB: "B) 4",
+    optionC: "C) 3",
+    optionD: "D) 1",
+  },
+
+  {
+    id: "10.",
+    question: "secA + tanA = 3, then secA =",
+
+    optionA: "A) 5/3",
+    optionB: "B) 10/3",
+    optionC: "C) 7/3",
+    optionD: "D) 10",
+  },
+
+  {
+    id: "11.",
+    question:<MathEq math={String.raw`$\frac{tan225 ^{\circ}}{cot225 ^{\circ}}$`}/>, 
+
+    optionA: "A) 2",
+    optionB: "B) 4",
+    optionC: "C) 3",
+    optionD: "D) 1",
+  },
+
+  {
+    id: "12.",
     question: (
       <MathEq
         math={String.raw`Convert the $\frac{7\pi ^{c}}{6}$ to Degree measure`}
@@ -120,29 +220,7 @@ export const questionsAll = [
   },
 
   {
-    id: "4.",
-    question: (
-      <MathEq math={String.raw`Convert $270^{\circ}$ to Radian measure`} />
-    ),
-
-    optionA: <MathEq math={String.raw`A) $3\pi^{c}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{2\pi^{c}}{3}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{3\pi^{c}}{2}$ `} />,
-    optionD: <MathEq math={String.raw`D) $\frac{3\pi^{c}}{4}$ `} />,
-  },
-
-  {
-    id: "5.",
-    question: <MathEq math={String.raw`If $sinA=\frac{3}{4}$, then $tanA$=`} />,
-
-    optionA: <MathEq math={String.raw`A) $\frac{3}{7}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{\sqrt{7}}{3}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{1}{\sqrt{7}}$`} />,
-    optionD: <MathEq math={String.raw`D) $\frac{3}{\sqrt{7}}$`} />,
-  },
-
-  {
-    id: "6.",
+    id: "13.",
     question: (
       <MathEq
         math={String.raw`If $sinA=\frac{4}{5}$, then $\left ( 4+tanA \right )\left ( 2+cosA \right )$=`}
@@ -156,49 +234,7 @@ export const questionsAll = [
   },
 
   {
-    id: "7.",
-    question: (
-      <MathEq
-        math={String.raw`Find $\frac{\left ( 1+sin\theta  \right )\left ( 1-sin\theta \right )}{\left ( 1+sin\theta  \right )\left ( 1-cos\theta \right )}$ if $cot\theta = \frac{7}{8}$`}
-      />
-    ),
-
-    optionA: <MathEq math={String.raw`A) $\frac{49}{6}$`} />,
-    optionB: <MathEq math={String.raw`B) $\frac{64}{49}$`} />,
-    optionC: <MathEq math={String.raw`C) $\frac{49}{64}$`} />,
-    optionD: "D) 0",
-  },
-
-  {
-    id: "8.",
-    question: (
-      <MathEq
-        math={String.raw`Find the value of $\frac{2tan30^{\circ}}{1-tan^{2}30^{\circ}}$`}
-      />
-    ),
-
-    optionA: <MathEq math={String.raw`A) $\frac{1}{\sqrt{3}}$`} />,
-    optionB: <MathEq math={String.raw`B) $\sqrt{3}$`} />,
-    optionC: "C) 0",
-    optionD: <MathEq math={String.raw`D) $\frac{1}{2}$`} />,
-  },
-
-  {
-    id: "9.",
-    question: (
-      <MathEq
-        math={String.raw`Find the value of $\frac{cos60^{\circ}+sin60^{\circ}}{cos60^{\circ}-sin60^{\circ}}$`}
-      />
-    ),
-
-    optionA: <MathEq math={String.raw`A) $-\left ( \sqrt{3}+2 \right )$`} />,
-    optionB: "B) 1",
-    optionC: <MathEq math={String.raw`C) $-\sqrt{3}+2$`} />,
-    optionD: "D) 0",
-  },
-
-  {
-    id: "10.",
+    id: "14.",
     question: (
       <MathEq
         math={String.raw`Find the value of $sin60^{\circ} cos30^{\circ}+cos60^{\circ} sin30^{\circ}$`}
@@ -212,7 +248,7 @@ export const questionsAll = [
   },
 
   {
-    id: "11.",
+    id: "15.",
     question: (
       <MathEq
         math={String.raw`Find the value of $sin^{2}60^{\circ}+cos^{2}30^{\circ}+cot^{2}45^{\circ}+sec^{2}60^{\circ}-cosec^{2}30^{\circ}$`}
@@ -226,199 +262,160 @@ export const questionsAll = [
   },
 
   {
-    id: "12.",
-    question: (
-      <MathEq
-        math={String.raw`Find the value of $2sin^{2}30^{\circ}-3cos^{2}45^{\circ}+tan^{2}60^{\circ}$`}
-      />
-    ),
-
-    optionA: "A) 1",
-    optionB: "B) 2",
-    optionC: "C) 4",
-    optionD: "D) 5",
-  },
-  
-  {
-    id: "13.",
-    question: (
-      <MathEq
-        math={String.raw`$sin^{2}A + cos^{2}A$ = `}
-      />
-    ),
-
-    optionA: "A) not defined",
-    optionB: "B) 0",
-    optionC: "C) -1",
-    optionD: "D) 1",
-  },
-  
-  {
-    id: "14.",
-    question: (
-      <MathEq
-        math={String.raw`$cos^{2}30^{\circ}-sin^{2}30^{\circ}$ = `}
-      />
-    ),
-
-    optionA: "A) not defined",
-    optionB: "B) 1/2",
-    optionC: "C) 0",
-    optionD: "D) 1", 
-  },
-  
-  {
-    id: "15.",
-    question: (
-      <MathEq
-        math={String.raw`$tan225^{\circ}$ = `}
-      />
-    ),
-
-    optionA: "A) not defined",
-    optionB: "B) 1/2",
-    optionC: "C) 1",
-    optionD: "D) 0", 
-  },
-
-  {
     id: "16.",
-    question:'A rock is brought from the surface of the moon,',
+    question: "The tidal waves in the sea are primarily due to",
 
-    optionA:'its mass will change',
-    optionB:'its weight will change but not mass',
-    optionC:'both mass and weight wil change',
-    optionD:'its mass and weight both will remain same',
+    optionA: "A) The gravitational effect of the moon on the earth",
+    optionB: "B) The gravitational effect of the sun on the earth",
+    optionC: "C) The gravitational effect of venus on the earth",
+    optionD: "D) The atmospheric effect of the earth itself",
   },
 
   {
     id: "17.",
-    question:"A lead ball and a snow ball of identical radius are released from a certain height in vacuum. The time taken by both of them to reach the ground are",
+    question:
+      "If there were a smaller gravitational effect, which of the following forces do you think would alter in some respect",
 
-    optionA:'exactly equal',
-    optionB:'unequal',
-    optionC:'roughly equal',
-    optionD:'in the ratio of the density of lead and snow',
+    optionA: "A) Viscous forces",
+    optionB: "B) Archimedes uplift",
+    optionC: "C) Electrostatic force",
+    optionD: "D) None of the above",
   },
-  
+
   {
     id: "18.",
-    question:"The SI unit of g is",
+    question:
+      "A satellite of the earth is revolving in a circular orbit with a uniform speed v. If the gravitational force suddenly disappears, the satellite will",
 
-    optionA: <MathEq math={String.raw`A) $m^{2}/s$`} />,
-    optionB: <MathEq math={String.raw`B) $m/s^{2}$`} />,
-    optionC: <MathEq math={String.raw`C) $s/m^{2}$`} />,
-    optionD: <MathEq math={String.raw`D) $m/s$`} />,
+    optionA: "A) Continue to move with velocity v along the original orbit",
+    optionB: "B) Move with a velocity v, tangentially to the original orbit",
+    optionC: "C) Fall down with increasing velocity",
+    optionD: "D) Ultimately come to rest somewhere on the original orbit",
   },
-  
+
   {
     id: "19.",
-    question:"If the distance between two masses be doubled, then the force between them will become",
+    question: "The atmosphere is held to the earth by",
 
-    optionA:'A) 1/4 times',
-    optionB:'B) 4 times',
-    optionC:'C) 1/2 times',
-    optionD:'D) 2 times',
+    optionA: "A) Winds",
+    optionB: "B) Gravity",
+    optionC: "C) Clouds",
+    optionD: "D) None of the above",
   },
-  
+
   {
     id: "20.",
-    question:"A body falls freely towards the earth with",
+    question: "The weight of a body at the centre of the earth is",
 
-    optionA:'A) uniform speed',
-    optionB:'B) uniform velocity',
-    optionC:'C) uniform acceleration',
-    optionD:'D) none of these',
+    optionA: "A) Zero",
+    optionB: "B) Infinite",
+    optionC: "C) Same as on the surface of earth",
+    optionD: "D) None of the above",
   },
 
   {
     id: "21.",
-    question:'The force of gravitaion between two bodies does not depend on',
+    question:
+      "If the distance between two masses is doubled, the gravitational attraction between them",
 
-    optionA:'A) their separation',
-    optionB:'B) the gravitational constant',
-    optionC:'C) the product of their masses',
-    optionD:'D) the sum of their masses',
+    optionA: "A) Is doubled",
+    optionB: "B) Becomes four times",
+    optionC: "C) Is reduced to half",
+    optionD: "D) Is reduced to a quarter",
   },
   {
     id: "22.",
-    question:'A body having a mass 1kg on the surface of the earth weighs',
+    question:
+      "Which of the following is the evidence to show that there must be a force acting on earth and directed towards the sun",
 
-    optionA:'A) 9.8 N',
-    optionB:'B) 1/9.8 N',
-    optionC:'C) 980 N',
-    optionD:'D) 1/980 N',
+    optionA: "A) Deviation of the falling bodies towards east",
+    optionB: "B) Revolution of the earth round the sun",
+    optionC: "C) Phenomenon of day and night",
+    optionD: "D) Apparent motion of sun round the earth",
   },
   {
     id: "23.",
-    question:"A stone dropped from the roof of the building takes 4s to reach the ground. the height of the building is",
+    question:
+      "The gravitational force between two stones of mass 1 kg each separated by a distance of 1 metre in vacuum is",
 
-    optionA:'A) 9.8m',
-    optionB:'B) 19.6m',
-    optionC:'C) 39.2m',
-    optionD:'D) 78.4m',
+    optionA: "A) Zero",
+    optionB: (
+      <MathEq math={String.raw`B) $6.675 \: \times \: 10^{-5}$ newton`} />
+    ),
+    optionC: (
+      <MathEq math={String.raw`C) $6.675 \: \times \: 10^{-11}$ newton`} />
+    ),
+    optionD: (
+      <MathEq math={String.raw`D) $6.675 \: \times \: 10^{-8}$ newton`} />
+    ),
   },
   {
     id: "24.",
-    question:"A ball is thrown up and attains a maximum height of 100m. It's initial speed was",
+    question:
+      "The pressure at the bottom of a tank  containing a liquid does not depend on",
 
-    optionA:'A) 9.8 m/s',
-    optionB:'B) 44.2 m/s',
-    optionC:'C) 19.6 m/s',
-    optionD:'D) None of these',
+    optionA: "A) Acceleration due to gravity",
+    optionB: "B) Height of the liquid column",
+    optionC: "C) Area of the bottom surface",
+    optionD: "D) Nature of the liquid",
   },
   {
     id: "25.",
-    question:"The weight of an object",
+    question: "Why the dam of water reservoir is thick at the bottom",
 
-    optionA:'A) is the quantity of matter it contains',
-    optionB:"B) refers to it's inertia",
-    optionC:"C) is same as it's mass but is expressed in different units",
-    optionD:"D) is the force with which it is attracted towards the earth",
+    optionA: "A) Quantity of water increases with depth",
+    optionB: "B) Density of water increases with depth",
+    optionC: "C) Pressure of water increases with depth ",
+    optionD: "D) Temperature of water increases with depth",
   },
   {
     id: "26.",
-    question:"What is the mass of an object whose weight is 980N",
+    question:
+      "A metallic block of density 5 gm cm–3 and having dimensions 5 cm × 5 cm × 5 cm is weighed in water. Its apparent weight will be",
 
-    optionA:'A) 980 kg',
-    optionB:'B) 98 kg',
-    optionC:'C) 100 kg',
-    optionD:'D) 0',
+    optionA: "A) 5 × 5 × 5 × 5 gf",
+    optionB: "B) 4 × 4 × 4 × 4 gf",
+    optionC: "C) 5 × 4 × 4 × 4 gf",
+    optionD: "D) 4 × 5 × 5 × 5 gf ",
   },
   {
     id: "27.",
-    question:"A weighing macine measures",
+    question: [
+      "A candle of diameter d is floating on a liquid in a cylindrical container of diameter D (D>>d) as shown in figure. If it is burning at the rate of 2cm/hour then the top of the candle will",
+      <Image g={i1} />,
+    ],
 
-    optionA:'A) weight only',
-    optionB:'B) mass only',
-    optionC:'C) mass and weight',
-    optionD:'D) None of these',
+    optionA: "A) Remain at the same height",
+    optionB: "B) Fall at the rate of 1 cm/hour",
+    optionC: "C) Fall at the rate of  2 cm/hour",
+    optionD: "D) Go up the rate of 1cm/hour",
   },
   {
     id: "28.",
-    question:"Hold a stone at the end of the spring balance. the pointer shows 5 kg wt. Now release the spring balance then the pointer will read",
+    question:
+      "An ice block contains a glass ball when the ice melts within the water containing vessel, the level of water",
 
-    optionA:'A) more than 5kg wt',
-    optionB:'B) less than 5kg wt',
-    optionC:'C) equal to 5kg wt',
-    optionD:'D) 0',
+    optionA: "A) Rises",
+    optionB: "B) Falls",
+    optionC: "C) Unchanged",
+    optionD: "D) First rises and then falls",
   },
   {
     id: "29.",
-    question:"While orbiting around the earth in a space ship an astronaut experiences",
+    question: "A large ship can float but a steel needle sinks because of",
 
-    optionA:'A) more weight',
-    optionB:'B) lesser weight',
-    optionC:'C) weightlessness',
-    optionD:'D) nothing at all',
+    optionA: "A) Viscosity",
+    optionB: "B) Surface tension",
+    optionC: "C) Density",
+    optionD: "D) None of these",
   },
   {
     id: "30.",
-    question:"The three laws of planetary motion were given by",
+    question: "Construction of submarines is based on",
 
-    optionA:'A) Aristotle',
-    optionB:'B) Kepler',
-    optionC:'C) Copernicus',
-    optionD:'D) Tycho Brahe',
+    optionA: "A) Archimedes’ principle",
+    optionB: "B) Bernoulli’s theorem ",
+    optionC: "C) Pascal’s law",
+    optionD: "D) Newton’s laws",
   },
 ];
